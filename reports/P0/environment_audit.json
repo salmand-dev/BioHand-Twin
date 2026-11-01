@@ -1,0 +1,134 @@
+{
+ "generated_utc": "2026-10-31T18:44:41+00:00",
+ "generator": "scripts/p0_environment_audit.py",
+ "os": {
+  "platform": "Windows-10-10.0.19045-SP0",
+  "version": "10.0.19045",
+  "machine": "AMD64"
+ },
+ "python": {
+  "version": "3.11.4",
+  "executable": "<PROJECT>\\.venv\\Scripts\\python.exe",
+  "in_venv": true
+ },
+ "python_packages": {
+  "absl-py": "2.5.1",
+  "ast_serialize": "0.13.1",
+  "colorama": "0.4.6",
+  "etils": "1.14.0",
+  "fsspec": "2026.9.0",
+  "glfw": "2.11.0",
+  "iniconfig": "2.3.1",
+  "librt": "0.16.0",
+  "mujoco": "3.17.0",
+  "mypy": "2.4.1",
+  "mypy_extensions": "1.1.0",
+  "numpy": "2.4.6",
+  "packaging": "26.3",
+  "pathspec": "1.1.1",
+  "pip": "26.2.2",
+  "pluggy": "1.7.0",
+  "Pygments": "2.21.0",
+  "PyOpenGL": "3.1.10",
+  "pytest": "9.2.0",
+  "PyYAML": "6.0.3",
+  "ruff": "0.17.3",
+  "scipy": "1.17.1",
+  "setuptools": "65.5.0",
+  "typing_extensions": "4.16.0",
+  "websockets": "17.4",
+  "zipp": "4.1.2"
+ },
+ "mujoco_python": {
+  "package": "3.17.0",
+  "library": "3.17.0"
+ },
+ "git": {
+  "cmd": [
+   "git",
+   "--version"
+  ],
+  "returncode": 0,
+  "stdout": "git version 2.56.0.windows.2",
+  "stderr": ""
+ },
+ "project_git_status": {
+  "cmd": [
+   "git",
+   "status",
+   "--short"
+  ],
+  "returncode": 128,
+  "stdout": "",
+  "stderr": "fatal: not a git repository (or any of the parent directories): .git"
+ },
+ "mujoco_standalone": {
+  "dir": "<HOME>\\Downloads\\mujoco-3.17.0-windows-x86_64",
+  "exists": true,
+  "mujoco_dll_exists": true,
+  "dll_file_version": "3.17.0",
+  "license_first_line": "Apache License"
+ },
+ "godot": {
+  "path": "<HOME>\\Downloads\\Godot_v4.7.2-stable_win64.exe\\Godot_v4.7.2-stable_win64_console.exe",
+  "exists": true,
+  "version": {
+   "cmd": [
+    "<HOME>\\Downloads\\Godot_v4.7.2-stable_win64.exe\\Godot_v4.7.2-stable_win64_console.exe",
+    "--version"
+   ],
+   "returncode": 0,
+   "stdout": "4.7.2.stable.official.ed1daf0bf",
+   "stderr": ""
+  },
+  "headless_project_open": {
+   "cmd": [
+    "<HOME>\\Downloads\\Godot_v4.7.2-stable_win64.exe\\Godot_v4.7.2-stable_win64_console.exe",
+    "--headless",
+    "--path",
+    "<PROJECT>\\godot_app",
+    "--quit"
+   ],
+   "returncode": 0,
+   "stdout": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+   "stderr": ""
+  }
+ },
+ "blender": {
+  "path": "C:\\Program Files\\Blender Foundation\\Blender 3.6\\blender.exe",
+  "exists": true,
+  "version": {
+   "cmd": [
+    "C:\\Program Files\\Blender Foundation\\Blender 3.6\\blender.exe",
+    "--version"
+   ],
+   "returncode": 0,
+   "stdout": "Blender 3.6.23\n\tbuild date: 2025-06-17\n\tbuild time: 03:22:43\n\tbuild commit date: 2025-06-16\n\tbuild commit time: 11:52\n\tbuild hash: e467db79ca8c\n\tbuild platform: Windows\n\tbuild type: Release\n\tbuild c flags: /W3 /w34062 /w34100 /w34115 /w34189 /w35038 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /wd4828 /wd4996 /wd4661 /wd4848 /we4013 /we4133 /we4431 /we4033 /DWIN32 /D_WINDOWS /W3 /nologo /J /Gd /MP /bigobj /Zc:inline -openmp   \n\tbuild c++ flags: /W3 /w34062 /w34100 /w34115 /w34189 /w35038 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /wd4828 /wd4996 /wd4661 /wd4848 /we4013 /we4133 /we4431 /we4033 /DWIN32 /D_WINDOWS /W3  /EHsc /nologo /J /Gd /MP /EHsc /bigobj /Zc:inline /permissive- /Zc:twoPhase- -openmp /Zc:__cplusplus   \n\tbuild link flags: /MACHINE:X64  /SUBSYSTEM:CONSOLE /STACK:2097152 /ignore:4049 /ignore:4217 /ignore:4221\n\tbuild system: CMake",
+   "stderr": ""
+  }
+ },
+ "hardware": {
+  "computer": {
+   "TotalPhysicalMemory": 8524095488,
+   "NumberOfLogicalProcessors": 4
+  },
+  "cpu": {
+   "Name": "Intel(R) Core(TM) i7-4610M CPU @ 3.00GHz"
+  },
+  "gpu": [
+   {
+    "Name": "Intel(R) HD Graphics 4600",
+    "DriverVersion": "20.19.15.4835"
+   },
+   {
+    "Name": "AMD Radeon HD 8690M",
+    "DriverVersion": "15.201.1101.0"
+   }
+  ],
+  "disk_c": {
+   "total": 536315899904,
+   "used": 445815590912,
+   "free": 90500308992
+  }
+ }
+}

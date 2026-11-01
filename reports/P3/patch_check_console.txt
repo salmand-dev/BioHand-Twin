@@ -1,0 +1,24 @@
+muscles whose operating range worsens with the patch: 21
+  ECRB_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.000 -> 0.197 | lnorm 0.702..1.109
+  ECRL_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.083 -> 0.299 | lnorm 0.774..1.22
+  ECU_r     outside-active 0.000 -> 0.000 | outside-lengthrange 0.000 -> 0.125 | lnorm 0.685..0.992
+  EDC2_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.000 -> 0.036 | lnorm 0.714..1.048
+  EDC3_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.000 -> 0.094 | lnorm 0.695..1.034
+  EDC4_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.000 -> 0.056 | lnorm 0.718..1.038
+  EDC5_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.000 -> 0.080 | lnorm 0.684..1.044
+  EDM_r     outside-active 0.000 -> 0.000 | outside-lengthrange 0.000 -> 0.085 | lnorm 0.677..1.024
+  EIP_r     outside-active 0.000 -> 0.000 | outside-lengthrange 0.001 -> 0.147 | lnorm 0.701..1.073
+  FCR_r     outside-active 0.000 -> 0.000 | outside-lengthrange 0.003 -> 0.097 | lnorm 0.746..1.096
+  FCU_r     outside-active 0.000 -> 0.000 | outside-lengthrange 0.017 -> 0.111 | lnorm 0.716..1.085
+  FDP2_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.093 -> 0.130 | lnorm 0.662..1.054
+  FDP3_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.104 -> 0.167 | lnorm 0.655..1.061
+  FDP4_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.001 -> 0.067 | lnorm 0.707..1.032
+  FDP5_r    outside-active 0.027 -> 0.103 | outside-lengthrange 0.969 -> 0.916 | lnorm 0.44..0.774
+  FDS2_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.043 -> 0.093 | lnorm 0.667..1.046
+  FDS3_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.145 -> 0.161 | lnorm 0.628..1.045
+  FDS4_r    outside-active 0.031 -> 0.103 | outside-lengthrange 0.969 -> 0.910 | lnorm 0.417..0.789
+  FDS5_r    outside-active 0.000 -> 0.000 | outside-lengthrange 0.000 -> 0.056 | lnorm 0.731..1.066
+  FPL_r     outside-active 0.000 -> 0.000 | outside-lengthrange 0.000 -> 0.043 | lnorm 0.892..1.063
+  PL_r      outside-active 0.000 -> 0.000 | outside-lengthrange 0.006 -> 0.134 | lnorm 0.732..1.091
+smoke patched: {'zero': {'finite': True, 'max_limit_violation_rad': 0.00416, 'warnings': {}}, 'full': {'finite': True, 'max_limit_violation_rad': 0.14997, 'warnings': {}}, 'random_seeded': {'finite': True, 'max_limit_violation_rad': 0.1159, 'warnings': {}}}
+smoke upstream: {'zero': {'finite': True, 'max_limit_violation_rad': 0.00416, 'warnings': {}}, 'full': {'finite': True, 'max_limit_violation_rad': 0.15424, 'warnings': {}}, 'random_seeded': {'finite': True, 'max_limit_violation_rad': 0.11062, 'warnings': {}}}

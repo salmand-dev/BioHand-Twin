@@ -1,0 +1,14 @@
+id: power_grip_proxy
+description: Power-grip proxy around a static cylinder (illustrative fixture, 40 mm diameter).
+brace_joints: [pro_sup_r, deviation_r, flexion_r]   # forearm/wrist brace (apparatus)
+initial_angles_rad: {cmc_abduction_r: 0.5, cmc_flexion_r: 0.4}   # thumb abducted+extended (MoBL convention) so it clears the object
+duration_s: 2.0
+object: {name: grip_cylinder, radius_m: 0.02, half_length_m: 0.05, palmar_clearance_m: 0.02}
+phases:
+  - {start_s: 0.0, end_s: 2.0, ramp_s: 0.3, activations: {finger_flexors: 0.5, thumb_flexors: 0.5}}
+metrics:
+  - {kind: contact_force_mean, name: grip_force_mean_last_0p5s, from_s: 1.5, to_s: 2.0}
+  - {kind: n_contact_bodies, name: n_hand_bodies_in_contact}
+success:
+  - {metric: grip_force_mean_last_0p5s, op: ">=", value: 1.0}    # task definition
+  - {metric: n_hand_bodies_in_contact, op: ">=", value: 3}

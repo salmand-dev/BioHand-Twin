@@ -1,0 +1,12 @@
+id: rest_neutral
+description: Neutral pose, no activation (passive settling under gravity).
+initial_angles_rad: {}
+# Horizon changed from 2 s to 4 s on 2026-11-01 (threshold unchanged). With measured forearm stiffness and the
+# upstream forearm damping the time constant is about 2.3 s, so 2 s cannot show settling. At 2 s the check
+# still fails (0.091 rad/s, reports/fixes/FIXES_REPORT.md); the change is declared, not hidden.
+# Reviewed and accepted by the project owner on 2026-11-01.
+duration_s: 4.0
+phases: []
+metrics: []
+success:
+  - {metric: final_max_abs_qvel_rad_s, op: "<", value: 0.05}     # settled

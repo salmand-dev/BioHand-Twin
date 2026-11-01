@@ -1,0 +1,1286 @@
+{
+ "actuators": [
+  {
+   "canonical_name": "extensor carpi radialis longus",
+   "name": "ECRL_r",
+   "name_status": "provisional",
+   "peak_force_N": 337.3,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "extensor carpi radialis brevis",
+   "name": "ECRB_r",
+   "name_status": "provisional",
+   "peak_force_N": 252.2,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "extensor carpi ulnaris",
+   "name": "ECU_r",
+   "name_status": "provisional",
+   "peak_force_N": 192.9,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor carpi radialis",
+   "name": "FCR_r",
+   "name_status": "provisional",
+   "peak_force_N": 407.9,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor carpi ulnaris",
+   "name": "FCU_r",
+   "name_status": "provisional",
+   "peak_force_N": 479.8,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "palmaris longus",
+   "name": "PL_r",
+   "name_status": "provisional",
+   "peak_force_N": 101.0,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "pronator teres",
+   "name": "PT_r",
+   "name_status": "provisional",
+   "peak_force_N": 557.2,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "pronator quadratus",
+   "name": "PQ_r",
+   "name_status": "provisional",
+   "peak_force_N": 284.7,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor digitorum superficialis, little finger (digit V) compartment",
+   "name": "FDS5_r",
+   "name_status": "verified",
+   "peak_force_N": 75.3,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor digitorum superficialis, ring finger (digit IV) compartment",
+   "name": "FDS4_r",
+   "name_status": "verified",
+   "peak_force_N": 171.2,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor digitorum superficialis, middle finger (digit III) compartment",
+   "name": "FDS3_r",
+   "name_status": "verified",
+   "peak_force_N": 258.8,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor digitorum superficialis, index finger (digit II) compartment",
+   "name": "FDS2_r",
+   "name_status": "verified",
+   "peak_force_N": 162.5,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor digitorum profundus, little finger (digit V) compartment",
+   "name": "FDP5_r",
+   "name_status": "verified",
+   "peak_force_N": 236.8,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor digitorum profundus, ring finger (digit IV) compartment",
+   "name": "FDP4_r",
+   "name_status": "verified",
+   "peak_force_N": 172.9,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor digitorum profundus, middle finger (digit III) compartment",
+   "name": "FDP3_r",
+   "name_status": "verified",
+   "peak_force_N": 212.4,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor digitorum profundus, index finger (digit II) compartment",
+   "name": "FDP2_r",
+   "name_status": "verified",
+   "peak_force_N": 197.3,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "extensor digitorum (communis), little finger (digit V) slip",
+   "name": "EDC5_r",
+   "name_status": "verified",
+   "peak_force_N": 39.4,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "extensor digitorum (communis), ring finger (digit IV) slip",
+   "name": "EDC4_r",
+   "name_status": "verified",
+   "peak_force_N": 109.2,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "extensor digitorum (communis), middle finger (digit III) slip",
+   "name": "EDC3_r",
+   "name_status": "verified",
+   "peak_force_N": 94.4,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "extensor digitorum (communis), index finger (digit II) slip",
+   "name": "EDC2_r",
+   "name_status": "verified",
+   "peak_force_N": 48.8,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "extensor digiti minimi",
+   "name": "EDM_r",
+   "name_status": "provisional",
+   "peak_force_N": 72.4,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "extensor indicis (proprius)",
+   "name": "EIP_r",
+   "name_status": "provisional",
+   "peak_force_N": 47.3,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "extensor pollicis longus",
+   "name": "EPL_r",
+   "name_status": "provisional",
+   "peak_force_N": 88.3,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "extensor pollicis brevis",
+   "name": "EPB_r",
+   "name_status": "provisional",
+   "peak_force_N": 46.0,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor pollicis longus",
+   "name": "FPL_r",
+   "name_status": "provisional",
+   "peak_force_N": 201.0,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "abductor pollicis longus",
+   "name": "APL_r",
+   "name_status": "provisional",
+   "peak_force_N": 116.7,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "opponens pollicis",
+   "name": "OP_r",
+   "name_status": "provisional",
+   "peak_force_N": 180.0,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "radial interosseous of index finger (digit II)",
+   "name": "RI2_r",
+   "name_status": "unresolved",
+   "peak_force_N": 61.2,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "lumbrical with radial band, index finger (digit II) (combined actuator)",
+   "name": "LU_RB2_r",
+   "name_status": "unresolved",
+   "peak_force_N": 61.2,
+   "representation": "combined_actuator"
+  },
+  {
+   "canonical_name": "ulnar interosseous with ulnar band, index finger (digit II) (combined actuator)",
+   "name": "UI_UB2_r",
+   "name_status": "unresolved",
+   "peak_force_N": 61.2,
+   "representation": "combined_actuator"
+  },
+  {
+   "canonical_name": "radial interosseous of middle finger (digit III)",
+   "name": "RI3_r",
+   "name_status": "unresolved",
+   "peak_force_N": 61.2,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "lumbrical with radial band, middle finger (digit III) (combined actuator)",
+   "name": "LU_RB3_r",
+   "name_status": "unresolved",
+   "peak_force_N": 98.0,
+   "representation": "combined_actuator"
+  },
+  {
+   "canonical_name": "ulnar interosseous with ulnar band, middle finger (digit III) (combined actuator)",
+   "name": "UI_UB3_r",
+   "name_status": "unresolved",
+   "peak_force_N": 98.0,
+   "representation": "combined_actuator"
+  },
+  {
+   "canonical_name": "radial interosseous of ring finger (digit IV)",
+   "name": "RI4_r",
+   "name_status": "unresolved",
+   "peak_force_N": 97.0,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "lumbrical with radial band, ring finger (digit IV) (combined actuator)",
+   "name": "LU_RB4_r",
+   "name_status": "unresolved",
+   "peak_force_N": 76.9,
+   "representation": "combined_actuator"
+  },
+  {
+   "canonical_name": "ulnar interosseous with ulnar band, ring finger (digit IV) (combined actuator)",
+   "name": "UI_UB4_r",
+   "name_status": "unresolved",
+   "peak_force_N": 76.9,
+   "representation": "combined_actuator"
+  },
+  {
+   "canonical_name": "radial interosseous of little finger (digit V)",
+   "name": "RI5_r",
+   "name_status": "unresolved",
+   "peak_force_N": 59.9,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "lumbrical with radial band, little finger (digit V) (combined actuator)",
+   "name": "LU_RB5_r",
+   "name_status": "unresolved",
+   "peak_force_N": 47.9,
+   "representation": "combined_actuator"
+  },
+  {
+   "canonical_name": "ulnar interosseous with ulnar band, little finger (digit V) (combined actuator)",
+   "name": "UI_UB5_r",
+   "name_status": "unresolved",
+   "peak_force_N": 47.9,
+   "representation": "combined_actuator"
+  },
+  {
+   "canonical_name": "abductor pollicis brevis",
+   "name": "APB_r",
+   "name_status": "provisional",
+   "peak_force_N": 24.09,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor pollicis brevis, superficial head",
+   "name": "FPBs_r",
+   "name_status": "provisional",
+   "peak_force_N": 11.55,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "flexor pollicis brevis, deep head",
+   "name": "FPBd_r",
+   "name_status": "provisional",
+   "peak_force_N": 9.075,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "adductor pollicis, oblique head",
+   "name": "ADPo_r",
+   "name_status": "provisional",
+   "peak_force_N": 71.115,
+   "representation": "simulated_actuator"
+  },
+  {
+   "canonical_name": "adductor pollicis, transverse head",
+   "name": "ADPt_r",
+   "name_status": "provisional",
+   "peak_force_N": 29.315,
+   "representation": "simulated_actuator"
+  }
+ ],
+ "bodies": {
+  "2proxph_r": {
+   "canonical_name": "proximal phalanx of index finger (digit II)",
+   "motion_unit": "2proxph_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "2proxph_r__visual"
+   ]
+  },
+  "3proxph_r": {
+   "canonical_name": "proximal phalanx of middle finger (digit III)",
+   "motion_unit": "3proxph_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "3proxph_r__visual"
+   ]
+  },
+  "4proxph_r": {
+   "canonical_name": "proximal phalanx of ring finger (digit IV)",
+   "motion_unit": "4proxph_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "4proxph_r__visual"
+   ]
+  },
+  "5proxph_r": {
+   "canonical_name": "proximal phalanx of little finger (digit V)",
+   "motion_unit": "5proxph_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "5proxph_r__visual"
+   ]
+  },
+  "capitate_r": {
+   "canonical_name": "capitate",
+   "motion_unit": "lunate_r",
+   "notes": "welded; moves only with the carpus+palm segment",
+   "representation": "rigid_part_of:lunate_r",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "capitate__visual"
+   ]
+  },
+  "clavicle_r": {
+   "canonical_name": "right clavicle",
+   "motion_unit": "world",
+   "notes": "welded to world in fixed preview pose (hand.py)",
+   "representation": "scaffold_non_hand",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "clavicle_r__visual"
+   ]
+  },
+  "clavphant_r": {
+   "canonical_name": null,
+   "motion_unit": "world",
+   "notes": "MoBL phantom body for shoulder kinematics; jointless after pruning",
+   "representation": "non_anatomical",
+   "status": "n/a",
+   "structure_type": "kinematic_helper",
+   "visual_nodes": []
+  },
+  "distal_thumb_r": {
+   "canonical_name": "distal phalanx of thumb",
+   "motion_unit": "distal_thumb_r",
+   "notes": "identity inferred from body/mesh name 'thumbdist'; confirm against MoBL documentation",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "thumbdist_r__visual"
+   ]
+  },
+  "distph2_r": {
+   "canonical_name": "distal phalanx of index finger (digit II)",
+   "motion_unit": "distph2_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "2distph_r__visual"
+   ]
+  },
+  "distph3_r": {
+   "canonical_name": "distal phalanx of middle finger (digit III)",
+   "motion_unit": "distph3_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "3distph_r__visual"
+   ]
+  },
+  "distph4_r": {
+   "canonical_name": "distal phalanx of ring finger (digit IV)",
+   "motion_unit": "distph4_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "4distph_r__visual"
+   ]
+  },
+  "distph5_r": {
+   "canonical_name": "distal phalanx of little finger (digit V)",
+   "motion_unit": "distph5_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "5distph__visual"
+   ]
+  },
+  "fifthmc_r": {
+   "canonical_name": "metacarpal V",
+   "motion_unit": "lunate_r",
+   "notes": "welded to capitate: no CMC motion for this digit",
+   "representation": "rigid_part_of:lunate_r",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "5mc_r__visual"
+   ]
+  },
+  "firstmc_r": {
+   "canonical_name": "first metacarpal (thumb)",
+   "motion_unit": "firstmc_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "1mc_r__visual"
+   ]
+  },
+  "fourthmc_r": {
+   "canonical_name": "metacarpal IV",
+   "motion_unit": "lunate_r",
+   "notes": "welded to capitate: no CMC motion for this digit",
+   "representation": "rigid_part_of:lunate_r",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "4mc_r__visual"
+   ]
+  },
+  "hamate_r": {
+   "canonical_name": "hamate",
+   "motion_unit": "lunate_r",
+   "notes": "welded; moves only with the carpus+palm segment",
+   "representation": "rigid_part_of:lunate_r",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "hamate_r__visual"
+   ]
+  },
+  "humerus_r": {
+   "canonical_name": "right humerus",
+   "motion_unit": "world",
+   "notes": "welded to world in fixed preview pose (hand.py)",
+   "representation": "scaffold_non_hand",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "humerus_r__visual"
+   ]
+  },
+  "humphant1_r": {
+   "canonical_name": null,
+   "motion_unit": "world",
+   "notes": "MoBL phantom body for shoulder kinematics; jointless after pruning",
+   "representation": "non_anatomical",
+   "status": "n/a",
+   "structure_type": "kinematic_helper",
+   "visual_nodes": []
+  },
+  "humphant_r": {
+   "canonical_name": null,
+   "motion_unit": "world",
+   "notes": "MoBL phantom body for shoulder kinematics; jointless after pruning",
+   "representation": "non_anatomical",
+   "status": "n/a",
+   "structure_type": "kinematic_helper",
+   "visual_nodes": []
+  },
+  "lunate_r": {
+   "canonical_name": "lunate",
+   "motion_unit": "lunate_r",
+   "notes": "root of the lumped carpus+palm rigid segment; carries deviation_r and flexion_r",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "lunate_r__visual"
+   ]
+  },
+  "midph2_r": {
+   "canonical_name": "middle phalanx of index finger (digit II)",
+   "motion_unit": "midph2_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "2midph_r__visual"
+   ]
+  },
+  "midph3_r": {
+   "canonical_name": "middle phalanx of middle finger (digit III)",
+   "motion_unit": "midph3_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "3midph_r__visual"
+   ]
+  },
+  "midph4_r": {
+   "canonical_name": "middle phalanx of ring finger (digit IV)",
+   "motion_unit": "midph4_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "4midph_r__visual"
+   ]
+  },
+  "midph5_r": {
+   "canonical_name": "middle phalanx of little finger (digit V)",
+   "motion_unit": "midph5_r",
+   "notes": "",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "5midph_r__visual"
+   ]
+  },
+  "myoarm_r_root": {
+   "canonical_name": null,
+   "motion_unit": "world",
+   "notes": "MyoArm attachment root",
+   "representation": "non_anatomical",
+   "status": "n/a",
+   "structure_type": "model_root",
+   "visual_nodes": []
+  },
+  "pisiform_r": {
+   "canonical_name": "pisiform",
+   "motion_unit": "lunate_r",
+   "notes": "welded; moves only with the carpus+palm segment",
+   "representation": "rigid_part_of:lunate_r",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "pisiform_r__visual"
+   ]
+  },
+  "proximal_thumb_r": {
+   "canonical_name": "proximal phalanx of thumb",
+   "motion_unit": "proximal_thumb_r",
+   "notes": "identity inferred from body/mesh name 'thumbprox'; confirm against MoBL documentation",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "thumbprox__visual"
+   ]
+  },
+  "radius_r": {
+   "canonical_name": "right radius",
+   "motion_unit": "radius_r",
+   "notes": "moves by pro_sup_r",
+   "representation": "simulated_segment",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "radius_r__visual"
+   ]
+  },
+  "scaphoid_r": {
+   "canonical_name": "scaphoid",
+   "motion_unit": "lunate_r",
+   "notes": "welded; moves only with the carpus+palm segment",
+   "representation": "rigid_part_of:lunate_r",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "scaphoid_r__visual"
+   ]
+  },
+  "scapphant_r": {
+   "canonical_name": null,
+   "motion_unit": "world",
+   "notes": "MoBL phantom body for shoulder kinematics; jointless after pruning",
+   "representation": "non_anatomical",
+   "status": "n/a",
+   "structure_type": "kinematic_helper",
+   "visual_nodes": []
+  },
+  "scapula_r": {
+   "canonical_name": "right scapula",
+   "motion_unit": "world",
+   "notes": "welded to world in fixed preview pose (hand.py)",
+   "representation": "scaffold_non_hand",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "scapula_r__visual"
+   ]
+  },
+  "secondmc_r": {
+   "canonical_name": "metacarpal II",
+   "motion_unit": "lunate_r",
+   "notes": "welded to capitate: no CMC motion for this digit",
+   "representation": "rigid_part_of:lunate_r",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "2mc_r__visual"
+   ]
+  },
+  "thirdmc_r": {
+   "canonical_name": "metacarpal III",
+   "motion_unit": "lunate_r",
+   "notes": "welded to capitate: no CMC motion for this digit",
+   "representation": "rigid_part_of:lunate_r",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "3mc_r__visual"
+   ]
+  },
+  "trapezium_r": {
+   "canonical_name": "trapezium",
+   "motion_unit": "lunate_r",
+   "notes": "welded; moves only with the carpus+palm segment",
+   "representation": "rigid_part_of:lunate_r",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "trapezium_r__visual"
+   ]
+  },
+  "trapezoid_r": {
+   "canonical_name": "trapezoid",
+   "motion_unit": "lunate_r",
+   "notes": "welded; moves only with the carpus+palm segment",
+   "representation": "rigid_part_of:lunate_r",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "trapezoid_r__visual"
+   ]
+  },
+  "triquetrum_r": {
+   "canonical_name": "triquetrum",
+   "motion_unit": "lunate_r",
+   "notes": "welded; moves only with the carpus+palm segment",
+   "representation": "rigid_part_of:lunate_r",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "triquetrum_r__visual"
+   ]
+  },
+  "ulna_r": {
+   "canonical_name": "right ulna",
+   "motion_unit": "world",
+   "notes": "welded to world (elbow pruned); does not move",
+   "representation": "fixed_reference",
+   "status": "provisional",
+   "structure_type": "bone",
+   "visual_nodes": [
+    "ulna_r__visual"
+   ]
+  },
+  "world": {
+   "canonical_name": null,
+   "motion_unit": "world",
+   "notes": "",
+   "representation": "non_anatomical",
+   "status": "n/a",
+   "structure_type": "simulation_world",
+   "visual_nodes": []
+  }
+ },
+ "disclaimer": "Research/education software. Not a medical device and not clinically validated. Outputs are model estimates; see reports/ for limitations.",
+ "joints": [
+  {
+   "canonical_name": "forearm pronation-supination",
+   "muscle_validity_envelope_rad": [
+    -1.5708,
+    1.5708
+   ],
+   "name": "pro_sup_r",
+   "negative_direction": "supination",
+   "positive_direction": "pronation",
+   "range_rad": [
+    -1.5708,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "wrist radial-ulnar deviation",
+   "muscle_validity_envelope_rad": [
+    -0.174533,
+    0.17453293
+   ],
+   "name": "deviation_r",
+   "negative_direction": "ulnar deviation",
+   "positive_direction": "radial deviation",
+   "range_rad": [
+    -0.43633231,
+    0.17453293
+   ]
+  },
+  {
+   "canonical_name": "wrist flexion-extension",
+   "muscle_validity_envelope_rad": [
+    -0.785398,
+    0.785398
+   ],
+   "name": "flexion_r",
+   "negative_direction": "extension (dorsal)",
+   "positive_direction": "flexion (palmar)",
+   "range_rad": [
+    -1.22173048,
+    1.22173048
+   ]
+  },
+  {
+   "canonical_name": "thumb carpometacarpal flexion-extension (MoBL axis)",
+   "muscle_validity_envelope_rad": [
+    -0.78,
+    0.7
+   ],
+   "name": "cmc_flexion_r",
+   "negative_direction": "flexion (MoBL convention)",
+   "positive_direction": "extension (MoBL convention)",
+   "range_rad": [
+    -0.78,
+    0.7
+   ]
+  },
+  {
+   "canonical_name": "thumb carpometacarpal abduction-adduction (MoBL axis)",
+   "muscle_validity_envelope_rad": [
+    -0.5,
+    0.78
+   ],
+   "name": "cmc_abduction_r",
+   "negative_direction": "adduction (MoBL convention)",
+   "positive_direction": "abduction (MoBL convention)",
+   "range_rad": [
+    -0.5,
+    0.78
+   ]
+  },
+  {
+   "canonical_name": "thumb metacarpophalangeal flexion-extension",
+   "muscle_validity_envelope_rad": [
+    -0.785398,
+    0.698132
+   ],
+   "name": "mp_flexion_r",
+   "negative_direction": "flexion",
+   "positive_direction": "extension",
+   "range_rad": [
+    -0.785398,
+    0.698132
+   ]
+  },
+  {
+   "canonical_name": "thumb interphalangeal flexion-extension",
+   "muscle_validity_envelope_rad": [
+    -1.309,
+    0.436332
+   ],
+   "name": "ip_flexion_r",
+   "negative_direction": "flexion",
+   "positive_direction": "extension",
+   "range_rad": [
+    -1.309,
+    0.436332
+   ]
+  },
+  {
+   "canonical_name": "metacarpophalangeal flexion-extension, index finger (digit II)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "mcp2_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "metacarpophalangeal radial-ulnar deviation, index finger (digit II)",
+   "muscle_validity_envelope_rad": [
+    -0.261799,
+    0.261799
+   ],
+   "name": "mcp2_abduction_r",
+   "negative_direction": "ulnar deviation",
+   "positive_direction": "radial deviation",
+   "range_rad": [
+    -0.261799,
+    0.261799
+   ]
+  },
+  {
+   "canonical_name": "proximal interphalangeal flexion-extension, index finger (digit II)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "pm2_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "distal interphalangeal flexion-extension, index finger (digit II)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "md2_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "metacarpophalangeal flexion-extension, middle finger (digit III)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "mcp3_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "metacarpophalangeal radial-ulnar deviation, middle finger (digit III)",
+   "muscle_validity_envelope_rad": [
+    -0.261799,
+    0.261799
+   ],
+   "name": "mcp3_abduction_r",
+   "negative_direction": "ulnar deviation",
+   "positive_direction": "radial deviation",
+   "range_rad": [
+    -0.261799,
+    0.261799
+   ]
+  },
+  {
+   "canonical_name": "proximal interphalangeal flexion-extension, middle finger (digit III)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "pm3_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "distal interphalangeal flexion-extension, middle finger (digit III)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "md3_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "metacarpophalangeal flexion-extension, ring finger (digit IV)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "mcp4_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "metacarpophalangeal radial-ulnar deviation, ring finger (digit IV)",
+   "muscle_validity_envelope_rad": [
+    -0.261799,
+    0.261799
+   ],
+   "name": "mcp4_abduction_r",
+   "negative_direction": "ulnar deviation",
+   "positive_direction": "radial deviation",
+   "range_rad": [
+    -0.261799,
+    0.261799
+   ]
+  },
+  {
+   "canonical_name": "proximal interphalangeal flexion-extension, ring finger (digit IV)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "pm4_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "distal interphalangeal flexion-extension, ring finger (digit IV)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "md4_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "metacarpophalangeal flexion-extension, little finger (digit V)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "mcp5_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "metacarpophalangeal radial-ulnar deviation, little finger (digit V)",
+   "muscle_validity_envelope_rad": [
+    -0.261799,
+    0.261799
+   ],
+   "name": "mcp5_abduction_r",
+   "negative_direction": "ulnar deviation",
+   "positive_direction": "radial deviation",
+   "range_rad": [
+    -0.261799,
+    0.261799
+   ]
+  },
+  {
+   "canonical_name": "proximal interphalangeal flexion-extension, little finger (digit V)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "pm5_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  },
+  {
+   "canonical_name": "distal interphalangeal flexion-extension, little finger (digit V)",
+   "muscle_validity_envelope_rad": [
+    0.0,
+    1.5708
+   ],
+   "name": "md5_flexion_r",
+   "negative_direction": "extension",
+   "positive_direction": "flexion",
+   "range_rad": [
+    0.0,
+    1.5708
+   ]
+  }
+ ],
+ "licence_notice": "Model derived from MoBL-ARMS (non-commercial use only; cite Saul et al. 2015 and McFarland et al. 2019) and 2nd-Hand (MIT, Stanford 2015) via MyoSim (Apache-2.0).",
+ "model_fingerprint_sha256": "ef776de58de26104893b9eeddfeca0899bb10012a067238bac0ad8c7a583654a",
+ "motion_units": [
+  {
+   "bodies": [
+    "world",
+    "myoarm_r_root",
+    "clavicle_r",
+    "clavphant_r",
+    "scapula_r",
+    "scapphant_r",
+    "humphant_r",
+    "humphant1_r",
+    "humerus_r",
+    "ulna_r"
+   ],
+   "joints": [],
+   "lumped": true,
+   "movable": false,
+   "root_body": "world"
+  },
+  {
+   "bodies": [
+    "radius_r"
+   ],
+   "joints": [
+    "pro_sup_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "radius_r"
+  },
+  {
+   "bodies": [
+    "lunate_r",
+    "scaphoid_r",
+    "pisiform_r",
+    "triquetrum_r",
+    "capitate_r",
+    "trapezium_r",
+    "trapezoid_r",
+    "hamate_r",
+    "secondmc_r",
+    "thirdmc_r",
+    "fourthmc_r",
+    "fifthmc_r"
+   ],
+   "joints": [
+    "deviation_r",
+    "flexion_r"
+   ],
+   "lumped": true,
+   "movable": true,
+   "root_body": "lunate_r"
+  },
+  {
+   "bodies": [
+    "firstmc_r"
+   ],
+   "joints": [
+    "cmc_flexion_r",
+    "cmc_abduction_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "firstmc_r"
+  },
+  {
+   "bodies": [
+    "proximal_thumb_r"
+   ],
+   "joints": [
+    "mp_flexion_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "proximal_thumb_r"
+  },
+  {
+   "bodies": [
+    "distal_thumb_r"
+   ],
+   "joints": [
+    "ip_flexion_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "distal_thumb_r"
+  },
+  {
+   "bodies": [
+    "2proxph_r"
+   ],
+   "joints": [
+    "mcp2_flexion_r",
+    "mcp2_abduction_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "2proxph_r"
+  },
+  {
+   "bodies": [
+    "midph2_r"
+   ],
+   "joints": [
+    "pm2_flexion_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "midph2_r"
+  },
+  {
+   "bodies": [
+    "distph2_r"
+   ],
+   "joints": [
+    "md2_flexion_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "distph2_r"
+  },
+  {
+   "bodies": [
+    "3proxph_r"
+   ],
+   "joints": [
+    "mcp3_flexion_r",
+    "mcp3_abduction_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "3proxph_r"
+  },
+  {
+   "bodies": [
+    "midph3_r"
+   ],
+   "joints": [
+    "pm3_flexion_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "midph3_r"
+  },
+  {
+   "bodies": [
+    "distph3_r"
+   ],
+   "joints": [
+    "md3_flexion_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "distph3_r"
+  },
+  {
+   "bodies": [
+    "4proxph_r"
+   ],
+   "joints": [
+    "mcp4_flexion_r",
+    "mcp4_abduction_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "4proxph_r"
+  },
+  {
+   "bodies": [
+    "midph4_r"
+   ],
+   "joints": [
+    "pm4_flexion_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "midph4_r"
+  },
+  {
+   "bodies": [
+    "distph4_r"
+   ],
+   "joints": [
+    "md4_flexion_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "distph4_r"
+  },
+  {
+   "bodies": [
+    "5proxph_r"
+   ],
+   "joints": [
+    "mcp5_flexion_r",
+    "mcp5_abduction_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "5proxph_r"
+  },
+  {
+   "bodies": [
+    "midph5_r"
+   ],
+   "joints": [
+    "pm5_flexion_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "midph5_r"
+  },
+  {
+   "bodies": [
+    "distph5_r"
+   ],
+   "joints": [
+    "md5_flexion_r"
+   ],
+   "lumped": false,
+   "movable": true,
+   "root_body": "distph5_r"
+  }
+ ],
+ "not_represented": [
+  "abductor digiti minimi",
+  "flexor digiti minimi brevis",
+  "opponens digiti minimi",
+  "supinator",
+  "biceps brachii",
+  "brachioradialis",
+  "extensor mechanism as a tendon network (terminal tendon, central slip, lateral bands)",
+  "sesamoid bones",
+  "ligaments, joint capsules and volar plates of wrist and hand",
+  "flexor tendon pulleys as structures",
+  "carpometacarpal motion of digits II-V",
+  "independent intercarpal motion (two-row wrist)"
+ ],
+ "schema_version": "1.1.0"
+}

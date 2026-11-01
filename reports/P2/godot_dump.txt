@@ -1,0 +1,7 @@
+DUMP_JSON {"__visual_node_count":32,"distal_thumb_r":[0.600395560264587,0.142432063817978,-0.0655726939439774],"distph3_r":[0.674702167510986,0.18901951611042,-0.0110519994050264],"distph5_r":[0.647698760032654,0.157849460840225,0.0212460402399302],"lunate_r":[0.520550012588501,0.171063393354416,-0.00574322417378426],"radius_r":[0.278126358985901,0.148135364055634,0.00902391970157623],"secondmc_r":[0.57340669631958,0.179442659020424,-0.0234493855386972]}
+ERROR: Pages in use exist at exit in PagedAllocator: N20RasterizerSceneDummy21GeometryInstanceDummyE
+   at: ~Dependency (servers/rendering/storageERROR: 32 RID allocations of type 'N13RendererDummy15MaterialStorage13DummyMaterialE' were leaked at exit.
+ERROR: 1 RID allocations of type 'N13RendererDummy15MaterialStorage11DummyShaderE' were leaked at exit.
+ERROR: 64 RID allocations of type 'N13RendererDummy9DummyMeshE' were leaked at exit.
+ERROR: 32 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
+ERROR: 96 resources still in use at exit (run with --verbose for details).

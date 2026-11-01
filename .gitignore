@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Upstream reference models are cloned locally at a pinned commit, never committed.
+# MyoSim meshes/parameters derive from non-commercial MoBL-ARMS (docs/P1_LICENSE_AND_PROVENANCE.md).
+third_party/
+
+# Godot
+godot_app/.godot/
+godot_app/*.import
+
+# MuJoCo runtime warning log (contents summarised in reports/P1)
+MUJOCO_LOG.TXT
+
+# Local visual builds (MoBL-ARMS-derived geometry: non-commercial, never committed)
+build/
+godot_app/local_assets/
+
+# Local tool settings
+.claude/
+
+# Local working files, not part of the published project
+CLAUDE.md
+docs/CLAUDE_CODE_MASTER_PROMPT.md
+reports/ai_models/
+release_assets/

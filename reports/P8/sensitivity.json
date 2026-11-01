@@ -1,0 +1,553 @@
+{
+ "hand_closing": {
+  "metric": "flexion_fraction_final",
+  "rows": {
+   "baseline": {
+    "metric_value": 1.0036,
+    "passed": true,
+    "finite": true,
+    "warnings": {},
+    "time_to_half_MCP_flexion_s": 0.18
+   },
+   "F_max x0.8": {
+    "metric_value": 1.0029,
+    "passed": true,
+    "finite": true,
+    "warnings": {},
+    "time_to_half_MCP_flexion_s": 0.2
+   },
+   "F_max x1.2": {
+    "metric_value": 1.0043,
+    "passed": true,
+    "finite": true,
+    "warnings": {},
+    "time_to_half_MCP_flexion_s": 0.18
+   },
+   "joint damping x0.5": {
+    "metric_value": 1.0036,
+    "passed": true,
+    "finite": true,
+    "warnings": {},
+    "time_to_half_MCP_flexion_s": 0.16
+   },
+   "joint damping x2": {
+    "metric_value": 1.0036,
+    "passed": true,
+    "finite": true,
+    "warnings": {},
+    "time_to_half_MCP_flexion_s": 0.22
+   },
+   "hand inertia x0.1": {
+    "metric_value": 1.0063,
+    "passed": true,
+    "finite": true,
+    "warnings": {},
+    "time_to_half_MCP_flexion_s": 0.18
+   },
+   "hand inertia x10": {
+    "metric_value": 1.0009,
+    "passed": true,
+    "finite": true,
+    "warnings": {},
+    "time_to_half_MCP_flexion_s": 0.22
+   },
+   "limit timeconst upstream 0.02 s": {
+    "metric_value": 1.0763,
+    "passed": true,
+    "finite": true,
+    "warnings": {},
+    "time_to_half_MCP_flexion_s": 0.18
+   },
+   "contact timeconst 0.01 s": {
+    "metric_value": 1.0036,
+    "passed": true,
+    "finite": true,
+    "warnings": {},
+    "time_to_half_MCP_flexion_s": 0.18
+   },
+   "timestep 0.001 s": {
+    "metric_value": 1.0036,
+    "passed": true,
+    "finite": true,
+    "warnings": {},
+    "time_to_half_MCP_flexion_s": 0.18
+   }
+  },
+  "verdict_changes": [],
+  "max_abs_change": 0.0727
+ },
+ "hand_opening": {
+  "metric": "flexion_fraction_final",
+  "rows": {
+   "baseline": {
+    "metric_value": -0.0007,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x0.8": {
+    "metric_value": -0.0006,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x1.2": {
+    "metric_value": -0.0008,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x0.5": {
+    "metric_value": -0.0007,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x2": {
+    "metric_value": -0.0007,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x0.1": {
+    "metric_value": -0.0012,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x10": {
+    "metric_value": -0.0003,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "limit timeconst upstream 0.02 s": {
+    "metric_value": -0.0175,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "contact timeconst 0.01 s": {
+    "metric_value": -0.0007,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "timestep 0.001 s": {
+    "metric_value": -0.0007,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   }
+  },
+  "verdict_changes": [],
+  "max_abs_change": 0.0168
+ },
+ "thumb_opposition": {
+  "metric": "thumb_index_min_distance_ratio",
+  "rows": {
+   "baseline": {
+    "metric_value": 0.5541,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x0.8": {
+    "metric_value": 0.5518,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x1.2": {
+    "metric_value": 0.5543,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x0.5": {
+    "metric_value": 0.5578,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x2": {
+    "metric_value": 0.5502,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x0.1": {
+    "metric_value": 0.5511,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x10": {
+    "metric_value": 0.5594,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "limit timeconst upstream 0.02 s": {
+    "metric_value": 0.5578,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "contact timeconst 0.01 s": {
+    "metric_value": 0.5541,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "timestep 0.001 s": {
+    "metric_value": 0.5538,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   }
+  },
+  "verdict_changes": [],
+  "max_abs_change": 0.0053
+ },
+ "wrist_flexion_extension": {
+  "metric": "flexion_max_phase1",
+  "rows": {
+   "baseline": {
+    "metric_value": 1.1142,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x0.8": {
+    "metric_value": 1.10548,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x1.2": {
+    "metric_value": 1.11948,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x0.5": {
+    "metric_value": 1.11419,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x2": {
+    "metric_value": 1.11418,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x0.1": {
+    "metric_value": 1.1142,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x10": {
+    "metric_value": 1.1601,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "limit timeconst upstream 0.02 s": {
+    "metric_value": 1.1142,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "contact timeconst 0.01 s": {
+    "metric_value": 1.1142,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "timestep 0.001 s": {
+    "metric_value": 1.1142,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   }
+  },
+  "verdict_changes": [],
+  "max_abs_change": 0.0459
+ },
+ "wrist_deviation": {
+  "metric": "deviation_min_phase2",
+  "rows": {
+   "baseline": {
+    "metric_value": -0.38049,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x0.8": {
+    "metric_value": -0.38521,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x1.2": {
+    "metric_value": -0.37519,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x0.5": {
+    "metric_value": -0.38452,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x2": {
+    "metric_value": -0.37947,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x0.1": {
+    "metric_value": -0.37868,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x10": {
+    "metric_value": -0.41694,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "limit timeconst upstream 0.02 s": {
+    "metric_value": -0.38311,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "contact timeconst 0.01 s": {
+    "metric_value": -0.38049,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "timestep 0.001 s": {
+    "metric_value": -0.37999,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   }
+  },
+  "verdict_changes": [],
+  "max_abs_change": 0.0364
+ },
+ "power_grip_proxy": {
+  "metric": "grip_force_mean_last_0p5s",
+  "rows": {
+   "baseline": {
+    "metric_value": 272.7122,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x0.8": {
+    "metric_value": 212.7802,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x1.2": {
+    "metric_value": 347.1256,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x0.5": {
+    "metric_value": 272.8898,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x2": {
+    "metric_value": 267.0795,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x0.1": {
+    "metric_value": 338.5837,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x10": {
+    "metric_value": 244.5303,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "limit timeconst upstream 0.02 s": {
+    "metric_value": 271.5605,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "contact timeconst 0.01 s": {
+    "metric_value": 246.9835,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "timestep 0.001 s": {
+    "metric_value": 272.4778,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   }
+  },
+  "verdict_changes": [],
+  "max_abs_change": 74.4134
+ },
+ "pinch": {
+  "metric": "pinch_force_mean_last_0p5s",
+  "rows": {
+   "baseline": {
+    "metric_value": 0.7936,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x0.8": {
+    "metric_value": 0.6401,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x1.2": {
+    "metric_value": 0.3584,
+    "passed": false,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x0.5": {
+    "metric_value": 0.4079,
+    "passed": false,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x2": {
+    "metric_value": 0.6366,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x0.1": {
+    "metric_value": 0.2387,
+    "passed": false,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x10": {
+    "metric_value": 0.1887,
+    "passed": false,
+    "finite": true,
+    "warnings": {}
+   },
+   "limit timeconst upstream 0.02 s": {
+    "metric_value": 0.8069,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "contact timeconst 0.01 s": {
+    "metric_value": 0.7936,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "timestep 0.001 s": {
+    "metric_value": 0.6398,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   }
+  },
+  "verdict_changes": [
+   "F_max x1.2",
+   "joint damping x0.5",
+   "hand inertia x0.1",
+   "hand inertia x10"
+  ],
+  "max_abs_change": 0.6049
+ },
+ "rest_neutral": {
+  "metric": "final_max_abs_qvel_rad_s",
+  "rows": {
+   "baseline": {
+    "metric_value": 0.02618,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x0.8": {
+    "metric_value": 0.02617,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "F_max x1.2": {
+    "metric_value": 0.02619,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x0.5": {
+    "metric_value": 0.0292,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "joint damping x2": {
+    "metric_value": 0.04539,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x0.1": {
+    "metric_value": 0.02621,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "hand inertia x10": {
+    "metric_value": 0.0259,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "limit timeconst upstream 0.02 s": {
+    "metric_value": 0.02618,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "contact timeconst 0.01 s": {
+    "metric_value": 0.02618,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   },
+   "timestep 0.001 s": {
+    "metric_value": 0.02618,
+    "passed": true,
+    "finite": true,
+    "warnings": {}
+   }
+  },
+  "verdict_changes": [],
+  "max_abs_change": 0.0192
+ }
+}

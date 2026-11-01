@@ -1,0 +1,236 @@
+{
+ "model_commit": "93b0ca8f4ec90c9899ee7f05fee561e9911da91b",
+ "method": "perturb joint by +0.1 rad at qpos0; displacement of tracked mesh centroid in hand frame (distal, radial, dorsal) of the unperturbed pose; rotation of radial axis about distal",
+ "joints": [
+  {
+   "joint": "pro_sup_r",
+   "tracked_body": "distph3_r",
+   "displacement_hand_frame_m": [
+    -6.2e-05,
+    -0.001052,
+    -0.001675
+   ],
+   "rotation_about_distal_rad": -0.099892
+  },
+  {
+   "joint": "deviation_r",
+   "tracked_body": "distph3_r",
+   "displacement_hand_frame_m": [
+    -0.000692,
+    0.015563,
+    -0.004641
+   ],
+   "rotation_about_distal_rad": 0.015495
+  },
+  {
+   "joint": "flexion_r",
+   "tracked_body": "distph3_r",
+   "displacement_hand_frame_m": [
+    -0.001162,
+    -0.00482,
+    -0.015582
+   ],
+   "rotation_about_distal_rad": 0.004345
+  },
+  {
+   "joint": "cmc_flexion_r",
+   "tracked_body": "distal_thumb_r",
+   "displacement_hand_frame_m": [
+    -0.00193,
+    0.00712,
+    0.001064
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "cmc_abduction_r",
+   "tracked_body": "distal_thumb_r",
+   "displacement_hand_frame_m": [
+    -0.003815,
+    -0.000587,
+    -0.005251
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "mp_flexion_r",
+   "tracked_body": "distal_thumb_r",
+   "displacement_hand_frame_m": [
+    -0.001516,
+    0.003806,
+    -0.000201
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "ip_flexion_r",
+   "tracked_body": "distal_thumb_r",
+   "displacement_hand_frame_m": [
+    -0.000298,
+    0.001018,
+    2e-05
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "mcp2_flexion_r",
+   "tracked_body": "distph2_r",
+   "displacement_hand_frame_m": [
+    -0.000567,
+    -0.002189,
+    -0.007252
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "mcp2_abduction_r",
+   "tracked_body": "distph2_r",
+   "displacement_hand_frame_m": [
+    -0.001119,
+    0.007312,
+    -0.001775
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "pm2_flexion_r",
+   "tracked_body": "distph2_r",
+   "displacement_hand_frame_m": [
+    -0.000436,
+    -0.001591,
+    -0.002937
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "md2_flexion_r",
+   "tracked_body": "distph2_r",
+   "displacement_hand_frame_m": [
+    -0.000133,
+    -0.000247,
+    -0.000809
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "mcp3_flexion_r",
+   "tracked_body": "distph3_r",
+   "displacement_hand_frame_m": [
+    -0.000725,
+    -0.000799,
+    -0.008139
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "mcp3_abduction_r",
+   "tracked_body": "distph3_r",
+   "displacement_hand_frame_m": [
+    -0.000227,
+    0.008158,
+    -0.000745
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "pm3_flexion_r",
+   "tracked_body": "distph3_r",
+   "displacement_hand_frame_m": [
+    -0.000526,
+    -0.001087,
+    -0.003565
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "md3_flexion_r",
+   "tracked_body": "distph3_r",
+   "displacement_hand_frame_m": [
+    -0.000166,
+    -0.000242,
+    -0.000804
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "mcp4_flexion_r",
+   "tracked_body": "distph4_r",
+   "displacement_hand_frame_m": [
+    -0.000576,
+    0.001126,
+    -0.007298
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "mcp4_abduction_r",
+   "tracked_body": "distph4_r",
+   "displacement_hand_frame_m": [
+    0.000923,
+    0.007268,
+    0.001046
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "pm4_flexion_r",
+   "tracked_body": "distph4_r",
+   "displacement_hand_frame_m": [
+    -0.000267,
+    0.000345,
+    -0.003345
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "md4_flexion_r",
+   "tracked_body": "distph4_r",
+   "displacement_hand_frame_m": [
+    4e-06,
+    0.000259,
+    -0.000855
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "mcp5_flexion_r",
+   "tracked_body": "distph5_r",
+   "displacement_hand_frame_m": [
+    -0.000816,
+    0.001944,
+    -0.006047
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "mcp5_abduction_r",
+   "tracked_body": "distph5_r",
+   "displacement_hand_frame_m": [
+    0.001592,
+    0.006048,
+    0.001766
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "pm5_flexion_r",
+   "tracked_body": "distph5_r",
+   "displacement_hand_frame_m": [
+    -0.000403,
+    0.000868,
+    -0.002684
+   ],
+   "rotation_about_distal_rad": 0.0
+  },
+  {
+   "joint": "md5_flexion_r",
+   "tracked_body": "distph5_r",
+   "displacement_hand_frame_m": [
+    -0.000129,
+    0.000175,
+    -0.000765
+   ],
+   "rotation_about_distal_rad": 0.0
+  }
+ ]
+}

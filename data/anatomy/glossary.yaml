@@ -1,0 +1,1173 @@
+# BioHand Twin anatomical glossary - source of truth for canonical names.
+# Hand-curated after initial generation; validated by tests/test_naming.py.
+# Never add a structure the model does not contain, except under not_represented.
+schema_version: 1
+model:
+  name: MyoHand fragment
+  myosim_commit: 93b0ca8f4ec90c9899ee7f05fee561e9911da91b
+status_values:
+  verified: canonical name taken from the cited, retrieved source
+  provisional: standard English anatomical term; citation to an anatomy reference pending
+  derived: direction semantics computed from the model (kinematic and muscle evidence agree)
+  derived_muscle_only: direction semantics from muscle moment-arm signs only
+  unresolved: identity not settled by any retrieved source; UI must show an 'unverified' badge
+  n/a: non-anatomical element
+representation_values:
+  simulated_segment: moves independently through its own joint(s)
+  rigid_part_of:<body>: welded; moves only as part of the rigid segment rooted at <body>
+  fixed_reference: anatomical, but fixed to the world in this variant
+  scaffold_non_hand: proximal anatomy kept as fixed scaffold; outside BioHand scope
+  non_anatomical: simulation helper with no anatomical meaning
+  simulated_actuator: MuJoCo muscle actuator on its own tendon
+  combined_actuator: one actuator standing for more than one anatomical structure
+  not_represented: anatomical structure absent from the model
+bodies:
+- model_name: world
+  canonical_name: null
+  structure_type: simulation_world
+  representation: non_anatomical
+  status: n/a
+  name_source: null
+  aliases: []
+- model_name: myoarm_r_root
+  canonical_name: null
+  structure_type: model_root
+  representation: non_anatomical
+  status: n/a
+  name_source: null
+  aliases: []
+  notes: MyoArm attachment root
+- model_name: clavicle_r
+  canonical_name: right clavicle
+  structure_type: bone
+  representation: scaffold_non_hand
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - clavicle
+  notes: welded to world in fixed preview pose (hand.py)
+- model_name: scapula_r
+  canonical_name: right scapula
+  structure_type: bone
+  representation: scaffold_non_hand
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - scapula
+  notes: welded to world in fixed preview pose (hand.py)
+- model_name: humerus_r
+  canonical_name: right humerus
+  structure_type: bone
+  representation: scaffold_non_hand
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - humerus
+  notes: welded to world in fixed preview pose (hand.py)
+- model_name: clavphant_r
+  canonical_name: null
+  structure_type: kinematic_helper
+  representation: non_anatomical
+  status: n/a
+  name_source: null
+  aliases:
+  - clavphant
+  notes: MoBL phantom body for shoulder kinematics; jointless after pruning
+- model_name: scapphant_r
+  canonical_name: null
+  structure_type: kinematic_helper
+  representation: non_anatomical
+  status: n/a
+  name_source: null
+  aliases:
+  - scapphant
+  notes: MoBL phantom body for shoulder kinematics; jointless after pruning
+- model_name: humphant_r
+  canonical_name: null
+  structure_type: kinematic_helper
+  representation: non_anatomical
+  status: n/a
+  name_source: null
+  aliases:
+  - humphant
+  notes: MoBL phantom body for shoulder kinematics; jointless after pruning
+- model_name: humphant1_r
+  canonical_name: null
+  structure_type: kinematic_helper
+  representation: non_anatomical
+  status: n/a
+  name_source: null
+  aliases:
+  - humphant1
+  notes: MoBL phantom body for shoulder kinematics; jointless after pruning
+- model_name: ulna_r
+  canonical_name: right ulna
+  structure_type: bone
+  representation: fixed_reference
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - ulna
+  notes: welded to world (elbow pruned); does not move
+- model_name: radius_r
+  canonical_name: right radius
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - radius
+  notes: moves by pro_sup_r
+- model_name: lunate_r
+  canonical_name: lunate
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - lunate
+  notes: root of the lumped carpus+palm rigid segment; carries deviation_r and flexion_r
+- model_name: scaphoid_r
+  canonical_name: scaphoid
+  structure_type: bone
+  representation: rigid_part_of:lunate_r
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - scaphoid
+  notes: welded; moves only with the carpus+palm segment
+- model_name: pisiform_r
+  canonical_name: pisiform
+  structure_type: bone
+  representation: rigid_part_of:lunate_r
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - pisiform
+  notes: welded; moves only with the carpus+palm segment
+- model_name: triquetrum_r
+  canonical_name: triquetrum
+  structure_type: bone
+  representation: rigid_part_of:lunate_r
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - triquetrum
+  notes: welded; moves only with the carpus+palm segment
+- model_name: capitate_r
+  canonical_name: capitate
+  structure_type: bone
+  representation: rigid_part_of:lunate_r
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - capitate
+  notes: welded; moves only with the carpus+palm segment
+- model_name: trapezium_r
+  canonical_name: trapezium
+  structure_type: bone
+  representation: rigid_part_of:lunate_r
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - trapezium
+  notes: welded; moves only with the carpus+palm segment
+- model_name: trapezoid_r
+  canonical_name: trapezoid
+  structure_type: bone
+  representation: rigid_part_of:lunate_r
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - trapezoid
+  notes: welded; moves only with the carpus+palm segment
+- model_name: hamate_r
+  canonical_name: hamate
+  structure_type: bone
+  representation: rigid_part_of:lunate_r
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - hamate
+  notes: welded; moves only with the carpus+palm segment
+- model_name: firstmc_r
+  canonical_name: first metacarpal (thumb)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - firstmc
+- model_name: proximal_thumb_r
+  canonical_name: proximal phalanx of thumb
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - proximal_thumb
+  notes: identity inferred from body/mesh name 'thumbprox'; confirm against MoBL documentation
+- model_name: distal_thumb_r
+  canonical_name: distal phalanx of thumb
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - distal_thumb
+  notes: identity inferred from body/mesh name 'thumbdist'; confirm against MoBL documentation
+- model_name: secondmc_r
+  canonical_name: metacarpal II
+  structure_type: bone
+  representation: rigid_part_of:lunate_r
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - secondmc
+  notes: 'welded to capitate: no CMC motion for this digit'
+- model_name: 2proxph_r
+  canonical_name: proximal phalanx of index finger (digit II)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - 2proxph
+  - proxph2
+- model_name: midph2_r
+  canonical_name: middle phalanx of index finger (digit II)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - midph2
+- model_name: distph2_r
+  canonical_name: distal phalanx of index finger (digit II)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - distph2
+- model_name: thirdmc_r
+  canonical_name: metacarpal III
+  structure_type: bone
+  representation: rigid_part_of:lunate_r
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - thirdmc
+  notes: 'welded to capitate: no CMC motion for this digit'
+- model_name: 3proxph_r
+  canonical_name: proximal phalanx of middle finger (digit III)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - 3proxph
+  - proxph3
+- model_name: midph3_r
+  canonical_name: middle phalanx of middle finger (digit III)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - midph3
+- model_name: distph3_r
+  canonical_name: distal phalanx of middle finger (digit III)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - distph3
+- model_name: fourthmc_r
+  canonical_name: metacarpal IV
+  structure_type: bone
+  representation: rigid_part_of:lunate_r
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - fourthmc
+  notes: 'welded to capitate: no CMC motion for this digit'
+- model_name: 4proxph_r
+  canonical_name: proximal phalanx of ring finger (digit IV)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - 4proxph
+  - proxph4
+- model_name: midph4_r
+  canonical_name: middle phalanx of ring finger (digit IV)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - midph4
+- model_name: distph4_r
+  canonical_name: distal phalanx of ring finger (digit IV)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - distph4
+- model_name: fifthmc_r
+  canonical_name: metacarpal V
+  structure_type: bone
+  representation: rigid_part_of:lunate_r
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - fifthmc
+  notes: 'welded to capitate: no CMC motion for this digit'
+- model_name: 5proxph_r
+  canonical_name: proximal phalanx of little finger (digit V)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - 5proxph
+  - proxph5
+- model_name: midph5_r
+  canonical_name: middle phalanx of little finger (digit V)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - midph5
+- model_name: distph5_r
+  canonical_name: distal phalanx of little finger (digit V)
+  structure_type: bone
+  representation: simulated_segment
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+  aliases:
+  - distph5
+joints:
+- model_name: pro_sup_r
+  canonical_name: forearm pronation-supination
+  positive_direction: pronation
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - pro_sup
+  notes: 'kinematic: radial axis rotates negatively about the distal axis (pronation for a right forearm); muscle:
+    PT and PQ drive +'
+  kinematic_expected: pronation
+  muscles_driving_positive:
+  - PT_r
+  - PQ_r
+  muscles_driving_negative: []
+  negative_direction: supination
+- model_name: deviation_r
+  canonical_name: wrist radial-ulnar deviation
+  positive_direction: radial deviation
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - deviation
+  notes: 'kinematic: fingertip moves radially; muscle: ECRL drives +, ECU and FCU drive -. P3: SIGN INVERTED relative
+    to the MoBL-ARMS source (reports/P3/wrist_convention_check.json, fingertip-direction cosine -0.99): in MoBL,
+    + is ulnar, so its range -10..+25 deg means 10 deg radial / 25 deg ulnar. MyoHand kept the numbers, so it allows
+    25 deg radial / 10 deg ulnar (gap T10). Wrist mechanism also differs (single joint vs two-row splines, gap T6).
+    BioHand patch wrist_rom_v1 restores the source meaning: range -25..+10 deg (25 deg ulnar / 10 deg radial) in
+    MyoHand''s sign convention.'
+  kinematic_expected: radial
+  muscles_driving_positive:
+  - ECRL_r
+  muscles_driving_negative:
+  - ECU_r
+  - FCU_r
+  negative_direction: ulnar deviation
+- model_name: flexion_r
+  canonical_name: wrist flexion-extension
+  positive_direction: flexion (palmar)
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - flexion
+  notes: 'kinematic: fingertip moves palmar; muscle: FCR, FCU, PL drive +, ECRB, ECU, EDC drive -. P3: direction
+    matches MoBL-ARMS (cosine 0.9996); range narrowed from +/-70 deg (gap T5); BioHand patch wrist_rom_v1 restores
+    +/-70 deg'
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FCR_r
+  - FCU_r
+  - PL_r
+  muscles_driving_negative:
+  - ECRB_r
+  - ECU_r
+  - EDC3_r
+  negative_direction: extension (dorsal)
+- model_name: cmc_flexion_r
+  canonical_name: thumb carpometacarpal flexion-extension (MoBL axis)
+  positive_direction: extension (MoBL convention)
+  positive_direction_evidence: 'muscle only: OP and EPB signs (OP drives -, EPB drives +); hand-frame kinematic
+    test not discriminative for the thumb'
+  status: derived_muscle_only
+  aliases:
+  - cmc_flexion
+  notes: oblique axis defined by MoBL/2nd-Hand; thumb CMC conventions vary - do not relabel without a source
+  kinematic_expected: null
+  muscles_driving_positive:
+  - EPB_r
+  muscles_driving_negative:
+  - OP_r
+  negative_direction: flexion (MoBL convention)
+- model_name: cmc_abduction_r
+  canonical_name: thumb carpometacarpal abduction-adduction (MoBL axis)
+  positive_direction: abduction (MoBL convention)
+  positive_direction_evidence: 'muscle only: APL drives +'
+  status: derived_muscle_only
+  aliases:
+  - cmc_abduction
+  kinematic_expected: null
+  muscles_driving_positive:
+  - APL_r
+  muscles_driving_negative: []
+  negative_direction: adduction (MoBL convention)
+- model_name: mp_flexion_r
+  canonical_name: thumb metacarpophalangeal flexion-extension
+  positive_direction: extension
+  positive_direction_evidence: 'muscle only: FPL drives -, EPL and EPB drive +'
+  status: derived_muscle_only
+  aliases:
+  - mp_flexion
+  notes: range -45..+40 deg = 45 deg flexion, 40 deg extension
+  kinematic_expected: null
+  muscles_driving_positive:
+  - EPL_r
+  - EPB_r
+  muscles_driving_negative:
+  - FPL_r
+  negative_direction: flexion
+- model_name: ip_flexion_r
+  canonical_name: thumb interphalangeal flexion-extension
+  positive_direction: extension
+  positive_direction_evidence: 'muscle only: FPL drives -, EPL drives +'
+  status: derived_muscle_only
+  aliases:
+  - ip_flexion
+  notes: range -75..+25 deg = 75 deg flexion, 25 deg extension
+  kinematic_expected: null
+  muscles_driving_positive:
+  - EPL_r
+  muscles_driving_negative:
+  - FPL_r
+  negative_direction: flexion
+- model_name: mcp2_flexion_r
+  canonical_name: metacarpophalangeal flexion-extension, index finger (digit II)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - mcp2_flexion
+  notes: 'range 0..90 deg: no hyperextension'
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP2_r
+  - FDS2_r
+  muscles_driving_negative:
+  - EDC2_r
+  negative_direction: extension
+- model_name: mcp2_abduction_r
+  canonical_name: metacarpophalangeal radial-ulnar deviation, index finger (digit II)
+  positive_direction: radial deviation
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - mcp2_abduction
+  notes: anatomically abduction for digit II; RI2 drives +, UI_UB2 drives -
+  kinematic_expected: radial
+  muscles_driving_positive:
+  - RI2_r
+  muscles_driving_negative:
+  - UI_UB2_r
+  negative_direction: ulnar deviation
+- model_name: pm2_flexion_r
+  canonical_name: proximal interphalangeal flexion-extension, index finger (digit II)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - pm2_flexion
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP2_r
+  - FDS2_r
+  muscles_driving_negative:
+  - EDC2_r
+  negative_direction: extension
+- model_name: md2_flexion_r
+  canonical_name: distal interphalangeal flexion-extension, index finger (digit II)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - md2_flexion
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP2_r
+  muscles_driving_negative:
+  - EDC2_r
+  negative_direction: extension
+- model_name: mcp3_flexion_r
+  canonical_name: metacarpophalangeal flexion-extension, middle finger (digit III)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - mcp3_flexion
+  notes: 'range 0..90 deg: no hyperextension'
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP3_r
+  - FDS3_r
+  muscles_driving_negative:
+  - EDC3_r
+  negative_direction: extension
+- model_name: mcp3_abduction_r
+  canonical_name: metacarpophalangeal radial-ulnar deviation, middle finger (digit III)
+  positive_direction: radial deviation
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - mcp3_abduction
+  notes: radial abduction of digit III; RI3 drives +, UI_UB3 drives -
+  kinematic_expected: radial
+  muscles_driving_positive:
+  - RI3_r
+  muscles_driving_negative:
+  - UI_UB3_r
+  negative_direction: ulnar deviation
+- model_name: pm3_flexion_r
+  canonical_name: proximal interphalangeal flexion-extension, middle finger (digit III)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - pm3_flexion
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP3_r
+  - FDS3_r
+  muscles_driving_negative:
+  - EDC3_r
+  negative_direction: extension
+- model_name: md3_flexion_r
+  canonical_name: distal interphalangeal flexion-extension, middle finger (digit III)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - md3_flexion
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP3_r
+  muscles_driving_negative:
+  - EDC3_r
+  negative_direction: extension
+- model_name: mcp4_flexion_r
+  canonical_name: metacarpophalangeal flexion-extension, ring finger (digit IV)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - mcp4_flexion
+  notes: 'range 0..90 deg: no hyperextension'
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP4_r
+  - FDS4_r
+  muscles_driving_negative:
+  - EDC4_r
+  negative_direction: extension
+- model_name: mcp4_abduction_r
+  canonical_name: metacarpophalangeal radial-ulnar deviation, ring finger (digit IV)
+  positive_direction: radial deviation
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - mcp4_abduction
+  notes: anatomically adduction for digit IV (abduction is defined relative to digit III); RI4 drives +, UI_UB4
+    drives -
+  kinematic_expected: radial
+  muscles_driving_positive:
+  - RI4_r
+  muscles_driving_negative:
+  - UI_UB4_r
+  negative_direction: ulnar deviation
+- model_name: pm4_flexion_r
+  canonical_name: proximal interphalangeal flexion-extension, ring finger (digit IV)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - pm4_flexion
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP4_r
+  - FDS4_r
+  muscles_driving_negative:
+  - EDC4_r
+  negative_direction: extension
+- model_name: md4_flexion_r
+  canonical_name: distal interphalangeal flexion-extension, ring finger (digit IV)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - md4_flexion
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP4_r
+  muscles_driving_negative:
+  - EDC4_r
+  negative_direction: extension
+- model_name: mcp5_flexion_r
+  canonical_name: metacarpophalangeal flexion-extension, little finger (digit V)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - mcp5_flexion
+  notes: 'range 0..90 deg: no hyperextension'
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP5_r
+  - FDS5_r
+  muscles_driving_negative:
+  - EDC5_r
+  negative_direction: extension
+- model_name: mcp5_abduction_r
+  canonical_name: metacarpophalangeal radial-ulnar deviation, little finger (digit V)
+  positive_direction: radial deviation
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - mcp5_abduction
+  notes: anatomically adduction for digit V (abduction is defined relative to digit III); RI5 drives +, UI_UB5 drives
+    -
+  kinematic_expected: radial
+  muscles_driving_positive:
+  - RI5_r
+  muscles_driving_negative:
+  - UI_UB5_r
+  negative_direction: ulnar deviation
+- model_name: pm5_flexion_r
+  canonical_name: proximal interphalangeal flexion-extension, little finger (digit V)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - pm5_flexion
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP5_r
+  - FDS5_r
+  muscles_driving_negative:
+  - EDC5_r
+  negative_direction: extension
+- model_name: md5_flexion_r
+  canonical_name: distal interphalangeal flexion-extension, little finger (digit V)
+  positive_direction: flexion
+  positive_direction_evidence: 'derived: kinematic perturbation + muscle dL/dq sign at qpos0 (reports/P2); confirm
+    over full range in P3'
+  status: derived
+  aliases:
+  - md5_flexion
+  kinematic_expected: palmar
+  muscles_driving_positive:
+  - FDP5_r
+  muscles_driving_negative:
+  - EDC5_r
+  negative_direction: extension
+actuators:
+- model_name: ECRL_r
+  canonical_name: extensor carpi radialis longus
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - ECRL
+- model_name: ECRB_r
+  canonical_name: extensor carpi radialis brevis
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - ECRB
+- model_name: ECU_r
+  canonical_name: extensor carpi ulnaris
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - ECU
+- model_name: FCR_r
+  canonical_name: flexor carpi radialis
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - FCR
+- model_name: FCU_r
+  canonical_name: flexor carpi ulnaris
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - FCU
+- model_name: PL_r
+  canonical_name: palmaris longus
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - PL
+- model_name: PT_r
+  canonical_name: pronator teres
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - PT
+- model_name: PQ_r
+  canonical_name: pronator quadratus
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - PQ
+- model_name: FDS5_r
+  canonical_name: flexor digitorum superficialis, little finger (digit V) compartment
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - FDS5
+- model_name: FDS4_r
+  canonical_name: flexor digitorum superficialis, ring finger (digit IV) compartment
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - FDS4
+- model_name: FDS3_r
+  canonical_name: flexor digitorum superficialis, middle finger (digit III) compartment
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - FDS3
+- model_name: FDS2_r
+  canonical_name: flexor digitorum superficialis, index finger (digit II) compartment
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - FDS2
+- model_name: FDP5_r
+  canonical_name: flexor digitorum profundus, little finger (digit V) compartment
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - FDP5
+- model_name: FDP4_r
+  canonical_name: flexor digitorum profundus, ring finger (digit IV) compartment
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - FDP4
+- model_name: FDP3_r
+  canonical_name: flexor digitorum profundus, middle finger (digit III) compartment
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - FDP3
+- model_name: FDP2_r
+  canonical_name: flexor digitorum profundus, index finger (digit II) compartment
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - FDP2
+- model_name: EDC5_r
+  canonical_name: extensor digitorum (communis), little finger (digit V) slip
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - EDC5
+  notes: single path to distal phalanx; extensor mechanism not represented; [CHECK] peak force 139.4 N vs MoBL-ARMS
+    39.4 N (gap T2)
+- model_name: EDC4_r
+  canonical_name: extensor digitorum (communis), ring finger (digit IV) slip
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - EDC4
+  notes: single path to distal phalanx; extensor mechanism not represented
+- model_name: EDC3_r
+  canonical_name: extensor digitorum (communis), middle finger (digit III) slip
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - EDC3
+  notes: single path to distal phalanx; extensor mechanism not represented
+- model_name: EDC2_r
+  canonical_name: extensor digitorum (communis), index finger (digit II) slip
+  structure_type: muscle
+  representation: simulated_actuator
+  status: verified
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - EDC2
+  notes: single path to distal phalanx; extensor mechanism not represented
+- model_name: EDM_r
+  canonical_name: extensor digiti minimi
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - EDM
+- model_name: EIP_r
+  canonical_name: extensor indicis (proprius)
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - EIP
+- model_name: EPL_r
+  canonical_name: extensor pollicis longus
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - EPL
+- model_name: EPB_r
+  canonical_name: extensor pollicis brevis
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - EPB
+- model_name: FPL_r
+  canonical_name: flexor pollicis longus
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - FPL
+- model_name: APL_r
+  canonical_name: abductor pollicis longus
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MoBL-ARMS abbreviation; full name is a standard anatomical term - citation pending (Holzbaur 2005)
+  aliases:
+  - APL
+- model_name: OP_r
+  canonical_name: opponens pollicis
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: MyoSuite paper, arXiv:2205.13600 sec. 3.1 (added by MyoSuite authors)
+  aliases:
+  - OP
+  notes: not present in the MoBL-ARMS or 2nd-Hand source files
+- model_name: APB_r
+  canonical_name: abductor pollicis brevis
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: Mirakhorlo et al. 2016, doi:10.1080/23335432.2016.1191373, Table 2
+  aliases:
+  - APB
+  - AbPB
+  notes: added by patch thumb_intrinsics_v1; not present in MyoHand, MoBL-ARMS or 2nd-Hand
+- model_name: FPBs_r
+  canonical_name: flexor pollicis brevis, superficial head
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: Mirakhorlo et al. 2016, doi:10.1080/23335432.2016.1191373, Table 2
+  aliases:
+  - FPBs
+  notes: added by patch thumb_intrinsics_v1; not present in MyoHand, MoBL-ARMS or 2nd-Hand
+- model_name: FPBd_r
+  canonical_name: flexor pollicis brevis, deep head
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: Mirakhorlo et al. 2016, doi:10.1080/23335432.2016.1191373, Table 2
+  aliases:
+  - FPBd
+  notes: added by patch thumb_intrinsics_v1; not present in MyoHand, MoBL-ARMS or 2nd-Hand
+- model_name: ADPo_r
+  canonical_name: adductor pollicis, oblique head
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: Mirakhorlo et al. 2016, doi:10.1080/23335432.2016.1191373, Table 2
+  aliases:
+  - AdPo
+  notes: added by patch thumb_intrinsics_v1; not present in MyoHand, MoBL-ARMS or 2nd-Hand
+- model_name: ADPt_r
+  canonical_name: adductor pollicis, transverse head
+  structure_type: muscle
+  representation: simulated_actuator
+  status: provisional
+  name_source: Mirakhorlo et al. 2016, doi:10.1080/23335432.2016.1191373, Table 2
+  aliases:
+  - AdPt
+  notes: added by patch thumb_intrinsics_v1; not present in MyoHand, MoBL-ARMS or 2nd-Hand
+- model_name: RI2_r
+  canonical_name: radial interosseous of index finger (digit II)
+  structure_type: muscle
+  representation: simulated_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - RI2
+  notes: 'Lee 2015: ''dorsal interosseous or radial interosseous''; per-digit dorsal/palmar identity unresolved
+    (2022 correction PMC9020702 not retrieved)'
+- model_name: LU_RB2_r
+  canonical_name: lumbrical with radial band, index finger (digit II) (combined actuator)
+  structure_type: combined_muscle_tendon
+  representation: combined_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model) (LU and RB defined separately
+    there)
+  aliases:
+  - LU_RB2
+  notes: LU+RB combination inferred from the actuator name; not documented upstream
+- model_name: UI_UB2_r
+  canonical_name: ulnar interosseous with ulnar band, index finger (digit II) (combined actuator)
+  structure_type: combined_muscle_tendon
+  representation: combined_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model) (UI and UB defined separately
+    there)
+  aliases:
+  - UI_UB2
+  notes: 'Lee 2015: UI = ''palmar interosseous or ulnar interosseous''; UB combination inferred from name'
+- model_name: RI3_r
+  canonical_name: radial interosseous of middle finger (digit III)
+  structure_type: muscle
+  representation: simulated_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - RI3
+  notes: 'Lee 2015: ''dorsal interosseous or radial interosseous''; per-digit dorsal/palmar identity unresolved
+    (2022 correction PMC9020702 not retrieved)'
+- model_name: LU_RB3_r
+  canonical_name: lumbrical with radial band, middle finger (digit III) (combined actuator)
+  structure_type: combined_muscle_tendon
+  representation: combined_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model) (LU and RB defined separately
+    there)
+  aliases:
+  - LU_RB3
+  notes: LU+RB combination inferred from the actuator name; not documented upstream
+- model_name: UI_UB3_r
+  canonical_name: ulnar interosseous with ulnar band, middle finger (digit III) (combined actuator)
+  structure_type: combined_muscle_tendon
+  representation: combined_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model) (UI and UB defined separately
+    there)
+  aliases:
+  - UI_UB3
+  notes: 'Lee 2015: UI = ''palmar interosseous or ulnar interosseous''; UB combination inferred from name'
+- model_name: RI4_r
+  canonical_name: radial interosseous of ring finger (digit IV)
+  structure_type: muscle
+  representation: simulated_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - RI4
+  notes: 'Lee 2015: ''dorsal interosseous or radial interosseous''; per-digit dorsal/palmar identity unresolved
+    (2022 correction PMC9020702 not retrieved)'
+- model_name: LU_RB4_r
+  canonical_name: lumbrical with radial band, ring finger (digit IV) (combined actuator)
+  structure_type: combined_muscle_tendon
+  representation: combined_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model) (LU and RB defined separately
+    there)
+  aliases:
+  - LU_RB4
+  notes: LU+RB combination inferred from the actuator name; not documented upstream
+- model_name: UI_UB4_r
+  canonical_name: ulnar interosseous with ulnar band, ring finger (digit IV) (combined actuator)
+  structure_type: combined_muscle_tendon
+  representation: combined_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model) (UI and UB defined separately
+    there)
+  aliases:
+  - UI_UB4
+  notes: 'Lee 2015: UI = ''palmar interosseous or ulnar interosseous''; UB combination inferred from name'
+- model_name: RI5_r
+  canonical_name: radial interosseous of little finger (digit V)
+  structure_type: muscle
+  representation: simulated_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model)
+  aliases:
+  - RI5
+  notes: 'Lee 2015: ''dorsal interosseous or radial interosseous''; per-digit dorsal/palmar identity unresolved
+    (2022 correction PMC9020702 not retrieved)'
+- model_name: LU_RB5_r
+  canonical_name: lumbrical with radial band, little finger (digit V) (combined actuator)
+  structure_type: combined_muscle_tendon
+  representation: combined_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model) (LU and RB defined separately
+    there)
+  aliases:
+  - LU_RB5
+  notes: LU+RB combination inferred from the actuator name; not documented upstream
+- model_name: UI_UB5_r
+  canonical_name: ulnar interosseous with ulnar band, little finger (digit V) (combined actuator)
+  structure_type: combined_muscle_tendon
+  representation: combined_actuator
+  status: unresolved
+  name_source: Lee et al. 2015, PLoS ONE 10(4):e0121712, Methods (musculoskeletal model) (UI and UB defined separately
+    there)
+  aliases:
+  - UI_UB5
+  notes: 'Lee 2015: UI = ''palmar interosseous or ulnar interosseous''; UB combination inferred from name'
+not_represented:
+- canonical_name: abductor digiti minimi
+  structure_type: muscle
+  representation: not_represented
+  gap_id: M2
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+- canonical_name: flexor digiti minimi brevis
+  structure_type: muscle
+  representation: not_represented
+  gap_id: M2
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+- canonical_name: opponens digiti minimi
+  structure_type: muscle
+  representation: not_represented
+  gap_id: M2
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+- canonical_name: supinator
+  structure_type: muscle
+  representation: not_represented
+  gap_id: M3 (in MyoArm, pruned from hand)
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+- canonical_name: biceps brachii
+  structure_type: muscle
+  representation: not_represented
+  gap_id: M3 (in MyoArm, pruned from hand)
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+- canonical_name: brachioradialis
+  structure_type: muscle
+  representation: not_represented
+  gap_id: M3 (in MyoArm, pruned from hand)
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+- canonical_name: extensor mechanism as a tendon network (terminal tendon, central slip, lateral bands)
+  structure_type: tendon_network
+  representation: not_represented
+  gap_id: M4
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+- canonical_name: sesamoid bones
+  structure_type: bone
+  representation: not_represented
+  gap_id: S7
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+- canonical_name: ligaments, joint capsules and volar plates of wrist and hand
+  structure_type: ligament
+  representation: not_represented
+  gap_id: S7
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+- canonical_name: flexor tendon pulleys as structures
+  structure_type: ligament
+  representation: not_represented
+  gap_id: S7
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+- canonical_name: carpometacarpal motion of digits II-V
+  structure_type: joint
+  representation: not_represented
+  gap_id: S3
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)
+- canonical_name: independent intercarpal motion (two-row wrist)
+  structure_type: joint
+  representation: not_represented
+  gap_id: S1, T6
+  status: provisional
+  name_source: standard English anatomical term - citation pending (P2 decision 0.4)

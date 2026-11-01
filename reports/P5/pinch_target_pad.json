@@ -1,0 +1,18 @@
+{
+ "joints": {
+  "cmc_flexion_r": -0.15915,
+  "cmc_abduction_r": -0.08581,
+  "mp_flexion_r": -0.37615,
+  "ip_flexion_r": -0.19064,
+  "mcp2_flexion_r": 0.78444,
+  "mcp2_abduction_r": -0.10127,
+  "pm2_flexion_r": 0.9251,
+  "md2_flexion_r": 0.81355
+ },
+ "capsule_distance_m": -0.002,
+ "objective": 2.667543526104051e-05,
+ "target_overlap_m": -0.002,
+ "regularisation": 0.0001,
+ "seed": 7,
+ "note": "kinematic target for the pinch control policy; not an anatomical posture claim"
+}

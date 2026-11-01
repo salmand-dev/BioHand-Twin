@@ -1,0 +1,673 @@
+{
+ "agreement": {
+  "n_healthy": 31,
+  "median_abs_mm": 0.78,
+  "p90_abs_mm": 6.94,
+  "max_abs_mm": 16.08
+ },
+ "muscles": [
+  {
+   "actuator": "ECRL_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.313191,
+    0.341072
+   ],
+   "derived_m": [
+    0.316357,
+    0.349522
+   ],
+   "delta_lo_mm": -3.17,
+   "delta_hi_mm": -8.45,
+   "overlap_fraction": 0.745,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "ECRB_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.26997,
+    0.301495
+   ],
+   "derived_m": [
+    0.269972,
+    0.301481
+   ],
+   "delta_lo_mm": -0.0,
+   "delta_hi_mm": 0.01,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "ECU_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.279041,
+    0.306754
+   ],
+   "derived_m": [
+    0.279052,
+    0.306739
+   ],
+   "delta_lo_mm": -0.01,
+   "delta_hi_mm": 0.01,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "FCR_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.295866,
+    0.331494
+   ],
+   "derived_m": [
+    0.296057,
+    0.331544
+   ],
+   "delta_lo_mm": -0.19,
+   "delta_hi_mm": -0.05,
+   "overlap_fraction": 0.999,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "FCU_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.293357,
+    0.332707
+   ],
+   "derived_m": [
+    0.295591,
+    0.334639
+   ],
+   "delta_lo_mm": -2.23,
+   "delta_hi_mm": -1.93,
+   "overlap_fraction": 0.951,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "PL_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.311593,
+    0.362396
+   ],
+   "derived_m": [
+    0.312344,
+    0.362818
+   ],
+   "delta_lo_mm": -0.75,
+   "delta_hi_mm": -0.42,
+   "overlap_fraction": 0.992,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "PT_r",
+   "n_joints": 1,
+   "specified_m": [
+    0.147243,
+    0.170204
+   ],
+   "derived_m": [
+    0.147933,
+    0.170892
+   ],
+   "delta_lo_mm": -0.69,
+   "delta_hi_mm": -0.69,
+   "overlap_fraction": 0.97,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "PQ_r",
+   "n_joints": 1,
+   "specified_m": [
+    0.022079,
+    0.037167
+   ],
+   "derived_m": [
+    0.022078,
+    0.037168
+   ],
+   "delta_lo_mm": 0.0,
+   "delta_hi_mm": -0.0,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "FDS5_r",
+   "n_joints": 6,
+   "specified_m": [
+    0.354916,
+    0.423992
+   ],
+   "derived_m": [
+    0.361925,
+    0.424438
+   ],
+   "delta_lo_mm": -7.01,
+   "delta_hi_mm": -0.45,
+   "overlap_fraction": 0.993,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "FDS4_r",
+   "n_joints": 6,
+   "specified_m": [
+    0.422088,
+    0.480218
+   ],
+   "derived_m": [
+    0.367485,
+    0.425767
+   ],
+   "delta_lo_mm": 54.6,
+   "delta_hi_mm": 54.45,
+   "overlap_fraction": 0.063,
+   "path_changed_by_patch": false,
+   "defective": true
+  },
+  {
+   "actuator": "FDS3_r",
+   "n_joints": 6,
+   "specified_m": [
+    0.328489,
+    0.390589
+   ],
+   "derived_m": [
+    0.312408,
+    0.387294
+   ],
+   "delta_lo_mm": 16.08,
+   "delta_hi_mm": 3.3,
+   "overlap_fraction": 0.785,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "FDS2_r",
+   "n_joints": 6,
+   "specified_m": [
+    0.330149,
+    0.392331
+   ],
+   "derived_m": [
+    0.320783,
+    0.388655
+   ],
+   "delta_lo_mm": 9.37,
+   "delta_hi_mm": 3.68,
+   "overlap_fraction": 0.862,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "FDP5_r",
+   "n_joints": 7,
+   "specified_m": [
+    0.387224,
+    0.450745
+   ],
+   "derived_m": [
+    0.331016,
+    0.390041
+   ],
+   "delta_lo_mm": 56.21,
+   "delta_hi_mm": 60.7,
+   "overlap_fraction": 0.048,
+   "path_changed_by_patch": false,
+   "defective": true
+  },
+  {
+   "actuator": "FDP4_r",
+   "n_joints": 7,
+   "specified_m": [
+    0.348164,
+    0.417976
+   ],
+   "derived_m": [
+    0.347369,
+    0.411694
+   ],
+   "delta_lo_mm": 0.8,
+   "delta_hi_mm": 6.28,
+   "overlap_fraction": 0.988,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "FDP3_r",
+   "n_joints": 7,
+   "specified_m": [
+    0.336078,
+    0.398672
+   ],
+   "derived_m": [
+    0.325063,
+    0.398336
+   ],
+   "delta_lo_mm": 11.02,
+   "delta_hi_mm": 0.34,
+   "overlap_fraction": 0.85,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "FDP2_r",
+   "n_joints": 7,
+   "specified_m": [
+    0.336953,
+    0.40261
+   ],
+   "derived_m": [
+    0.325101,
+    0.400246
+   ],
+   "delta_lo_mm": 11.85,
+   "delta_hi_mm": 2.36,
+   "overlap_fraction": 0.842,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "EDC5_r",
+   "n_joints": 7,
+   "specified_m": [
+    0.381709,
+    0.426592
+   ],
+   "derived_m": [
+    0.381172,
+    0.426508
+   ],
+   "delta_lo_mm": 0.54,
+   "delta_hi_mm": 0.08,
+   "overlap_fraction": 0.988,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "EDC4_r",
+   "n_joints": 7,
+   "specified_m": [
+    0.391706,
+    0.456154
+   ],
+   "derived_m": [
+    0.393521,
+    0.453236
+   ],
+   "delta_lo_mm": -1.81,
+   "delta_hi_mm": 2.92,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "EDC3_r",
+   "n_joints": 7,
+   "specified_m": [
+    0.399791,
+    0.456735
+   ],
+   "derived_m": [
+    0.399037,
+    0.45333
+   ],
+   "delta_lo_mm": 0.75,
+   "delta_hi_mm": 3.4,
+   "overlap_fraction": 0.986,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "EDC2_r",
+   "n_joints": 7,
+   "specified_m": [
+    0.395914,
+    0.455475
+   ],
+   "derived_m": [
+    0.396558,
+    0.452328
+   ],
+   "delta_lo_mm": -0.64,
+   "delta_hi_mm": 3.15,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "EDM_r",
+   "n_joints": 7,
+   "specified_m": [
+    0.37707,
+    0.417549
+   ],
+   "derived_m": [
+    0.377168,
+    0.417486
+   ],
+   "delta_lo_mm": -0.1,
+   "delta_hi_mm": 0.06,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "EIP_r",
+   "n_joints": 7,
+   "specified_m": [
+    0.245809,
+    0.291046
+   ],
+   "derived_m": [
+    0.245366,
+    0.291048
+   ],
+   "delta_lo_mm": 0.44,
+   "delta_hi_mm": -0.0,
+   "overlap_fraction": 0.99,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "EPL_r",
+   "n_joints": 7,
+   "specified_m": [
+    0.253147,
+    0.327478
+   ],
+   "derived_m": [
+    0.254965,
+    0.32802
+   ],
+   "delta_lo_mm": -1.82,
+   "delta_hi_mm": -0.54,
+   "overlap_fraction": 0.993,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "EPB_r",
+   "n_joints": 5,
+   "specified_m": [
+    0.146292,
+    0.199276
+   ],
+   "derived_m": [
+    0.14675,
+    0.198977
+   ],
+   "delta_lo_mm": -0.46,
+   "delta_hi_mm": 0.3,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "FPL_r",
+   "n_joints": 6,
+   "specified_m": [
+    0.22287,
+    0.27967
+   ],
+   "derived_m": [
+    0.230041,
+    0.285803
+   ],
+   "delta_lo_mm": -7.17,
+   "delta_hi_mm": -6.13,
+   "overlap_fraction": 0.89,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "APL_r",
+   "n_joints": 4,
+   "specified_m": [
+    0.204756,
+    0.228384
+   ],
+   "derived_m": [
+    0.184852,
+    0.215088
+   ],
+   "delta_lo_mm": 19.9,
+   "delta_hi_mm": 13.3,
+   "overlap_fraction": 0.342,
+   "path_changed_by_patch": false,
+   "defective": true
+  },
+  {
+   "actuator": "OP_r",
+   "n_joints": 2,
+   "specified_m": [
+    0.031426,
+    0.051871
+   ],
+   "derived_m": [
+    0.029097,
+    0.051922
+   ],
+   "delta_lo_mm": 2.33,
+   "delta_hi_mm": -0.05,
+   "overlap_fraction": 0.896,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "RI2_r",
+   "n_joints": 2,
+   "specified_m": [
+    0.031409,
+    0.042363
+   ],
+   "derived_m": [
+    0.031413,
+    0.042359
+   ],
+   "delta_lo_mm": -0.0,
+   "delta_hi_mm": 0.0,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": true,
+   "defective": true
+  },
+  {
+   "actuator": "LU_RB2_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.089859,
+    0.099807
+   ],
+   "derived_m": [
+    0.090859,
+    0.104529
+   ],
+   "delta_lo_mm": -1.0,
+   "delta_hi_mm": -4.72,
+   "overlap_fraction": 0.655,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "UI_UB2_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.091326,
+    0.105141
+   ],
+   "derived_m": [
+    0.091384,
+    0.10288
+   ],
+   "delta_lo_mm": -0.06,
+   "delta_hi_mm": 2.26,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "RI3_r",
+   "n_joints": 2,
+   "specified_m": [
+    0.035837,
+    0.050972
+   ],
+   "derived_m": [
+    0.035889,
+    0.050914
+   ],
+   "delta_lo_mm": -0.05,
+   "delta_hi_mm": 0.06,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "LU_RB3_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.08276,
+    0.098832
+   ],
+   "derived_m": [
+    0.083833,
+    0.097425
+   ],
+   "delta_lo_mm": -1.07,
+   "delta_hi_mm": 1.41,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "UI_UB3_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.085343,
+    0.099726
+   ],
+   "derived_m": [
+    0.087011,
+    0.094304
+   ],
+   "delta_lo_mm": -1.67,
+   "delta_hi_mm": 5.42,
+   "overlap_fraction": 1.0,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "RI4_r",
+   "n_joints": 2,
+   "specified_m": [
+    0.043557,
+    0.058459
+   ],
+   "derived_m": [
+    0.04262,
+    0.058349
+   ],
+   "delta_lo_mm": 0.94,
+   "delta_hi_mm": 0.11,
+   "overlap_fraction": 0.94,
+   "path_changed_by_patch": false,
+   "defective": false
+  },
+  {
+   "actuator": "LU_RB4_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.07979,
+    0.090959
+   ],
+   "derived_m": [
+    0.071797,
+    0.078873
+   ],
+   "delta_lo_mm": 7.99,
+   "delta_hi_mm": 12.09,
+   "overlap_fraction": 0.0,
+   "path_changed_by_patch": false,
+   "defective": true
+  },
+  {
+   "actuator": "UI_UB4_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.081992,
+    0.096903
+   ],
+   "derived_m": [
+    0.07578,
+    0.083901
+   ],
+   "delta_lo_mm": 6.21,
+   "delta_hi_mm": 13.0,
+   "overlap_fraction": 0.235,
+   "path_changed_by_patch": false,
+   "defective": true
+  },
+  {
+   "actuator": "RI5_r",
+   "n_joints": 2,
+   "specified_m": [
+    0.042513,
+    0.046266
+   ],
+   "derived_m": [
+    0.027124,
+    0.041962
+   ],
+   "delta_lo_mm": 15.39,
+   "delta_hi_mm": 4.3,
+   "overlap_fraction": 0.0,
+   "path_changed_by_patch": false,
+   "defective": true
+  },
+  {
+   "actuator": "LU_RB5_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.097014,
+    0.100417
+   ],
+   "derived_m": [
+    0.09075,
+    0.104986
+   ],
+   "delta_lo_mm": 6.26,
+   "delta_hi_mm": -4.57,
+   "overlap_fraction": 0.239,
+   "path_changed_by_patch": false,
+   "defective": true
+  },
+  {
+   "actuator": "UI_UB5_r",
+   "n_joints": 3,
+   "specified_m": [
+    0.091023,
+    0.097684
+   ],
+   "derived_m": [
+    0.09094,
+    0.102328
+   ],
+   "delta_lo_mm": 0.08,
+   "delta_hi_mm": -4.64,
+   "overlap_fraction": 0.585,
+   "path_changed_by_patch": false,
+   "defective": false
+  }
+ ]
+}

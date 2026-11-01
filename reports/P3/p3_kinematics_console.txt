@@ -1,0 +1,41 @@
+neutral reproducible: True
+all sweeps continuous: True
+composite fingertip travel (m): {'thumb': 0.0, 'index': 0.1086, 'middle': 0.1195, 'ring': 0.1106, 'little': 0.0927}
+neutral penetrating pairs: [('humerus_coll_r', 'radius_coll_r', 0.03855), ('humerus_coll_r', 'radius_coll_3_r', 0.02983), ('humerus_coll_r', 'radius_coll_2_r', 0.02344), ('3mcskin_coll_r', '4mcski_r', 0.01032), ('2mcskin_coll_r', '3mcskin_coll_r', 0.00936), ('radius_coll_r', '5mcskin_r', 0.0071), ('4mcski_r', '5mcskin_r', 0.00707), ('radius_coll_r', '3mcskin_coll_r', 0.00636), ('radius_coll_r', '4mcski_r', 0.00554), ('1mcskin_r', '2mcskin_coll_r', 0.00426), ('radius_coll_r', '2mcskin_coll_r', 0.004), ('proxph3_coll_r', '4mcski_r', 0.00268), ('3mcskin_coll_r', 'proxph4_coll_r', 0.00257), ('4mcski_r', '5proxph_coll_r', 0.00176), ('radius_coll_2_r', '2mcskin_coll_r', 0.00151), ('proxph3_coll_r', 'proxph4_coll_r', 0.00147), ('radius_coll_3_r', '5mcskin_r', 0.00131), ('2mcskin_coll_r', 'proxph3_coll_r', 0.00077), ('radius_coll_2_r', '3mcskin_coll_r', 0.00073), ('proxph2_coll_r', '3mcskin_coll_r', 0.00048), ('proxph4_coll_r', '5mcskin_r', 0.00044), ('proxph4_coll_r', '5proxph_coll_r', 0.00022)]
+penetration neutral_qpos0: new/deeper=0 max=0.0 m []
+penetration full_finger_flexion: new/deeper=23 max=0.01024 m [('midph2_coll_r', 'midph3_coll_r', 0.01024), ('distph2_coll_r', 'midph3_coll_r', 0.00926), ('proxph2_coll_r', 'proxph3_coll_r', 0.00868), ('midph2_coll_r', 'proxph3_coll_r', 0.00835)]
+penetration half_finger_flexion: new/deeper=20 max=0.00722 m [('distph3_coll_r', 'distph4_coll_2_r', 0.00722), ('distph3_coll_r', 'distph4_coll_r', 0.00635), ('midph2_coll_r', 'midph3_coll_r', 0.00579), ('distph2_coll_r', 'distph3_coll_r', 0.00578)]
+penetration index_ulnar_middle_radial (converge II-III): new/deeper=9 max=0.0151 m [('proxph2_coll_r', 'proxph3_coll_r', 0.0151), ('midph2_coll_r', 'proxph3_coll_r', 0.01449), ('proxph2_coll_r', 'midph3_coll_r', 0.01368), ('midph2_coll_r', 'midph3_coll_r', 0.01319)]
+penetration ring_ulnar_little_radial (converge IV-V): new/deeper=6 max=0.01092 m [('proxph4_coll_r', '5proxph_coll_r', 0.01092), ('proxph4_coll_r', '5midph_coll_r', 0.00976), ('midph4_coll_r', '5midph_coll_r', 0.00693), ('4mcski_r', '5proxph_coll_r', 0.00339)]
+penetration thumb_full_negative (flexion in MoBL convention): new/deeper=0 max=0.0 m []
+rom_comparison wrist flexion 45.0 ref 54.0 covers False
+rom_comparison wrist extension 45.0 ref 60.0 covers False
+rom_comparison radial deviation 25.0 ref 17.0 covers True
+rom_comparison ulnar deviation 10.0 ref 40.0 covers False
+rom_comparison_biohand_patched wrist flexion 70.0 ref 54.0 covers True
+rom_comparison_biohand_patched wrist extension 70.0 ref 60.0 covers True
+rom_comparison_biohand_patched radial deviation 10.0 ref 17.0 covers False
+rom_comparison_biohand_patched ulnar deviation 25.0 ref 40.0 covers False
+limit pro_sup_r         up tau=  0.365 pen=  0.11deg | low tau=  0.490 pen=  0.15deg
+limit deviation_r       up tau= 43.712 pen= 22.85deg | low tau= 17.032 pen=  8.90deg
+limit flexion_r         up tau= 57.764 pen= 31.46deg | low tau= 22.048 pen= 12.01deg
+limit cmc_flexion_r     up tau=  1.551 pen= 12.58deg | low tau=  4.731 pen= 38.37deg
+limit cmc_abduction_r   up tau=  1.638 pen= 14.00deg | low tau=  1.551 pen= 13.26deg
+limit mp_flexion_r      up tau=  0.856 pen=  9.20deg | low tau=  0.834 pen=  8.97deg
+limit ip_flexion_r      up tau=  0.343 pen=  3.91deg | low tau=  1.287 pen= 14.69deg
+limit mcp2_flexion_r    up tau=  5.515 pen= 24.49deg | low tau=  1.121 pen=  4.98deg
+limit mcp2_abduction_r  up tau=  1.689 pen=  5.35deg | low tau=  0.719 pen=  2.28deg
+limit pm2_flexion_r     up tau=  2.853 pen= 17.55deg | low tau=  0.930 pen=  5.72deg
+limit md2_flexion_r     up tau=  1.008 pen=  7.06deg | low tau=  0.301 pen=  2.11deg
+limit mcp3_flexion_r    up tau=  8.147 pen= 36.20deg | low tau=  0.884 pen=  3.93deg
+limit mcp3_abduction_r  up tau=  2.175 pen=  6.86deg | low tau=  1.861 pen=  5.87deg
+limit pm3_flexion_r     up tau=  4.115 pen= 25.39deg | low tau=  0.763 pen=  4.71deg
+limit md3_flexion_r     up tau=  0.845 pen=  5.94deg | low tau=  0.289 pen=  2.03deg
+limit mcp4_flexion_r    up tau=  4.619 pen= 20.79deg | low tau=  0.863 pen=  3.88deg
+limit mcp4_abduction_r  up tau=  1.827 pen=  5.72deg | low tau=  1.481 pen=  4.63deg
+limit pm4_flexion_r     up tau=  1.855 pen= 11.39deg | low tau=  0.702 pen=  4.31deg
+limit md4_flexion_r     up tau=  0.954 pen=  6.69deg | low tau=  0.600 pen=  4.21deg
+limit mcp5_flexion_r    up tau=  4.133 pen= 18.83deg | low tau=  1.237 pen=  5.64deg
+limit mcp5_abduction_r  up tau=  1.171 pen=  3.69deg | low tau=  1.735 pen=  5.46deg
+limit pm5_flexion_r     up tau=  2.330 pen= 14.36deg | low tau=  1.268 pen=  7.82deg
+limit md5_flexion_r     up tau=  1.153 pen=  8.08deg | low tau=  0.584 pen=  4.09deg

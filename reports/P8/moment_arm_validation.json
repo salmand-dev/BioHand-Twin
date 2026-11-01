@@ -1,0 +1,1015 @@
+{
+ "wrist_measured_garland2018": {
+  "rows": [
+   {
+    "axis": "flexion_extension",
+    "actuator": "FCR_r",
+    "reference_mm": 12.2,
+    "sd_mm": 2.1,
+    "model_mm": 17.08,
+    "model_full_range_mm": 13.47,
+    "z": 2.33,
+    "passed": false
+   },
+   {
+    "axis": "flexion_extension",
+    "actuator": "FCU_r",
+    "reference_mm": 11.3,
+    "sd_mm": 2.1,
+    "model_mm": 17.62,
+    "model_full_range_mm": 15.24,
+    "z": 3.01,
+    "passed": false
+   },
+   {
+    "axis": "flexion_extension",
+    "actuator": "ECRL_r",
+    "reference_mm": -6.6,
+    "sd_mm": 3.0,
+    "model_mm": -10.96,
+    "model_full_range_mm": -9.1,
+    "z": -1.45,
+    "passed": true
+   },
+   {
+    "axis": "flexion_extension",
+    "actuator": "ECRB_r",
+    "reference_mm": -10.8,
+    "sd_mm": 2.8,
+    "model_mm": -14.84,
+    "model_full_range_mm": -13.79,
+    "z": -1.44,
+    "passed": true
+   },
+   {
+    "axis": "flexion_extension",
+    "actuator": "ECU_r",
+    "reference_mm": -4.0,
+    "sd_mm": 0.9,
+    "model_mm": -7.24,
+    "model_full_range_mm": -6.47,
+    "z": -3.6,
+    "passed": false
+   },
+   {
+    "axis": "flexion_extension",
+    "actuator": "APL_r",
+    "reference_mm": 6.8,
+    "sd_mm": 1.9,
+    "model_mm": 6.44,
+    "model_full_range_mm": 5.89,
+    "z": -0.19,
+    "passed": true
+   },
+   {
+    "axis": "radioulnar_deviation",
+    "actuator": "FCR_r",
+    "reference_mm": -10.2,
+    "sd_mm": 2.5,
+    "model_mm": -3.94,
+    "model_full_range_mm": -3.24,
+    "z": 2.5,
+    "passed": false
+   },
+   {
+    "axis": "radioulnar_deviation",
+    "actuator": "FCU_r",
+    "reference_mm": 11.7,
+    "sd_mm": 4.2,
+    "model_mm": 10.54,
+    "model_full_range_mm": 11.2,
+    "z": -0.28,
+    "passed": true
+   },
+   {
+    "axis": "radioulnar_deviation",
+    "actuator": "ECRL_r",
+    "reference_mm": -17.2,
+    "sd_mm": 3.6,
+    "model_mm": -23.57,
+    "model_full_range_mm": -22.73,
+    "z": -1.77,
+    "passed": true
+   },
+   {
+    "axis": "radioulnar_deviation",
+    "actuator": "ECRB_r",
+    "reference_mm": -10.0,
+    "sd_mm": 2.2,
+    "model_mm": -14.17,
+    "model_full_range_mm": -13.27,
+    "z": -1.9,
+    "passed": true
+   },
+   {
+    "axis": "radioulnar_deviation",
+    "actuator": "ECU_r",
+    "reference_mm": 23.7,
+    "sd_mm": 3.3,
+    "model_mm": 27.77,
+    "model_full_range_mm": 28.52,
+    "z": 1.23,
+    "passed": true
+   },
+   {
+    "axis": "radioulnar_deviation",
+    "actuator": "APL_r",
+    "reference_mm": -23.6,
+    "sd_mm": 2.5,
+    "model_mm": -26.66,
+    "model_full_range_mm": -26.38,
+    "z": -1.22,
+    "passed": true
+   }
+  ],
+  "n_passed": 8,
+  "n": 12,
+  "stats": {
+   "n": 12,
+   "rmse_mm": 4.42,
+   "mean_abs_err_mm": 4.02,
+   "max_abs_err_mm": 6.37,
+   "pearson_r": 0.979,
+   "sign_agreement": 1.0
+  },
+  "assumption": "model pro_sup_r = 0 taken as mid-prone; model mean over the muscle validity envelope"
+ },
+ "index_mcp_derived_lee2015": {
+  "rows": [
+   {
+    "joint": "mcp_flexion",
+    "muscle": "FDP",
+    "actuator": "FDP2_r",
+    "reference_mm": 11.5,
+    "model_mm": 11.88,
+    "upstream_mm": 11.88,
+    "passed": true
+   },
+   {
+    "joint": "mcp_flexion",
+    "muscle": "FDS",
+    "actuator": "FDS2_r",
+    "reference_mm": 12.4,
+    "model_mm": 11.96,
+    "upstream_mm": 11.96,
+    "passed": true
+   },
+   {
+    "joint": "mcp_flexion",
+    "muscle": "EDC",
+    "actuator": "EDC2_r",
+    "reference_mm": -7.4,
+    "model_mm": -7.6,
+    "upstream_mm": -7.6,
+    "passed": true
+   },
+   {
+    "joint": "mcp_flexion",
+    "muscle": "LU",
+    "actuator": "LU_RB2_r",
+    "reference_mm": 3.5,
+    "model_mm": 3.29,
+    "upstream_mm": 3.29,
+    "passed": true
+   },
+   {
+    "joint": "mcp_flexion",
+    "muscle": "RI",
+    "actuator": "RI2_r",
+    "reference_mm": 6.6,
+    "model_mm": 6.09,
+    "upstream_mm": 5.01,
+    "passed": true
+   },
+   {
+    "joint": "mcp_flexion",
+    "muscle": "UI",
+    "actuator": "UI_UB2_r",
+    "reference_mm": 2.0,
+    "model_mm": 2.72,
+    "upstream_mm": 2.72,
+    "passed": true
+   },
+   {
+    "joint": "mcp_abduction",
+    "muscle": "FDP",
+    "actuator": "FDP2_r",
+    "reference_mm": -2.8,
+    "model_mm": 0.69,
+    "upstream_mm": 0.69,
+    "passed": false
+   },
+   {
+    "joint": "mcp_abduction",
+    "muscle": "FDS",
+    "actuator": "FDS2_r",
+    "reference_mm": 2.2,
+    "model_mm": 0.74,
+    "upstream_mm": 0.74,
+    "passed": true
+   },
+   {
+    "joint": "mcp_abduction",
+    "muscle": "EDC",
+    "actuator": "EDC2_r",
+    "reference_mm": 2.5,
+    "model_mm": -0.41,
+    "upstream_mm": -0.41,
+    "passed": false
+   },
+   {
+    "joint": "mcp_abduction",
+    "muscle": "LU",
+    "actuator": "LU_RB2_r",
+    "reference_mm": 4.3,
+    "model_mm": 6.49,
+    "upstream_mm": 6.49,
+    "passed": true
+   },
+   {
+    "joint": "mcp_abduction",
+    "muscle": "RI",
+    "actuator": "RI2_r",
+    "reference_mm": 4.1,
+    "model_mm": 5.58,
+    "upstream_mm": 5.83,
+    "passed": true
+   },
+   {
+    "joint": "mcp_abduction",
+    "muscle": "UI",
+    "actuator": "UI_UB2_r",
+    "reference_mm": -6.8,
+    "model_mm": -6.66,
+    "upstream_mm": -6.66,
+    "passed": true
+   }
+  ],
+  "n_passed": 10,
+  "n": 12,
+  "stats": {
+   "n": 12,
+   "rmse_mm": 1.61,
+   "mean_abs_err_mm": 1.18,
+   "max_abs_err_mm": 3.49,
+   "pearson_r": 0.963,
+   "sign_agreement": 0.833
+  },
+  "stats_upstream": {
+   "n": 12,
+   "rmse_mm": 1.68,
+   "mean_abs_err_mm": 1.29,
+   "max_abs_err_mm": 3.49,
+   "pearson_r": 0.959,
+   "sign_agreement": 0.833
+  }
+ },
+ "fidelity_vs_2nd_hand": {
+  "rows": [
+   {
+    "digit": 2,
+    "joint": "mcp2_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 11.4,
+    "model_mm": 11.88,
+    "upstream_mm": 11.88,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "mcp2_flexion_r",
+    "muscle": "FDS",
+    "reference_mm": 12.4,
+    "model_mm": 11.96,
+    "upstream_mm": 11.96,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "mcp2_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -7.4,
+    "model_mm": -7.6,
+    "upstream_mm": -7.6,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "mcp2_flexion_r",
+    "muscle": "LU",
+    "reference_mm": 3.8,
+    "model_mm": 3.29,
+    "upstream_mm": 3.29,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "mcp2_flexion_r",
+    "muscle": "RI",
+    "reference_mm": 5.5,
+    "model_mm": 6.09,
+    "upstream_mm": 5.01,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "mcp2_flexion_r",
+    "muscle": "UI",
+    "reference_mm": 1.9,
+    "model_mm": 2.72,
+    "upstream_mm": 2.72,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "mcp2_abduction_r",
+    "muscle": "FDP",
+    "reference_mm": 1.3,
+    "model_mm": 0.69,
+    "upstream_mm": 0.69,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "mcp2_abduction_r",
+    "muscle": "FDS",
+    "reference_mm": 0.7,
+    "model_mm": 0.74,
+    "upstream_mm": 0.74,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "mcp2_abduction_r",
+    "muscle": "EDC",
+    "reference_mm": -1.0,
+    "model_mm": -0.41,
+    "upstream_mm": -0.41,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "mcp2_abduction_r",
+    "muscle": "LU",
+    "reference_mm": 6.5,
+    "model_mm": 6.49,
+    "upstream_mm": 6.49,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "mcp2_abduction_r",
+    "muscle": "RI",
+    "reference_mm": 5.6,
+    "model_mm": 5.58,
+    "upstream_mm": 5.83,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "mcp2_abduction_r",
+    "muscle": "UI",
+    "reference_mm": -6.7,
+    "model_mm": -6.66,
+    "upstream_mm": -6.66,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "pm2_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 8.5,
+    "model_mm": 9.15,
+    "upstream_mm": 9.15,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "pm2_flexion_r",
+    "muscle": "FDS",
+    "reference_mm": 7.4,
+    "model_mm": 6.09,
+    "upstream_mm": 6.09,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "pm2_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -3.6,
+    "model_mm": -3.69,
+    "upstream_mm": -3.69,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "pm2_flexion_r",
+    "muscle": "LU",
+    "reference_mm": -2.6,
+    "model_mm": -3.53,
+    "upstream_mm": -3.53,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "pm2_flexion_r",
+    "muscle": "UI",
+    "reference_mm": 0.6,
+    "model_mm": -2.41,
+    "upstream_mm": -2.41,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 2,
+    "joint": "md2_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 5.0,
+    "model_mm": 5.32,
+    "upstream_mm": 5.32,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 2,
+    "joint": "md2_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -3.1,
+    "model_mm": -3.21,
+    "upstream_mm": -3.21,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 11.8,
+    "model_mm": 12.24,
+    "upstream_mm": 12.24,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_flexion_r",
+    "muscle": "FDS",
+    "reference_mm": 15.7,
+    "model_mm": 14.73,
+    "upstream_mm": 14.73,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -6.7,
+    "model_mm": -7.82,
+    "upstream_mm": -7.82,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_flexion_r",
+    "muscle": "LU",
+    "reference_mm": 4.0,
+    "model_mm": 4.76,
+    "upstream_mm": 4.76,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_flexion_r",
+    "muscle": "RI",
+    "reference_mm": 8.0,
+    "model_mm": 8.4,
+    "upstream_mm": 8.4,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_flexion_r",
+    "muscle": "UI",
+    "reference_mm": 2.2,
+    "model_mm": 2.88,
+    "upstream_mm": 2.88,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_abduction_r",
+    "muscle": "FDP",
+    "reference_mm": -0.1,
+    "model_mm": -0.43,
+    "upstream_mm": -0.43,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_abduction_r",
+    "muscle": "FDS",
+    "reference_mm": 0.3,
+    "model_mm": -1.17,
+    "upstream_mm": -1.17,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_abduction_r",
+    "muscle": "EDC",
+    "reference_mm": 0.4,
+    "model_mm": 0.93,
+    "upstream_mm": 0.93,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_abduction_r",
+    "muscle": "LU",
+    "reference_mm": 3.9,
+    "model_mm": 8.35,
+    "upstream_mm": 8.35,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_abduction_r",
+    "muscle": "RI",
+    "reference_mm": 8.1,
+    "model_mm": 7.46,
+    "upstream_mm": 7.46,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "mcp3_abduction_r",
+    "muscle": "UI",
+    "reference_mm": -3.8,
+    "model_mm": -4.06,
+    "upstream_mm": -4.06,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "pm3_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 7.9,
+    "model_mm": 11.07,
+    "upstream_mm": 11.07,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 3,
+    "joint": "pm3_flexion_r",
+    "muscle": "FDS",
+    "reference_mm": 6.5,
+    "model_mm": 8.89,
+    "upstream_mm": 8.89,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 3,
+    "joint": "pm3_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -4.2,
+    "model_mm": -3.91,
+    "upstream_mm": -3.91,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "pm3_flexion_r",
+    "muscle": "LU",
+    "reference_mm": -1.1,
+    "model_mm": -1.27,
+    "upstream_mm": -1.27,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "pm3_flexion_r",
+    "muscle": "UI",
+    "reference_mm": -0.2,
+    "model_mm": -0.4,
+    "upstream_mm": -0.4,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "md3_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 5.2,
+    "model_mm": 3.59,
+    "upstream_mm": 3.59,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 3,
+    "joint": "md3_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -2.8,
+    "model_mm": -2.93,
+    "upstream_mm": -2.93,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 9.1,
+    "model_mm": 9.57,
+    "upstream_mm": 9.57,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_flexion_r",
+    "muscle": "FDS",
+    "reference_mm": 9.7,
+    "model_mm": 9.68,
+    "upstream_mm": 9.68,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -5.8,
+    "model_mm": -7.22,
+    "upstream_mm": -7.22,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_flexion_r",
+    "muscle": "LU",
+    "reference_mm": 3.0,
+    "model_mm": 2.59,
+    "upstream_mm": 2.59,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_flexion_r",
+    "muscle": "RI",
+    "reference_mm": 5.4,
+    "model_mm": 7.59,
+    "upstream_mm": 7.59,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_flexion_r",
+    "muscle": "UI",
+    "reference_mm": 1.7,
+    "model_mm": 1.13,
+    "upstream_mm": 1.13,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_abduction_r",
+    "muscle": "FDP",
+    "reference_mm": -2.1,
+    "model_mm": -3.04,
+    "upstream_mm": -3.04,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_abduction_r",
+    "muscle": "FDS",
+    "reference_mm": 0.1,
+    "model_mm": -0.86,
+    "upstream_mm": -0.86,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_abduction_r",
+    "muscle": "EDC",
+    "reference_mm": 3.2,
+    "model_mm": 4.36,
+    "upstream_mm": 4.36,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_abduction_r",
+    "muscle": "LU",
+    "reference_mm": 4.0,
+    "model_mm": 3.74,
+    "upstream_mm": 3.74,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_abduction_r",
+    "muscle": "RI",
+    "reference_mm": 2.8,
+    "model_mm": 6.92,
+    "upstream_mm": 6.92,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 4,
+    "joint": "mcp4_abduction_r",
+    "muscle": "UI",
+    "reference_mm": -3.8,
+    "model_mm": -4.41,
+    "upstream_mm": -4.41,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "pm4_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 6.2,
+    "model_mm": 8.56,
+    "upstream_mm": 8.56,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 4,
+    "joint": "pm4_flexion_r",
+    "muscle": "FDS",
+    "reference_mm": 5.0,
+    "model_mm": 4.67,
+    "upstream_mm": 4.67,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "pm4_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -2.9,
+    "model_mm": -3.25,
+    "upstream_mm": -3.25,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "pm4_flexion_r",
+    "muscle": "LU",
+    "reference_mm": -0.4,
+    "model_mm": -0.56,
+    "upstream_mm": -0.56,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "pm4_flexion_r",
+    "muscle": "UI",
+    "reference_mm": -0.7,
+    "model_mm": -2.59,
+    "upstream_mm": -2.59,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "md4_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 3.3,
+    "model_mm": 3.77,
+    "upstream_mm": 3.77,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 4,
+    "joint": "md4_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -1.7,
+    "model_mm": -4.87,
+    "upstream_mm": -4.87,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 8.8,
+    "model_mm": 9.17,
+    "upstream_mm": 9.17,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_flexion_r",
+    "muscle": "FDS",
+    "reference_mm": 10.4,
+    "model_mm": 9.55,
+    "upstream_mm": 9.55,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -2.2,
+    "model_mm": -5.75,
+    "upstream_mm": -5.75,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_flexion_r",
+    "muscle": "LU",
+    "reference_mm": 3.4,
+    "model_mm": 3.1,
+    "upstream_mm": 3.1,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_flexion_r",
+    "muscle": "RI",
+    "reference_mm": 6.2,
+    "model_mm": 8.9,
+    "upstream_mm": 8.9,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_flexion_r",
+    "muscle": "UI",
+    "reference_mm": 1.7,
+    "model_mm": 2.89,
+    "upstream_mm": 2.89,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_abduction_r",
+    "muscle": "FDP",
+    "reference_mm": -2.2,
+    "model_mm": -2.55,
+    "upstream_mm": -2.55,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_abduction_r",
+    "muscle": "FDS",
+    "reference_mm": 2.2,
+    "model_mm": -4.0,
+    "upstream_mm": -4.0,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_abduction_r",
+    "muscle": "EDC",
+    "reference_mm": 2.9,
+    "model_mm": 3.21,
+    "upstream_mm": 3.21,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_abduction_r",
+    "muscle": "LU",
+    "reference_mm": 2.4,
+    "model_mm": 6.45,
+    "upstream_mm": 6.45,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_abduction_r",
+    "muscle": "RI",
+    "reference_mm": 4.1,
+    "model_mm": 3.72,
+    "upstream_mm": 3.72,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "mcp5_abduction_r",
+    "muscle": "UI",
+    "reference_mm": -6.1,
+    "model_mm": -6.31,
+    "upstream_mm": -6.31,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "pm5_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 8.0,
+    "model_mm": 6.74,
+    "upstream_mm": 6.74,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "pm5_flexion_r",
+    "muscle": "FDS",
+    "reference_mm": 7.2,
+    "model_mm": 7.83,
+    "upstream_mm": 7.83,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "pm5_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -3.0,
+    "model_mm": -3.35,
+    "upstream_mm": -3.35,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "pm5_flexion_r",
+    "muscle": "LU",
+    "reference_mm": -0.4,
+    "model_mm": -3.7,
+    "upstream_mm": -3.7,
+    "within_2p1mm": false
+   },
+   {
+    "digit": 5,
+    "joint": "pm5_flexion_r",
+    "muscle": "UI",
+    "reference_mm": -0.8,
+    "model_mm": -2.44,
+    "upstream_mm": -2.44,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "md5_flexion_r",
+    "muscle": "FDP",
+    "reference_mm": 5.5,
+    "model_mm": 4.11,
+    "upstream_mm": 4.11,
+    "within_2p1mm": true
+   },
+   {
+    "digit": 5,
+    "joint": "md5_flexion_r",
+    "muscle": "EDC",
+    "reference_mm": -2.0,
+    "model_mm": -2.65,
+    "upstream_mm": -2.65,
+    "within_2p1mm": true
+   }
+  ],
+  "n": 76,
+  "share_within_2p1mm": 0.829,
+  "stats_all": {
+   "n": 76,
+   "rmse_mm": 1.63,
+   "mean_abs_err_mm": 1.08,
+   "max_abs_err_mm": 6.2,
+   "pearson_r": 0.959,
+   "sign_agreement": 0.947
+  },
+  "stats_upstream_all": {
+   "n": 76,
+   "rmse_mm": 1.63,
+   "mean_abs_err_mm": 1.08,
+   "max_abs_err_mm": 6.2,
+   "pearson_r": 0.959,
+   "sign_agreement": 0.947
+  },
+  "stats_flexion_joints": {
+   "n": 52,
+   "rmse_mm": 1.41,
+   "mean_abs_err_mm": 1.03,
+   "max_abs_err_mm": 3.55,
+   "pearson_r": 0.975,
+   "sign_agreement": 0.981
+  },
+  "stats_abduction": {
+   "n": 24,
+   "rmse_mm": 2.03,
+   "mean_abs_err_mm": 1.19,
+   "max_abs_err_mm": 6.2,
+   "pearson_r": 0.892,
+   "sign_agreement": 0.875
+  },
+  "stats_by_joint_type": {
+   "mcp": {
+    "n": 48,
+    "rmse_mm": 1.67,
+    "mean_abs_err_mm": 1.04,
+    "max_abs_err_mm": 6.2,
+    "pearson_r": 0.959,
+    "sign_agreement": 0.938
+   },
+   "pm": {
+    "n": 20,
+    "rmse_mm": 1.63,
+    "mean_abs_err_mm": 1.22,
+    "max_abs_err_mm": 3.3,
+    "pearson_r": 0.962,
+    "sign_agreement": 0.95
+   },
+   "md": {
+    "n": 8,
+    "rmse_mm": 1.39,
+    "mean_abs_err_mm": 0.98,
+    "max_abs_err_mm": 3.17,
+    "pearson_r": 0.956,
+    "sign_agreement": 1.0
+   }
+  }
+ }
+}

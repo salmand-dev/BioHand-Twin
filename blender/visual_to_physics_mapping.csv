@@ -1,0 +1,92 @@
+visual_node,canonical_name,mujoco_body,rigid_segment,source,representation,notes
+clavicle_r__visual,right clavicle,clavicle_r,world,MyoSim meshes/clavicle.stl sha256:b46bb92ce8ea72cf,scaffold_non_hand,
+scapula_r__visual,right scapula,scapula_r,world,MyoSim meshes/scapula.stl sha256:ed4a9d41bd26e5f8,scaffold_non_hand,
+humerus_r__visual,right humerus,humerus_r,world,MyoSim meshes/humerus.stl sha256:b779c4d2df097070,scaffold_non_hand,
+humerus_coll_r,right humerus,humerus_r,world,MyoSim primitive geom,debug_only,collision proxy
+Elbow_PT_ECRL_wrap,right humerus,humerus_r,world,MyoSim primitive geom,debug_only,tendon wrapping surface
+Elbow_PT_FCU_wrap,right humerus,humerus_r,world,MyoSim primitive geom,debug_only,tendon wrapping surface
+ulna_r__visual,right ulna,ulna_r,world,MyoSim meshes/ulna.stl sha256:710264159b68764d,fixed_reference,
+PQ2_wrap,right ulna,ulna_r,world,MyoSim primitive geom,debug_only,tendon wrapping surface
+ulna_coll_r,right ulna,ulna_r,world,MyoSim primitive geom,debug_only,collision proxy
+radius_coll_r,right radius,radius_r,radius_r,MyoSim primitive geom,debug_only,collision proxy
+radius_coll_2_r,right radius,radius_r,radius_r,MyoSim primitive geom,debug_only,collision proxy
+radius_coll_3_r,right radius,radius_r,radius_r,MyoSim primitive geom,debug_only,collision proxy
+radius_r__visual,right radius,radius_r,radius_r,MyoSim meshes/radius.stl sha256:1cfc0056df177418,simulated_segment,
+ECU_torus_wrap,right radius,radius_r,radius_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+lunate_r__visual,lunate,lunate_r,lunate_r,MyoSim meshes/lunate.stl sha256:225cbfc34bc7e246,simulated_segment,
+ExtensorEllipse_ellipsoid_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+FDS_ellipsoid_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+FDP_ellipsoid_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+EDM_ellipsoid_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+FPL_ellipsoid_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+ECRL_torus_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+ECRB_torus_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+FCR_torus_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+EDCL_torus_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+EDCR_torus_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+EDCM_torus_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+EDCI_torus_wrap,lunate,lunate_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+scaphoid_r__visual,scaphoid,scaphoid_r,lunate_r,MyoSim meshes/scaphoid.stl sha256:0a016dd1497f6719,rigid_part_of:lunate_r,
+pisiform_r__visual,pisiform,pisiform_r,lunate_r,MyoSim meshes/pisiform.stl sha256:a8cfa7c74c1f551d,rigid_part_of:lunate_r,
+triquetrum_r__visual,triquetrum,triquetrum_r,lunate_r,MyoSim meshes/triquetrum.stl sha256:8828f38da02f8a9f,rigid_part_of:lunate_r,
+capitate__visual,capitate,capitate_r,lunate_r,MyoSim meshes/capitate.stl sha256:51c4ff14860a267f,rigid_part_of:lunate_r,geom name differs from body name (upstream naming)
+trapezium_r__visual,trapezium,trapezium_r,lunate_r,MyoSim meshes/trapezium.stl sha256:f130696c1dfec4d0,rigid_part_of:lunate_r,
+1mcskin_r,first metacarpal (thumb),firstmc_r,firstmc_r,MyoSim primitive geom,debug_only,collision proxy
+1mc_r__visual,first metacarpal (thumb),firstmc_r,firstmc_r,MyoSim meshes/1mc.stl sha256:b75e58243a2005af,simulated_segment,geom name differs from body name (upstream naming)
+MPthumb_wrap,first metacarpal (thumb),firstmc_r,firstmc_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+proximal_thumb_coll_r,proximal phalanx of thumb,proximal_thumb_r,proximal_thumb_r,MyoSim primitive geom,debug_only,collision proxy
+thumbprox__visual,proximal phalanx of thumb,proximal_thumb_r,proximal_thumb_r,MyoSim meshes/thumbprox.stl sha256:d55ea0de846c5acf,simulated_segment,geom name differs from body name (upstream naming)
+IPthumb_wrap,proximal phalanx of thumb,proximal_thumb_r,proximal_thumb_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+distal_thumb_coll_r,distal phalanx of thumb,distal_thumb_r,distal_thumb_r,MyoSim primitive geom,debug_only,collision proxy
+thumbdist_r__visual,distal phalanx of thumb,distal_thumb_r,distal_thumb_r,MyoSim meshes/thumbdist.stl sha256:95b059723be971e7,simulated_segment,geom name differs from body name (upstream naming)
+distal_thumb_coll_2_r,distal phalanx of thumb,distal_thumb_r,distal_thumb_r,MyoSim primitive geom,debug_only,collision proxy
+trapezoid_r__visual,trapezoid,trapezoid_r,lunate_r,MyoSim meshes/trapezoid.stl sha256:3a68fabd59a87208,rigid_part_of:lunate_r,
+hamate_r__visual,hamate,hamate_r,lunate_r,MyoSim meshes/hamate.stl sha256:d880faf00df1cc47,rigid_part_of:lunate_r,
+2mcskin_coll_r,metacarpal II,secondmc_r,lunate_r,MyoSim primitive geom,debug_only,collision proxy
+2mc_r__visual,metacarpal II,secondmc_r,lunate_r,MyoSim meshes/2mc.stl sha256:ac3286bfb7281a7d,rigid_part_of:lunate_r,geom name differs from body name (upstream naming)
+2ndmcp_ellipsoid_wrap,metacarpal II,secondmc_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+proxph2_coll_r,proximal phalanx of index finger (digit II),2proxph_r,2proxph_r,MyoSim primitive geom,debug_only,collision proxy
+2proxph_r__visual,proximal phalanx of index finger (digit II),2proxph_r,2proxph_r,MyoSim meshes/2proxph.stl sha256:041bf5a60e9376c0,simulated_segment,
+Secondpm_wrap,proximal phalanx of index finger (digit II),2proxph_r,2proxph_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+midph2_coll_r,middle phalanx of index finger (digit II),midph2_r,midph2_r,MyoSim primitive geom,debug_only,collision proxy
+2midph_r__visual,middle phalanx of index finger (digit II),midph2_r,midph2_r,MyoSim meshes/2midph.stl sha256:074318c92e652ba0,simulated_segment,geom name differs from body name (upstream naming)
+Secondmd_wrap,middle phalanx of index finger (digit II),midph2_r,midph2_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+distph2_coll_r,distal phalanx of index finger (digit II),distph2_r,distph2_r,MyoSim primitive geom,debug_only,collision proxy
+2distph_r__visual,distal phalanx of index finger (digit II),distph2_r,distph2_r,MyoSim meshes/2distph.stl sha256:39fca93724345208,simulated_segment,geom name differs from body name (upstream naming)
+distph2_coll_2_r,distal phalanx of index finger (digit II),distph2_r,distph2_r,MyoSim primitive geom,debug_only,collision proxy
+3mcskin_coll_r,metacarpal III,thirdmc_r,lunate_r,MyoSim primitive geom,debug_only,collision proxy
+3mc_r__visual,metacarpal III,thirdmc_r,lunate_r,MyoSim meshes/3mc.stl sha256:eaa77802c8afe5a3,rigid_part_of:lunate_r,geom name differs from body name (upstream naming)
+3rdmcp_ellipsoid_wrap,metacarpal III,thirdmc_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+proxph3_coll_r,proximal phalanx of middle finger (digit III),3proxph_r,3proxph_r,MyoSim primitive geom,debug_only,collision proxy
+3proxph_r__visual,proximal phalanx of middle finger (digit III),3proxph_r,3proxph_r,MyoSim meshes/3proxph.stl sha256:48094bce62d115ae,simulated_segment,
+Thirdpm_wrap,proximal phalanx of middle finger (digit III),3proxph_r,3proxph_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+midph3_coll_r,middle phalanx of middle finger (digit III),midph3_r,midph3_r,MyoSim primitive geom,debug_only,collision proxy
+3midph_r__visual,middle phalanx of middle finger (digit III),midph3_r,midph3_r,MyoSim meshes/3midph.stl sha256:5e0ef3d76f2f99f9,simulated_segment,geom name differs from body name (upstream naming)
+Thirdmd_wrap,middle phalanx of middle finger (digit III),midph3_r,midph3_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+distph3_coll_r,distal phalanx of middle finger (digit III),distph3_r,distph3_r,MyoSim primitive geom,debug_only,collision proxy
+3distph_r__visual,distal phalanx of middle finger (digit III),distph3_r,distph3_r,MyoSim meshes/3distph.stl sha256:d5ecddeac9b45720,simulated_segment,geom name differs from body name (upstream naming)
+distph3_coll_2_r,distal phalanx of middle finger (digit III),distph3_r,distph3_r,MyoSim primitive geom,debug_only,collision proxy
+4mcski_r,metacarpal IV,fourthmc_r,lunate_r,MyoSim primitive geom,debug_only,collision proxy
+4mc_r__visual,metacarpal IV,fourthmc_r,lunate_r,MyoSim meshes/4mc.stl sha256:ad2fe21562879512,rigid_part_of:lunate_r,geom name differs from body name (upstream naming)
+4thmcp_ellipsoid_wrap,metacarpal IV,fourthmc_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+proxph4_coll_r,proximal phalanx of ring finger (digit IV),4proxph_r,4proxph_r,MyoSim primitive geom,debug_only,collision proxy
+4proxph_r__visual,proximal phalanx of ring finger (digit IV),4proxph_r,4proxph_r,MyoSim meshes/4proxph.stl sha256:eea82e95eb50e934,simulated_segment,
+Fourthpm_wrap,proximal phalanx of ring finger (digit IV),4proxph_r,4proxph_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+midph4_coll_r,middle phalanx of ring finger (digit IV),midph4_r,midph4_r,MyoSim primitive geom,debug_only,collision proxy
+4midph_r__visual,middle phalanx of ring finger (digit IV),midph4_r,midph4_r,MyoSim meshes/4midph.stl sha256:98ecb5ad76749abd,simulated_segment,geom name differs from body name (upstream naming)
+Fourthmd_wrap,middle phalanx of ring finger (digit IV),midph4_r,midph4_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+distph4_coll_r,distal phalanx of ring finger (digit IV),distph4_r,distph4_r,MyoSim primitive geom,debug_only,collision proxy
+4distph_r__visual,distal phalanx of ring finger (digit IV),distph4_r,distph4_r,MyoSim meshes/4distph.stl sha256:02f01c191dfc86ab,simulated_segment,geom name differs from body name (upstream naming)
+distph4_coll_2_r,distal phalanx of ring finger (digit IV),distph4_r,distph4_r,MyoSim primitive geom,debug_only,collision proxy
+5mcskin_r,metacarpal V,fifthmc_r,lunate_r,MyoSim primitive geom,debug_only,collision proxy
+5mc_r__visual,metacarpal V,fifthmc_r,lunate_r,MyoSim meshes/5mc.stl sha256:46c75922ddc94f98,rigid_part_of:lunate_r,geom name differs from body name (upstream naming)
+5thmcp_ellipsoid_wrap,metacarpal V,fifthmc_r,lunate_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+5proxph_coll_r,proximal phalanx of little finger (digit V),5proxph_r,5proxph_r,MyoSim primitive geom,debug_only,collision proxy
+5proxph_r__visual,proximal phalanx of little finger (digit V),5proxph_r,5proxph_r,MyoSim meshes/5proxph.stl sha256:b04672ea67df7403,simulated_segment,
+Fifthpm_wrap,proximal phalanx of little finger (digit V),5proxph_r,5proxph_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+5midph_coll_r,middle phalanx of little finger (digit V),midph5_r,midph5_r,MyoSim primitive geom,debug_only,collision proxy
+5midph_r__visual,middle phalanx of little finger (digit V),midph5_r,midph5_r,MyoSim meshes/5midph.stl sha256:d383a1f058224f71,simulated_segment,geom name differs from body name (upstream naming)
+Fifthmd_wrap,middle phalanx of little finger (digit V),midph5_r,midph5_r,MyoSim primitive geom,debug_only,tendon wrapping surface
+5distph_coll_r,distal phalanx of little finger (digit V),distph5_r,distph5_r,MyoSim primitive geom,debug_only,collision proxy
+5distph__visual,distal phalanx of little finger (digit V),distph5_r,distph5_r,MyoSim meshes/5distph.stl sha256:a2ca70efdb0a5e59,simulated_segment,geom name differs from body name (upstream naming)
+5distph_coll_2_r,distal phalanx of little finger (digit V),distph5_r,distph5_r,MyoSim primitive geom,debug_only,collision proxy

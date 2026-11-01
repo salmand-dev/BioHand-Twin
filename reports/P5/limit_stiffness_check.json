@@ -1,0 +1,551 @@
+{
+ "before": {
+  "patches": [
+   "wrist_rom_v1",
+   "muscle_fixes_v1"
+  ],
+  "solref": [
+   [
+    0.02,
+    1.0
+   ]
+  ],
+  "worst_static_penetration_deg": 38.37,
+  "static": [
+   {
+    "joint": "pro_sup_r",
+    "upper": {
+     "tau_Nm": 0.365,
+     "penetration_deg": 0.11
+    },
+    "lower": {
+     "tau_Nm": 0.49,
+     "penetration_deg": 0.15
+    }
+   },
+   {
+    "joint": "deviation_r",
+    "upper": {
+     "tau_Nm": 37.775,
+     "penetration_deg": 19.74
+    },
+    "lower": {
+     "tau_Nm": 21.727,
+     "penetration_deg": 11.36
+    }
+   },
+   {
+    "joint": "flexion_r",
+    "upper": {
+     "tau_Nm": 45.886,
+     "penetration_deg": 24.99
+    },
+    "lower": {
+     "tau_Nm": 20.158,
+     "penetration_deg": 10.98
+    }
+   },
+   {
+    "joint": "cmc_flexion_r",
+    "upper": {
+     "tau_Nm": 1.551,
+     "penetration_deg": 12.58
+    },
+    "lower": {
+     "tau_Nm": 4.731,
+     "penetration_deg": 38.37
+    }
+   },
+   {
+    "joint": "cmc_abduction_r",
+    "upper": {
+     "tau_Nm": 1.638,
+     "penetration_deg": 14.0
+    },
+    "lower": {
+     "tau_Nm": 1.551,
+     "penetration_deg": 13.26
+    }
+   },
+   {
+    "joint": "mp_flexion_r",
+    "upper": {
+     "tau_Nm": 0.856,
+     "penetration_deg": 9.2
+    },
+    "lower": {
+     "tau_Nm": 0.834,
+     "penetration_deg": 8.97
+    }
+   },
+   {
+    "joint": "ip_flexion_r",
+    "upper": {
+     "tau_Nm": 0.343,
+     "penetration_deg": 3.91
+    },
+    "lower": {
+     "tau_Nm": 1.287,
+     "penetration_deg": 14.69
+    }
+   },
+   {
+    "joint": "mcp2_flexion_r",
+    "upper": {
+     "tau_Nm": 5.515,
+     "penetration_deg": 24.49
+    },
+    "lower": {
+     "tau_Nm": 0.862,
+     "penetration_deg": 3.83
+    }
+   },
+   {
+    "joint": "mcp2_abduction_r",
+    "upper": {
+     "tau_Nm": 1.689,
+     "penetration_deg": 5.35
+    },
+    "lower": {
+     "tau_Nm": 0.719,
+     "penetration_deg": 2.28
+    }
+   },
+   {
+    "joint": "pm2_flexion_r",
+    "upper": {
+     "tau_Nm": 2.853,
+     "penetration_deg": 17.55
+    },
+    "lower": {
+     "tau_Nm": 0.93,
+     "penetration_deg": 5.72
+    }
+   },
+   {
+    "joint": "md2_flexion_r",
+    "upper": {
+     "tau_Nm": 1.008,
+     "penetration_deg": 7.06
+    },
+    "lower": {
+     "tau_Nm": 0.301,
+     "penetration_deg": 2.11
+    }
+   },
+   {
+    "joint": "mcp3_flexion_r",
+    "upper": {
+     "tau_Nm": 8.147,
+     "penetration_deg": 36.2
+    },
+    "lower": {
+     "tau_Nm": 0.884,
+     "penetration_deg": 3.93
+    }
+   },
+   {
+    "joint": "mcp3_abduction_r",
+    "upper": {
+     "tau_Nm": 2.175,
+     "penetration_deg": 6.86
+    },
+    "lower": {
+     "tau_Nm": 1.861,
+     "penetration_deg": 5.87
+    }
+   },
+   {
+    "joint": "pm3_flexion_r",
+    "upper": {
+     "tau_Nm": 4.115,
+     "penetration_deg": 25.39
+    },
+    "lower": {
+     "tau_Nm": 0.763,
+     "penetration_deg": 4.71
+    }
+   },
+   {
+    "joint": "md3_flexion_r",
+    "upper": {
+     "tau_Nm": 0.845,
+     "penetration_deg": 5.94
+    },
+    "lower": {
+     "tau_Nm": 0.289,
+     "penetration_deg": 2.03
+    }
+   },
+   {
+    "joint": "mcp4_flexion_r",
+    "upper": {
+     "tau_Nm": 4.619,
+     "penetration_deg": 20.79
+    },
+    "lower": {
+     "tau_Nm": 0.863,
+     "penetration_deg": 3.88
+    }
+   },
+   {
+    "joint": "mcp4_abduction_r",
+    "upper": {
+     "tau_Nm": 1.827,
+     "penetration_deg": 5.72
+    },
+    "lower": {
+     "tau_Nm": 1.481,
+     "penetration_deg": 4.63
+    }
+   },
+   {
+    "joint": "pm4_flexion_r",
+    "upper": {
+     "tau_Nm": 1.855,
+     "penetration_deg": 11.39
+    },
+    "lower": {
+     "tau_Nm": 0.702,
+     "penetration_deg": 4.31
+    }
+   },
+   {
+    "joint": "md4_flexion_r",
+    "upper": {
+     "tau_Nm": 0.954,
+     "penetration_deg": 6.69
+    },
+    "lower": {
+     "tau_Nm": 0.6,
+     "penetration_deg": 4.21
+    }
+   },
+   {
+    "joint": "mcp5_flexion_r",
+    "upper": {
+     "tau_Nm": 4.133,
+     "penetration_deg": 18.83
+    },
+    "lower": {
+     "tau_Nm": 0.647,
+     "penetration_deg": 2.95
+    }
+   },
+   {
+    "joint": "mcp5_abduction_r",
+    "upper": {
+     "tau_Nm": 0.772,
+     "penetration_deg": 2.43
+    },
+    "lower": {
+     "tau_Nm": 1.735,
+     "penetration_deg": 5.46
+    }
+   },
+   {
+    "joint": "pm5_flexion_r",
+    "upper": {
+     "tau_Nm": 2.33,
+     "penetration_deg": 14.36
+    },
+    "lower": {
+     "tau_Nm": 0.738,
+     "penetration_deg": 4.55
+    }
+   },
+   {
+    "joint": "md5_flexion_r",
+    "upper": {
+     "tau_Nm": 1.154,
+     "penetration_deg": 8.08
+    },
+    "lower": {
+     "tau_Nm": 0.285,
+     "penetration_deg": 2.0
+    }
+   }
+  ],
+  "random_control_4s": {
+   "finite": true,
+   "max_limit_violation_deg": 9.77,
+   "max_kinetic_energy_J": 0.15225,
+   "warnings": {}
+  }
+ },
+ "after": {
+  "patches": [
+   "wrist_rom_v1",
+   "muscle_fixes_v1",
+   "limit_stiffness_v1"
+  ],
+  "solref": [
+   [
+    0.004,
+    1.0
+   ]
+  ],
+  "worst_static_penetration_deg": 1.53,
+  "static": [
+   {
+    "joint": "pro_sup_r",
+    "upper": {
+     "tau_Nm": 0.365,
+     "penetration_deg": 0.01
+    },
+    "lower": {
+     "tau_Nm": 0.49,
+     "penetration_deg": 0.01
+    }
+   },
+   {
+    "joint": "deviation_r",
+    "upper": {
+     "tau_Nm": 37.775,
+     "penetration_deg": 0.79
+    },
+    "lower": {
+     "tau_Nm": 21.727,
+     "penetration_deg": 0.45
+    }
+   },
+   {
+    "joint": "flexion_r",
+    "upper": {
+     "tau_Nm": 45.886,
+     "penetration_deg": 1.0
+    },
+    "lower": {
+     "tau_Nm": 20.158,
+     "penetration_deg": 0.44
+    }
+   },
+   {
+    "joint": "cmc_flexion_r",
+    "upper": {
+     "tau_Nm": 1.551,
+     "penetration_deg": 0.5
+    },
+    "lower": {
+     "tau_Nm": 4.731,
+     "penetration_deg": 1.53
+    }
+   },
+   {
+    "joint": "cmc_abduction_r",
+    "upper": {
+     "tau_Nm": 1.638,
+     "penetration_deg": 0.56
+    },
+    "lower": {
+     "tau_Nm": 1.551,
+     "penetration_deg": 0.53
+    }
+   },
+   {
+    "joint": "mp_flexion_r",
+    "upper": {
+     "tau_Nm": 0.856,
+     "penetration_deg": 0.37
+    },
+    "lower": {
+     "tau_Nm": 0.834,
+     "penetration_deg": 0.36
+    }
+   },
+   {
+    "joint": "ip_flexion_r",
+    "upper": {
+     "tau_Nm": 0.343,
+     "penetration_deg": 0.16
+    },
+    "lower": {
+     "tau_Nm": 1.287,
+     "penetration_deg": 0.59
+    }
+   },
+   {
+    "joint": "mcp2_flexion_r",
+    "upper": {
+     "tau_Nm": 5.515,
+     "penetration_deg": 0.98
+    },
+    "lower": {
+     "tau_Nm": 0.862,
+     "penetration_deg": 0.15
+    }
+   },
+   {
+    "joint": "mcp2_abduction_r",
+    "upper": {
+     "tau_Nm": 1.689,
+     "penetration_deg": 0.21
+    },
+    "lower": {
+     "tau_Nm": 0.719,
+     "penetration_deg": 0.09
+    }
+   },
+   {
+    "joint": "pm2_flexion_r",
+    "upper": {
+     "tau_Nm": 2.853,
+     "penetration_deg": 0.7
+    },
+    "lower": {
+     "tau_Nm": 0.93,
+     "penetration_deg": 0.23
+    }
+   },
+   {
+    "joint": "md2_flexion_r",
+    "upper": {
+     "tau_Nm": 1.008,
+     "penetration_deg": 0.28
+    },
+    "lower": {
+     "tau_Nm": 0.301,
+     "penetration_deg": 0.08
+    }
+   },
+   {
+    "joint": "mcp3_flexion_r",
+    "upper": {
+     "tau_Nm": 8.147,
+     "penetration_deg": 1.45
+    },
+    "lower": {
+     "tau_Nm": 0.884,
+     "penetration_deg": 0.16
+    }
+   },
+   {
+    "joint": "mcp3_abduction_r",
+    "upper": {
+     "tau_Nm": 2.175,
+     "penetration_deg": 0.27
+    },
+    "lower": {
+     "tau_Nm": 1.861,
+     "penetration_deg": 0.23
+    }
+   },
+   {
+    "joint": "pm3_flexion_r",
+    "upper": {
+     "tau_Nm": 4.115,
+     "penetration_deg": 1.02
+    },
+    "lower": {
+     "tau_Nm": 0.763,
+     "penetration_deg": 0.19
+    }
+   },
+   {
+    "joint": "md3_flexion_r",
+    "upper": {
+     "tau_Nm": 0.845,
+     "penetration_deg": 0.24
+    },
+    "lower": {
+     "tau_Nm": 0.289,
+     "penetration_deg": 0.08
+    }
+   },
+   {
+    "joint": "mcp4_flexion_r",
+    "upper": {
+     "tau_Nm": 4.619,
+     "penetration_deg": 0.83
+    },
+    "lower": {
+     "tau_Nm": 0.863,
+     "penetration_deg": 0.16
+    }
+   },
+   {
+    "joint": "mcp4_abduction_r",
+    "upper": {
+     "tau_Nm": 1.827,
+     "penetration_deg": 0.23
+    },
+    "lower": {
+     "tau_Nm": 1.481,
+     "penetration_deg": 0.19
+    }
+   },
+   {
+    "joint": "pm4_flexion_r",
+    "upper": {
+     "tau_Nm": 1.855,
+     "penetration_deg": 0.46
+    },
+    "lower": {
+     "tau_Nm": 0.702,
+     "penetration_deg": 0.17
+    }
+   },
+   {
+    "joint": "md4_flexion_r",
+    "upper": {
+     "tau_Nm": 0.954,
+     "penetration_deg": 0.27
+    },
+    "lower": {
+     "tau_Nm": 0.6,
+     "penetration_deg": 0.17
+    }
+   },
+   {
+    "joint": "mcp5_flexion_r",
+    "upper": {
+     "tau_Nm": 4.133,
+     "penetration_deg": 0.75
+    },
+    "lower": {
+     "tau_Nm": 0.647,
+     "penetration_deg": 0.12
+    }
+   },
+   {
+    "joint": "mcp5_abduction_r",
+    "upper": {
+     "tau_Nm": 0.772,
+     "penetration_deg": 0.1
+    },
+    "lower": {
+     "tau_Nm": 1.735,
+     "penetration_deg": 0.22
+    }
+   },
+   {
+    "joint": "pm5_flexion_r",
+    "upper": {
+     "tau_Nm": 2.33,
+     "penetration_deg": 0.57
+    },
+    "lower": {
+     "tau_Nm": 0.738,
+     "penetration_deg": 0.18
+    }
+   },
+   {
+    "joint": "md5_flexion_r",
+    "upper": {
+     "tau_Nm": 1.154,
+     "penetration_deg": 0.32
+    },
+    "lower": {
+     "tau_Nm": 0.285,
+     "penetration_deg": 0.08
+    }
+   }
+  ],
+  "random_control_4s": {
+   "finite": true,
+   "max_limit_violation_deg": 0.65,
+   "max_kinetic_energy_J": 0.15322,
+   "warnings": {}
+  }
+ }
+}

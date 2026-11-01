@@ -1,0 +1,67 @@
+cff-version: 1.2.0
+title: "BioHand Twin"
+message: "Research and education software. Using it with the MyoHand model is non-commercial only. Cite this software and the references below."
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/salmand-dev/BioHand-Twin"
+abstract: "A musculoskeletal hand, wrist and forearm simulation and visualization platform built on MuJoCo. MIT covers BioHand's own code only; the model data it uses are non-commercial (MoBL-ARMS)."
+authors:
+  - family-names: Dawod
+    given-names: Salman
+references:
+  - type: article
+    title: "Benchmarking of dynamic simulation predictions in two software platforms using an upper limb musculoskeletal model"
+    authors:
+      - {family-names: Saul, given-names: K. R.}
+      - {family-names: Hu, given-names: X.}
+      - {family-names: Goehler, given-names: C. M.}
+      - {family-names: Vidt, given-names: M. E.}
+      - {family-names: Daly, given-names: M.}
+      - {family-names: Velisar, given-names: A.}
+      - {family-names: Murray, given-names: W. M.}
+    journal: "Computer Methods in Biomechanics and Biomedical Engineering"
+    year: 2015
+    doi: 10.1080/10255842.2014.916698
+    notes: "Citation required by the MoBL-ARMS licence."
+  - type: article
+    title: "Spatial Dependency of Glenohumeral Joint Stability During Dynamic Unimanual and Bimanual Pushing and Pulling"
+    authors:
+      - {family-names: McFarland, given-names: D. C.}
+      - {family-names: McCain, given-names: E. M.}
+      - {family-names: Poppo, given-names: M. N.}
+      - {family-names: Saul, given-names: K. R.}
+    journal: "Journal of Biomechanical Engineering"
+    year: 2019
+    doi: 10.1115/1.4043035
+    notes: "Citation required by the MoBL-ARMS licence."
+  - type: article
+    title: "Finger Muscle Attachments for an OpenSim Upper-Extremity Model"
+    authors:
+      - {family-names: Lee, given-names: J. H.}
+      - {family-names: Asakawa, given-names: D. S.}
+      - {family-names: Dennerlein, given-names: J. T.}
+      - {family-names: Jindrich, given-names: D. L.}
+    journal: "PLoS ONE"
+    year: 2015
+    doi: 10.1371/journal.pone.0121712
+  - type: article
+    title: "Wrist tendon moment arms: Quantification by imaging and experimental techniques"
+    authors:
+      - {family-names: Garland, given-names: A. K.}
+      - {family-names: Shah, given-names: D. S.}
+      - {family-names: Kedgley, given-names: A. E.}
+    journal: "Journal of Biomechanics"
+    year: 2018
+    doi: 10.1016/j.jbiomech.2017.12.024
+    notes: "Measured reference data used in the P8 comparison."
+  - type: article
+    title: "MyoSuite: A contact-rich simulation suite for musculoskeletal motor control"
+    authors:
+      - {family-names: Caggiano, given-names: V.}
+      - {family-names: Wang, given-names: H.}
+      - {family-names: Durandau, given-names: G.}
+      - {family-names: Sartori, given-names: M.}
+      - {family-names: Kumar, given-names: V.}
+    year: 2022
+    url: "https://arxiv.org/abs/2205.13600"

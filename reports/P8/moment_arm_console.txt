@@ -1,0 +1,28 @@
+wrist_measured_garland2018 {'n_passed': 8, 'n': 12, 'stats': {'n': 12, 'rmse_mm': 4.42, 'mean_abs_err_mm': 4.02, 'max_abs_err_mm': 6.37, 'pearson_r': 0.979, 'sign_agreement': 1.0}, 'assumption': 'model pro_sup_r = 0 taken as mid-prone; model mean over the muscle validity envelope'}
+index_mcp_derived_lee2015 {'n_passed': 10, 'n': 12, 'stats': {'n': 12, 'rmse_mm': 1.61, 'mean_abs_err_mm': 1.18, 'max_abs_err_mm': 3.49, 'pearson_r': 0.963, 'sign_agreement': 0.833}, 'stats_upstream': {'n': 12, 'rmse_mm': 1.68, 'mean_abs_err_mm': 1.29, 'max_abs_err_mm': 3.49, 'pearson_r': 0.959, 'sign_agreement': 0.833}}
+fidelity_vs_2nd_hand {'n': 76, 'share_within_2p1mm': 0.829, 'stats_all': {'n': 76, 'rmse_mm': 1.63, 'mean_abs_err_mm': 1.08, 'max_abs_err_mm': 6.2, 'pearson_r': 0.959, 'sign_agreement': 0.947}, 'stats_upstream_all': {'n': 76, 'rmse_mm': 1.63, 'mean_abs_err_mm': 1.08, 'max_abs_err_mm': 6.2, 'pearson_r': 0.959, 'sign_agreement': 0.947}, 'stats_flexion_joints': {'n': 52, 'rmse_mm': 1.41, 'mean_abs_err_mm': 1.03, 'max_abs_err_mm': 3.55, 'pearson_r': 0.975, 'sign_agreement': 0.981}, 'stats_abduction': {'n': 24, 'rmse_mm': 2.03, 'mean_abs_err_mm': 1.19, 'max_abs_err_mm': 6.2, 'pearson_r': 0.892, 'sign_agreement': 0.875}, 'stats_by_joint_type': {'mcp': {'n': 48, 'rmse_mm': 1.67, 'mean_abs_err_mm': 1.04, 'max_abs_err_mm': 6.2, 'pearson_r': 0.959, 'sign_agreement': 0.938}, 'pm': {'n': 20, 'rmse_mm': 1.63, 'mean_abs_err_mm': 1.22, 'max_abs_err_mm': 3.3, 'pearson_r': 0.962, 'sign_agreement': 0.95}, 'md': {'n': 8, 'rmse_mm': 1.39, 'mean_abs_err_mm': 0.98, 'max_abs_err_mm': 3.17, 'pearson_r': 0.956, 'sign_agreement': 1.0}}}
+  flexio FCR_r   ref   12.2 +- 2.1  model  17.08  full  13.47  z  +2.3  FAIL
+  flexio FCU_r   ref   11.3 +- 2.1  model  17.62  full  15.24  z  +3.0  FAIL
+  flexio ECRL_r  ref   -6.6 +- 3.0  model -10.96  full  -9.10  z  -1.4  PASS
+  flexio ECRB_r  ref  -10.8 +- 2.8  model -14.84  full -13.79  z  -1.4  PASS
+  flexio ECU_r   ref   -4.0 +- 0.9  model  -7.24  full  -6.47  z  -3.6  FAIL
+  flexio APL_r   ref    6.8 +- 1.9  model   6.44  full   5.89  z  -0.2  PASS
+  radiou FCR_r   ref  -10.2 +- 2.5  model  -3.94  full  -3.24  z  +2.5  FAIL
+  radiou FCU_r   ref   11.7 +- 4.2  model  10.54  full  11.20  z  -0.3  PASS
+  radiou ECRL_r  ref  -17.2 +- 3.6  model -23.57  full -22.73  z  -1.8  PASS
+  radiou ECRB_r  ref  -10.0 +- 2.2  model -14.17  full -13.27  z  -1.9  PASS
+  radiou ECU_r   ref   23.7 +- 3.3  model  27.77  full  28.52  z  +1.2  PASS
+  radiou APL_r   ref  -23.6 +- 2.5  model -26.66  full -26.38  z  -1.2  PASS
+  mcp_flexion   FDP  ref  11.5  model  11.88  upstream  11.88  PASS
+  mcp_flexion   FDS  ref  12.4  model  11.96  upstream  11.96  PASS
+  mcp_flexion   EDC  ref  -7.4  model  -7.60  upstream  -7.60  PASS
+  mcp_flexion   LU   ref   3.5  model   3.29  upstream   3.29  PASS
+  mcp_flexion   RI   ref   6.6  model   6.09  upstream   5.01  PASS
+  mcp_flexion   UI   ref   2.0  model   2.72  upstream   2.72  PASS
+  mcp_abduction FDP  ref  -2.8  model   0.69  upstream   0.69  FAIL
+  mcp_abduction FDS  ref   2.2  model   0.74  upstream   0.74  PASS
+  mcp_abduction EDC  ref   2.5  model  -0.41  upstream  -0.41  FAIL
+  mcp_abduction LU   ref   4.3  model   6.49  upstream   6.49  PASS
+  mcp_abduction RI   ref   4.1  model   5.58  upstream   5.83  PASS
+  mcp_abduction UI   ref  -6.8  model  -6.66  upstream  -6.66  PASS
+  worst fidelity: [('mcp5_abduction_r', 'FDS', 2.2, -4.0), ('mcp3_abduction_r', 'LU', 3.9, 8.35), ('mcp4_abduction_r', 'RI', 2.8, 6.92), ('mcp5_abduction_r', 'LU', 2.4, 6.45), ('mcp5_flexion_r', 'EDC', -2.2, -5.75), ('pm5_flexion_r', 'LU', -0.4, -3.7), ('pm3_flexion_r', 'FDP', 7.9, 11.07), ('md4_flexion_r', 'EDC', -1.7, -4.87)]

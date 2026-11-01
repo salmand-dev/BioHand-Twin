@@ -1,0 +1,1 @@
+PERF_JSON {"apply_frame_ms":3.13913861386139,"frames_in_run":101,"load_ms":343.349,"rendered_fps":44.6044853378366,"rendered_frames":300,"run":"power_grip_proxy","video_adapter":"ANGLE (AMD, AMD Radeon HD 8690M (0x00006660) Direct3D11 vs_5_0 ps_5_0, D3D11-8.17.10.1404)"}

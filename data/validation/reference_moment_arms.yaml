@@ -1,0 +1,64 @@
+# Published moment-arm reference data (mm) transcribed from the retrieved papers, 2026-11-01.
+# Criteria below were fixed BEFORE the comparison was run (reports/P8/P8_REPORT.md).
+schema_version: 1
+sets:
+  garland2018_wrist_tendon_excursion:
+    kind: measured   # cadaver, tendon excursion method
+    citation: >
+      Garland AK, Shah DS, Kedgley AE. Wrist tendon moment arms: quantification by imaging and experimental
+      techniques. J Biomech 2018;68:136-140. doi:10.1016/j.jbiomech.2017.12.024. CC BY 4.0. Table 1, row TE.
+    specimens: 10
+    protocol: >
+      Passive wrist motion over the specimen's range; mean over the range of motion; forearm mid-prone
+      (pronation = 0 deg). Signs: flexion +, extension -; ulnar deviation +, radial deviation -.
+    flexion_extension:
+      FCR_r: [12.2, 2.1]
+      FCU_r: [11.3, 2.1]
+      ECRL_r: [-6.6, 3.0]
+      ECRB_r: [-10.8, 2.8]
+      ECU_r: [-4.0, 0.9]
+      APL_r: [6.8, 1.9]
+    radioulnar_deviation:
+      FCR_r: [-10.2, 2.5]
+      FCU_r: [11.7, 4.2]
+      ECRL_r: [-17.2, 3.6]
+      ECRB_r: [-10.0, 2.2]
+      ECU_r: [23.7, 3.3]
+      APL_r: [-23.6, 2.5]
+    criterion: "sign agrees and |model - mean| <= 2 SD (the band Garland et al. use between studies)"
+  lee2015_index_derived_from_attachments:
+    kind: derived_from_measured_attachments   # An 1979 attachments; NOT direct excursion measurements
+    citation: >
+      Lee JH, Asakawa DS, Dennerlein JT, Jindrich DL. Finger muscle attachments for an OpenSim upper-extremity
+      model. PLoS ONE 2015;10(4):e0121712. Table 2 (index finger MCP).
+    measured_sd_mm: {flexion_extension: 2.1, abduction_adduction: 2.5}   # as quoted by Lee 2015 for An 1983
+    protocol: "Means over MCP 0-90 deg flexion and 30 deg ab/adduction span. flexion +, abduction +."
+    mcp_flexion: {FDP: 11.5, FDS: 12.4, EDC: -7.4, LU: 3.5, RI: 6.6, UI: 2.0}
+    mcp_abduction: {FDP: -2.8, FDS: 2.2, EDC: 2.5, LU: 4.3, RI: 4.1, UI: -6.8}
+    criterion: "sign agrees and |model - value| <= 2 x measured SD"
+  lee2015_source_model:
+    kind: source_model_not_measurement   # the 2nd-Hand OpenSim model: tests conversion fidelity only
+    citation: "Lee et al. 2015, Tables 3-6 (mean moment arms of the OpenSim model)."
+    ranges_deg: {mcp_flexion: [0, 90], mcp_abduction: [-15, 15], pm_flexion: [0, 90], md_flexion: [0, 50]}
+    digits:
+      2:
+        mcp_flexion: {FDP: 11.4, FDS: 12.4, EDC: -7.4, LU: 3.8, RI: 5.5, UI: 1.9}
+        mcp_abduction: {FDP: 1.3, FDS: 0.7, EDC: -1.0, LU: 6.5, RI: 5.6, UI: -6.7}
+        pm_flexion: {FDP: 8.5, FDS: 7.4, EDC: -3.6, LU: -2.6, UI: 0.6}
+        md_flexion: {FDP: 5.0, EDC: -3.1}
+      3:
+        mcp_flexion: {FDP: 11.8, FDS: 15.7, EDC: -6.7, LU: 4.0, RI: 8.0, UI: 2.2}
+        mcp_abduction: {FDP: -0.1, FDS: 0.3, EDC: 0.4, LU: 3.9, RI: 8.1, UI: -3.8}
+        pm_flexion: {FDP: 7.9, FDS: 6.5, EDC: -4.2, LU: -1.1, UI: -0.2}
+        md_flexion: {FDP: 5.2, EDC: -2.8}
+      4:
+        mcp_flexion: {FDP: 9.1, FDS: 9.7, EDC: -5.8, LU: 3.0, RI: 5.4, UI: 1.7}
+        mcp_abduction: {FDP: -2.1, FDS: 0.1, EDC: 3.2, LU: 4.0, RI: 2.8, UI: -3.8}
+        pm_flexion: {FDP: 6.2, FDS: 5.0, EDC: -2.9, LU: -0.4, UI: -0.7}
+        md_flexion: {FDP: 3.3, EDC: -1.7}
+      5:
+        mcp_flexion: {FDP: 8.8, FDS: 10.4, EDC: -2.2, LU: 3.4, RI: 6.2, UI: 1.7}
+        mcp_abduction: {FDP: -2.2, FDS: 2.2, EDC: 2.9, LU: 2.4, RI: 4.1, UI: -6.1}
+        pm_flexion: {FDP: 8.0, FDS: 7.2, EDC: -3.0, LU: -0.4, UI: -0.8}
+        md_flexion: {FDP: 5.5, EDC: -2.0}
+    criterion: "report RMSE, correlation and share within 2.1 mm (one measured SD); no pass/fail claim about anatomy"

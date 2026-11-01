@@ -1,0 +1,129 @@
+{
+ "settling": {
+  "baseline": {
+   "2 s": {
+    "force_N": 272.71,
+    "final_qvel_rad_s": 0.1035
+   },
+   "4 s": {
+    "force_N": 272.32,
+    "final_qvel_rad_s": 0.0004
+   },
+   "8 s": {
+    "force_N": 272.34,
+    "final_qvel_rad_s": 0.0001
+   }
+  },
+  "hand inertia x0.1": {
+   "2 s": {
+    "force_N": 338.58,
+    "final_qvel_rad_s": 0.0261
+   },
+   "4 s": {
+    "force_N": 340.03,
+    "final_qvel_rad_s": 0.0004
+   },
+   "8 s": {
+    "force_N": 340.03,
+    "final_qvel_rad_s": 0.0002
+   }
+  },
+  "hand inertia x10": {
+   "2 s": {
+    "force_N": 244.53,
+    "final_qvel_rad_s": 0.058
+   },
+   "4 s": {
+    "force_N": 243.99,
+    "final_qvel_rad_s": 0.0166
+   },
+   "8 s": {
+    "force_N": 244.1,
+    "final_qvel_rad_s": 0.0015
+   }
+  }
+ },
+ "inertia_spread_N": {
+  "2 s": 94.05,
+  "4 s": 96.04,
+  "8 s": 95.93
+ },
+ "contact_hypothesis_8s": {
+  "k=20000 N/m, d=200 N s/m": {
+   "rows": {
+    "baseline": {
+     "force_N": 244.18,
+     "final_qvel_rad_s": 0.0
+    },
+    "hand inertia x0.1": {
+     "force_N": 251.29,
+     "final_qvel_rad_s": 0.0
+    },
+    "hand inertia x10": {
+     "force_N": 240.36,
+     "final_qvel_rad_s": 0.003
+    }
+   },
+   "inertia_spread_N": 10.93
+  },
+  "k=100000 N/m, d=400 N s/m": {
+   "rows": {
+    "baseline": {
+     "force_N": 241.7,
+     "final_qvel_rad_s": 0.0
+    },
+    "hand inertia x0.1": {
+     "force_N": 244.23,
+     "final_qvel_rad_s": 0.0
+    },
+    "hand inertia x10": {
+     "force_N": 239.56,
+     "final_qvel_rad_s": 0.0093
+    }
+   },
+   "inertia_spread_N": 4.67
+  }
+ },
+ "activation_sweep_4s": {
+  "0.10": {
+   "force_N": 45.99,
+   "final_qvel_rad_s": 0.1615
+  },
+  "0.25": {
+   "force_N": 127.22,
+   "final_qvel_rad_s": 0.0043
+  },
+  "0.50": {
+   "force_N": 272.32,
+   "final_qvel_rad_s": 0.0004
+  },
+  "0.75": {
+   "force_N": 486.52,
+   "final_qvel_rad_s": 0.0029
+  },
+  "1.00": {
+   "force_N": 658.41,
+   "final_qvel_rad_s": 0.0
+  }
+ },
+ "fmax_sweep_4s": {
+  "F_max x0.8": {
+   "force_N": 212.27,
+   "final_qvel_rad_s": 0.0002
+  },
+  "F_max x1.0": {
+   "force_N": 272.32,
+   "final_qvel_rad_s": 0.0004
+  },
+  "F_max x1.2": {
+   "force_N": 347.89,
+   "final_qvel_rad_s": 0.0001
+  }
+ },
+ "measured_grip": {
+  "men_mean_N": 467.8,
+  "women_mean_N": 266.7,
+  "source": "Park et al. 1998, doi:10.35371/kjoem.1998.10.3.362, n = 1018, Jamar dynamometer, right hand"
+ },
+ "comparability": "not the same quantity; plausibility check only"
+}

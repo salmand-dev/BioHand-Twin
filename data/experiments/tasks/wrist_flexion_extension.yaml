@@ -1,0 +1,14 @@
+id: wrist_flexion_extension
+description: Wrist flexion (FCR, FCU, PL) for 1 s, then extension (ECRL, ECRB, ECU) for 1 s.
+brace_joints: [pro_sup_r]   # forearm brace (apparatus); wrist free
+initial_angles_rad: {}
+duration_s: 2.0
+phases:
+  - {start_s: 0.0, end_s: 1.0, ramp_s: 0.2, activations: {wrist_flexors: 0.5}}
+  - {start_s: 1.0, end_s: 2.0, ramp_s: 0.2, activations: {wrist_extensors: 0.5}}
+metrics:
+  - {kind: joint_max, name: flexion_max_phase1, joint: flexion_r, from_s: 0.0, to_s: 1.0}
+  - {kind: joint_min, name: flexion_min_phase2, joint: flexion_r, from_s: 1.0, to_s: 2.0}
+success:
+  - {metric: flexion_max_phase1, op: ">=", value: 0.3}           # >= 17 deg flexion
+  - {metric: flexion_min_phase2, op: "<=", value: -0.3}          # >= 17 deg extension

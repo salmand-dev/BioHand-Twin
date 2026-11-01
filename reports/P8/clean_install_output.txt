@@ -1,0 +1,12 @@
+# Fresh venv (<HOME>/bhx_clean) from requirements-lock.txt, same machine, 2026-11-01T11:57:09Z
+LOCK_IDENTICAL
+........................................................................ [ 50%]
+......................................................................   [100%]
+142 passed in 34.29s
+
+[exited with code 0]
+
+# Project copy without third_party/, build/, local assets; same fresh venv; PYTHONPATH=copy
+# no model files:            50 passed, 92 skipped
+# + pinned MyoSim (local clone at 93b0ca8f):  127 passed, 15 skipped
+# CLI run-task hand_closing: wrote 76 frames

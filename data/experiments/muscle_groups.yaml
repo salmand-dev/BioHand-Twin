@@ -1,0 +1,13 @@
+# Muscle groups used by task control policies (P5). Membership follows each actuator's derived action at
+# the neutral pose (docs/MUSCLE_MODEL.md, "Actions at the neutral pose"); it is a control convenience,
+# not an anatomical classification claim.
+finger_flexors: [FDS2_r, FDS3_r, FDS4_r, FDS5_r, FDP2_r, FDP3_r, FDP4_r, FDP5_r]
+finger_extensors: [EDC2_r, EDC3_r, EDC4_r, EDC5_r, EIP_r, EDM_r]
+index_flexors: [FDS2_r, FDP2_r]
+wrist_flexors: [FCR_r, FCU_r, PL_r]
+wrist_extensors: [ECRL_r, ECRB_r, ECU_r]
+radial_deviators: [ECRL_r, FCR_r]     # opposite wrist flexion actions cancel; both drive deviation_r +
+ulnar_deviators: [ECU_r, FCU_r]
+thumb_flexors: [FPL_r, OP_r]          # drive cmc/mp/ip toward negative = flexion (MoBL convention)
+thumb_extensors: [EPL_r, EPB_r, APL_r]
+pronators: [PT_r, PQ_r]

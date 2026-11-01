@@ -1,0 +1,62 @@
+{
+ "tolerance": "bitwise identity on the same platform, MuJoCo version and model fingerprint",
+ "not_tested": "cross-platform (other OS/CPU) reproducibility",
+ "tasks": {
+  "hand_closing": {
+   "frames": 76,
+   "schema_valid": true,
+   "identical": true,
+   "frames_sha256": "b98d99f2d6ef6b239b91528149bc0f5437271de27a30515ab2e485a32ecfd33b",
+   "model_fingerprint": "14240d292861774c3961ee8edb399a5979f28eeb4668885bfba250ddcea67628"
+  },
+  "hand_opening": {
+   "frames": 76,
+   "schema_valid": true,
+   "identical": true,
+   "frames_sha256": "c7405af4f6b866b1264b16f8904e435b0dde72ef2770118c2fa09398ca35ffeb",
+   "model_fingerprint": "14240d292861774c3961ee8edb399a5979f28eeb4668885bfba250ddcea67628"
+  },
+  "pinch": {
+   "frames": 101,
+   "schema_valid": true,
+   "identical": true,
+   "frames_sha256": "a96aaa31cfc56a83124c5af73954d130ec8e7324b724ece7d936002ac4b2b802",
+   "model_fingerprint": "55d3a0fa2dc9f46764dc85db04cd97d9a2ec5d455bb0baf039a153bec15c65df"
+  },
+  "power_grip_proxy": {
+   "frames": 101,
+   "schema_valid": true,
+   "identical": true,
+   "frames_sha256": "b4d328207f66ed5a8027908fcc671abc6fc01d57ab550b762ceb9ebf402a6ada",
+   "model_fingerprint": "94d39ab168634b089e780dac500dc93305eed3285f8c9e185d313caf2856c9b5"
+  },
+  "rest_neutral": {
+   "frames": 201,
+   "schema_valid": true,
+   "identical": true,
+   "frames_sha256": "53b356735e5d1d7d09b91685728e5435ce23257c6090e15592860edd91d0a8c2",
+   "model_fingerprint": "ef776de58de26104893b9eeddfeca0899bb10012a067238bac0ad8c7a583654a"
+  },
+  "thumb_opposition": {
+   "frames": 76,
+   "schema_valid": true,
+   "identical": true,
+   "frames_sha256": "d70fe2ee53019ae29c012405f8a9a727f2e156d21e39e89933ff861c079f2790",
+   "model_fingerprint": "14240d292861774c3961ee8edb399a5979f28eeb4668885bfba250ddcea67628"
+  },
+  "wrist_deviation": {
+   "frames": 101,
+   "schema_valid": true,
+   "identical": true,
+   "frames_sha256": "5dfea1e62043b875258b9d034a435d1f1a630d9ed11abc70e160588cedfe5cab",
+   "model_fingerprint": "b81e099a08e318e0ebb2b097c03e2cbf3da4a12627dee13f9427cd8a01c217e8"
+  },
+  "wrist_flexion_extension": {
+   "frames": 101,
+   "schema_valid": true,
+   "identical": true,
+   "frames_sha256": "a540d2a34eff115bfc563ccab84b4bd10192e44aa21643390bb44bdc7ec7305c",
+   "model_fingerprint": "b81e099a08e318e0ebb2b097c03e2cbf3da4a12627dee13f9427cd8a01c217e8"
+  }
+ }
+}

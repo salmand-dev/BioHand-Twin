@@ -1,0 +1,110 @@
+project: BioHand Twin
+manifest_version: 1
+status: "COMPLETE 2026-10-31. Licences verified; intended use declared non-commercial (research/education). Do not bundle upstream files."
+
+model_name: "MyoHand (myohand_r), MyoSim"
+source_url: "https://github.com/MyoHub/myo_sim"
+source_commit: "93b0ca8f4ec90c9899ee7f05fee561e9911da91b"
+source_commit_date: "2026-09-15T22:57:29-04:00"
+source_commit_message: "v0.2.3 release (#134)"
+source_package_version: "0.2.3"   # myo_sim/pyproject.toml at that commit; no git tag exists
+authors_listed: ["Vittorio Caggiano", "Huiyi Wang", "Vikash Kumar (XML headers)"]
+retrieved_date: "2026-10-31"
+retrieval_method: "git clone https://github.com/MyoHub/myo_sim.git third_party/myo_sim (HEAD of main)"
+local_path: "third_party/myo_sim (gitignored; not redistributed)"
+
+entry_points:
+  primary_candidate:
+    name: fragment
+    call: 'myo_sim.FRAGMENT_SPEC_BUILDERS["myohand_r"]()'
+    description: "Right hand derived by pruning MyoArm (myo_sim/build/hand.py); no torso, no contact pairs"
+    build_warnings: []
+  upstream_default:
+    name: composed
+    call: 'myo_sim.load("myohand_r")  # aliases: "myohand", "hand"'
+    description: "Fragment attached to passive torso scaffold + 3 radius-thorax contact pairs"
+    build_warnings: ["UserWarning: Attaching a spec with an empty prefix may prevent the model from being saved correctly."]
+
+license:
+  repository: "Apache-2.0"   # LICENSE file + GitHub API spdx_id; XML headers also state Apache 2.0
+  upstream_reference_models:
+    - name: "MoBL-ARMS upper limb model (Saul 2015 / McFarland 2019)"
+      url: "https://simtk.org/projects/upexdyn"
+      archive_received: "MobL_ARMS_OpenSim3_bimanual_model.zip (sha256 1735972e97ebe2973ee9dc2ef6e037c20ec744bb6b02cc8ece681ca277f6d55c)"
+      osim: "MoBL_ARMS_bimanual_6_2_21.osim (sha256 a776ad04d710c6f75134695bdccca983b588a63657ecd5d1523e323cde85c673)"
+      license: "BSD-3-Clause, open-sourced SOLELY for non-commercial purposes; commercial use requires a commercial license; citation of Saul 2015 and McFarland 2019 required"
+      copyright: "Copyright (c) 2014-present, North Carolina State University, Northwestern University, Rehabilitation Institute of Chicago, Valparaiso University, Wake Forest University, Stanford University and VA HCS."
+      license_text: "data/provenance/licenses/MoBL-ARMS_use_agreement.txt (sha256 cb0b2c4b62c34d60337d869a7986aea4853425c7e6c120ceacc844dd6a1d0192)"
+      license_text_source: "supplied by project owner 2026-10-31, copied from SimTK download agreement"
+    - name: "2nd-Hand finger muscle model (Lee et al. 2015)"
+      url: "https://simtk.org/projects/hand_muscle"
+      archive_received: "'hand model with geometry files' (zip; sha256 0e7254c0a5c205cf33426abd50b7d350d6cd51f18d6bc09f0a7f9c356512dc31; entries dated 2014-09-04)"
+      osim: "2nd_Hand_Model_Mass.osim (sha256 66a7b3155e57a003a05f4229a5ccda205168fb45c1d3a6ae61ea1a89631a7f18); 2nd_Hand_Model_An_attachments.osim (sha256 d6750a12126f92499512048b16f00c45e399e049a5bc24faa6c3bee723a345d4)"
+      license: "MIT"
+      copyright: "Copyright (c) 2015, Stanford University"
+      license_text: "data/provenance/licenses/2nd-Hand_MIT_license.txt (sha256 e202a0098192dc1fc32ff867fb85baf9b30bdf3766cbd9387dfe5e4514c249f0)"
+      license_text_source: "supplied by project owner 2026-10-31, copied from SimTK download agreement"
+  meshes: "MyoSim STL meshes correspond by name to MoBL/2nd-Hand bone geometry (same 33 bone names in the 2nd-Hand archive); treated as MoBL-derived, i.e. non-commercial."
+  derivation_evidence: "25 of 26 MyoHand extrinsic muscle peak forces equal MoBL-ARMS max_isometric_force (reports/P1/osim_vs_myohand.json); 20/23 joint ranges equal 2nd-Hand coordinate ranges."
+
+redistribution_allowed: "non-commercial only, with notices"   # project policy: still not bundled
+redistribution_rationale: >
+  MoBL-ARMS terms (BSD-3 + non-commercial restriction) apply to MoBL-derived content regardless of
+  MyoSim's Apache-2.0 label. Redistribution for non-commercial purposes is permitted if the BSD-3
+  copyright notice is retained and Saul 2015 + McFarland 2019 are cited. BioHand Twin still installs
+  MyoSim from upstream and ships no upstream files (simplest compliant path). This is a reading of
+  the licence texts, not legal advice.
+intended_use: "NON-COMMERCIAL: research and education (declared by project owner, 2026-10-31). Commercial use would require a MoBL-ARMS commercial licence."
+
+additional_data_sources:   # values only; no files bundled
+  - "data/sources/mirakhorlo2016_thumb.yaml (CC BY 4.0, doi:10.1080/23335432.2016.1191373, data doi:10.6084/m9.figshare.4434791.v1, md5 recorded)"
+  - "data/sources/passive_joint_stiffness.yaml (Formica 2012, Shi 2020, Wu 2009; each value labelled measured, assumed or estimated)"
+model_file_hashes: "data/provenance/myohand_file_hashes.json (73 files, sha256)"
+model_inventory: "data/model_inventory.json"
+
+modifications: []   # no upstream file has been changed (verified clean git status + hashes in tests)
+project_patches:     # applied to the MjSpec at build time by simulation/patches.py; never to files
+  - id: wrist_rom_v1
+    file: data/patches/wrist_rom_v1.yaml
+    status: provisional (muscle operating ranges over the new wrist range to be verified in P4)
+    changes: "deviation_r range -10..25 deg -> -25..10 deg (restores MoBL meaning after sign inversion); flexion_r range +/-45 -> +/-70 deg (MoBL value)"
+    approved: "project owner, option B, 2026-10-31"
+  - id: muscle_fixes_v1
+    file: data/patches/muscle_fixes_v1.yaml
+    status: provisional
+    changes: "EDC5 force 139.4 -> 39.4 N (MoBL-ARMS source value); RI2 path without converted MCP cylinder (consistent with RI3-RI5); lengthrange re-derived by MuJoCo definition for FDS4, FDP5, APL, RI2, LU_RB4, UI_UB4, RI5, LU_RB5"
+    approved: "project owner ('fix the defects'), 2026-10-31"
+  - id: limit_stiffness_v1
+    file: data/patches/limit_stiffness_v1.yaml
+    status: provisional
+    classification: tuned (numerical solver setting)
+    changes: "joint-limit solref time constant 0.02 -> 0.004 s (= 2 x timestep); damping ratio unchanged"
+    approved: "project owner ('fix the defects'), 2026-10-31"
+
+parameter_sources:
+  - parameter_group: "joint axes, joint ranges, muscle paths, wrapping geometry"
+    source: "converted from MoBL-ARMS + 2nd-Hand OpenSim models via MyoSim conversion pipeline, then manually adjusted (README_hand.md)"
+    classification: "upstream model values (converted + tuned); not directly traceable to measurements per value"
+  - parameter_group: "muscle peak force (gainprm[2]) and lengthrange"
+    source: "MyoSim force/moment-arm optimization against OpenSim reference (Wang et al. 2022 / MyoSuite)"
+    classification: "tuned"
+  - parameter_group: "muscle shape params (range, lmin, lmax, vmax, fpmax, fvmax) and activation time constants"
+    source: "identical for all 39 actuators (myoarm_muscle default class)"
+    classification: "generic defaults - not muscle-specific"
+  - parameter_group: "segment masses / inertias"
+    source: "explicit inertials in myoarm_r_chain.xml; several equal numerical floors (1e-4 kg m^2, 0.001 kg); lunate_r and capitate_r computed from mesh (inertiafromgeom=auto)"
+    classification: "numerical conditioning / illustrative - not anatomical"
+  - parameter_group: "joint damping, armature"
+    source: "myoarm class defaults and per-joint overrides"
+    classification: "tuned (README_hand.md: 'Dynamics properties of the joints' manually adjusted)"
+
+citations_required:
+  - "Saul KR et al. Comput Methods Biomech Biomed Eng 2015;18:1445-58 (required by MoBL-ARMS licence)"
+  - "McFarland DC, McCain EM, Poppo MN, Saul KR. J Biomech Eng 2019;141(5):051006. doi:10.1115/1.4043035 (required by MoBL-ARMS licence)"
+citations_requested_by_upstream:
+  - "Caggiano V, Wang H, Durandau G, Sartori M, Kumar V. MyoSuite: A contact-rich simulation suite for musculoskeletal motor control. arXiv:2205.13600 (2022)"
+  - "Towards Embodied AI with MuscleMimic. arXiv:2603.25544 (2026)"
+
+open_items:
+  - "Optional: ask MyoHub (issue) to add the MoBL-ARMS non-commercial notice to the repository and to explain the EDC5 force (139.4 N vs MoBL 39.4 N)."
+  - "Retrieve Lee et al. 2015 correction (PMC9020702) text for interosseous naming."

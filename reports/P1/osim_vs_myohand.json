@@ -1,0 +1,2326 @@
+{
+ "_meta": {
+  "generated_utc": "2026-11-01T12:59:04+00:00",
+  "myohand_commit": "93b0ca8f4ec90c9899ee7f05fee561e9911da91b"
+ },
+ "2nd_hand_mass": {
+  "joints": [
+   {
+    "myohand_joint": "pro_sup_r",
+    "myohand_range_rad": [
+     -1.5708,
+     1.5708
+    ],
+    "osim_coordinate": "pro_sup",
+    "osim_range_rad": [
+     -1.57079633,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "deviation_r",
+    "myohand_range_rad": [
+     -0.174533,
+     0.436332
+    ],
+    "osim_coordinate": "deviation",
+    "osim_range_rad": [
+     -0.17453293,
+     0.43633231
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "flexion_r",
+    "myohand_range_rad": [
+     -0.785398,
+     0.785398
+    ],
+    "osim_coordinate": "flexion",
+    "osim_range_rad": [
+     -1.22173048,
+     1.22173048
+    ],
+    "range_identical_1e-4": false
+   },
+   {
+    "myohand_joint": "cmc_flexion_r",
+    "myohand_range_rad": [
+     -0.78,
+     0.7
+    ],
+    "osim_coordinate": "cmc_flexion",
+    "osim_range_rad": [
+     -0.26179939,
+     0.78539816
+    ],
+    "range_identical_1e-4": false
+   },
+   {
+    "myohand_joint": "cmc_abduction_r",
+    "myohand_range_rad": [
+     -0.5,
+     0.78
+    ],
+    "osim_coordinate": "cmc_abduction",
+    "osim_range_rad": [
+     -0.43633231,
+     0.43633231
+    ],
+    "range_identical_1e-4": false
+   },
+   {
+    "myohand_joint": "mp_flexion_r",
+    "myohand_range_rad": [
+     -0.785398,
+     0.698132
+    ],
+    "osim_coordinate": "mp_flexion",
+    "osim_range_rad": [
+     -0.78539816,
+     0.6981317
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "ip_flexion_r",
+    "myohand_range_rad": [
+     -1.309,
+     0.436332
+    ],
+    "osim_coordinate": "ip_flexion",
+    "osim_range_rad": [
+     -1.30899694,
+     0.43633231
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp2_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "mcp2_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp2_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": "mcp2_abduction",
+    "osim_range_rad": [
+     -0.26179939,
+     0.26179939
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "pm2_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "pm2_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "md2_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "md2_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp3_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "mcp3_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp3_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": "mcp3_abduction",
+    "osim_range_rad": [
+     -0.26179939,
+     0.26179939
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "pm3_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "pm3_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "md3_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "md3_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp4_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "mcp4_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp4_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": "mcp4_abduction",
+    "osim_range_rad": [
+     -0.26179939,
+     0.26179939
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "pm4_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "pm4_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "md4_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "md4_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp5_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "mcp5_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp5_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": "mcp5_abduction",
+    "osim_range_rad": [
+     -0.26179939,
+     0.26179939
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "pm5_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "pm5_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "md5_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "md5_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   }
+  ],
+  "actuators": [
+   {
+    "myohand_actuator": "ECRL_r",
+    "myohand_peak_force_N": 337.3,
+    "osim_muscle": "ECRL",
+    "max_isometric_force": 304.89,
+    "optimal_fiber_length": 0.081,
+    "tendon_slack_length": 0.224,
+    "pennation_angle_at_optimal": 0.0,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.1063
+   },
+   {
+    "myohand_actuator": "ECRB_r",
+    "myohand_peak_force_N": 252.2,
+    "osim_muscle": "ECRB",
+    "max_isometric_force": 100.52,
+    "optimal_fiber_length": 0.0585,
+    "tendon_slack_length": 0.2223,
+    "pennation_angle_at_optimal": 0.1553343,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.509
+   },
+   {
+    "myohand_actuator": "ECU_r",
+    "myohand_peak_force_N": 192.9,
+    "osim_muscle": "ECU",
+    "max_isometric_force": 93.17,
+    "optimal_fiber_length": 0.0622,
+    "tendon_slack_length": 0.2285,
+    "pennation_angle_at_optimal": 0.06108652,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.0704
+   },
+   {
+    "myohand_actuator": "FCR_r",
+    "myohand_peak_force_N": 407.9,
+    "osim_muscle": "FCR",
+    "max_isometric_force": 73.96,
+    "optimal_fiber_length": 0.0628,
+    "tendon_slack_length": 0.244,
+    "pennation_angle_at_optimal": 0.05410521,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 5.5151
+   },
+   {
+    "myohand_actuator": "FCU_r",
+    "myohand_peak_force_N": 479.8,
+    "osim_muscle": "FCU",
+    "max_isometric_force": 128.93,
+    "optimal_fiber_length": 0.0509,
+    "tendon_slack_length": 0.265,
+    "pennation_angle_at_optimal": 0.21118484,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 3.7214
+   },
+   {
+    "myohand_actuator": "PL_r",
+    "myohand_peak_force_N": 101.0,
+    "osim_muscle": "PL",
+    "max_isometric_force": 26.72,
+    "optimal_fiber_length": 0.0638,
+    "tendon_slack_length": 0.2694,
+    "pennation_angle_at_optimal": 0.06981317,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 3.7799
+   },
+   {
+    "myohand_actuator": "PT_r",
+    "myohand_peak_force_N": 557.2,
+    "osim_muscle": "PT",
+    "max_isometric_force": 566.22,
+    "optimal_fiber_length": 0.0492,
+    "tendon_slack_length": 0.098,
+    "pennation_angle_at_optimal": 0.17453293,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9841
+   },
+   {
+    "myohand_actuator": "PQ_r",
+    "myohand_peak_force_N": 284.7,
+    "osim_muscle": "PQ",
+    "max_isometric_force": 75.48,
+    "optimal_fiber_length": 0.0282,
+    "tendon_slack_length": 0.005,
+    "pennation_angle_at_optimal": 0.17453293,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 3.7719
+   },
+   {
+    "myohand_actuator": "FDS5_r",
+    "myohand_peak_force_N": 75.3,
+    "osim_muscle": "FDS5",
+    "max_isometric_force": 16.55,
+    "optimal_fiber_length": 0.0515,
+    "tendon_slack_length": 0.3383,
+    "pennation_angle_at_optimal": 0.08726646,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 4.5498
+   },
+   {
+    "myohand_actuator": "FDS4_r",
+    "myohand_peak_force_N": 171.2,
+    "osim_muscle": "FDS4",
+    "max_isometric_force": 57.9,
+    "optimal_fiber_length": 0.0736,
+    "tendon_slack_length": 0.328,
+    "pennation_angle_at_optimal": 0.06981317,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.9568
+   },
+   {
+    "myohand_actuator": "FDS3_r",
+    "myohand_peak_force_N": 258.8,
+    "osim_muscle": "FDS3",
+    "max_isometric_force": 91.03,
+    "optimal_fiber_length": 0.0749,
+    "tendon_slack_length": 0.295,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.843
+   },
+   {
+    "myohand_actuator": "FDS2_r",
+    "myohand_peak_force_N": 162.5,
+    "osim_muscle": "FDS2",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6535
+   },
+   {
+    "myohand_actuator": "FDP5_r",
+    "myohand_peak_force_N": 236.8,
+    "osim_muscle": "FDP5",
+    "max_isometric_force": 79.65,
+    "optimal_fiber_length": 0.0749,
+    "tendon_slack_length": 0.2819,
+    "pennation_angle_at_optimal": 0.13962634,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.973
+   },
+   {
+    "myohand_actuator": "FDP4_r",
+    "myohand_peak_force_N": 172.9,
+    "osim_muscle": "FDP4",
+    "max_isometric_force": 64.08,
+    "optimal_fiber_length": 0.0798,
+    "tendon_slack_length": 0.282,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6982
+   },
+   {
+    "myohand_actuator": "FDP3_r",
+    "myohand_peak_force_N": 212.4,
+    "osim_muscle": "FDP3",
+    "max_isometric_force": 81.65,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.293,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6013
+   },
+   {
+    "myohand_actuator": "FDP2_r",
+    "myohand_peak_force_N": 197.3,
+    "osim_muscle": "FDP2",
+    "max_isometric_force": 68.27,
+    "optimal_fiber_length": 0.0749,
+    "tendon_slack_length": 0.2935,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.89
+   },
+   {
+    "myohand_actuator": "EDC5_r",
+    "myohand_peak_force_N": 139.4,
+    "osim_muscle": "EDC5",
+    "max_isometric_force": 13.11,
+    "optimal_fiber_length": 0.065,
+    "tendon_slack_length": 0.2965,
+    "pennation_angle_at_optimal": 0.03490659,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 10.6331
+   },
+   {
+    "myohand_actuator": "EDC4_r",
+    "myohand_peak_force_N": 109.2,
+    "osim_muscle": "EDC4",
+    "max_isometric_force": 34.04,
+    "optimal_fiber_length": 0.0626,
+    "tendon_slack_length": 0.327,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 3.208
+   },
+   {
+    "myohand_actuator": "EDC3_r",
+    "myohand_peak_force_N": 94.4,
+    "osim_muscle": "EDC3",
+    "max_isometric_force": 35.32,
+    "optimal_fiber_length": 0.0724,
+    "tendon_slack_length": 0.335,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6727
+   },
+   {
+    "myohand_actuator": "EDC2_r",
+    "myohand_peak_force_N": 48.8,
+    "osim_muscle": "EDC2",
+    "max_isometric_force": 18.26,
+    "optimal_fiber_length": 0.07,
+    "tendon_slack_length": 0.322,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6725
+   },
+   {
+    "myohand_actuator": "EDM_r",
+    "myohand_peak_force_N": 72.4,
+    "osim_muscle": "EDM",
+    "max_isometric_force": 25.25,
+    "optimal_fiber_length": 0.0675,
+    "tendon_slack_length": 0.322,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.8673
+   },
+   {
+    "myohand_actuator": "EIP_r",
+    "myohand_peak_force_N": 47.3,
+    "osim_muscle": "EIP",
+    "max_isometric_force": 21.7,
+    "optimal_fiber_length": 0.0589,
+    "tendon_slack_length": 0.186,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.1797
+   },
+   {
+    "myohand_actuator": "EPL_r",
+    "myohand_peak_force_N": 88.3,
+    "osim_muscle": "EPL",
+    "max_isometric_force": 39.46,
+    "optimal_fiber_length": 0.054,
+    "tendon_slack_length": 0.2205,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.2377
+   },
+   {
+    "myohand_actuator": "EPB_r",
+    "myohand_peak_force_N": 46.0,
+    "osim_muscle": "EPB",
+    "max_isometric_force": 14.2,
+    "optimal_fiber_length": 0.0675,
+    "tendon_slack_length": 0.1155,
+    "pennation_angle_at_optimal": 0.12566371,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 3.2394
+   },
+   {
+    "myohand_actuator": "FPL_r",
+    "myohand_peak_force_N": 201.0,
+    "osim_muscle": "FPL",
+    "max_isometric_force": 77.2,
+    "optimal_fiber_length": 0.0552,
+    "tendon_slack_length": 0.1938,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6036
+   },
+   {
+    "myohand_actuator": "APL_r",
+    "myohand_peak_force_N": 116.7,
+    "osim_muscle": "APL",
+    "max_isometric_force": 59.53,
+    "optimal_fiber_length": 0.0713,
+    "tendon_slack_length": 0.1295,
+    "pennation_angle_at_optimal": 0.13089969,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.9604
+   },
+   {
+    "myohand_actuator": "OP_r",
+    "myohand_peak_force_N": 180.0,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "RI2_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": "RI2",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9993
+   },
+   {
+    "myohand_actuator": "LU_RB2_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": "LU_RB2",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9993
+   },
+   {
+    "myohand_actuator": "UI_UB2_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": "UI_UB2",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9993
+   },
+   {
+    "myohand_actuator": "RI3_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": "RI3",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9993
+   },
+   {
+    "myohand_actuator": "LU_RB3_r",
+    "myohand_peak_force_N": 98.0,
+    "osim_muscle": "LU_RB3",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.6003
+   },
+   {
+    "myohand_actuator": "UI_UB3_r",
+    "myohand_peak_force_N": 98.0,
+    "osim_muscle": "UI_UB3",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.6003
+   },
+   {
+    "myohand_actuator": "RI4_r",
+    "myohand_peak_force_N": 97.0,
+    "osim_muscle": "RI4",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.5839
+   },
+   {
+    "myohand_actuator": "LU_RB4_r",
+    "myohand_peak_force_N": 76.9,
+    "osim_muscle": "LU_RB4",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.2557
+   },
+   {
+    "myohand_actuator": "UI_UB4_r",
+    "myohand_peak_force_N": 76.9,
+    "osim_muscle": "UI_UB4",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.2557
+   },
+   {
+    "myohand_actuator": "RI5_r",
+    "myohand_peak_force_N": 59.9,
+    "osim_muscle": "RI5",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9781
+   },
+   {
+    "myohand_actuator": "LU_RB5_r",
+    "myohand_peak_force_N": 47.9,
+    "osim_muscle": "LU_RB5",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.7822
+   },
+   {
+    "myohand_actuator": "UI_UB5_r",
+    "myohand_peak_force_N": 47.9,
+    "osim_muscle": "UI_UB5",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.7822
+   }
+  ],
+  "osim_muscles_not_in_myohand": [
+   "ANC",
+   "BIClong",
+   "BICshort",
+   "BRA",
+   "BRD",
+   "CORB",
+   "DELT1",
+   "DELT2",
+   "DELT3",
+   "INFSP",
+   "LAT1",
+   "LAT2",
+   "LAT3",
+   "PECM1",
+   "PECM2",
+   "PECM3",
+   "SUBSC",
+   "SUP",
+   "SUPSP",
+   "TMAJ",
+   "TMIN",
+   "TRIlat",
+   "TRIlong",
+   "TRImed"
+  ],
+  "osim_coupler_constraints": 79,
+  "myohand_equality_constraints": 0
+ },
+ "2nd_hand_an_attachments": {
+  "joints": [
+   {
+    "myohand_joint": "pro_sup_r",
+    "myohand_range_rad": [
+     -1.5708,
+     1.5708
+    ],
+    "osim_coordinate": "pro_sup",
+    "osim_range_rad": [
+     -1.57079633,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "deviation_r",
+    "myohand_range_rad": [
+     -0.174533,
+     0.436332
+    ],
+    "osim_coordinate": "deviation",
+    "osim_range_rad": [
+     -0.17453293,
+     0.43633231
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "flexion_r",
+    "myohand_range_rad": [
+     -0.785398,
+     0.785398
+    ],
+    "osim_coordinate": "flexion",
+    "osim_range_rad": [
+     -1.22173048,
+     1.22173048
+    ],
+    "range_identical_1e-4": false
+   },
+   {
+    "myohand_joint": "cmc_flexion_r",
+    "myohand_range_rad": [
+     -0.78,
+     0.7
+    ],
+    "osim_coordinate": "cmc_flexion",
+    "osim_range_rad": [
+     -0.26179939,
+     0.78539816
+    ],
+    "range_identical_1e-4": false
+   },
+   {
+    "myohand_joint": "cmc_abduction_r",
+    "myohand_range_rad": [
+     -0.5,
+     0.78
+    ],
+    "osim_coordinate": "cmc_abduction",
+    "osim_range_rad": [
+     -0.43633231,
+     0.43633231
+    ],
+    "range_identical_1e-4": false
+   },
+   {
+    "myohand_joint": "mp_flexion_r",
+    "myohand_range_rad": [
+     -0.785398,
+     0.698132
+    ],
+    "osim_coordinate": "mp_flexion",
+    "osim_range_rad": [
+     -0.78539816,
+     0.6981317
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "ip_flexion_r",
+    "myohand_range_rad": [
+     -1.309,
+     0.436332
+    ],
+    "osim_coordinate": "ip_flexion",
+    "osim_range_rad": [
+     -1.30899694,
+     0.43633231
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp2_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "mcp2_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp2_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": "mcp2_abduction",
+    "osim_range_rad": [
+     -0.26179939,
+     0.26179939
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "pm2_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "pm2_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "md2_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "md2_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp3_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "mcp3_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp3_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": "mcp3_abduction",
+    "osim_range_rad": [
+     -0.26179939,
+     0.26179939
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "pm3_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "pm3_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "md3_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "md3_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp4_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "mcp4_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp4_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": "mcp4_abduction",
+    "osim_range_rad": [
+     -0.26179939,
+     0.26179939
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "pm4_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "pm4_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "md4_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "md4_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp5_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "mcp5_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "mcp5_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": "mcp5_abduction",
+    "osim_range_rad": [
+     -0.26179939,
+     0.26179939
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "pm5_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "pm5_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "md5_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": "md5_flexion",
+    "osim_range_rad": [
+     0.0,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   }
+  ],
+  "actuators": [
+   {
+    "myohand_actuator": "ECRL_r",
+    "myohand_peak_force_N": 337.3,
+    "osim_muscle": "ECRL",
+    "max_isometric_force": 304.89,
+    "optimal_fiber_length": 0.081,
+    "tendon_slack_length": 0.224,
+    "pennation_angle_at_optimal": 0.0,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.1063
+   },
+   {
+    "myohand_actuator": "ECRB_r",
+    "myohand_peak_force_N": 252.2,
+    "osim_muscle": "ECRB",
+    "max_isometric_force": 100.52,
+    "optimal_fiber_length": 0.0585,
+    "tendon_slack_length": 0.2223,
+    "pennation_angle_at_optimal": 0.1553343,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.509
+   },
+   {
+    "myohand_actuator": "ECU_r",
+    "myohand_peak_force_N": 192.9,
+    "osim_muscle": "ECU",
+    "max_isometric_force": 93.17,
+    "optimal_fiber_length": 0.0622,
+    "tendon_slack_length": 0.2285,
+    "pennation_angle_at_optimal": 0.06108652,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.0704
+   },
+   {
+    "myohand_actuator": "FCR_r",
+    "myohand_peak_force_N": 407.9,
+    "osim_muscle": "FCR",
+    "max_isometric_force": 73.96,
+    "optimal_fiber_length": 0.0628,
+    "tendon_slack_length": 0.244,
+    "pennation_angle_at_optimal": 0.05410521,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 5.5151
+   },
+   {
+    "myohand_actuator": "FCU_r",
+    "myohand_peak_force_N": 479.8,
+    "osim_muscle": "FCU",
+    "max_isometric_force": 128.93,
+    "optimal_fiber_length": 0.0509,
+    "tendon_slack_length": 0.265,
+    "pennation_angle_at_optimal": 0.21118484,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 3.7214
+   },
+   {
+    "myohand_actuator": "PL_r",
+    "myohand_peak_force_N": 101.0,
+    "osim_muscle": "PL",
+    "max_isometric_force": 26.72,
+    "optimal_fiber_length": 0.0638,
+    "tendon_slack_length": 0.2694,
+    "pennation_angle_at_optimal": 0.06981317,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 3.7799
+   },
+   {
+    "myohand_actuator": "PT_r",
+    "myohand_peak_force_N": 557.2,
+    "osim_muscle": "PT",
+    "max_isometric_force": 566.22,
+    "optimal_fiber_length": 0.0492,
+    "tendon_slack_length": 0.098,
+    "pennation_angle_at_optimal": 0.17453293,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9841
+   },
+   {
+    "myohand_actuator": "PQ_r",
+    "myohand_peak_force_N": 284.7,
+    "osim_muscle": "PQ",
+    "max_isometric_force": 75.48,
+    "optimal_fiber_length": 0.0282,
+    "tendon_slack_length": 0.005,
+    "pennation_angle_at_optimal": 0.17453293,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 3.7719
+   },
+   {
+    "myohand_actuator": "FDS5_r",
+    "myohand_peak_force_N": 75.3,
+    "osim_muscle": "FDS5",
+    "max_isometric_force": 16.55,
+    "optimal_fiber_length": 0.0515,
+    "tendon_slack_length": 0.3383,
+    "pennation_angle_at_optimal": 0.08726646,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 4.5498
+   },
+   {
+    "myohand_actuator": "FDS4_r",
+    "myohand_peak_force_N": 171.2,
+    "osim_muscle": "FDS4",
+    "max_isometric_force": 57.9,
+    "optimal_fiber_length": 0.0736,
+    "tendon_slack_length": 0.328,
+    "pennation_angle_at_optimal": 0.06981317,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.9568
+   },
+   {
+    "myohand_actuator": "FDS3_r",
+    "myohand_peak_force_N": 258.8,
+    "osim_muscle": "FDS3",
+    "max_isometric_force": 91.03,
+    "optimal_fiber_length": 0.0749,
+    "tendon_slack_length": 0.295,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.843
+   },
+   {
+    "myohand_actuator": "FDS2_r",
+    "myohand_peak_force_N": 162.5,
+    "osim_muscle": "FDS2",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6535
+   },
+   {
+    "myohand_actuator": "FDP5_r",
+    "myohand_peak_force_N": 236.8,
+    "osim_muscle": "FDP5",
+    "max_isometric_force": 79.65,
+    "optimal_fiber_length": 0.0749,
+    "tendon_slack_length": 0.2819,
+    "pennation_angle_at_optimal": 0.13962634,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.973
+   },
+   {
+    "myohand_actuator": "FDP4_r",
+    "myohand_peak_force_N": 172.9,
+    "osim_muscle": "FDP4",
+    "max_isometric_force": 64.08,
+    "optimal_fiber_length": 0.0798,
+    "tendon_slack_length": 0.282,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6982
+   },
+   {
+    "myohand_actuator": "FDP3_r",
+    "myohand_peak_force_N": 212.4,
+    "osim_muscle": "FDP3",
+    "max_isometric_force": 81.65,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.293,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6013
+   },
+   {
+    "myohand_actuator": "FDP2_r",
+    "myohand_peak_force_N": 197.3,
+    "osim_muscle": "FDP2",
+    "max_isometric_force": 68.27,
+    "optimal_fiber_length": 0.0749,
+    "tendon_slack_length": 0.2935,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.89
+   },
+   {
+    "myohand_actuator": "EDC5_r",
+    "myohand_peak_force_N": 139.4,
+    "osim_muscle": "EDC5",
+    "max_isometric_force": 13.11,
+    "optimal_fiber_length": 0.065,
+    "tendon_slack_length": 0.2965,
+    "pennation_angle_at_optimal": 0.03490659,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 10.6331
+   },
+   {
+    "myohand_actuator": "EDC4_r",
+    "myohand_peak_force_N": 109.2,
+    "osim_muscle": "EDC4",
+    "max_isometric_force": 34.04,
+    "optimal_fiber_length": 0.0626,
+    "tendon_slack_length": 0.327,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 3.208
+   },
+   {
+    "myohand_actuator": "EDC3_r",
+    "myohand_peak_force_N": 94.4,
+    "osim_muscle": "EDC3",
+    "max_isometric_force": 35.32,
+    "optimal_fiber_length": 0.0724,
+    "tendon_slack_length": 0.335,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6727
+   },
+   {
+    "myohand_actuator": "EDC2_r",
+    "myohand_peak_force_N": 48.8,
+    "osim_muscle": "EDC2",
+    "max_isometric_force": 18.26,
+    "optimal_fiber_length": 0.07,
+    "tendon_slack_length": 0.322,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6725
+   },
+   {
+    "myohand_actuator": "EDM_r",
+    "myohand_peak_force_N": 72.4,
+    "osim_muscle": "EDM",
+    "max_isometric_force": 25.25,
+    "optimal_fiber_length": 0.0675,
+    "tendon_slack_length": 0.322,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.8673
+   },
+   {
+    "myohand_actuator": "EIP_r",
+    "myohand_peak_force_N": 47.3,
+    "osim_muscle": "EIP",
+    "max_isometric_force": 21.7,
+    "optimal_fiber_length": 0.0589,
+    "tendon_slack_length": 0.186,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.1797
+   },
+   {
+    "myohand_actuator": "EPL_r",
+    "myohand_peak_force_N": 88.3,
+    "osim_muscle": "EPL",
+    "max_isometric_force": 39.46,
+    "optimal_fiber_length": 0.054,
+    "tendon_slack_length": 0.2205,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.2377
+   },
+   {
+    "myohand_actuator": "EPB_r",
+    "myohand_peak_force_N": 46.0,
+    "osim_muscle": "EPB",
+    "max_isometric_force": 14.2,
+    "optimal_fiber_length": 0.0675,
+    "tendon_slack_length": 0.1155,
+    "pennation_angle_at_optimal": 0.12566371,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 3.2394
+   },
+   {
+    "myohand_actuator": "FPL_r",
+    "myohand_peak_force_N": 201.0,
+    "osim_muscle": "FPL",
+    "max_isometric_force": 77.2,
+    "optimal_fiber_length": 0.0552,
+    "tendon_slack_length": 0.1938,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 2.6036
+   },
+   {
+    "myohand_actuator": "APL_r",
+    "myohand_peak_force_N": 116.7,
+    "osim_muscle": "APL",
+    "max_isometric_force": 59.53,
+    "optimal_fiber_length": 0.0713,
+    "tendon_slack_length": 0.1295,
+    "pennation_angle_at_optimal": 0.13089969,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.9604
+   },
+   {
+    "myohand_actuator": "OP_r",
+    "myohand_peak_force_N": 180.0,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "RI2_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": "RI2",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9993
+   },
+   {
+    "myohand_actuator": "LU_RB2_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": "LU_RB2",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9993
+   },
+   {
+    "myohand_actuator": "UI_UB2_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": "UI_UB2",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9993
+   },
+   {
+    "myohand_actuator": "RI3_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": "RI3",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9993
+   },
+   {
+    "myohand_actuator": "LU_RB3_r",
+    "myohand_peak_force_N": 98.0,
+    "osim_muscle": "LU_RB3",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.6003
+   },
+   {
+    "myohand_actuator": "UI_UB3_r",
+    "myohand_peak_force_N": 98.0,
+    "osim_muscle": "UI_UB3",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.6003
+   },
+   {
+    "myohand_actuator": "RI4_r",
+    "myohand_peak_force_N": 97.0,
+    "osim_muscle": "RI4",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.5839
+   },
+   {
+    "myohand_actuator": "LU_RB4_r",
+    "myohand_peak_force_N": 76.9,
+    "osim_muscle": "LU_RB4",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.2557
+   },
+   {
+    "myohand_actuator": "UI_UB4_r",
+    "myohand_peak_force_N": 76.9,
+    "osim_muscle": "UI_UB4",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.2557
+   },
+   {
+    "myohand_actuator": "RI5_r",
+    "myohand_peak_force_N": 59.9,
+    "osim_muscle": "RI5",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9781
+   },
+   {
+    "myohand_actuator": "LU_RB5_r",
+    "myohand_peak_force_N": 47.9,
+    "osim_muscle": "LU_RB5",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.7822
+   },
+   {
+    "myohand_actuator": "UI_UB5_r",
+    "myohand_peak_force_N": 47.9,
+    "osim_muscle": "UI_UB5",
+    "max_isometric_force": 61.24,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": null,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.7822
+   }
+  ],
+  "osim_muscles_not_in_myohand": [
+   "ANC",
+   "BIClong",
+   "BICshort",
+   "BRA",
+   "BRD",
+   "CORB",
+   "DELT1",
+   "DELT2",
+   "DELT3",
+   "INFSP",
+   "LAT1",
+   "LAT2",
+   "LAT3",
+   "PECM1",
+   "PECM2",
+   "PECM3",
+   "SUBSC",
+   "SUP",
+   "SUPSP",
+   "TMAJ",
+   "TMIN",
+   "TRIlat",
+   "TRIlong",
+   "TRImed"
+  ],
+  "osim_coupler_constraints": 79,
+  "myohand_equality_constraints": 0
+ },
+ "mobl_arms_bimanual": {
+  "joints": [
+   {
+    "myohand_joint": "pro_sup_r",
+    "myohand_range_rad": [
+     -1.5708,
+     1.5708
+    ],
+    "osim_coordinate": "pro_sup_r",
+    "osim_range_rad": [
+     -1.57079633,
+     1.57079633
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "deviation_r",
+    "myohand_range_rad": [
+     -0.174533,
+     0.436332
+    ],
+    "osim_coordinate": "deviation_r",
+    "osim_range_rad": [
+     -0.17453293,
+     0.43633231
+    ],
+    "range_identical_1e-4": true
+   },
+   {
+    "myohand_joint": "flexion_r",
+    "myohand_range_rad": [
+     -0.785398,
+     0.785398
+    ],
+    "osim_coordinate": "flexion_r",
+    "osim_range_rad": [
+     -1.22173048,
+     1.22173048
+    ],
+    "range_identical_1e-4": false
+   },
+   {
+    "myohand_joint": "cmc_flexion_r",
+    "myohand_range_rad": [
+     -0.78,
+     0.7
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "cmc_abduction_r",
+    "myohand_range_rad": [
+     -0.5,
+     0.78
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "mp_flexion_r",
+    "myohand_range_rad": [
+     -0.785398,
+     0.698132
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "ip_flexion_r",
+    "myohand_range_rad": [
+     -1.309,
+     0.436332
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "mcp2_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "mcp2_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "pm2_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "md2_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "mcp3_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "mcp3_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "pm3_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "md3_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "mcp4_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "mcp4_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "pm4_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "md4_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "mcp5_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "mcp5_abduction_r",
+    "myohand_range_rad": [
+     -0.261799,
+     0.261799
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "pm5_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   },
+   {
+    "myohand_joint": "md5_flexion_r",
+    "myohand_range_rad": [
+     0.0,
+     1.5708
+    ],
+    "osim_coordinate": null,
+    "osim_range_rad": null
+   }
+  ],
+  "actuators": [
+   {
+    "myohand_actuator": "ECRL_r",
+    "myohand_peak_force_N": 337.3,
+    "osim_muscle": "ECRL_r",
+    "max_isometric_force": 337.3,
+    "optimal_fiber_length": 0.081,
+    "tendon_slack_length": 0.244,
+    "pennation_angle_at_optimal": 0.0,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "ECRB_r",
+    "myohand_peak_force_N": 252.2,
+    "osim_muscle": "ECRB_r",
+    "max_isometric_force": 252.5,
+    "optimal_fiber_length": 0.0585,
+    "tendon_slack_length": 0.2223,
+    "pennation_angle_at_optimal": 0.1570796,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 0.9988
+   },
+   {
+    "myohand_actuator": "ECU_r",
+    "myohand_peak_force_N": 192.9,
+    "osim_muscle": "ECU_r",
+    "max_isometric_force": 192.9,
+    "optimal_fiber_length": 0.0622,
+    "tendon_slack_length": 0.2285,
+    "pennation_angle_at_optimal": 0.0698132,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "FCR_r",
+    "myohand_peak_force_N": 407.9,
+    "osim_muscle": "FCR_r",
+    "max_isometric_force": 407.9,
+    "optimal_fiber_length": 0.0628,
+    "tendon_slack_length": 0.244,
+    "pennation_angle_at_optimal": 0.0523599,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "FCU_r",
+    "myohand_peak_force_N": 479.8,
+    "osim_muscle": "FCU_r",
+    "max_isometric_force": 479.8,
+    "optimal_fiber_length": 0.0509,
+    "tendon_slack_length": 0.265,
+    "pennation_angle_at_optimal": 0.2094395,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "PL_r",
+    "myohand_peak_force_N": 101.0,
+    "osim_muscle": "PL_r",
+    "max_isometric_force": 101.0,
+    "optimal_fiber_length": 0.0638,
+    "tendon_slack_length": 0.2694,
+    "pennation_angle_at_optimal": 0.06981317,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "PT_r",
+    "myohand_peak_force_N": 557.2,
+    "osim_muscle": "PT_r",
+    "max_isometric_force": 557.2,
+    "optimal_fiber_length": 0.0492,
+    "tendon_slack_length": 0.098,
+    "pennation_angle_at_optimal": 0.17453293,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "PQ_r",
+    "myohand_peak_force_N": 284.7,
+    "osim_muscle": "PQ_r",
+    "max_isometric_force": 284.7,
+    "optimal_fiber_length": 0.0282,
+    "tendon_slack_length": 0.005,
+    "pennation_angle_at_optimal": 0.17453293,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "FDS5_r",
+    "myohand_peak_force_N": 75.3,
+    "osim_muscle": "FDSL_r",
+    "max_isometric_force": 75.3,
+    "optimal_fiber_length": 0.0515,
+    "tendon_slack_length": 0.3386,
+    "pennation_angle_at_optimal": 0.08726646,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "FDS4_r",
+    "myohand_peak_force_N": 171.2,
+    "osim_muscle": "FDSR_r",
+    "max_isometric_force": 171.2,
+    "optimal_fiber_length": 0.0736,
+    "tendon_slack_length": 0.328,
+    "pennation_angle_at_optimal": 0.06981317,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "FDS3_r",
+    "myohand_peak_force_N": 258.8,
+    "osim_muscle": "FDSM_r",
+    "max_isometric_force": 258.8,
+    "optimal_fiber_length": 0.0749,
+    "tendon_slack_length": 0.295,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "FDS2_r",
+    "myohand_peak_force_N": 162.5,
+    "osim_muscle": "FDSI_r",
+    "max_isometric_force": 162.5,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.275,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "FDP5_r",
+    "myohand_peak_force_N": 236.8,
+    "osim_muscle": "FDPL_r",
+    "max_isometric_force": 236.8,
+    "optimal_fiber_length": 0.0749,
+    "tendon_slack_length": 0.2819,
+    "pennation_angle_at_optimal": 0.13962634,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "FDP4_r",
+    "myohand_peak_force_N": 172.9,
+    "osim_muscle": "FDPR_r",
+    "max_isometric_force": 172.9,
+    "optimal_fiber_length": 0.0798,
+    "tendon_slack_length": 0.2915,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "FDP3_r",
+    "myohand_peak_force_N": 212.4,
+    "osim_muscle": "FDPM_r",
+    "max_isometric_force": 212.4,
+    "optimal_fiber_length": 0.0835,
+    "tendon_slack_length": 0.303,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "FDP2_r",
+    "myohand_peak_force_N": 197.3,
+    "osim_muscle": "FDPI_r",
+    "max_isometric_force": 197.3,
+    "optimal_fiber_length": 0.0749,
+    "tendon_slack_length": 0.3015,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "EDC5_r",
+    "myohand_peak_force_N": 139.4,
+    "osim_muscle": "EDCL_r",
+    "max_isometric_force": 39.4,
+    "optimal_fiber_length": 0.065,
+    "tendon_slack_length": 0.335,
+    "pennation_angle_at_optimal": 0.03490659,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 3.5381
+   },
+   {
+    "myohand_actuator": "EDC4_r",
+    "myohand_peak_force_N": 109.2,
+    "osim_muscle": "EDCR_r",
+    "max_isometric_force": 109.2,
+    "optimal_fiber_length": 0.0626,
+    "tendon_slack_length": 0.365,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "EDC3_r",
+    "myohand_peak_force_N": 94.4,
+    "osim_muscle": "EDCM_r",
+    "max_isometric_force": 94.4,
+    "optimal_fiber_length": 0.0724,
+    "tendon_slack_length": 0.365,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "EDC2_r",
+    "myohand_peak_force_N": 48.8,
+    "osim_muscle": "EDCI_r",
+    "max_isometric_force": 48.8,
+    "optimal_fiber_length": 0.07,
+    "tendon_slack_length": 0.365,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "EDM_r",
+    "myohand_peak_force_N": 72.4,
+    "osim_muscle": "EDM_r",
+    "max_isometric_force": 72.4,
+    "optimal_fiber_length": 0.0675,
+    "tendon_slack_length": 0.335,
+    "pennation_angle_at_optimal": 0.05235988,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "EIP_r",
+    "myohand_peak_force_N": 47.3,
+    "osim_muscle": "EIP_r",
+    "max_isometric_force": 47.3,
+    "optimal_fiber_length": 0.0589,
+    "tendon_slack_length": 0.21,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "EPL_r",
+    "myohand_peak_force_N": 88.3,
+    "osim_muscle": "EPL_r",
+    "max_isometric_force": 88.3,
+    "optimal_fiber_length": 0.054,
+    "tendon_slack_length": 0.2305,
+    "pennation_angle_at_optimal": 0.10471976,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "EPB_r",
+    "myohand_peak_force_N": 46.0,
+    "osim_muscle": "EPB_r",
+    "max_isometric_force": 46.0,
+    "optimal_fiber_length": 0.0675,
+    "tendon_slack_length": 0.1155,
+    "pennation_angle_at_optimal": 0.122173,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "FPL_r",
+    "myohand_peak_force_N": 201.0,
+    "osim_muscle": "FPL_r",
+    "max_isometric_force": 201.0,
+    "optimal_fiber_length": 0.0552,
+    "tendon_slack_length": 0.197,
+    "pennation_angle_at_optimal": 0.12217305,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "APL_r",
+    "myohand_peak_force_N": 116.7,
+    "osim_muscle": "APL_r",
+    "max_isometric_force": 116.7,
+    "optimal_fiber_length": 0.0713,
+    "tendon_slack_length": 0.1295,
+    "pennation_angle_at_optimal": 0.1396263,
+    "max_contraction_velocity": 10.0,
+    "activation_time_constant": null,
+    "deactivation_time_constant": null,
+    "force_ratio_myohand_over_osim": 1.0
+   },
+   {
+    "myohand_actuator": "OP_r",
+    "myohand_peak_force_N": 180.0,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "RI2_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "LU_RB2_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "UI_UB2_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "RI3_r",
+    "myohand_peak_force_N": 61.2,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "LU_RB3_r",
+    "myohand_peak_force_N": 98.0,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "UI_UB3_r",
+    "myohand_peak_force_N": 98.0,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "RI4_r",
+    "myohand_peak_force_N": 97.0,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "LU_RB4_r",
+    "myohand_peak_force_N": 76.9,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "UI_UB4_r",
+    "myohand_peak_force_N": 76.9,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "RI5_r",
+    "myohand_peak_force_N": 59.9,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "LU_RB5_r",
+    "myohand_peak_force_N": 47.9,
+    "osim_muscle": null
+   },
+   {
+    "myohand_actuator": "UI_UB5_r",
+    "myohand_peak_force_N": 47.9,
+    "osim_muscle": null
+   }
+  ],
+  "osim_muscles_not_in_myohand": [
+   "ANC",
+   "BIClong",
+   "BICshort",
+   "BRA",
+   "BRD",
+   "CORB",
+   "DELT1",
+   "DELT2",
+   "DELT3",
+   "INFSP",
+   "LAT1",
+   "LAT2",
+   "LAT3",
+   "PECM1",
+   "PECM2",
+   "PECM3",
+   "SUBSC",
+   "SUP",
+   "SUPSP",
+   "TMAJ",
+   "TMIN",
+   "TRIlat",
+   "TRIlong",
+   "TRImed"
+  ],
+  "osim_coupler_constraints": 26,
+  "myohand_equality_constraints": 0
+ }
+}

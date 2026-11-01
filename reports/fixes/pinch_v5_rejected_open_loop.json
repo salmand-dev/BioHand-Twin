@@ -1,0 +1,274 @@
+{
+ "guards": {
+  "deepest_penetration_mm": 0.751,
+  "max_limit_overshoot_deg": 0.45,
+  "final_max_abs_qvel_rad_s": 0.0855,
+  "final_joint_angles_deg": {
+   "cmc_flexion_r": -43.4,
+   "cmc_abduction_r": -28.7,
+   "mp_flexion_r": 40.0,
+   "ip_flexion_r": 25.1,
+   "mcp2_flexion_r": 90.1,
+   "pm2_flexion_r": 90.1,
+   "md2_flexion_r": 6.3
+  },
+  "contact_force_final_N": 0.743
+ },
+ "sensitivity": {
+  "baseline": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.00781,
+    "max_kinetic_energy_J": 0.006854,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.08547,
+    "hand_bodies_in_contact": [
+     "midph2_r"
+    ],
+    "pinch_force_mean_last_0p5s": 0.8578,
+    "pinch_force_min_last_0p5s": 0.7549,
+    "thumb_index_final_distance": 0.06396,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.6765
+   }
+  },
+  "timestep 1 ms": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.00636,
+    "max_kinetic_energy_J": 0.006847,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.08563,
+    "hand_bodies_in_contact": [
+     "midph2_r"
+    ],
+    "pinch_force_mean_last_0p5s": 0.8508,
+    "pinch_force_min_last_0p5s": 0.743,
+    "thumb_index_final_distance": 0.06395,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.6764
+   }
+  },
+  "new muscle force x0.80": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.00781,
+    "max_kinetic_energy_J": 0.006749,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.08548,
+    "hand_bodies_in_contact": [],
+    "pinch_force_mean_last_0p5s": 0.0,
+    "pinch_force_min_last_0p5s": 0.0,
+    "thumb_index_final_distance": 0.06631,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.7014
+   }
+  },
+  "new muscle force x1.20": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.00956,
+    "max_kinetic_energy_J": 0.006958,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.08548,
+    "hand_bodies_in_contact": [
+     "midph2_r"
+    ],
+    "pinch_force_mean_last_0p5s": 0.4874,
+    "pinch_force_min_last_0p5s": 0.4873,
+    "thumb_index_final_distance": 0.06368,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.6736
+   }
+  },
+  "all muscle F_max x0.8": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.00665,
+    "max_kinetic_energy_J": 0.005208,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.06493,
+    "hand_bodies_in_contact": [
+     "midph2_r"
+    ],
+    "pinch_force_mean_last_0p5s": 0.5345,
+    "pinch_force_min_last_0p5s": 0.3967,
+    "thumb_index_final_distance": 0.06529,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.6906
+   }
+  },
+  "all muscle F_max x1.2": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.00809,
+    "max_kinetic_energy_J": 0.00848,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.10941,
+    "hand_bodies_in_contact": [
+     "midph2_r"
+    ],
+    "pinch_force_mean_last_0p5s": 0.469,
+    "pinch_force_min_last_0p5s": 0.4689,
+    "thumb_index_final_distance": 0.06355,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.6722
+   }
+  },
+  "origins +x by palm RMS": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.01039,
+    "max_kinetic_energy_J": 0.006797,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.08548,
+    "hand_bodies_in_contact": [],
+    "pinch_force_mean_last_0p5s": 0.0,
+    "pinch_force_min_last_0p5s": 0.0,
+    "thumb_index_final_distance": 0.06789,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.7181
+   }
+  },
+  "origins -x by palm RMS": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.00781,
+    "max_kinetic_energy_J": 0.006887,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.08546,
+    "hand_bodies_in_contact": [
+     "midph2_r"
+    ],
+    "pinch_force_mean_last_0p5s": 0.4935,
+    "pinch_force_min_last_0p5s": 0.4934,
+    "thumb_index_final_distance": 0.06367,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.6735
+   }
+  },
+  "origins +y by palm RMS": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.00781,
+    "max_kinetic_energy_J": 0.006804,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.09917,
+    "hand_bodies_in_contact": [
+     "midph2_r"
+    ],
+    "pinch_force_mean_last_0p5s": 0.7832,
+    "pinch_force_min_last_0p5s": 0.5678,
+    "thumb_index_final_distance": 0.06375,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.6743
+   }
+  },
+  "origins -y by palm RMS": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.00781,
+    "max_kinetic_energy_J": 0.006878,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.08546,
+    "hand_bodies_in_contact": [
+     "midph2_r"
+    ],
+    "pinch_force_mean_last_0p5s": 0.8941,
+    "pinch_force_min_last_0p5s": 0.839,
+    "thumb_index_final_distance": 0.06445,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.6817
+   }
+  },
+  "origins +z by palm RMS": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.00781,
+    "max_kinetic_energy_J": 0.006992,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.08547,
+    "hand_bodies_in_contact": [
+     "midph2_r"
+    ],
+    "pinch_force_mean_last_0p5s": 0.5743,
+    "pinch_force_min_last_0p5s": 0.446,
+    "thumb_index_final_distance": 0.06369,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.6737
+   }
+  },
+  "origins -z by palm RMS": {
+   "passed": false,
+   "metrics": {
+    "finite": true,
+    "max_limit_violation_rad": 0.00781,
+    "max_kinetic_energy_J": 0.006656,
+    "warnings": {},
+    "fraction_samples_outside_muscle_validity_envelope": 0.0,
+    "final_max_abs_qvel_rad_s": 0.08546,
+    "hand_bodies_in_contact": [
+     "midph2_r"
+    ],
+    "pinch_force_mean_last_0p5s": 0.9159,
+    "pinch_force_min_last_0p5s": 0.8444,
+    "thumb_index_final_distance": 0.06459,
+    "thumb_index_final_distance_initial": 0.09454,
+    "thumb_index_final_distance_ratio": 0.6832
+   }
+  }
+ },
+ "passed_count": 0,
+ "n_cases": 12,
+ "capacity": {
+  "max_mean_contact_force_N": 0.0,
+  "evaluations": 273,
+  "activations": {
+   "FPL_r": 1.0,
+   "OP_r": 1.0,
+   "EPL_r": 1.0,
+   "EPB_r": 1.0,
+   "APL_r": 1.0,
+   "APB_r": 1.0,
+   "FPBs_r": 1.0,
+   "FPBd_r": 1.0,
+   "ADPo_r": 1.0,
+   "ADPt_r": 1.0,
+   "FDS2_r": 1.0,
+   "FDP2_r": 1.0,
+   "EDC2_r": 1.0,
+   "EIP_r": 1.0,
+   "RI2_r": 1.0,
+   "LU_RB2_r": 1.0,
+   "UI_UB2_r": 1.0
+  },
+  "note": "local optimum: a lower bound on model capacity"
+ },
+ "measured_tip_pinch_N": {
+  "men_mean": 60.8,
+  "women_mean": 38.2,
+  "source": "Park et al. 1998, doi:10.35371/kjoem.1998.10.3.362, n = 1018"
+ }
+}

@@ -1,0 +1,205 @@
+{
+ "mapping": {
+  "palm_scale": 0.978,
+  "palm_residuals_mm": [
+   7.85,
+   11.45,
+   3.09,
+   5.75,
+   3.2,
+   6.7
+  ],
+  "palm_rms_mm": 6.96,
+  "pp1_scale": 1.0823,
+  "pp1_axis_misalignment_deg": 4.38
+ },
+ "force_N": {
+  "APB_r": 24.09,
+  "FPBs_r": 11.55,
+  "FPBd_r": 9.075,
+  "ADPo_r": 71.115,
+  "ADPt_r": 29.315
+ },
+ "lengthrange_m": {
+  "APB_r": [
+   0.030008,
+   0.060162
+  ],
+  "FPBs_r": [
+   0.021955,
+   0.060876
+  ],
+  "FPBd_r": [
+   0.025752,
+   0.065138
+  ],
+  "ADPo_r": [
+   0.028711,
+   0.067589
+  ],
+  "ADPt_r": [
+   0.013125,
+   0.070964
+  ]
+ },
+ "moment_arms": {
+  "APB_r": {
+   "cmc_flexion_r": {
+    "at_qpos0_mm": -15.6,
+    "min_mm": -20.92,
+    "max_mm": -7.27,
+    "expected_sign": null,
+    "sign_ok": null
+   },
+   "cmc_abduction_r": {
+    "at_qpos0_mm": 5.33,
+    "min_mm": -0.33,
+    "max_mm": 13.0,
+    "expected_sign": 1,
+    "sign_ok": true
+   },
+   "mp_flexion_r": {
+    "at_qpos0_mm": -0.55,
+    "min_mm": -0.7,
+    "max_mm": -0.08,
+    "expected_sign": null,
+    "sign_ok": null
+   },
+   "ip_flexion_r": {
+    "at_qpos0_mm": -0.0,
+    "min_mm": -0.0,
+    "max_mm": -0.0,
+    "expected_sign": null,
+    "sign_ok": null
+   }
+  },
+  "FPBs_r": {
+   "cmc_flexion_r": {
+    "at_qpos0_mm": -20.76,
+    "min_mm": -23.41,
+    "max_mm": -13.39,
+    "expected_sign": null,
+    "sign_ok": null
+   },
+   "cmc_abduction_r": {
+    "at_qpos0_mm": -0.81,
+    "min_mm": -5.48,
+    "max_mm": 6.45,
+    "expected_sign": null,
+    "sign_ok": null
+   },
+   "mp_flexion_r": {
+    "at_qpos0_mm": -7.09,
+    "min_mm": -8.95,
+    "max_mm": 0.19,
+    "expected_sign": -1,
+    "sign_ok": true
+   },
+   "ip_flexion_r": {
+    "at_qpos0_mm": -0.0,
+    "min_mm": -0.0,
+    "max_mm": -0.0,
+    "expected_sign": null,
+    "sign_ok": null
+   }
+  },
+  "FPBd_r": {
+   "cmc_flexion_r": {
+    "at_qpos0_mm": -15.51,
+    "min_mm": -20.62,
+    "max_mm": -7.38,
+    "expected_sign": null,
+    "sign_ok": null
+   },
+   "cmc_abduction_r": {
+    "at_qpos0_mm": -1.49,
+    "min_mm": -6.24,
+    "max_mm": 6.04,
+    "expected_sign": null,
+    "sign_ok": null
+   },
+   "mp_flexion_r": {
+    "at_qpos0_mm": -11.27,
+    "min_mm": -11.33,
+    "max_mm": -6.28,
+    "expected_sign": -1,
+    "sign_ok": true
+   },
+   "ip_flexion_r": {
+    "at_qpos0_mm": -0.0,
+    "min_mm": -0.0,
+    "max_mm": -0.0,
+    "expected_sign": null,
+    "sign_ok": null
+   }
+  },
+  "ADPo_r": {
+   "cmc_flexion_r": {
+    "at_qpos0_mm": -14.58,
+    "min_mm": -20.24,
+    "max_mm": -6.12,
+    "expected_sign": -1,
+    "sign_ok": true
+   },
+   "cmc_abduction_r": {
+    "at_qpos0_mm": -7.16,
+    "min_mm": -12.25,
+    "max_mm": 1.93,
+    "expected_sign": -1,
+    "sign_ok": true
+   },
+   "mp_flexion_r": {
+    "at_qpos0_mm": -9.71,
+    "min_mm": -10.55,
+    "max_mm": -5.56,
+    "expected_sign": -1,
+    "sign_ok": true
+   },
+   "ip_flexion_r": {
+    "at_qpos0_mm": -0.0,
+    "min_mm": -0.0,
+    "max_mm": -0.0,
+    "expected_sign": null,
+    "sign_ok": null
+   }
+  },
+  "ADPt_r": {
+   "cmc_flexion_r": {
+    "at_qpos0_mm": -20.05,
+    "min_mm": -24.32,
+    "max_mm": -11.87,
+    "expected_sign": -1,
+    "sign_ok": true
+   },
+   "cmc_abduction_r": {
+    "at_qpos0_mm": -16.09,
+    "min_mm": -20.6,
+    "max_mm": -6.72,
+    "expected_sign": -1,
+    "sign_ok": true
+   },
+   "mp_flexion_r": {
+    "at_qpos0_mm": -9.79,
+    "min_mm": -9.85,
+    "max_mm": -7.16,
+    "expected_sign": -1,
+    "sign_ok": true
+   },
+   "ip_flexion_r": {
+    "at_qpos0_mm": -0.0,
+    "min_mm": -0.0,
+    "max_mm": -0.0,
+    "expected_sign": null,
+    "sign_ok": null
+   }
+  }
+ },
+ "all_expected_signs_ok": true,
+ "default_patches_at_derivation": [
+  "wrist_rom_v1",
+  "muscle_fixes_v1",
+  "limit_stiffness_v1",
+  "thumb_intrinsics_v1",
+  "passive_stiffness_v1"
+ ]
+}

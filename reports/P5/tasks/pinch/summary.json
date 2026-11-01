@@ -1,0 +1,173 @@
+{
+ "id": "pinch",
+ "description": "Tip pinch proxy between thumb and index distal segments with explicit contact pairs.",
+ "config": "data/experiments/tasks/pinch.yaml",
+ "meta": {
+  "patches": [
+   "wrist_rom_v1",
+   "muscle_fixes_v1",
+   "limit_stiffness_v1",
+   "thumb_intrinsics_v1",
+   "passive_stiffness_v1"
+  ],
+  "fixtures": [
+   {
+    "type": "contact_pair",
+    "name": "pinch_a",
+    "geom1": "distal_thumb_coll_r",
+    "geom2": "distph2_coll_r",
+    "contact_params": "MuJoCo defaults (not validated)"
+   },
+   {
+    "type": "contact_pair",
+    "name": "pinch_b",
+    "geom1": "distal_thumb_coll_r",
+    "geom2": "distph2_coll_2_r",
+    "contact_params": "MuJoCo defaults (not validated)"
+   },
+   {
+    "type": "contact_pair",
+    "name": "pinch_c",
+    "geom1": "distal_thumb_coll_2_r",
+    "geom2": "distph2_coll_r",
+    "contact_params": "MuJoCo defaults (not validated)"
+   },
+   {
+    "type": "contact_pair",
+    "name": "pinch_d",
+    "geom1": "distal_thumb_coll_2_r",
+    "geom2": "distph2_coll_2_r",
+    "contact_params": "MuJoCo defaults (not validated)"
+   },
+   {
+    "type": "joint_brace",
+    "joint": "pro_sup_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   },
+   {
+    "type": "joint_brace",
+    "joint": "deviation_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   },
+   {
+    "type": "joint_brace",
+    "joint": "flexion_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   }
+  ],
+  "timestep_s": 0.002,
+  "solver": 2,
+  "integrator": 0,
+  "iterations": 100,
+  "myosim_commit": "93b0ca8f4ec90c9899ee7f05fee561e9911da91b"
+ },
+ "metrics": {
+  "finite": true,
+  "max_limit_violation_rad": 0.00087,
+  "max_kinetic_energy_J": 0.074226,
+  "warnings": {},
+  "fraction_samples_outside_muscle_validity_envelope": 0.0,
+  "final_max_abs_qvel_rad_s": 0.16122,
+  "hand_bodies_in_contact": [
+   "distph2_r"
+  ],
+  "static_opt_solves": 200,
+  "static_opt_max_residual_Nm": 26.26457,
+  "static_opt_median_residual_Nm": 18.61674,
+  "pinch_force_mean_last_0p5s": 0.7936,
+  "pinch_force_min_last_0p5s": 0.5955,
+  "thumb_index_final_distance": 0.03008,
+  "thumb_index_final_distance_initial": 0.09454,
+  "thumb_index_final_distance_ratio": 0.3182
+ },
+ "success": {
+  "all_passed": true,
+  "numerically_healthy": true,
+  "checks": [
+   {
+    "metric": "pinch_force_min_last_0p5s",
+    "op": ">",
+    "value": 0.0,
+    "observed": 0.5955,
+    "passed": true
+   },
+   {
+    "metric": "pinch_force_mean_last_0p5s",
+    "op": ">=",
+    "value": 0.5,
+    "observed": 0.7936,
+    "passed": true
+   }
+  ]
+ },
+ "deterministic_repeat": true,
+ "timestep_sensitivity": {
+  "max_limit_violation_rad": {
+   "dt_0p002": 0.00087,
+   "dt_0p001": 0.00074,
+   "abs_diff": 0.00013
+  },
+  "max_kinetic_energy_J": {
+   "dt_0p002": 0.074226,
+   "dt_0p001": 0.07431,
+   "abs_diff": 8.4e-05
+  },
+  "fraction_samples_outside_muscle_validity_envelope": {
+   "dt_0p002": 0.0,
+   "dt_0p001": 0.0,
+   "abs_diff": 0.0
+  },
+  "final_max_abs_qvel_rad_s": {
+   "dt_0p002": 0.16122,
+   "dt_0p001": 0.23349,
+   "abs_diff": 0.07227
+  },
+  "static_opt_solves": {
+   "dt_0p002": 200,
+   "dt_0p001": 200,
+   "abs_diff": 0.0
+  },
+  "static_opt_max_residual_Nm": {
+   "dt_0p002": 26.26457,
+   "dt_0p001": 26.26457,
+   "abs_diff": 0.0
+  },
+  "static_opt_median_residual_Nm": {
+   "dt_0p002": 18.61674,
+   "dt_0p001": 18.71687,
+   "abs_diff": 0.10013
+  },
+  "pinch_force_mean_last_0p5s": {
+   "dt_0p002": 0.7936,
+   "dt_0p001": 0.6398,
+   "abs_diff": 0.1538
+  },
+  "pinch_force_min_last_0p5s": {
+   "dt_0p002": 0.5955,
+   "dt_0p001": 0.3237,
+   "abs_diff": 0.2718
+  },
+  "thumb_index_final_distance": {
+   "dt_0p002": 0.03008,
+   "dt_0p001": 0.02964,
+   "abs_diff": 0.00044
+  },
+  "thumb_index_final_distance_initial": {
+   "dt_0p002": 0.09454,
+   "dt_0p001": 0.09454,
+   "abs_diff": 0.0
+  },
+  "thumb_index_final_distance_ratio": {
+   "dt_0p002": 0.3182,
+   "dt_0p001": 0.3135,
+   "abs_diff": 0.0047
+  }
+ },
+ "fine_dt_success": true
+}

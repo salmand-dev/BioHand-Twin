@@ -1,0 +1,1753 @@
+{
+ "model_commit": "93b0ca8f4ec90c9899ee7f05fee561e9911da91b",
+ "neutral_reproducibility": {
+  "builds": 2,
+  "fk_digest_sha256": "4924a3612b0450368b639c648d78ed26746bd1c6fae4a6c6634f900ffec66f25",
+  "identical": true
+ },
+ "fingertips_at_qpos0_m": {
+  "thumb": [
+   0.62031,
+   0.07627,
+   0.13517
+  ],
+  "index": [
+   0.68605,
+   0.0382,
+   0.19144
+  ],
+  "middle": [
+   0.69369,
+   0.01309,
+   0.18793
+  ],
+  "ring": [
+   0.6829,
+   -0.01219,
+   0.1754
+  ],
+  "little": [
+   0.66465,
+   -0.02198,
+   0.1545
+  ]
+ },
+ "sweeps": [
+  {
+   "joint": "pro_sup_r",
+   "n": 181,
+   "dtheta_rad": 0.01745333333333332,
+   "tips": {
+    "thumb": {
+     "endpoint_displacement_m": 0.19525,
+     "max_step_m": 0.001703863126222092,
+     "continuity_bound_m": 0.0017038847526147922,
+     "continuous": true
+    },
+    "index": {
+     "endpoint_displacement_m": 0.092415,
+     "max_step_m": 0.0008064619808203447,
+     "continuity_bound_m": 0.0008064722168910135,
+     "continuous": true
+    },
+    "middle": {
+     "endpoint_displacement_m": 0.043011,
+     "max_step_m": 0.00037533459546718544,
+     "continuity_bound_m": 0.00037533935942565247,
+     "continuous": true
+    },
+    "ring": {
+     "endpoint_displacement_m": 0.032188,
+     "max_step_m": 0.00028089123424042026,
+     "continuity_bound_m": 0.00028089479947040596,
+     "continuous": true
+    },
+    "little": {
+     "endpoint_displacement_m": 0.074223,
+     "max_step_m": 0.0006477145045662763,
+     "continuity_bound_m": 0.0006477227257243551,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "deviation_r",
+   "n": 181,
+   "dtheta_rad": 0.003393694444444456,
+   "tips": {
+    "thumb": {
+     "endpoint_displacement_m": 0.072448,
+     "max_step_m": 0.000408818234765952,
+     "continuity_bound_m": 0.0004088184309501602,
+     "continuous": true
+    },
+    "index": {
+     "endpoint_displacement_m": 0.101489,
+     "max_step_m": 0.000572692239114793,
+     "continuity_bound_m": 0.0005726925139393059,
+     "continuous": true
+    },
+    "middle": {
+     "endpoint_displacement_m": 0.104113,
+     "max_step_m": 0.0005874968208539979,
+     "continuity_bound_m": 0.0005874971027829417,
+     "continuous": true
+    },
+    "ring": {
+     "endpoint_displacement_m": 0.09813,
+     "max_step_m": 0.0005537347986357329,
+     "continuity_bound_m": 0.0005537350643629679,
+     "continuous": true
+    },
+    "little": {
+     "endpoint_displacement_m": 0.088541,
+     "max_step_m": 0.0004996289290159047,
+     "continuity_bound_m": 0.0004996291687786993,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726644444444487,
+   "tips": {
+    "thumb": {
+     "endpoint_displacement_m": 0.153158,
+     "max_step_m": 0.0009450863935425591,
+     "continuity_bound_m": 0.0009450893923995785,
+     "continuous": true
+    },
+    "index": {
+     "endpoint_displacement_m": 0.235083,
+     "max_step_m": 0.0014506139223129744,
+     "continuity_bound_m": 0.0014506185252614002,
+     "continuous": true
+    },
+    "middle": {
+     "endpoint_displacement_m": 0.245855,
+     "max_step_m": 0.001517087394151354,
+     "continuity_bound_m": 0.0015170922080270704,
+     "continuous": true
+    },
+    "ring": {
+     "endpoint_displacement_m": 0.229855,
+     "max_step_m": 0.001418357621581085,
+     "continuity_bound_m": 0.0014183621221769153,
+     "continuous": true
+    },
+    "little": {
+     "endpoint_displacement_m": 0.204871,
+     "max_step_m": 0.001264189146714688,
+     "continuity_bound_m": 0.0012641931581179977,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "cmc_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008222222222222242,
+   "tips": {
+    "thumb": {
+     "endpoint_displacement_m": 0.117484,
+     "max_step_m": 0.0007162954892580093,
+     "continuity_bound_m": 0.000716297506974878,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "cmc_abduction_r",
+   "n": 181,
+   "dtheta_rad": 0.007111111111111124,
+   "tips": {
+    "thumb": {
+     "endpoint_displacement_m": 0.090952,
+     "max_step_m": 0.0005415070353054823,
+     "continuity_bound_m": 0.000541508176260129,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "mp_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008241833333333282,
+   "tips": {
+    "thumb": {
+     "endpoint_displacement_m": 0.072808,
+     "max_step_m": 0.00044410554223588063,
+     "continuity_bound_m": 0.0004441067992015461,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "ip_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.00969628888888896,
+   "tips": {
+    "thumb": {
+     "endpoint_displacement_m": 0.036245,
+     "max_step_m": 0.00022938565469526434,
+     "continuity_bound_m": 0.00022938655329703562,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "mcp2_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "index": {
+     "endpoint_displacement_m": 0.120846,
+     "max_step_m": 0.0007456979229632791,
+     "continuity_bound_m": 0.0007457002891521379,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "mcp2_abduction_r",
+   "n": 181,
+   "dtheta_rad": 0.002908877777777763,
+   "tips": {
+    "index": {
+     "endpoint_displacement_m": 0.04429,
+     "max_step_m": 0.00024888718420253977,
+     "continuity_bound_m": 0.0002488872719514854,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "pm2_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "index": {
+     "endpoint_displacement_m": 0.061137,
+     "max_step_m": 0.0003772543766203713,
+     "continuity_bound_m": 0.0003772555736936449,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "md2_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "index": {
+     "endpoint_displacement_m": 0.025611,
+     "max_step_m": 0.00015803717870947761,
+     "continuity_bound_m": 0.00015803768018030835,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "mcp3_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "middle": {
+     "endpoint_displacement_m": 0.130752,
+     "max_step_m": 0.000806828353790758,
+     "continuity_bound_m": 0.0008068309139537871,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "mcp3_abduction_r",
+   "n": 181,
+   "dtheta_rad": 0.002908877777777763,
+   "tips": {
+    "middle": {
+     "endpoint_displacement_m": 0.047869,
+     "max_step_m": 0.00026900053790801954,
+     "continuity_bound_m": 0.00026900063274827585,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "pm3_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "middle": {
+     "endpoint_displacement_m": 0.067962,
+     "max_step_m": 0.0004193714656161843,
+     "continuity_bound_m": 0.0004193727963320321,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "md3_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "middle": {
+     "endpoint_displacement_m": 0.026907,
+     "max_step_m": 0.0001660356301216842,
+     "continuity_bound_m": 0.0001660361569725771,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "mcp4_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "ring": {
+     "endpoint_displacement_m": 0.117708,
+     "max_step_m": 0.0007263384227583154,
+     "continuity_bound_m": 0.0007263407275171044,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "mcp4_abduction_r",
+   "n": 181,
+   "dtheta_rad": 0.002908877777777763,
+   "tips": {
+    "ring": {
+     "endpoint_displacement_m": 0.043061,
+     "max_step_m": 0.0002419846819669392,
+     "continuity_bound_m": 0.00024198476728233453,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "pm4_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "ring": {
+     "endpoint_displacement_m": 0.060636,
+     "max_step_m": 0.0003741641099371646,
+     "continuity_bound_m": 0.00037416529720464515,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "md4_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "ring": {
+     "endpoint_displacement_m": 0.025532,
+     "max_step_m": 0.0001575471444488543,
+     "continuity_bound_m": 0.00015754764436475487,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "mcp5_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "little": {
+     "endpoint_displacement_m": 0.1036,
+     "max_step_m": 0.000639279745278337,
+     "continuity_bound_m": 0.0006392817737895301,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "mcp5_abduction_r",
+   "n": 181,
+   "dtheta_rad": 0.002908877777777763,
+   "tips": {
+    "little": {
+     "endpoint_displacement_m": 0.038429,
+     "max_step_m": 0.00021595201867317235,
+     "continuity_bound_m": 0.00021595209481030403,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "pm5_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "little": {
+     "endpoint_displacement_m": 0.053369,
+     "max_step_m": 0.0003293242527682585,
+     "continuity_bound_m": 0.0003293252977535159,
+     "continuous": true
+    }
+   }
+  },
+  {
+   "joint": "md5_flexion_r",
+   "n": 181,
+   "dtheta_rad": 0.008726666666666667,
+   "tips": {
+    "little": {
+     "endpoint_displacement_m": 0.024452,
+     "max_step_m": 0.00015088184750670905,
+     "continuity_bound_m": 0.0001508823262728248,
+     "continuous": true
+    }
+   }
+  }
+ ],
+ "all_sweeps_continuous": true,
+ "composite_flexion": {
+  "fingertip_travel_m": {
+   "thumb": 0.0,
+   "index": 0.1086,
+   "middle": 0.1195,
+   "ring": 0.1106,
+   "little": 0.0927
+  }
+ },
+ "penetration": {
+  "geometry": "model collision proxies (geom group 4: capsules/ellipsoids); bone meshes not used",
+  "excluded": "same-body and parent-child pairs",
+  "note": "penetrations already present at qpos0 (e.g. welded humerus vs radius capsules, overlapping metacarpal skin capsules) are a property of the proxy geometry; poses report only pairs that are new or deeper than at qpos0",
+  "neutral_pairs": [
+   {
+    "geom1": "humerus_coll_r",
+    "geom2": "radius_coll_r",
+    "penetration_m": 0.03855
+   },
+   {
+    "geom1": "humerus_coll_r",
+    "geom2": "radius_coll_3_r",
+    "penetration_m": 0.02983
+   },
+   {
+    "geom1": "humerus_coll_r",
+    "geom2": "radius_coll_2_r",
+    "penetration_m": 0.02344
+   },
+   {
+    "geom1": "3mcskin_coll_r",
+    "geom2": "4mcski_r",
+    "penetration_m": 0.01032
+   },
+   {
+    "geom1": "2mcskin_coll_r",
+    "geom2": "3mcskin_coll_r",
+    "penetration_m": 0.00936
+   },
+   {
+    "geom1": "radius_coll_r",
+    "geom2": "5mcskin_r",
+    "penetration_m": 0.0071
+   },
+   {
+    "geom1": "4mcski_r",
+    "geom2": "5mcskin_r",
+    "penetration_m": 0.00707
+   },
+   {
+    "geom1": "radius_coll_r",
+    "geom2": "3mcskin_coll_r",
+    "penetration_m": 0.00636
+   },
+   {
+    "geom1": "radius_coll_r",
+    "geom2": "4mcski_r",
+    "penetration_m": 0.00554
+   },
+   {
+    "geom1": "1mcskin_r",
+    "geom2": "2mcskin_coll_r",
+    "penetration_m": 0.00426
+   },
+   {
+    "geom1": "radius_coll_r",
+    "geom2": "2mcskin_coll_r",
+    "penetration_m": 0.004
+   },
+   {
+    "geom1": "proxph3_coll_r",
+    "geom2": "4mcski_r",
+    "penetration_m": 0.00268
+   },
+   {
+    "geom1": "3mcskin_coll_r",
+    "geom2": "proxph4_coll_r",
+    "penetration_m": 0.00257
+   },
+   {
+    "geom1": "4mcski_r",
+    "geom2": "5proxph_coll_r",
+    "penetration_m": 0.00176
+   },
+   {
+    "geom1": "radius_coll_2_r",
+    "geom2": "2mcskin_coll_r",
+    "penetration_m": 0.00151
+   },
+   {
+    "geom1": "proxph3_coll_r",
+    "geom2": "proxph4_coll_r",
+    "penetration_m": 0.00147
+   },
+   {
+    "geom1": "radius_coll_3_r",
+    "geom2": "5mcskin_r",
+    "penetration_m": 0.00131
+   },
+   {
+    "geom1": "2mcskin_coll_r",
+    "geom2": "proxph3_coll_r",
+    "penetration_m": 0.00077
+   },
+   {
+    "geom1": "radius_coll_2_r",
+    "geom2": "3mcskin_coll_r",
+    "penetration_m": 0.00073
+   },
+   {
+    "geom1": "proxph2_coll_r",
+    "geom2": "3mcskin_coll_r",
+    "penetration_m": 0.00048
+   },
+   {
+    "geom1": "proxph4_coll_r",
+    "geom2": "5mcskin_r",
+    "penetration_m": 0.00044
+   },
+   {
+    "geom1": "proxph4_coll_r",
+    "geom2": "5proxph_coll_r",
+    "penetration_m": 0.00022
+   }
+  ],
+  "poses": {
+   "neutral_qpos0": {
+    "n_penetrating_pairs": 22,
+    "n_new_or_deeper_vs_neutral": 0,
+    "max_new_or_deeper_m": 0.0,
+    "new_or_deeper": []
+   },
+   "full_finger_flexion": {
+    "n_penetrating_pairs": 40,
+    "n_new_or_deeper_vs_neutral": 23,
+    "max_new_or_deeper_m": 0.01024,
+    "new_or_deeper": [
+     {
+      "geom1": "midph2_coll_r",
+      "geom2": "midph3_coll_r",
+      "penetration_m": 0.01024,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "distph2_coll_r",
+      "geom2": "midph3_coll_r",
+      "penetration_m": 0.00926,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "proxph2_coll_r",
+      "geom2": "proxph3_coll_r",
+      "penetration_m": 0.00868,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "midph2_coll_r",
+      "geom2": "proxph3_coll_r",
+      "penetration_m": 0.00835,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "proxph2_coll_r",
+      "geom2": "midph3_coll_r",
+      "penetration_m": 0.00787,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "midph2_coll_r",
+      "geom2": "distph3_coll_r",
+      "penetration_m": 0.00659,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "distph2_coll_r",
+      "geom2": "distph3_coll_r",
+      "penetration_m": 0.00601,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "proxph3_coll_r",
+      "geom2": "proxph4_coll_r",
+      "penetration_m": 0.00601,
+      "baseline_m": 0.00147
+     }
+    ]
+   },
+   "half_finger_flexion": {
+    "n_penetrating_pairs": 38,
+    "n_new_or_deeper_vs_neutral": 20,
+    "max_new_or_deeper_m": 0.00722,
+    "new_or_deeper": [
+     {
+      "geom1": "distph3_coll_r",
+      "geom2": "distph4_coll_2_r",
+      "penetration_m": 0.00722,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "distph3_coll_r",
+      "geom2": "distph4_coll_r",
+      "penetration_m": 0.00635,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "midph2_coll_r",
+      "geom2": "midph3_coll_r",
+      "penetration_m": 0.00579,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "distph2_coll_r",
+      "geom2": "distph3_coll_r",
+      "penetration_m": 0.00578,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "distph2_coll_r",
+      "geom2": "midph3_coll_r",
+      "penetration_m": 0.00535,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "midph2_coll_r",
+      "geom2": "distph3_coll_r",
+      "penetration_m": 0.00398,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "midph3_coll_r",
+      "geom2": "midph4_coll_r",
+      "penetration_m": 0.00391,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "midph3_coll_r",
+      "geom2": "distph4_coll_r",
+      "penetration_m": 0.00298,
+      "baseline_m": 0.0
+     }
+    ]
+   },
+   "index_ulnar_middle_radial (converge II-III)": {
+    "n_penetrating_pairs": 29,
+    "n_new_or_deeper_vs_neutral": 9,
+    "max_new_or_deeper_m": 0.0151,
+    "new_or_deeper": [
+     {
+      "geom1": "proxph2_coll_r",
+      "geom2": "proxph3_coll_r",
+      "penetration_m": 0.0151,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "midph2_coll_r",
+      "geom2": "proxph3_coll_r",
+      "penetration_m": 0.01449,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "proxph2_coll_r",
+      "geom2": "midph3_coll_r",
+      "penetration_m": 0.01368,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "midph2_coll_r",
+      "geom2": "midph3_coll_r",
+      "penetration_m": 0.01319,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "distph2_coll_r",
+      "geom2": "midph3_coll_r",
+      "penetration_m": 0.00419,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "midph2_coll_r",
+      "geom2": "distph3_coll_r",
+      "penetration_m": 0.00183,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "2mcskin_coll_r",
+      "geom2": "proxph3_coll_r",
+      "penetration_m": 0.00129,
+      "baseline_m": 0.00077
+     },
+     {
+      "geom1": "distph2_coll_r",
+      "geom2": "distph3_coll_r",
+      "penetration_m": 0.00121,
+      "baseline_m": 0.0
+     }
+    ]
+   },
+   "ring_ulnar_little_radial (converge IV-V)": {
+    "n_penetrating_pairs": 25,
+    "n_new_or_deeper_vs_neutral": 6,
+    "max_new_or_deeper_m": 0.01092,
+    "new_or_deeper": [
+     {
+      "geom1": "proxph4_coll_r",
+      "geom2": "5proxph_coll_r",
+      "penetration_m": 0.01092,
+      "baseline_m": 0.00022
+     },
+     {
+      "geom1": "proxph4_coll_r",
+      "geom2": "5midph_coll_r",
+      "penetration_m": 0.00976,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "midph4_coll_r",
+      "geom2": "5midph_coll_r",
+      "penetration_m": 0.00693,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "4mcski_r",
+      "geom2": "5proxph_coll_r",
+      "penetration_m": 0.00339,
+      "baseline_m": 0.00176
+     },
+     {
+      "geom1": "midph4_coll_r",
+      "geom2": "5distph_coll_r",
+      "penetration_m": 0.00249,
+      "baseline_m": 0.0
+     },
+     {
+      "geom1": "proxph4_coll_r",
+      "geom2": "5mcskin_r",
+      "penetration_m": 0.00081,
+      "baseline_m": 0.00044
+     }
+    ]
+   },
+   "thumb_full_negative (flexion in MoBL convention)": {
+    "n_penetrating_pairs": 22,
+    "n_new_or_deeper_vs_neutral": 0,
+    "max_new_or_deeper_m": 0.0,
+    "new_or_deeper": []
+   }
+  }
+ },
+ "rom_comparison": [
+  {
+   "quantity": "wrist flexion",
+   "model_deg": 44.99999063801583,
+   "reference_deg": 54.0,
+   "reference": "Ryu1991",
+   "model_covers_reference": false
+  },
+  {
+   "quantity": "wrist extension",
+   "model_deg": 44.99999063801583,
+   "reference_deg": 60.0,
+   "reference": "Ryu1991",
+   "model_covers_reference": false
+  },
+  {
+   "quantity": "radial deviation",
+   "model_deg": 24.999982066502238,
+   "reference_deg": 17.0,
+   "reference": "Ryu1991",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "ulnar deviation",
+   "model_deg": 10.000004285756797,
+   "reference_deg": 40.0,
+   "reference": "Ryu1991",
+   "model_covers_reference": false
+  },
+  {
+   "quantity": "MCP flexion digit 2",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    19.0,
+    71.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "MCP flexion digit 3",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    19.0,
+    71.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "MCP flexion digit 4",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    19.0,
+    71.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "MCP flexion digit 5",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    19.0,
+    71.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "PIP flexion digit 2",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    23.0,
+    87.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "PIP flexion digit 3",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    23.0,
+    87.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "PIP flexion digit 4",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    23.0,
+    87.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "PIP flexion digit 5",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    23.0,
+    87.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "DIP flexion digit 2",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    10.0,
+    64.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "DIP flexion digit 3",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    10.0,
+    64.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "DIP flexion digit 4",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    10.0,
+    64.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "DIP flexion digit 5",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    10.0,
+    64.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  }
+ ],
+ "rom_comparison_biohand_patched": [
+  {
+   "quantity": "wrist flexion",
+   "model_deg": 70.00000020649223,
+   "reference_deg": 54.0,
+   "reference": "Ryu1991",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "wrist extension",
+   "model_deg": 70.00000020649223,
+   "reference_deg": 60.0,
+   "reference": "Ryu1991",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "radial deviation",
+   "model_deg": 10.000000275052232,
+   "reference_deg": 17.0,
+   "reference": "Ryu1991",
+   "model_covers_reference": false
+  },
+  {
+   "quantity": "ulnar deviation",
+   "model_deg": 24.999999828193886,
+   "reference_deg": 40.0,
+   "reference": "Ryu1991",
+   "model_covers_reference": false
+  },
+  {
+   "quantity": "MCP flexion digit 2",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    19.0,
+    71.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "MCP flexion digit 3",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    19.0,
+    71.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "MCP flexion digit 4",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    19.0,
+    71.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "MCP flexion digit 5",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    19.0,
+    71.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "PIP flexion digit 2",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    23.0,
+    87.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "PIP flexion digit 3",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    23.0,
+    87.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "PIP flexion digit 4",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    23.0,
+    87.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "PIP flexion digit 5",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    23.0,
+    87.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "DIP flexion digit 2",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    10.0,
+    64.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "DIP flexion digit 3",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    10.0,
+    64.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "DIP flexion digit 4",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    10.0,
+    64.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  },
+  {
+   "quantity": "DIP flexion digit 5",
+   "model_deg": [
+    0.0,
+    90.00021045914971
+   ],
+   "reference_deg": [
+    10.0,
+    64.0
+   ],
+   "reference": "Bain2015",
+   "model_covers_reference": true
+  }
+ ],
+ "reference_rom": {
+  "Ryu1991_wrist_ADL_max": {
+   "source": "Ryu J, Cooney WP, Askew LJ, An KN, Chao EY. Functional ranges of motion of the wrist joint. J Hand Surg Am 1991;16(3):409-419 (abstract): 40 subjects, biaxial goniometer",
+   "wrist_flexion": 54.0,
+   "wrist_extension": 60.0,
+   "ulnar_deviation": 40.0,
+   "radial_deviation": 17.0
+  },
+  "Bain2015_finger_functional": {
+   "source": "Bain GI, Polites N, Higgs BG, Heptinstall RJ, McGrath AM. The functional range of motion of the finger joints. J Hand Surg Eur 2015;40(4):406-411 (abstract): 10 volunteers, Sollerman test",
+   "MCP": [
+    19.0,
+    71.0
+   ],
+   "PIP": [
+    23.0,
+    87.0
+   ],
+   "DIP": [
+    10.0,
+    64.0
+   ]
+  }
+ },
+ "limit_compliance": [
+  {
+   "joint": "pro_sup_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 0.3648,
+    "penetration_rad": 0.00195,
+    "penetration_deg": 0.11,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.4897,
+    "penetration_rad": 0.00261,
+    "penetration_deg": 0.15,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "deviation_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 43.7122,
+    "penetration_rad": 0.39877,
+    "penetration_deg": 22.85,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 17.0323,
+    "penetration_rad": 0.15538,
+    "penetration_deg": 8.9,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 57.7643,
+    "penetration_rad": 0.54916,
+    "penetration_deg": 31.46,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 22.0478,
+    "penetration_rad": 0.20961,
+    "penetration_deg": 12.01,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "cmc_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 1.551,
+    "penetration_rad": 0.21954,
+    "penetration_deg": 12.58,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 4.7307,
+    "penetration_rad": 0.66961,
+    "penetration_deg": 38.37,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "cmc_abduction_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 1.6376,
+    "penetration_rad": 0.24429,
+    "penetration_deg": 14.0,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 1.5513,
+    "penetration_rad": 0.2314,
+    "penetration_deg": 13.26,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "mp_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 0.8557,
+    "penetration_rad": 0.16066,
+    "penetration_deg": 9.2,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.8339,
+    "penetration_rad": 0.15657,
+    "penetration_deg": 8.97,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "ip_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 0.3425,
+    "penetration_rad": 0.0682,
+    "penetration_deg": 3.91,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 1.2873,
+    "penetration_rad": 0.25631,
+    "penetration_deg": 14.69,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "mcp2_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 5.5154,
+    "penetration_rad": 0.42747,
+    "penetration_deg": 24.49,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 1.1209,
+    "penetration_rad": 0.08688,
+    "penetration_deg": 4.98,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "mcp2_abduction_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 1.6892,
+    "penetration_rad": 0.09339,
+    "penetration_deg": 5.35,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.7189,
+    "penetration_rad": 0.03974,
+    "penetration_deg": 2.28,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "pm2_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 2.8532,
+    "penetration_rad": 0.30622,
+    "penetration_deg": 17.55,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.9298,
+    "penetration_rad": 0.09978,
+    "penetration_deg": 5.72,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "md2_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 1.0076,
+    "penetration_rad": 0.12326,
+    "penetration_deg": 7.06,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.3014,
+    "penetration_rad": 0.03687,
+    "penetration_deg": 2.11,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "mcp3_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 8.1469,
+    "penetration_rad": 0.63181,
+    "penetration_deg": 36.2,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.8842,
+    "penetration_rad": 0.06857,
+    "penetration_deg": 3.93,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "mcp3_abduction_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 2.1752,
+    "penetration_rad": 0.11975,
+    "penetration_deg": 6.86,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 1.8613,
+    "penetration_rad": 0.10247,
+    "penetration_deg": 5.87,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "pm3_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 4.1155,
+    "penetration_rad": 0.44316,
+    "penetration_deg": 25.39,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.763,
+    "penetration_rad": 0.08216,
+    "penetration_deg": 4.71,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "md3_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 0.8454,
+    "penetration_rad": 0.1037,
+    "penetration_deg": 5.94,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.2892,
+    "penetration_rad": 0.03547,
+    "penetration_deg": 2.03,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "mcp4_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 4.6194,
+    "penetration_rad": 0.3629,
+    "penetration_deg": 20.79,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.8627,
+    "penetration_rad": 0.06778,
+    "penetration_deg": 3.88,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "mcp4_abduction_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 1.8273,
+    "penetration_rad": 0.09978,
+    "penetration_deg": 5.72,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 1.4807,
+    "penetration_rad": 0.08086,
+    "penetration_deg": 4.63,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "pm4_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 1.8546,
+    "penetration_rad": 0.19887,
+    "penetration_deg": 11.39,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.7023,
+    "penetration_rad": 0.0753,
+    "penetration_deg": 4.31,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "md4_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 0.9544,
+    "penetration_rad": 0.11679,
+    "penetration_deg": 6.69,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.6001,
+    "penetration_rad": 0.07344,
+    "penetration_deg": 4.21,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "mcp5_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 4.1332,
+    "penetration_rad": 0.3287,
+    "penetration_deg": 18.83,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 1.2368,
+    "penetration_rad": 0.09836,
+    "penetration_deg": 5.64,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "mcp5_abduction_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 1.171,
+    "penetration_rad": 0.06432,
+    "penetration_deg": 3.69,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 1.7348,
+    "penetration_rad": 0.09528,
+    "penetration_deg": 5.46,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "pm5_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 2.3302,
+    "penetration_rad": 0.25063,
+    "penetration_deg": 14.36,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 1.2683,
+    "penetration_rad": 0.13642,
+    "penetration_deg": 7.82,
+    "residual_speed_rad_s": 0.0
+   }
+  },
+  {
+   "joint": "md5_flexion_r",
+   "solref": [
+    0.02,
+    1.0
+   ],
+   "solimp": [
+    0.9,
+    0.95,
+    0.001,
+    0.5,
+    2.0
+   ],
+   "upper": {
+    "tau_max_Nm": 1.1535,
+    "penetration_rad": 0.14109,
+    "penetration_deg": 8.08,
+    "residual_speed_rad_s": 0.0
+   },
+   "lower": {
+    "tau_max_Nm": 0.5842,
+    "penetration_rad": 0.07145,
+    "penetration_deg": 4.09,
+    "residual_speed_rad_s": 0.0
+   }
+  }
+ ]
+}

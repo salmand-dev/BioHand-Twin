@@ -1,0 +1,8 @@
+{
+ "cpu": "Intel64 Family 6 Model 60 Stepping 3, GenuineIntel",
+ "steps": 5000,
+ "ms_per_step": 0.2865,
+ "realtime_factor": 7.0,
+ "ms_per_full_telemetry_frame": 17.571,
+ "note": "single thread, one run on the development laptop, not a benchmark claim"
+}

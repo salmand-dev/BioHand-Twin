@@ -1,0 +1,11 @@
+id: thumb_opposition
+description: Thumb opposition proxy - FPL and OP with light index flexion; thumb tip approaches index tip.
+brace_joints: [pro_sup_r, deviation_r, flexion_r]   # forearm/wrist brace (apparatus)
+initial_angles_rad: {}
+duration_s: 1.5
+phases:
+  - {start_s: 0.0, end_s: 1.5, ramp_s: 0.3, activations: {thumb_flexors: 0.6, index_flexors: 0.3}}
+metrics:
+  - {kind: tip_distance, name: thumb_index_min_distance, tips: [thumb, index], reduce: min}
+success:
+  - {metric: thumb_index_min_distance_ratio, op: "<=", value: 0.6}  # distance reduced by >= 40 %

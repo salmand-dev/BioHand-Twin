@@ -1,0 +1,18 @@
+# Third-Party Notices
+
+List every external model, mesh, texture, dataset, paper, library, and code component here, with author, exact version/commit, source URL, license, copyright notice, modifications, and redistribution status. A repository's code license does not automatically cover its model assets.
+
+| Component | Version | Source | License | Bundled in BioHand? | Modifications | Redistribution status |
+|---|---|---|---|---|---|---|
+| MyoSim (code, MJCF XML, STL meshes) | commit `93b0ca8f`, v0.2.3 | https://github.com/MyoHub/myo_sim | Apache-2.0 (repo). Copyright 2025 Vikash Kumar, Vittorio Caggiano (XML header) | **No** — cloned locally into gitignored `third_party/` | None | Non-commercial only, with notices — MoBL-ARMS-derived content (see next row). Not bundled by policy |
+| MoBL-ARMS upper limb model (bimanual OpenSim 3 model, `MoBL_ARMS_bimanual_6_2_21.osim`) | SimTK archive sha256 `1735972e…f6d55c` | https://simtk.org/projects/upexdyn | **BSD-3-Clause, non-commercial use only** (commercial licence required otherwise). Copyright (c) 2014-present, North Carolina State University, Northwestern University, Rehabilitation Institute of Chicago, Valparaiso University, Wake Forest University, Stanford University and VA HCS. Must cite Saul et al. 2015 and McFarland et al. 2019. Text: `data/provenance/licenses/MoBL-ARMS_use_agreement.txt` | No (`third_party/`, gitignored) | None | Non-commercial, keep notice + citations |
+| 2nd-Hand finger model (Lee et al. 2015) | SimTK archive sha256 `0e7254c0…512dc31` (2014-09-04) | https://simtk.org/projects/hand_muscle | MIT, Copyright (c) 2015 Stanford University. Text: `data/provenance/licenses/2nd-Hand_MIT_license.txt` | No (`third_party/`, gitignored) | None | Permitted with notice |
+| MuJoCo | 3.17.0 | PyPI `mujoco`; https://github.com/google-deepmind/mujoco | Apache-2.0 | No (pip dependency) | None | Permitted under Apache-2.0 |
+| NumPy, SciPy, PyYAML, jsonschema | see `requirements-lock.txt` | PyPI | BSD-3 / BSD-3 / MIT / MIT | No (pip dependencies) | None | n/a |
+| Garland et al. 2018, Table 1 (moment-arm values) | doi:10.1016/j.jbiomech.2017.12.024 | Journal of Biomechanics | CC BY 4.0 | Values in `data/validation/reference_moment_arms.yaml`, with attribution | Transcribed | Permitted with attribution |
+| Lee et al. 2015, Tables 2–6 (moment-arm values) | doi:10.1371/journal.pone.0121712 | PLoS ONE | CC BY | Values in `data/validation/reference_moment_arms.yaml`, with attribution | Transcribed | Permitted with attribution |
+| Mirakhorlo et al. 2016, Table 2 and supplement Tables 3, 4, 7 (thumb muscle geometry, PCSA) | doi:10.1080/23335432.2016.1191373; data doi:10.6084/m9.figshare.4434791.v1 | International Biomechanics; Figshare | CC BY 4.0 | Values in `data/sources/mirakhorlo2016_thumb.yaml`; files not bundled | Mapped to model bones by rule (`scripts/fix_derive_thumb_intrinsics.py`) | Permitted with attribution |
+| Shi et al. 2020, Table 2 (index MCP stiffness) | doi:10.3389/fbioe.2020.592637 | Frontiers in Bioengineering and Biotechnology | CC BY | Values in `data/sources/passive_joint_stiffness.yaml` | Mean of 4 subjects | Permitted with attribution |
+| Formica et al. 2012, Table 2; Wu et al. 2009; O'Brien et al. 2010; Park et al. 1998 (numeric values cited) | doi:10.1152/jn.01014.2011; 10.1186/1475-925X-8-41; 10.1113/expphysiol.2009.048967; 10.35371/kjoem.1998.10.3.362 | Journals | Numeric facts cited; article text not stored | Values only | Formica: mean of 2 directions | Cited |
+| Godot Engine | 4.7.2-stable | https://godotengine.org | MIT | No | None | n/a |
+| Blender | 3.6.23 | https://www.blender.org | GPL-2.0-or-later (application; exported asset files are not covered by the GPL) | No | None | n/a |

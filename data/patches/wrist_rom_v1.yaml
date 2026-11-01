@@ -1,0 +1,45 @@
+# BioHand Twin model patch. Applied to the MjSpec at build time (simulation/patches.py).
+# Upstream files are never modified (project rule).
+patch_id: wrist_rom_v1
+version: 1
+status: provisional   # muscle operating-range re-check is P4 work (see reports/P3/P3_PATCH_REPORT.md)
+approved_by: project owner (option B, 2026-10-31)
+rationale: >
+  MyoHand inverted the sign of wrist deviation relative to its MoBL-ARMS source but kept the
+  numeric range, and narrowed wrist flexion from +/-70 deg to +/-45 deg without documentation
+  (gaps T10, T5; reports/P3/wrist_convention_check.json). This patch restores the source model's
+  ranges, expressed in MyoHand's own joint sign convention.
+evidence:
+  - reports/P3/wrist_convention_check.json
+  - reports/P1/osim_vs_myohand.json
+  - data/reference_osim_inventory.json
+changes:
+  - joint: deviation_r
+    field: range
+    source_model: mobl_arms_bimanual
+    source_coordinate: deviation_r
+    # MoBL: + = ulnar. MyoHand: + = radial (cosine -0.994 between the two directions),
+    # so the MyoHand range is the negated, reversed source range.
+    sign_mapping: -1
+    upstream_value_rad: [-0.174533, 0.436332]
+    patched_value_rad: [-0.43633231, 0.17453293]
+    meaning: "25 deg ulnar (negative) to 10 deg radial (positive), as in MoBL-ARMS"
+  - joint: flexion_r
+    field: range
+    source_model: mobl_arms_bimanual
+    source_coordinate: flexion_r
+    sign_mapping: 1   # same direction (cosine 0.9996)
+    upstream_value_rad: [-0.785398, 0.785398]
+    patched_value_rad: [-1.22173048, 1.22173048]
+    meaning: "70 deg extension (negative) to 70 deg flexion (positive), as in MoBL-ARMS"
+muscle_path_validity: >
+  P4 (reports/P4/P4_REPORT.md) found that upstream muscle paths are not valid throughout the widened
+  ranges: FDS2/FDS3 wrist moment arms break (24 mm jump) near -66 deg extension, and FCR, FCU and ECRL
+  reverse their wrist action near the extremes. Kinematics use the full patched range (source ROM), but
+  muscle forces/torques are only claimed inside the validity envelope = intersection of upstream and
+  patched ranges (simulation.patches.muscle_validity_envelope): flexion -45..+45 deg, deviation
+  -10..+10 deg. Outside it, results must be flagged.
+not_changed: >
+  Muscle lengthrange, force, and all other parameters are unchanged. The upstream muscle
+  calibration assumed the narrower wrist ranges, so muscle behaviour beyond the old limits is
+  unverified until P4.

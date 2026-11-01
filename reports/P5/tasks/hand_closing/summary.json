@@ -1,0 +1,94 @@
+{
+ "id": "hand_closing",
+ "description": "Finger flexion (hand closing) driven by FDS2-5 and FDP2-5 from the neutral pose.",
+ "config": "data/experiments/tasks/hand_closing.yaml",
+ "meta": {
+  "patches": [
+   "wrist_rom_v1",
+   "muscle_fixes_v1",
+   "limit_stiffness_v1",
+   "thumb_intrinsics_v1",
+   "passive_stiffness_v1"
+  ],
+  "fixtures": [
+   {
+    "type": "joint_brace",
+    "joint": "pro_sup_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   },
+   {
+    "type": "joint_brace",
+    "joint": "deviation_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   },
+   {
+    "type": "joint_brace",
+    "joint": "flexion_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   }
+  ],
+  "timestep_s": 0.002,
+  "solver": 2,
+  "integrator": 0,
+  "iterations": 100,
+  "myosim_commit": "93b0ca8f4ec90c9899ee7f05fee561e9911da91b"
+ },
+ "metrics": {
+  "finite": true,
+  "max_limit_violation_rad": 0.02553,
+  "max_kinetic_energy_J": 0.128568,
+  "warnings": {},
+  "fraction_samples_outside_muscle_validity_envelope": 0.0,
+  "final_max_abs_qvel_rad_s": 0.00144,
+  "hand_bodies_in_contact": [],
+  "flexion_fraction_final": 1.0036
+ },
+ "success": {
+  "all_passed": true,
+  "numerically_healthy": true,
+  "checks": [
+   {
+    "metric": "flexion_fraction_final",
+    "op": ">=",
+    "value": 0.5,
+    "observed": 1.0036,
+    "passed": true
+   }
+  ]
+ },
+ "deterministic_repeat": true,
+ "timestep_sensitivity": {
+  "max_limit_violation_rad": {
+   "dt_0p002": 0.02553,
+   "dt_0p001": 0.02253,
+   "abs_diff": 0.003
+  },
+  "max_kinetic_energy_J": {
+   "dt_0p002": 0.128568,
+   "dt_0p001": 0.128567,
+   "abs_diff": 1e-06
+  },
+  "fraction_samples_outside_muscle_validity_envelope": {
+   "dt_0p002": 0.0,
+   "dt_0p001": 0.0,
+   "abs_diff": 0.0
+  },
+  "final_max_abs_qvel_rad_s": {
+   "dt_0p002": 0.00144,
+   "dt_0p001": 0.00144,
+   "abs_diff": 0.0
+  },
+  "flexion_fraction_final": {
+   "dt_0p002": 1.0036,
+   "dt_0p001": 1.0036,
+   "abs_diff": 0.0
+  }
+ },
+ "fine_dt_success": true
+}

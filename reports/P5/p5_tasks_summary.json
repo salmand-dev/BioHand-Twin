@@ -1,0 +1,174 @@
+{
+ "hand_closing": {
+  "passed": true,
+  "healthy": true,
+  "deterministic": true,
+  "fine_dt_passed": true,
+  "checks": [
+   [
+    "flexion_fraction_final",
+    ">=",
+    0.5,
+    1.0036,
+    true
+   ]
+  ],
+  "max_limit_violation_deg": 1.46,
+  "outside_envelope_fraction": 0.0,
+  "max_KE_J": 0.128568
+ },
+ "hand_opening": {
+  "passed": true,
+  "healthy": true,
+  "deterministic": true,
+  "fine_dt_passed": true,
+  "checks": [
+   [
+    "flexion_fraction_final",
+    "<=",
+    0.25,
+    -0.0007,
+    true
+   ]
+  ],
+  "max_limit_violation_deg": 0.68,
+  "outside_envelope_fraction": 0.0,
+  "max_KE_J": 0.042264
+ },
+ "pinch": {
+  "passed": true,
+  "healthy": true,
+  "deterministic": true,
+  "fine_dt_passed": true,
+  "checks": [
+   [
+    "pinch_force_min_last_0p5s",
+    ">",
+    0.0,
+    0.5955,
+    true
+   ],
+   [
+    "pinch_force_mean_last_0p5s",
+    ">=",
+    0.5,
+    0.7936,
+    true
+   ]
+  ],
+  "max_limit_violation_deg": 0.05,
+  "outside_envelope_fraction": 0.0,
+  "max_KE_J": 0.074226
+ },
+ "power_grip_proxy": {
+  "passed": true,
+  "healthy": true,
+  "deterministic": true,
+  "fine_dt_passed": true,
+  "checks": [
+   [
+    "grip_force_mean_last_0p5s",
+    ">=",
+    1.0,
+    272.7122,
+    true
+   ],
+   [
+    "n_hand_bodies_in_contact",
+    ">=",
+    3,
+    14,
+    true
+   ]
+  ],
+  "max_limit_violation_deg": 0.71,
+  "outside_envelope_fraction": 0.0,
+  "max_KE_J": 0.083845
+ },
+ "rest_neutral": {
+  "passed": true,
+  "healthy": true,
+  "deterministic": true,
+  "fine_dt_passed": true,
+  "checks": [
+   [
+    "final_max_abs_qvel_rad_s",
+    "<",
+    0.05,
+    0.02618,
+    true
+   ]
+  ],
+  "max_limit_violation_deg": 0.0,
+  "outside_envelope_fraction": 0.0,
+  "max_KE_J": 0.000583
+ },
+ "thumb_opposition": {
+  "passed": true,
+  "healthy": true,
+  "deterministic": true,
+  "fine_dt_passed": true,
+  "checks": [
+   [
+    "thumb_index_min_distance_ratio",
+    "<=",
+    0.6,
+    0.5541,
+    true
+   ]
+  ],
+  "max_limit_violation_deg": 0.84,
+  "outside_envelope_fraction": 0.0,
+  "max_KE_J": 0.02501
+ },
+ "wrist_deviation": {
+  "passed": true,
+  "healthy": true,
+  "deterministic": true,
+  "fine_dt_passed": true,
+  "checks": [
+   [
+    "deviation_max_phase1",
+    ">=",
+    0.1,
+    0.17629,
+    true
+   ],
+   [
+    "deviation_min_phase2",
+    "<=",
+    -0.1,
+    -0.38049,
+    true
+   ]
+  ],
+  "max_limit_violation_deg": 0.14,
+  "outside_envelope_fraction": 0.8614,
+  "max_KE_J": 0.018872
+ },
+ "wrist_flexion_extension": {
+  "passed": true,
+  "healthy": true,
+  "deterministic": true,
+  "fine_dt_passed": true,
+  "checks": [
+   [
+    "flexion_max_phase1",
+    ">=",
+    0.3,
+    1.1142,
+    true
+   ],
+   [
+    "flexion_min_phase2",
+    "<=",
+    -0.3,
+    -1.22399,
+    true
+   ]
+  ],
+  "max_limit_violation_deg": 0.15,
+  "outside_envelope_fraction": 0.7228,
+  "max_KE_J": 0.044414
+ }
+}

@@ -1,0 +1,15 @@
+id: hand_opening
+description: Finger extension (hand opening) driven by EDC2-5, EIP, EDM from a flexed start (60 deg MCP/PIP/DIP).
+brace_joints: [pro_sup_r, deviation_r, flexion_r]   # forearm/wrist brace (apparatus)
+initial_angles_rad:
+  {mcp2_flexion_r: 1.0472, pm2_flexion_r: 1.0472, md2_flexion_r: 1.0472,
+   mcp3_flexion_r: 1.0472, pm3_flexion_r: 1.0472, md3_flexion_r: 1.0472,
+   mcp4_flexion_r: 1.0472, pm4_flexion_r: 1.0472, md4_flexion_r: 1.0472,
+   mcp5_flexion_r: 1.0472, pm5_flexion_r: 1.0472, md5_flexion_r: 1.0472}
+duration_s: 1.5
+phases:
+  - {start_s: 0.0, end_s: 1.5, ramp_s: 0.3, activations: {finger_extensors: 0.6}}
+metrics:
+  - {kind: finger_flexion_fraction, name: flexion_fraction_final}
+success:
+  - {metric: flexion_fraction_final, op: "<=", value: 0.25}       # opened to <= 25 % of flexion range

@@ -1,0 +1,230 @@
+{
+ "factorial_2x2": {
+  "neither": {
+   "passed": false,
+   "pinch_force_mean_last_0p5s": 0.0557,
+   "pinch_force_min_last_0p5s": 0.0449,
+   "thumb_index_final_distance": 0.03178,
+   "max_limit_violation_rad": 0.00088,
+   "final_max_abs_qvel_rad_s": 0.13122
+  },
+  "new muscles only": {
+   "passed": false,
+   "pinch_force_mean_last_0p5s": 0.0671,
+   "pinch_force_min_last_0p5s": 0.0567,
+   "thumb_index_final_distance": 0.03468,
+   "max_limit_violation_rad": 0.0009,
+   "final_max_abs_qvel_rad_s": 0.12489
+  },
+  "stiffness only": {
+   "passed": true,
+   "pinch_force_mean_last_0p5s": 1.1332,
+   "pinch_force_min_last_0p5s": 1.0947,
+   "thumb_index_final_distance": 0.03045,
+   "max_limit_violation_rad": 0.00082,
+   "final_max_abs_qvel_rad_s": 0.07485
+  },
+  "both": {
+   "passed": true,
+   "pinch_force_mean_last_0p5s": 0.7936,
+   "pinch_force_min_last_0p5s": 0.5955,
+   "thumb_index_final_distance": 0.03008,
+   "max_limit_violation_rad": 0.00087,
+   "final_max_abs_qvel_rad_s": 0.16122
+  }
+ },
+ "guards": {
+  "deepest_penetration_mm": 5.653,
+  "max_limit_overshoot_deg": 0.06,
+  "final_posture_deg": {
+   "cmc_flexion_r": -13.3,
+   "cmc_abduction_r": -4.6,
+   "mp_flexion_r": -15.2,
+   "ip_flexion_r": -13.3,
+   "mcp2_flexion_r": 68.2,
+   "mcp2_abduction_r": -0.7,
+   "pm2_flexion_r": 38.5,
+   "md2_flexion_r": 7.1
+  },
+  "joints_within_3deg_of_a_limit": [],
+  "geoms_in_contact_at_end": [
+   "distal_thumb_coll_r",
+   "distph2_coll_r"
+  ],
+  "contact_force_final_N": 0.625
+ },
+ "long_run": {
+  "seconds": 10.0,
+  "force_min_N": 0.0,
+  "force_mean_N": 0.916,
+  "force_max_N": 2.204,
+  "share_of_time_in_contact": 0.9981,
+  "final_pose_error_deg": {
+   "cmc_flexion_r": -0.72,
+   "cmc_abduction_r": 0.3,
+   "mp_flexion_r": 1.6,
+   "ip_flexion_r": -0.71,
+   "mcp2_flexion_r": 0.66,
+   "mcp2_abduction_r": -0.27,
+   "pm2_flexion_r": 0.48,
+   "md2_flexion_r": -1.23
+  },
+  "final_max_abs_qvel_rad_s": 0.406
+ },
+ "sensitivity": {
+  "baseline": {
+   "passed": true,
+   "pinch_force_mean_last_0p5s": 0.7936,
+   "pinch_force_min_last_0p5s": 0.5955,
+   "thumb_index_final_distance": 0.03008,
+   "max_limit_violation_rad": 0.00087,
+   "final_max_abs_qvel_rad_s": 0.16122
+  },
+  "timestep 1 ms": {
+   "passed": true,
+   "pinch_force_mean_last_0p5s": 0.6398,
+   "pinch_force_min_last_0p5s": 0.3237,
+   "thumb_index_final_distance": 0.02964,
+   "max_limit_violation_rad": 0.00074,
+   "final_max_abs_qvel_rad_s": 0.23349
+  },
+  "new muscle force x0.80": {
+   "passed": true,
+   "pinch_force_mean_last_0p5s": 0.7776,
+   "pinch_force_min_last_0p5s": 0.5598,
+   "thumb_index_final_distance": 0.02993,
+   "max_limit_violation_rad": 0.00082,
+   "final_max_abs_qvel_rad_s": 0.17036
+  },
+  "new muscle force x1.20": {
+   "passed": true,
+   "pinch_force_mean_last_0p5s": 0.531,
+   "pinch_force_min_last_0p5s": 0.2676,
+   "thumb_index_final_distance": 0.02935,
+   "max_limit_violation_rad": 0.00109,
+   "final_max_abs_qvel_rad_s": 0.28058
+  },
+  "all muscle F_max x0.8": {
+   "passed": true,
+   "pinch_force_mean_last_0p5s": 0.6401,
+   "pinch_force_min_last_0p5s": 0.3664,
+   "thumb_index_final_distance": 0.02956,
+   "max_limit_violation_rad": 0.00082,
+   "final_max_abs_qvel_rad_s": 0.24434
+  },
+  "all muscle F_max x1.2": {
+   "passed": false,
+   "pinch_force_mean_last_0p5s": 0.3584,
+   "pinch_force_min_last_0p5s": 0.1781,
+   "thumb_index_final_distance": 0.02864,
+   "max_limit_violation_rad": 0.00086,
+   "final_max_abs_qvel_rad_s": 0.27849
+  },
+  "origins +x by palm RMS": {
+   "passed": true,
+   "pinch_force_mean_last_0p5s": 1.1725,
+   "pinch_force_min_last_0p5s": 1.0468,
+   "thumb_index_final_distance": 0.03113,
+   "max_limit_violation_rad": 0.00169,
+   "final_max_abs_qvel_rad_s": 0.35541
+  },
+  "origins -x by palm RMS": {
+   "passed": false,
+   "pinch_force_mean_last_0p5s": 0.246,
+   "pinch_force_min_last_0p5s": 0.1267,
+   "thumb_index_final_distance": 0.02836,
+   "max_limit_violation_rad": 0.00107,
+   "final_max_abs_qvel_rad_s": 0.32895
+  },
+  "origins +y by palm RMS": {
+   "passed": true,
+   "pinch_force_mean_last_0p5s": 1.1231,
+   "pinch_force_min_last_0p5s": 0.9975,
+   "thumb_index_final_distance": 0.03124,
+   "max_limit_violation_rad": 0.00125,
+   "final_max_abs_qvel_rad_s": 0.20809
+  },
+  "origins -y by palm RMS": {
+   "passed": false,
+   "pinch_force_mean_last_0p5s": 0.2501,
+   "pinch_force_min_last_0p5s": 0.1706,
+   "thumb_index_final_distance": 0.02815,
+   "max_limit_violation_rad": 0.00107,
+   "final_max_abs_qvel_rad_s": 0.25269
+  },
+  "origins +z by palm RMS": {
+   "passed": true,
+   "pinch_force_mean_last_0p5s": 0.6754,
+   "pinch_force_min_last_0p5s": 0.4065,
+   "thumb_index_final_distance": 0.02964,
+   "max_limit_violation_rad": 0.00088,
+   "final_max_abs_qvel_rad_s": 0.22844
+  },
+  "origins -z by palm RMS": {
+   "passed": true,
+   "pinch_force_mean_last_0p5s": 0.6091,
+   "pinch_force_min_last_0p5s": 0.3193,
+   "thumb_index_final_distance": 0.02971,
+   "max_limit_violation_rad": 0.00075,
+   "final_max_abs_qvel_rad_s": 0.24068
+  }
+ },
+ "passed_count": 9,
+ "n_cases": 12,
+ "capacity": {
+  "samples_tried": 37288,
+  "postures_with_pad_contact": 500,
+  "seed": 20261101,
+  "tolerance_mm": 1.5,
+  "stats": {
+   "with_new_mu0": {
+    "median_N": 0.84,
+    "p95_N": 12.84,
+    "max_N": 57.11,
+    "feasible_share": 0.618
+   },
+   "without_new_mu0": {
+    "median_N": 0.0,
+    "p95_N": 4.46,
+    "max_N": 31.73,
+    "feasible_share": 0.42
+   },
+   "with_new_mu1": {
+    "median_N": 5.3,
+    "p95_N": 41.39,
+    "max_N": 71.3,
+    "feasible_share": 0.796
+   },
+   "without_new_mu1": {
+    "median_N": 1.44,
+    "p95_N": 18.35,
+    "max_N": 61.4,
+    "feasible_share": 0.568
+   }
+  },
+  "best_posture_with_new_mu1": {
+   "posture_deg": [
+    6.0,
+    1.8,
+    -41.9,
+    -48.1,
+    23.2,
+    -3.6,
+    84.0,
+    37.5
+   ],
+   "with_new_mu0": 57.10792782265441,
+   "without_new_mu0": 0.0,
+   "with_new_mu1": 71.2963134319775,
+   "without_new_mu1": 36.74460261558698
+  },
+  "best_share_of_measured_women": 1.866,
+  "best_share_of_measured_men": 1.173,
+  "assumptions": "one contact point; mu = 0 and mu = 1 friction pyramid; quasi-static; balances thumb and index joints only; sampled postures, so the maximum is a lower bound on the model capacity"
+ },
+ "measured_tip_pinch": {
+  "men_mean_N": 60.8,
+  "women_mean_N": 38.2,
+  "source": "Park et al. 1998, doi:10.35371/kjoem.1998.10.3.362, n = 1018, tip pinch, pinch gauge"
+ }
+}

@@ -1,0 +1,96 @@
+# Values copied verbatim from the cited tables. Do not edit numbers. Derived values live in the patches.
+source:
+  citation: "Mirakhorlo M, Visser JMA, Goislard de Monsabert BAAX, van der Helm FCT, Maas H, Veeger HEJ (2016).
+    Anatomical parameters for musculoskeletal modeling of the hand and wrist. International Biomechanics 3(1):40-49."
+  doi: 10.1080/23335432.2016.1191373
+  data_doi: 10.6084/m9.figshare.4434791.v1
+  data_url: https://ndownloader.figshare.com/files/7162265
+  data_file: Suppl2.docx
+  data_md5: 3defb1f472660fa69d22ab39693ed727
+  paper_url: https://spiral.imperial.ac.uk/entities/publication/e6bf678b-b7b7-400c-b775-8696eff5d0d4
+  licence: CC BY 4.0
+  date_retrieved: 2026-11-01
+  redistribution: permitted with attribution; only the values below are stored, not the files
+  specimen: one right lower arm of an old fresh-frozen female specimen, n = 1 (the authors note it may have had a disorder)
+  frame: "ulna frame, mm: origin ulnar styloid; Y toward the epicondyle midpoint; X radial; Z = X cross Y (dorsal)"
+  tables: "paper Table 2 (morphology); supplement Table 3 (joint axes), Table 4 (landmarks), Table 7 (muscle points)"
+joint_pivots_mm:     # supplement Table 3, pivot point on the flexion axis
+  wrist: [32.26, -9.16, -10.61]
+  cmc1: [48.54, -37.82, -6.63]
+  mcp2: [47.30, -92.88, 0.29]
+  mcp3: [31.83, -92.51, 0.73]
+  mcp4: [12.12, -86.07, -1.98]
+  mcp5: [-2.44, -79.11, -3.20]
+mcp1_flexion_axis: [-0.67, -0.07, 0.74]   # supplement Table 3; +rotation moves the thumb tip dorsally (extension)
+landmarks_mm:        # supplement Table 4
+  MCP1u: [70.9, -67.0, 3.5]
+  MCP1r: [77.7, -62.7, -18.1]
+  IP1u: [84.7, -90.5, 8.4]
+  IP1r: [94.4, -85.7, -8.3]
+muscles:             # points: supplement Table 7. Morphology: paper Table 2 (fibre mm, pennation deg, mass g, PCSA mm2)
+  APB_r:
+    name: abductor pollicis brevis
+    source_abbreviation: AbPB
+    origin_segment: MC3
+    origin_points_mm: [[32.2, -44.5, -16.4], [28.3, -30.8, -21.8], [34.1, -20.6, -23.4]]
+    insertion_segment: PP1
+    insertion_mm: [81.4, -65.0, -15.4]
+    fibre_mm: 49.7
+    tendon_mm: 24.5
+    pennation_deg: 0
+    mass_g: 2.3
+    pcsa_mm2: 43.8
+  FPBs_r:
+    name: flexor pollicis brevis, superficial head
+    source_abbreviation: FPBs
+    origin_segment: MC3
+    origin_points_mm: [[29.1, -42.3, -17.1]]
+    insertion_segment: PP1
+    insertion_mm: [74.0, -68.1, -18.9]
+    fibre_mm: 49.6
+    pennation_deg: 0
+    mass_g: 1.1
+    pcsa_mm2: 21.0
+  FPBd_r:
+    name: flexor pollicis brevis, deep head
+    source_abbreviation: FPBd
+    origin_segment: MC3
+    origin_points_mm: [[31.9, -32.1, -13.2]]
+    insertion_segment: PP1
+    insertion_mm: [70.5, -71.5, -15.8]
+    fibre_mm: 23.0
+    tendon_mm: 12
+    pennation_deg: 0
+    mass_g: 0.4
+    pcsa_mm2: 16.5
+  ADPo_r:
+    name: adductor pollicis, oblique head
+    source_abbreviation: AdPo
+    origin_segment: MC3
+    origin_points_mm: [[28.6, -37.2, -9.4], [31.9, -32.1, -13.2]]
+    insertion_segment: PP1
+    insertion_mm: [68.1, -74.2, -5.7]
+    fibre_mm: 30.7
+    tendon_mm: 0
+    pennation_deg: 0
+    mass_g: 4.2
+    pcsa_mm2: 129.3
+  ADPt_r:
+    name: adductor pollicis, transverse head
+    source_abbreviation: AdPt
+    origin_segment: MC3
+    origin_points_mm: [[26.4, -67.7, -2.3], [28.6, -37.2, -9.4]]
+    insertion_segment: PP1
+    insertion_mm: [68.1, -74.2, -5.7]
+    fibre_mm: 40.8
+    tendon_mm: 24
+    pennation_deg: 24
+    mass_g: 2.3
+    pcsa_mm2: 53.3
+specific_tension:
+  value_N_per_mm2: 0.55
+  sd_N_per_mm2: 0.11
+  citation: "O'Brien TD et al. (2010). In vivo measurements of muscle specific tension in adults and children.
+    Experimental Physiology 95(1):202-210 (men, 55 +/- 11 N/cm2)"
+  doi: 10.1113/expphysiol.2009.048967
+  limitation: measured on the quadriceps, not on hand muscles

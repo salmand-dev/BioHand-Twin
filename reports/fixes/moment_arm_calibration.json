@@ -1,0 +1,324 @@
+{
+ "warning": "TUNED to the data it is compared with; agreement is a fit, not validation",
+ "summary": {
+  "garland2018": {
+   "unfitted": 8,
+   "fitted": 11,
+   "n": 12
+  },
+  "lee2015": {
+   "unfitted": 10,
+   "fitted": 12,
+   "n": 12
+  }
+ },
+ "largest_site_shift_mm": 12.73,
+ "fits": {
+  "FCR_r": {
+   "sites": [
+    "FCR-P2_r",
+    "FCR-P3_r"
+   ],
+   "cost": 2.7386,
+   "nfev": 22
+  },
+  "FCU_r": {
+   "sites": [
+    "FCU-P3_r",
+    "FCU-P4_r"
+   ],
+   "cost": 0.0856,
+   "nfev": 21
+  },
+  "ECU_r": {
+   "sites": [
+    "ECU-P5_r",
+    "ECU-P6_r"
+   ],
+   "cost": 0.2761,
+   "nfev": 25
+  },
+  "FDP2_r": {
+   "sites": [
+    "FDP2-P5_r",
+    "FDP2-P6_r"
+   ],
+   "cost": 0.0301,
+   "nfev": 9
+  },
+  "EDC2_r": {
+   "sites": [
+    "EDC2-P4_r",
+    "EDC2-P5_r"
+   ],
+   "cost": 0.0079,
+   "nfev": 8
+  }
+ },
+ "rows": [
+  {
+   "set": "garland2018",
+   "actuator": "FCR_r",
+   "joint": "flexion_r",
+   "reference_mm": 12.2,
+   "sd_mm": 2.1,
+   "unfitted_mm": 17.08,
+   "fitted_mm": 14.31,
+   "unfitted_passed": false,
+   "fitted_passed": true
+  },
+  {
+   "set": "garland2018",
+   "actuator": "FCU_r",
+   "joint": "flexion_r",
+   "reference_mm": 11.3,
+   "sd_mm": 2.1,
+   "unfitted_mm": 17.62,
+   "fitted_mm": 11.41,
+   "unfitted_passed": false,
+   "fitted_passed": true
+  },
+  {
+   "set": "garland2018",
+   "actuator": "ECRL_r",
+   "joint": "flexion_r",
+   "reference_mm": -6.6,
+   "sd_mm": 3.0,
+   "unfitted_mm": -10.96,
+   "fitted_mm": -10.96,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "garland2018",
+   "actuator": "ECRB_r",
+   "joint": "flexion_r",
+   "reference_mm": -10.8,
+   "sd_mm": 2.8,
+   "unfitted_mm": -14.84,
+   "fitted_mm": -14.84,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "garland2018",
+   "actuator": "ECU_r",
+   "joint": "flexion_r",
+   "reference_mm": -4.0,
+   "sd_mm": 0.9,
+   "unfitted_mm": -7.24,
+   "fitted_mm": -4.21,
+   "unfitted_passed": false,
+   "fitted_passed": true
+  },
+  {
+   "set": "garland2018",
+   "actuator": "APL_r",
+   "joint": "flexion_r",
+   "reference_mm": 6.8,
+   "sd_mm": 1.9,
+   "unfitted_mm": 6.44,
+   "fitted_mm": 6.44,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "garland2018",
+   "actuator": "FCR_r",
+   "joint": "deviation_r",
+   "reference_mm": -10.2,
+   "sd_mm": 2.5,
+   "unfitted_mm": -3.94,
+   "fitted_mm": -5.17,
+   "unfitted_passed": false,
+   "fitted_passed": false
+  },
+  {
+   "set": "garland2018",
+   "actuator": "FCU_r",
+   "joint": "deviation_r",
+   "reference_mm": 11.7,
+   "sd_mm": 4.2,
+   "unfitted_mm": 10.54,
+   "fitted_mm": 11.69,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "garland2018",
+   "actuator": "ECRL_r",
+   "joint": "deviation_r",
+   "reference_mm": -17.2,
+   "sd_mm": 3.6,
+   "unfitted_mm": -23.57,
+   "fitted_mm": -23.57,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "garland2018",
+   "actuator": "ECRB_r",
+   "joint": "deviation_r",
+   "reference_mm": -10.0,
+   "sd_mm": 2.2,
+   "unfitted_mm": -14.17,
+   "fitted_mm": -14.17,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "garland2018",
+   "actuator": "ECU_r",
+   "joint": "deviation_r",
+   "reference_mm": 23.7,
+   "sd_mm": 3.3,
+   "unfitted_mm": 27.77,
+   "fitted_mm": 23.51,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "garland2018",
+   "actuator": "APL_r",
+   "joint": "deviation_r",
+   "reference_mm": -23.6,
+   "sd_mm": 2.5,
+   "unfitted_mm": -26.66,
+   "fitted_mm": -26.66,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "FDP2_r",
+   "joint": "mcp2_flexion_r",
+   "reference_mm": 11.5,
+   "sd_mm": 2.1,
+   "unfitted_mm": 11.88,
+   "fitted_mm": 11.5,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "FDS2_r",
+   "joint": "mcp2_flexion_r",
+   "reference_mm": 12.4,
+   "sd_mm": 2.1,
+   "unfitted_mm": 11.96,
+   "fitted_mm": 11.96,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "EDC2_r",
+   "joint": "mcp2_flexion_r",
+   "reference_mm": -7.4,
+   "sd_mm": 2.1,
+   "unfitted_mm": -7.6,
+   "fitted_mm": -7.41,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "LU_RB2_r",
+   "joint": "mcp2_flexion_r",
+   "reference_mm": 3.5,
+   "sd_mm": 2.1,
+   "unfitted_mm": 3.29,
+   "fitted_mm": 3.29,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "RI2_r",
+   "joint": "mcp2_flexion_r",
+   "reference_mm": 6.6,
+   "sd_mm": 2.1,
+   "unfitted_mm": 6.09,
+   "fitted_mm": 6.09,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "UI_UB2_r",
+   "joint": "mcp2_flexion_r",
+   "reference_mm": 2.0,
+   "sd_mm": 2.1,
+   "unfitted_mm": 2.72,
+   "fitted_mm": 2.72,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "FDP2_r",
+   "joint": "mcp2_abduction_r",
+   "reference_mm": -2.8,
+   "sd_mm": 2.5,
+   "unfitted_mm": 0.69,
+   "fitted_mm": -2.69,
+   "unfitted_passed": false,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "FDS2_r",
+   "joint": "mcp2_abduction_r",
+   "reference_mm": 2.2,
+   "sd_mm": 2.5,
+   "unfitted_mm": 0.74,
+   "fitted_mm": 0.74,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "EDC2_r",
+   "joint": "mcp2_abduction_r",
+   "reference_mm": 2.5,
+   "sd_mm": 2.5,
+   "unfitted_mm": -0.41,
+   "fitted_mm": 2.47,
+   "unfitted_passed": false,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "LU_RB2_r",
+   "joint": "mcp2_abduction_r",
+   "reference_mm": 4.3,
+   "sd_mm": 2.5,
+   "unfitted_mm": 6.49,
+   "fitted_mm": 6.49,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "RI2_r",
+   "joint": "mcp2_abduction_r",
+   "reference_mm": 4.1,
+   "sd_mm": 2.5,
+   "unfitted_mm": 5.58,
+   "fitted_mm": 5.58,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  },
+  {
+   "set": "lee2015",
+   "actuator": "UI_UB2_r",
+   "joint": "mcp2_abduction_r",
+   "reference_mm": -6.8,
+   "sd_mm": 2.5,
+   "unfitted_mm": -6.66,
+   "fitted_mm": -6.66,
+   "unfitted_passed": true,
+   "fitted_passed": true
+  }
+ ]
+}

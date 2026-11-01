@@ -1,0 +1,93 @@
+{
+ "id": "wrist_deviation",
+ "description": "Radial deviation (ECRL, FCR) for 1 s, then ulnar deviation (ECU, FCU) for 1 s.",
+ "config": "data/experiments/tasks/wrist_deviation.yaml",
+ "meta": {
+  "patches": [
+   "wrist_rom_v1",
+   "muscle_fixes_v1",
+   "limit_stiffness_v1",
+   "thumb_intrinsics_v1",
+   "passive_stiffness_v1"
+  ],
+  "fixtures": [
+   {
+    "type": "joint_brace",
+    "joint": "pro_sup_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   }
+  ],
+  "timestep_s": 0.002,
+  "solver": 2,
+  "integrator": 0,
+  "iterations": 100,
+  "myosim_commit": "93b0ca8f4ec90c9899ee7f05fee561e9911da91b"
+ },
+ "metrics": {
+  "finite": true,
+  "max_limit_violation_rad": 0.00243,
+  "max_kinetic_energy_J": 0.018872,
+  "warnings": {},
+  "fraction_samples_outside_muscle_validity_envelope": 0.8614,
+  "final_max_abs_qvel_rad_s": 0.11097,
+  "hand_bodies_in_contact": [],
+  "deviation_max_phase1": 0.17629,
+  "deviation_min_phase2": -0.38049
+ },
+ "success": {
+  "all_passed": true,
+  "numerically_healthy": true,
+  "checks": [
+   {
+    "metric": "deviation_max_phase1",
+    "op": ">=",
+    "value": 0.1,
+    "observed": 0.17629,
+    "passed": true
+   },
+   {
+    "metric": "deviation_min_phase2",
+    "op": "<=",
+    "value": -0.1,
+    "observed": -0.38049,
+    "passed": true
+   }
+  ]
+ },
+ "deterministic_repeat": true,
+ "timestep_sensitivity": {
+  "max_limit_violation_rad": {
+   "dt_0p002": 0.00243,
+   "dt_0p001": 0.00423,
+   "abs_diff": 0.0018
+  },
+  "max_kinetic_energy_J": {
+   "dt_0p002": 0.018872,
+   "dt_0p001": 0.018926,
+   "abs_diff": 5.4e-05
+  },
+  "fraction_samples_outside_muscle_validity_envelope": {
+   "dt_0p002": 0.8614,
+   "dt_0p001": 0.8713,
+   "abs_diff": 0.0099
+  },
+  "final_max_abs_qvel_rad_s": {
+   "dt_0p002": 0.11097,
+   "dt_0p001": 0.11019,
+   "abs_diff": 0.00078
+  },
+  "deviation_max_phase1": {
+   "dt_0p002": 0.17629,
+   "dt_0p001": 0.17629,
+   "abs_diff": 0.0
+  },
+  "deviation_min_phase2": {
+   "dt_0p002": -0.38049,
+   "dt_0p001": -0.37999,
+   "abs_diff": 0.0005
+  }
+ },
+ "fine_dt_success": true
+}

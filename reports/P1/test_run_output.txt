@@ -1,0 +1,41 @@
+# pytest -v  (2026-10-31T19:24:36Z)
+============================= test session starts =============================
+platform win32 -- Python 3.11.4, pytest-9.2.0, pluggy-1.7.0 -- <PROJECT>\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: <PROJECT>
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 23 items
+
+tests/test_inventory_unit.py::test_fixed_tendon_jacobian_matches_coefficients PASSED [  4%]
+tests/test_inventory_unit.py::test_spatial_tendon_jacobian_matches_analytic[-0.5] PASSED [  8%]
+tests/test_inventory_unit.py::test_spatial_tendon_jacobian_matches_analytic[0.0] PASSED [ 13%]
+tests/test_inventory_unit.py::test_spatial_tendon_jacobian_matches_analytic[0.4] PASSED [ 17%]
+tests/test_inventory_unit.py::test_jacobian_rejects_free_joint PASSED    [ 21%]
+tests/test_inventory_unit.py::test_inventory_reports_muscle_l0_formula PASSED [ 26%]
+tests/test_inventory_unit.py::test_inventory_counts_and_welded_flag PASSED [ 30%]
+tests/test_myohand_reference_model.py::test_checkout_is_pinned_and_clean PASSED [ 34%]
+tests/test_myohand_reference_model.py::test_fragment_builds_without_warnings PASSED [ 39%]
+tests/test_myohand_reference_model.py::test_fragment_counts_match_upstream_readme_claims PASSED [ 43%]
+tests/test_myohand_reference_model.py::test_joint_names_order_and_types PASSED [ 47%]
+tests/test_myohand_reference_model.py::test_every_actuator_is_a_muscle_on_its_own_tendon PASSED [ 52%]
+tests/test_myohand_reference_model.py::test_carpals_are_lumped_into_one_wrist_segment PASSED [ 56%]
+tests/test_myohand_reference_model.py::test_zero_control_simulation_is_finite_and_within_limits PASSED [ 60%]
+tests/test_myohand_reference_model.py::test_seeded_random_control_is_bitwise_deterministic PASSED [ 65%]
+tests/test_myohand_reference_model.py::test_committed_inventory_is_consistent_with_fresh_build PASSED [ 69%]
+tests/test_myohand_reference_model.py::test_hashed_upstream_files_unchanged PASSED [ 73%]
+tests/test_osim_sources.py::test_licence_texts_archived_verbatim PASSED  [ 78%]
+tests/test_osim_sources.py::test_source_osim_hashes_match_manifest PASSED [ 82%]
+tests/test_osim_sources.py::test_recorded_traceability_findings PASSED   [ 86%]
+tests/test_scaffold.py::test_validate_vector3 PASSED                     [ 91%]
+tests/test_scaffold.py::test_validate_vector3_rejects_bad_shape PASSED   [ 95%]
+tests/test_scaffold.py::test_generalized_muscle_torque PASSED            [100%]
+
+============================= 23 passed in 1.23s ==============================
+# ruff
+All checks passed!
+# mypy
+Success: no issues found in 6 source files
+# upstream status
+93b0ca8f4ec90c9899ee7f05fee561e9911da91b
+0

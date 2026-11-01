@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biohand-twin"
+version = "0.1.0"
+description = "Hand, wrist and forearm musculoskeletal simulation and viewer for non-commercial research and education"
+requires-python = ">=3.10,<3.13"
+authors = [{name = "Salman Dawod"}]
+readme = "README.md"
+keywords = ["biomechanics", "musculoskeletal", "mujoco", "hand", "simulation"]
+# mujoco is pinned to the version the P1 reference-model audit was run with.
+dependencies = ["numpy>=1.24", "scipy>=1.10", "mujoco==3.17.0", "pyyaml>=6", "jsonschema>=4.20"]
+
+[project.urls]
+Repository = "https://github.com/salmand-dev/BioHand-Twin"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5", "mypy>=1.10"]
+
+[tool.setuptools.packages.find]
+include = ["biomechanics*", "simulation*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["integration: requires the pinned third_party/myo_sim checkout"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

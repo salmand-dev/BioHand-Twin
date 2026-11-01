@@ -1,0 +1,81 @@
+{'cpu': 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel', 'steps': 5000, 'ms_per_step': 0.1203, 'realtime_factor': 16.6, 'ms_per_full_telemetry_frame': 7.835, 'note': 'single thread, one run on the development laptop, not a benchmark claim'}
+hand_closing baseline {'metric_value': 1.0036, 'passed': True, 'finite': True, 'warnings': {}, 'time_to_half_MCP_flexion_s': 0.18}
+hand_closing F_max x0.8 {'metric_value': 1.0029, 'passed': True, 'finite': True, 'warnings': {}, 'time_to_half_MCP_flexion_s': 0.2}
+hand_closing F_max x1.2 {'metric_value': 1.0044, 'passed': True, 'finite': True, 'warnings': {}, 'time_to_half_MCP_flexion_s': 0.18}
+hand_closing joint damping x0.5 {'metric_value': 1.0036, 'passed': True, 'finite': True, 'warnings': {}, 'time_to_half_MCP_flexion_s': 0.16}
+hand_closing joint damping x2 {'metric_value': 1.0036, 'passed': True, 'finite': True, 'warnings': {}, 'time_to_half_MCP_flexion_s': 0.22}
+hand_closing hand inertia x0.1 {'metric_value': 1.0064, 'passed': True, 'finite': True, 'warnings': {}, 'time_to_half_MCP_flexion_s': 0.18}
+hand_closing hand inertia x10 {'metric_value': 1.0009, 'passed': True, 'finite': True, 'warnings': {}, 'time_to_half_MCP_flexion_s': 0.22}
+hand_closing limit timeconst upstream 0.02 s {'metric_value': 1.0775, 'passed': True, 'finite': True, 'warnings': {}, 'time_to_half_MCP_flexion_s': 0.18}
+hand_closing contact timeconst 0.01 s {'metric_value': 1.0036, 'passed': True, 'finite': True, 'warnings': {}, 'time_to_half_MCP_flexion_s': 0.18}
+hand_closing timestep 0.001 s {'metric_value': 1.0036, 'passed': True, 'finite': True, 'warnings': {}, 'time_to_half_MCP_flexion_s': 0.18}
+hand_opening baseline {'metric_value': -0.0007, 'passed': True, 'finite': True, 'warnings': {}}
+hand_opening F_max x0.8 {'metric_value': -0.0006, 'passed': True, 'finite': True, 'warnings': {}}
+hand_opening F_max x1.2 {'metric_value': -0.0008, 'passed': True, 'finite': True, 'warnings': {}}
+hand_opening joint damping x0.5 {'metric_value': -0.0007, 'passed': True, 'finite': True, 'warnings': {}}
+hand_opening joint damping x2 {'metric_value': -0.0007, 'passed': True, 'finite': True, 'warnings': {}}
+hand_opening hand inertia x0.1 {'metric_value': -0.0012, 'passed': True, 'finite': True, 'warnings': {}}
+hand_opening hand inertia x10 {'metric_value': -0.0003, 'passed': True, 'finite': True, 'warnings': {}}
+hand_opening limit timeconst upstream 0.02 s {'metric_value': -0.0176, 'passed': True, 'finite': True, 'warnings': {}}
+hand_opening contact timeconst 0.01 s {'metric_value': -0.0007, 'passed': True, 'finite': True, 'warnings': {}}
+hand_opening timestep 0.001 s {'metric_value': -0.0007, 'passed': True, 'finite': True, 'warnings': {}}
+thumb_opposition baseline {'metric_value': 0.5538, 'passed': True, 'finite': True, 'warnings': {}}
+thumb_opposition F_max x0.8 {'metric_value': 0.5515, 'passed': True, 'finite': True, 'warnings': {}}
+thumb_opposition F_max x1.2 {'metric_value': 0.5541, 'passed': True, 'finite': True, 'warnings': {}}
+thumb_opposition joint damping x0.5 {'metric_value': 0.5578, 'passed': True, 'finite': True, 'warnings': {}}
+thumb_opposition joint damping x2 {'metric_value': 0.55, 'passed': True, 'finite': True, 'warnings': {}}
+thumb_opposition hand inertia x0.1 {'metric_value': 0.551, 'passed': True, 'finite': True, 'warnings': {}}
+thumb_opposition hand inertia x10 {'metric_value': 0.5594, 'passed': True, 'finite': True, 'warnings': {}}
+thumb_opposition limit timeconst upstream 0.02 s {'metric_value': 0.5598, 'passed': True, 'finite': True, 'warnings': {}}
+thumb_opposition contact timeconst 0.01 s {'metric_value': 0.5538, 'passed': True, 'finite': True, 'warnings': {}}
+thumb_opposition timestep 0.001 s {'metric_value': 0.5535, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_flexion_extension baseline {'metric_value': 1.15902, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_flexion_extension F_max x0.8 {'metric_value': 1.15907, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_flexion_extension F_max x1.2 {'metric_value': 1.15889, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_flexion_extension joint damping x0.5 {'metric_value': 1.17688, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_flexion_extension joint damping x2 {'metric_value': 1.1509, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_flexion_extension hand inertia x0.1 {'metric_value': 1.15161, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_flexion_extension hand inertia x10 {'metric_value': 1.2218, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_flexion_extension limit timeconst upstream 0.02 s {'metric_value': 1.15902, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_flexion_extension contact timeconst 0.01 s {'metric_value': 1.15902, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_flexion_extension timestep 0.001 s {'metric_value': 1.1584, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_deviation baseline {'metric_value': -0.31709, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_deviation F_max x0.8 {'metric_value': -0.31939, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_deviation F_max x1.2 {'metric_value': -0.31718, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_deviation joint damping x0.5 {'metric_value': -0.30824, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_deviation joint damping x2 {'metric_value': -0.32495, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_deviation hand inertia x0.1 {'metric_value': -0.31456, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_deviation hand inertia x10 {'metric_value': -0.34133, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_deviation limit timeconst upstream 0.02 s {'metric_value': -0.31711, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_deviation contact timeconst 0.01 s {'metric_value': -0.31709, 'passed': True, 'finite': True, 'warnings': {}}
+wrist_deviation timestep 0.001 s {'metric_value': -0.31625, 'passed': True, 'finite': True, 'warnings': {}}
+power_grip_proxy baseline {'metric_value': 275.7979, 'passed': True, 'finite': True, 'warnings': {}}
+power_grip_proxy F_max x0.8 {'metric_value': 215.9488, 'passed': True, 'finite': True, 'warnings': {}}
+power_grip_proxy F_max x1.2 {'metric_value': 350.364, 'passed': True, 'finite': True, 'warnings': {}}
+power_grip_proxy joint damping x0.5 {'metric_value': 276.165, 'passed': True, 'finite': True, 'warnings': {}}
+power_grip_proxy joint damping x2 {'metric_value': 270.532, 'passed': True, 'finite': True, 'warnings': {}}
+power_grip_proxy hand inertia x0.1 {'metric_value': 342.7217, 'passed': True, 'finite': True, 'warnings': {}}
+power_grip_proxy hand inertia x10 {'metric_value': 247.819, 'passed': True, 'finite': True, 'warnings': {}}
+power_grip_proxy limit timeconst upstream 0.02 s {'metric_value': 274.7, 'passed': True, 'finite': True, 'warnings': {}}
+power_grip_proxy contact timeconst 0.01 s {'metric_value': 250.2622, 'passed': True, 'finite': True, 'warnings': {}}
+power_grip_proxy timestep 0.001 s {'metric_value': 275.2489, 'passed': True, 'finite': True, 'warnings': {}}
+pinch baseline {'metric_value': 0.0, 'passed': False, 'finite': True, 'warnings': {}}
+pinch F_max x0.8 {'metric_value': 0.0, 'passed': False, 'finite': True, 'warnings': {}}
+pinch F_max x1.2 {'metric_value': 0.0, 'passed': False, 'finite': True, 'warnings': {}}
+pinch joint damping x0.5 {'metric_value': 0.0, 'passed': False, 'finite': True, 'warnings': {}}
+pinch joint damping x2 {'metric_value': 0.0, 'passed': False, 'finite': True, 'warnings': {}}
+pinch hand inertia x0.1 {'metric_value': 0.0, 'passed': False, 'finite': True, 'warnings': {}}
+pinch hand inertia x10 {'metric_value': 0.0, 'passed': False, 'finite': True, 'warnings': {}}
+pinch limit timeconst upstream 0.02 s {'metric_value': 0.0, 'passed': False, 'finite': True, 'warnings': {}}
+pinch contact timeconst 0.01 s {'metric_value': 0.0, 'passed': False, 'finite': True, 'warnings': {}}
+pinch timestep 0.001 s {'metric_value': 0.0, 'passed': False, 'finite': True, 'warnings': {}}
+rest_neutral baseline {'metric_value': 0.2462, 'passed': False, 'finite': True, 'warnings': {}}
+rest_neutral F_max x0.8 {'metric_value': 0.25346, 'passed': False, 'finite': True, 'warnings': {}}
+rest_neutral F_max x1.2 {'metric_value': 0.23907, 'passed': False, 'finite': True, 'warnings': {}}
+rest_neutral joint damping x0.5 {'metric_value': 0.10262, 'passed': False, 'finite': True, 'warnings': {}}
+rest_neutral joint damping x2 {'metric_value': 0.21151, 'passed': False, 'finite': True, 'warnings': {}}
+rest_neutral hand inertia x0.1 {'metric_value': 0.24323, 'passed': False, 'finite': True, 'warnings': {}}
+rest_neutral hand inertia x10 {'metric_value': 0.27483, 'passed': False, 'finite': True, 'warnings': {}}
+rest_neutral limit timeconst upstream 0.02 s {'metric_value': 0.24659, 'passed': False, 'finite': True, 'warnings': {}}
+rest_neutral contact timeconst 0.01 s {'metric_value': 0.2462, 'passed': False, 'finite': True, 'warnings': {}}
+rest_neutral timestep 0.001 s {'metric_value': 0.246, 'passed': False, 'finite': True, 'warnings': {}}

@@ -1,0 +1,560 @@
+{
+ "patch": "wrist_rom_v1",
+ "wrist_ranges_deg": {
+  "upstream": {
+   "flexion_r": [
+    -45.0,
+    45.0
+   ],
+   "deviation_r": [
+    -10.0,
+    25.0
+   ]
+  },
+  "patched": {
+   "flexion_r": [
+    -70.0,
+    70.0
+   ],
+   "deviation_r": [
+    -25.0,
+    10.0
+   ]
+  }
+ },
+ "operating_range_upstream_rom": {
+  "n_samples": 702,
+  "muscles": {
+   "ECRL_r": {
+    "lnorm_min": 0.784,
+    "lnorm_max": 1.141,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.083
+   },
+   "ECRB_r": {
+    "lnorm_min": 0.755,
+    "lnorm_max": 1.05,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "ECU_r": {
+    "lnorm_min": 0.751,
+    "lnorm_max": 1.05,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "FCR_r": {
+    "lnorm_min": 0.758,
+    "lnorm_max": 1.05,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.003
+   },
+   "FCU_r": {
+    "lnorm_min": 0.768,
+    "lnorm_max": 1.065,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.017
+   },
+   "PL_r": {
+    "lnorm_min": 0.76,
+    "lnorm_max": 1.052,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.006
+   },
+   "PT_r": {
+    "lnorm_min": 0.779,
+    "lnorm_max": 1.059,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.333
+   },
+   "PQ_r": {
+    "lnorm_min": 0.75,
+    "lnorm_max": 1.049,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.333
+   },
+   "FDS5_r": {
+    "lnorm_min": 0.782,
+    "lnorm_max": 1.048,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "FDS4_r": {
+    "lnorm_min": 0.475,
+    "lnorm_max": 0.769,
+    "fraction_outside_active_window": 0.031,
+    "fraction_outside_lengthrange": 0.969
+   },
+   "FDS3_r": {
+    "lnorm_min": 0.675,
+    "lnorm_max": 1.034,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.145
+   },
+   "FDS2_r": {
+    "lnorm_min": 0.71,
+    "lnorm_max": 1.032,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.043
+   },
+   "FDP5_r": {
+    "lnorm_min": 0.486,
+    "lnorm_max": 0.761,
+    "fraction_outside_active_window": 0.027,
+    "fraction_outside_lengthrange": 0.969
+   },
+   "FDP4_r": {
+    "lnorm_min": 0.749,
+    "lnorm_max": 1.02,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.001
+   },
+   "FDP3_r": {
+    "lnorm_min": 0.699,
+    "lnorm_max": 1.048,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.104
+   },
+   "FDP2_r": {
+    "lnorm_min": 0.697,
+    "lnorm_max": 1.039,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.093
+   },
+   "EDC5_r": {
+    "lnorm_min": 0.755,
+    "lnorm_max": 1.049,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "EDC4_r": {
+    "lnorm_min": 0.768,
+    "lnorm_max": 1.033,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "EDC3_r": {
+    "lnorm_min": 0.75,
+    "lnorm_max": 1.032,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "EDC2_r": {
+    "lnorm_min": 0.756,
+    "lnorm_max": 1.034,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "EDM_r": {
+    "lnorm_min": 0.754,
+    "lnorm_max": 1.043,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "EIP_r": {
+    "lnorm_min": 0.75,
+    "lnorm_max": 1.048,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.001
+   },
+   "EPL_r": {
+    "lnorm_min": 0.81,
+    "lnorm_max": 0.942,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "EPB_r": {
+    "lnorm_min": 0.841,
+    "lnorm_max": 0.961,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "FPL_r": {
+    "lnorm_min": 0.901,
+    "lnorm_max": 1.025,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "APL_r": {
+    "lnorm_min": 0.565,
+    "lnorm_max": 0.829,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.838
+   },
+   "OP_r": {
+    "lnorm_min": 0.943,
+    "lnorm_max": 0.943,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "RI2_r": {
+    "lnorm_min": 0.751,
+    "lnorm_max": 1.164,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.5
+   },
+   "LU_RB2_r": {
+    "lnorm_min": 0.974,
+    "lnorm_max": 0.985,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "UI_UB2_r": {
+    "lnorm_min": 0.87,
+    "lnorm_max": 0.881,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "RI3_r": {
+    "lnorm_min": 0.753,
+    "lnorm_max": 1.015,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "LU_RB3_r": {
+    "lnorm_min": 0.845,
+    "lnorm_max": 0.947,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "UI_UB3_r": {
+    "lnorm_min": 0.818,
+    "lnorm_max": 0.9,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "RI4_r": {
+    "lnorm_min": 0.776,
+    "lnorm_max": 1.016,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "LU_RB4_r": {
+    "lnorm_min": 0.591,
+    "lnorm_max": 0.677,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 1.0
+   },
+   "UI_UB4_r": {
+    "lnorm_min": 0.683,
+    "lnorm_max": 0.729,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 1.0
+   },
+   "RI5_r": {
+    "lnorm_min": -0.479,
+    "lnorm_max": 0.639,
+    "fraction_outside_active_window": 0.5,
+    "fraction_outside_lengthrange": 1.0
+   },
+   "LU_RB5_r": {
+    "lnorm_min": 0.798,
+    "lnorm_max": 0.881,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "UI_UB5_r": {
+    "lnorm_min": 0.982,
+    "lnorm_max": 1.015,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   }
+  }
+ },
+ "operating_range_patched_rom": {
+  "n_samples": 702,
+  "muscles": {
+   "ECRL_r": {
+    "lnorm_min": 0.774,
+    "lnorm_max": 1.22,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.299
+   },
+   "ECRB_r": {
+    "lnorm_min": 0.702,
+    "lnorm_max": 1.109,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.197
+   },
+   "ECU_r": {
+    "lnorm_min": 0.685,
+    "lnorm_max": 0.992,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.125
+   },
+   "FCR_r": {
+    "lnorm_min": 0.746,
+    "lnorm_max": 1.096,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.097
+   },
+   "FCU_r": {
+    "lnorm_min": 0.716,
+    "lnorm_max": 1.085,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.111
+   },
+   "PL_r": {
+    "lnorm_min": 0.732,
+    "lnorm_max": 1.091,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.134
+   },
+   "PT_r": {
+    "lnorm_min": 0.779,
+    "lnorm_max": 1.059,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.333
+   },
+   "PQ_r": {
+    "lnorm_min": 0.75,
+    "lnorm_max": 1.049,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.333
+   },
+   "FDS5_r": {
+    "lnorm_min": 0.731,
+    "lnorm_max": 1.066,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.056
+   },
+   "FDS4_r": {
+    "lnorm_min": 0.417,
+    "lnorm_max": 0.789,
+    "fraction_outside_active_window": 0.103,
+    "fraction_outside_lengthrange": 0.91
+   },
+   "FDS3_r": {
+    "lnorm_min": 0.628,
+    "lnorm_max": 1.045,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.161
+   },
+   "FDS2_r": {
+    "lnorm_min": 0.667,
+    "lnorm_max": 1.046,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.093
+   },
+   "FDP5_r": {
+    "lnorm_min": 0.44,
+    "lnorm_max": 0.774,
+    "fraction_outside_active_window": 0.103,
+    "fraction_outside_lengthrange": 0.916
+   },
+   "FDP4_r": {
+    "lnorm_min": 0.707,
+    "lnorm_max": 1.032,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.067
+   },
+   "FDP3_r": {
+    "lnorm_min": 0.655,
+    "lnorm_max": 1.061,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.167
+   },
+   "FDP2_r": {
+    "lnorm_min": 0.662,
+    "lnorm_max": 1.054,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.13
+   },
+   "EDC5_r": {
+    "lnorm_min": 0.684,
+    "lnorm_max": 1.044,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.08
+   },
+   "EDC4_r": {
+    "lnorm_min": 0.718,
+    "lnorm_max": 1.038,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.056
+   },
+   "EDC3_r": {
+    "lnorm_min": 0.695,
+    "lnorm_max": 1.034,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.094
+   },
+   "EDC2_r": {
+    "lnorm_min": 0.714,
+    "lnorm_max": 1.048,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.036
+   },
+   "EDM_r": {
+    "lnorm_min": 0.677,
+    "lnorm_max": 1.024,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.085
+   },
+   "EIP_r": {
+    "lnorm_min": 0.701,
+    "lnorm_max": 1.073,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.147
+   },
+   "EPL_r": {
+    "lnorm_min": 0.809,
+    "lnorm_max": 0.969,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "EPB_r": {
+    "lnorm_min": 0.882,
+    "lnorm_max": 1.009,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "FPL_r": {
+    "lnorm_min": 0.892,
+    "lnorm_max": 1.063,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.043
+   },
+   "APL_r": {
+    "lnorm_min": 0.566,
+    "lnorm_max": 0.927,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.581
+   },
+   "OP_r": {
+    "lnorm_min": 0.943,
+    "lnorm_max": 0.943,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "RI2_r": {
+    "lnorm_min": 0.751,
+    "lnorm_max": 1.164,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.5
+   },
+   "LU_RB2_r": {
+    "lnorm_min": 0.974,
+    "lnorm_max": 0.985,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "UI_UB2_r": {
+    "lnorm_min": 0.87,
+    "lnorm_max": 0.881,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "RI3_r": {
+    "lnorm_min": 0.753,
+    "lnorm_max": 1.015,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "LU_RB3_r": {
+    "lnorm_min": 0.845,
+    "lnorm_max": 0.947,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "UI_UB3_r": {
+    "lnorm_min": 0.818,
+    "lnorm_max": 0.9,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "RI4_r": {
+    "lnorm_min": 0.776,
+    "lnorm_max": 1.016,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "LU_RB4_r": {
+    "lnorm_min": 0.591,
+    "lnorm_max": 0.677,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 1.0
+   },
+   "UI_UB4_r": {
+    "lnorm_min": 0.683,
+    "lnorm_max": 0.729,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 1.0
+   },
+   "RI5_r": {
+    "lnorm_min": -0.479,
+    "lnorm_max": 0.639,
+    "fraction_outside_active_window": 0.5,
+    "fraction_outside_lengthrange": 1.0
+   },
+   "LU_RB5_r": {
+    "lnorm_min": 0.798,
+    "lnorm_max": 0.881,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   },
+   "UI_UB5_r": {
+    "lnorm_min": 0.982,
+    "lnorm_max": 1.015,
+    "fraction_outside_active_window": 0.0,
+    "fraction_outside_lengthrange": 0.0
+   }
+  }
+ },
+ "muscles_worse_with_patch": [
+  "ECRB_r",
+  "ECRL_r",
+  "ECU_r",
+  "EDC2_r",
+  "EDC3_r",
+  "EDC4_r",
+  "EDC5_r",
+  "EDM_r",
+  "EIP_r",
+  "FCR_r",
+  "FCU_r",
+  "FDP2_r",
+  "FDP3_r",
+  "FDP4_r",
+  "FDP5_r",
+  "FDS2_r",
+  "FDS3_r",
+  "FDS4_r",
+  "FDS5_r",
+  "FPL_r",
+  "PL_r"
+ ],
+ "smoke_patched": {
+  "zero": {
+   "finite": true,
+   "max_limit_violation_rad": 0.00416,
+   "warnings": {}
+  },
+  "full": {
+   "finite": true,
+   "max_limit_violation_rad": 0.14997,
+   "warnings": {}
+  },
+  "random_seeded": {
+   "finite": true,
+   "max_limit_violation_rad": 0.1159,
+   "warnings": {}
+  }
+ },
+ "smoke_upstream": {
+  "zero": {
+   "finite": true,
+   "max_limit_violation_rad": 0.00416,
+   "warnings": {}
+  },
+  "full": {
+   "finite": true,
+   "max_limit_violation_rad": 0.15424,
+   "warnings": {}
+  },
+  "random_seeded": {
+   "finite": true,
+   "max_limit_violation_rad": 0.11062,
+   "warnings": {}
+  }
+ }
+}

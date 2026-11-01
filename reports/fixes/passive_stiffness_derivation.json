@@ -1,0 +1,68 @@
+{
+ "flexion_r": {
+  "evidence": "measured",
+  "target_total": 0.7875,
+  "model_muscle_k": -0.0,
+  "joint_spring": 0.7875
+ },
+ "deviation_r": {
+  "evidence": "measured",
+  "target_total": 1.4775,
+  "model_muscle_k": 0.0,
+  "joint_spring": 1.4775
+ },
+ "pro_sup_r": {
+  "evidence": "measured",
+  "target_total": 0.213,
+  "model_muscle_k": -0.0,
+  "joint_spring": 0.213
+ },
+ "mcp2_flexion_r": {
+  "evidence": "measured",
+  "target_total": 0.0391,
+  "model_muscle_k": 0.004,
+  "joint_spring": 0.0351
+ },
+ "cmc_flexion_r": {
+  "evidence": "assumed_in_published_model",
+  "target_total": 0.15,
+  "model_muscle_k": -0.0,
+  "joint_spring": 0.15
+ },
+ "cmc_abduction_r": {
+  "evidence": "assumed_in_published_model",
+  "target_total": 0.15,
+  "model_muscle_k": -0.0,
+  "joint_spring": 0.15
+ },
+ "mp_flexion_r": {
+  "evidence": "assumed_in_published_model",
+  "target_total": 0.1,
+  "model_muscle_k": -0.0,
+  "joint_spring": 0.1
+ },
+ "ip_flexion_r": {
+  "evidence": "assumed_in_published_model",
+  "target_total": 0.05,
+  "model_muscle_k": -0.0,
+  "joint_spring": 0.05
+ },
+ "mcp3_flexion_r": {
+  "evidence": "estimated_by_analogy_with_index_mcp",
+  "target_total": 0.0391,
+  "model_muscle_k": 0.0022,
+  "joint_spring": 0.0369
+ },
+ "mcp4_flexion_r": {
+  "evidence": "estimated_by_analogy_with_index_mcp",
+  "target_total": 0.0391,
+  "model_muscle_k": 0.0041,
+  "joint_spring": 0.035
+ },
+ "mcp5_flexion_r": {
+  "evidence": "estimated_by_analogy_with_index_mcp",
+  "target_total": 0.0391,
+  "model_muscle_k": 0.0209,
+  "joint_spring": 0.0182
+ }
+}

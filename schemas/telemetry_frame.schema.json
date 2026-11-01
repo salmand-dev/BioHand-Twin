@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://biohand-twin.local/schemas/telemetry_frame/1.1.0",
+  "title": "BioHand Twin telemetry frame",
+  "description": "One simulation sample. SI units, radians. MuJoCo is the only dynamics source; body poses are given both in MuJoCo world coordinates and, converted by biomechanics/frames.py, in Godot coordinates.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "time_s",
+    "joints",
+    "muscles",
+    "fingertips_m",
+    "contact_normal_N",
+    "flags"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "1.0.0",
+        "1.1.0"
+      ]
+    },
+    "time_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "joints": {
+      "type": "object",
+      "description": "Keyed by MuJoCo joint name.",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "q_rad",
+          "qvel_rad_s"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "q_rad": {
+            "type": "number"
+          },
+          "qvel_rad_s": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "muscles": {
+      "type": "object",
+      "description": "Keyed by MuJoCo actuator name.",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "control",
+          "activation",
+          "tension_N",
+          "active_tension_N",
+          "passive_tension_N",
+          "length_m",
+          "normalised_length",
+          "in_active_window"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "control": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "activation": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "tension_N": {
+            "type": "number",
+            "minimum": 0
+          },
+          "active_tension_N": {
+            "type": "number",
+            "minimum": 0
+          },
+          "passive_tension_N": {
+            "type": "number",
+            "minimum": 0
+          },
+          "length_m": {
+            "type": "number"
+          },
+          "normalised_length": {
+            "type": "number"
+          },
+          "in_active_window": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "fingertips_m": {
+      "type": "object",
+      "description": "Fingertip site positions, MuJoCo world frame.",
+      "additionalProperties": {
+        "$ref": "#/$defs/vec3"
+      }
+    },
+    "bodies_godot": {
+      "type": "object",
+      "description": "Optional. Per MuJoCo body: world pose in Godot coordinates (pos m, quat x,y,z,w).",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "pos",
+          "quat_xyzw"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "pos": {
+            "$ref": "#/$defs/vec3"
+          },
+          "quat_xyzw": {
+            "$ref": "#/$defs/vec4"
+          }
+        }
+      }
+    },
+    "contact_normal_N": {
+      "type": "number",
+      "minimum": 0
+    },
+    "flags": {
+      "type": "object",
+      "required": [
+        "outside_muscle_validity_envelope",
+        "max_limit_violation_rad",
+        "finite"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "outside_muscle_validity_envelope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "max_limit_violation_rad": {
+          "type": "number",
+          "minimum": 0
+        },
+        "finite": {
+          "type": "boolean"
+        }
+      }
+    },
+    "muscle_paths_godot": {
+      "type": "object",
+      "description": "Optional (1.1.0). Per actuator: polyline of tendon path points (via-sites and wrap tangent points; wrap arcs drawn as chords, length error <= 0.25 mm) in Godot coordinates, m.",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/vec3"
+        },
+        "minItems": 2
+      }
+    }
+  },
+  "$defs": {
+    "vec3": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "vec4": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 4,
+      "maxItems": 4
+    }
+  }
+}

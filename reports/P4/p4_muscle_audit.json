@@ -1,0 +1,4536 @@
+{
+ "model": "BioHand reference = MyoHand fragment + wrist_rom_v1",
+ "moment_arm_flags": [
+  {
+   "actuator": "ECRB_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -2.43,
+   "r_max_mm": 1.9,
+   "max_jump_mm": 0.13,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "ECU_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -2.65,
+   "r_max_mm": 2.58,
+   "max_jump_mm": 0.141,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FCR_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -4.55,
+   "r_max_mm": 5.01,
+   "max_jump_mm": 0.28,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FCU_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -4.68,
+   "r_max_mm": 4.56,
+   "max_jump_mm": 0.258,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "PL_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -5.58,
+   "r_max_mm": 5.94,
+   "max_jump_mm": 0.341,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "PT_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -6.41,
+   "r_max_mm": 11.97,
+   "max_jump_mm": 0.797,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "PQ_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -0.58,
+   "r_max_mm": 7.45,
+   "max_jump_mm": 0.507,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS5_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -4.34,
+   "r_max_mm": 4.47,
+   "max_jump_mm": 0.253,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS4_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -4.16,
+   "r_max_mm": 4.48,
+   "max_jump_mm": 0.251,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS3_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -1.8,
+   "r_max_mm": 3.36,
+   "max_jump_mm": 0.18,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS2_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -1.48,
+   "r_max_mm": 3.45,
+   "max_jump_mm": 0.184,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDP5_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -1.16,
+   "r_max_mm": 2.17,
+   "max_jump_mm": 0.115,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDP4_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -1.27,
+   "r_max_mm": 2.34,
+   "max_jump_mm": 0.124,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDP3_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -1.21,
+   "r_max_mm": 2.7,
+   "max_jump_mm": 0.144,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDP2_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -0.76,
+   "r_max_mm": 2.68,
+   "max_jump_mm": 0.142,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "EDC5_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -2.18,
+   "r_max_mm": 1.88,
+   "max_jump_mm": 0.119,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "EDC4_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -2.49,
+   "r_max_mm": 1.8,
+   "max_jump_mm": 0.137,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "EDC3_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -2.61,
+   "r_max_mm": 2.1,
+   "max_jump_mm": 0.144,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "EDC2_r",
+   "joint": "pro_sup_r",
+   "background": "neutral",
+   "r_min_mm": -2.31,
+   "r_max_mm": 1.95,
+   "max_jump_mm": 0.126,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "ECRB_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -2.43,
+   "r_max_mm": 1.9,
+   "max_jump_mm": 0.13,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "ECU_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -2.65,
+   "r_max_mm": 2.58,
+   "max_jump_mm": 0.141,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FCR_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -4.55,
+   "r_max_mm": 5.01,
+   "max_jump_mm": 0.28,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FCU_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -4.68,
+   "r_max_mm": 4.56,
+   "max_jump_mm": 0.258,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "PL_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -5.58,
+   "r_max_mm": 5.94,
+   "max_jump_mm": 0.341,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "PT_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -6.41,
+   "r_max_mm": 11.97,
+   "max_jump_mm": 0.797,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "PQ_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -0.58,
+   "r_max_mm": 7.45,
+   "max_jump_mm": 0.507,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS5_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -4.34,
+   "r_max_mm": 4.47,
+   "max_jump_mm": 0.253,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS4_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -4.16,
+   "r_max_mm": 4.48,
+   "max_jump_mm": 0.251,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS3_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -1.8,
+   "r_max_mm": 3.36,
+   "max_jump_mm": 0.18,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS2_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -1.48,
+   "r_max_mm": 3.45,
+   "max_jump_mm": 0.184,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDP5_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -1.16,
+   "r_max_mm": 2.17,
+   "max_jump_mm": 0.115,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDP4_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -1.27,
+   "r_max_mm": 2.34,
+   "max_jump_mm": 0.124,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDP3_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -1.21,
+   "r_max_mm": 2.7,
+   "max_jump_mm": 0.144,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDP2_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -0.76,
+   "r_max_mm": 2.68,
+   "max_jump_mm": 0.142,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "EDC5_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -2.18,
+   "r_max_mm": 1.88,
+   "max_jump_mm": 0.119,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "EDC4_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -2.49,
+   "r_max_mm": 1.8,
+   "max_jump_mm": 0.137,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "EDC3_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -2.61,
+   "r_max_mm": 2.1,
+   "max_jump_mm": 0.144,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "EDC2_r",
+   "joint": "pro_sup_r",
+   "background": "mid_range",
+   "r_min_mm": -2.31,
+   "r_max_mm": 1.95,
+   "max_jump_mm": 0.126,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS5_r",
+   "joint": "deviation_r",
+   "background": "neutral",
+   "r_min_mm": -8.51,
+   "r_max_mm": 2.87,
+   "max_jump_mm": 0.191,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FDS4_r",
+   "joint": "deviation_r",
+   "background": "neutral",
+   "r_min_mm": -6.8,
+   "r_max_mm": 4.56,
+   "max_jump_mm": 0.19,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FDS3_r",
+   "joint": "deviation_r",
+   "background": "neutral",
+   "r_min_mm": -1.18,
+   "r_max_mm": 10.63,
+   "max_jump_mm": 0.2,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "FDP5_r",
+   "joint": "deviation_r",
+   "background": "neutral",
+   "r_min_mm": -6.68,
+   "r_max_mm": 3.98,
+   "max_jump_mm": 0.179,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FDP4_r",
+   "joint": "deviation_r",
+   "background": "neutral",
+   "r_min_mm": -5.24,
+   "r_max_mm": 5.85,
+   "max_jump_mm": 0.186,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "FDP3_r",
+   "joint": "deviation_r",
+   "background": "neutral",
+   "r_min_mm": -2.97,
+   "r_max_mm": 8.47,
+   "max_jump_mm": 0.192,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "EDC2_r",
+   "joint": "deviation_r",
+   "background": "neutral",
+   "r_min_mm": -2.03,
+   "r_max_mm": 4.51,
+   "max_jump_mm": 0.155,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "FDS5_r",
+   "joint": "deviation_r",
+   "background": "mid_range",
+   "r_min_mm": -8.51,
+   "r_max_mm": 2.87,
+   "max_jump_mm": 0.191,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FDS4_r",
+   "joint": "deviation_r",
+   "background": "mid_range",
+   "r_min_mm": -6.8,
+   "r_max_mm": 4.56,
+   "max_jump_mm": 0.19,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FDS3_r",
+   "joint": "deviation_r",
+   "background": "mid_range",
+   "r_min_mm": -1.18,
+   "r_max_mm": 10.63,
+   "max_jump_mm": 0.2,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "FDP5_r",
+   "joint": "deviation_r",
+   "background": "mid_range",
+   "r_min_mm": -6.68,
+   "r_max_mm": 3.98,
+   "max_jump_mm": 0.179,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FDP4_r",
+   "joint": "deviation_r",
+   "background": "mid_range",
+   "r_min_mm": -5.24,
+   "r_max_mm": 5.85,
+   "max_jump_mm": 0.186,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "FDP3_r",
+   "joint": "deviation_r",
+   "background": "mid_range",
+   "r_min_mm": -2.97,
+   "r_max_mm": 8.47,
+   "max_jump_mm": 0.192,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "EDC2_r",
+   "joint": "deviation_r",
+   "background": "mid_range",
+   "r_min_mm": -2.03,
+   "r_max_mm": 4.51,
+   "max_jump_mm": 0.155,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "ECRL_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -12.27,
+   "r_max_mm": 1.46,
+   "max_jump_mm": 1.329,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "ECRB_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -18.19,
+   "r_max_mm": -5.9,
+   "max_jump_mm": 2.843,
+   "sign_changes": 0,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FCR_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -7.96,
+   "r_max_mm": 18.61,
+   "max_jump_mm": 2.062,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "FCU_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -1.28,
+   "r_max_mm": 20.22,
+   "max_jump_mm": 3.708,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "PL_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": 2.85,
+   "r_max_mm": 27.22,
+   "max_jump_mm": 3.708,
+   "sign_changes": 0,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FDS3_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -16.28,
+   "r_max_mm": 30.28,
+   "max_jump_mm": 24.29,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "FDS2_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -16.55,
+   "r_max_mm": 30.1,
+   "max_jump_mm": 24.391,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "EDC3_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -25.37,
+   "r_max_mm": 4.4,
+   "max_jump_mm": 0.793,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "EDC2_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -22.39,
+   "r_max_mm": -4.14,
+   "max_jump_mm": 1.189,
+   "sign_changes": 0,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "EDM_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -18.65,
+   "r_max_mm": 3.78,
+   "max_jump_mm": 0.454,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "EPL_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -15.32,
+   "r_max_mm": -5.13,
+   "max_jump_mm": 2.232,
+   "sign_changes": 0,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "EPB_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -5.33,
+   "r_max_mm": 3.82,
+   "max_jump_mm": 0.169,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FPL_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": 4.33,
+   "r_max_mm": 12.86,
+   "max_jump_mm": 2.275,
+   "sign_changes": 0,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "APL_r",
+   "joint": "flexion_r",
+   "background": "neutral",
+   "r_min_mm": -2.19,
+   "r_max_mm": 10.45,
+   "max_jump_mm": 0.316,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "ECRL_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -13.93,
+   "r_max_mm": -4.29,
+   "max_jump_mm": 1.648,
+   "sign_changes": 0,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FCR_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -7.45,
+   "r_max_mm": 18.43,
+   "max_jump_mm": 2.001,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "FCU_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -6.56,
+   "r_max_mm": 20.94,
+   "max_jump_mm": 6.18,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "PL_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": 5.81,
+   "r_max_mm": 27.22,
+   "max_jump_mm": 3.479,
+   "sign_changes": 0,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FDS3_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -15.92,
+   "r_max_mm": 29.36,
+   "max_jump_mm": 23.977,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "FDS2_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -16.21,
+   "r_max_mm": 29.24,
+   "max_jump_mm": 24.033,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "EDC3_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -24.83,
+   "r_max_mm": 4.01,
+   "max_jump_mm": 0.78,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "EDC2_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -21.13,
+   "r_max_mm": -4.23,
+   "max_jump_mm": 1.247,
+   "sign_changes": 0,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "EDM_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -17.83,
+   "r_max_mm": 2.96,
+   "max_jump_mm": 0.434,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "EPB_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -7.02,
+   "r_max_mm": 5.98,
+   "max_jump_mm": 0.232,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "FPL_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": 3.92,
+   "r_max_mm": 13.14,
+   "max_jump_mm": 1.221,
+   "sign_changes": 0,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": false
+  },
+  {
+   "actuator": "APL_r",
+   "joint": "flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -3.05,
+   "r_max_mm": 14.59,
+   "max_jump_mm": 0.398,
+   "sign_changes": 1,
+   "in_patch_extension": true,
+   "sign_change_only_in_extension": true
+  },
+  {
+   "actuator": "APL_r",
+   "joint": "cmc_flexion_r",
+   "background": "neutral",
+   "r_min_mm": -1.37,
+   "r_max_mm": 1.46,
+   "max_jump_mm": 0.051,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "APL_r",
+   "joint": "cmc_abduction_r",
+   "background": "neutral",
+   "r_min_mm": -0.67,
+   "r_max_mm": 3.93,
+   "max_jump_mm": 0.099,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "OP_r",
+   "joint": "cmc_abduction_r",
+   "background": "neutral",
+   "r_min_mm": -4.64,
+   "r_max_mm": 6.92,
+   "max_jump_mm": 0.198,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FPBs_r",
+   "joint": "cmc_abduction_r",
+   "background": "neutral",
+   "r_min_mm": -5.48,
+   "r_max_mm": 6.45,
+   "max_jump_mm": 0.204,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FPBd_r",
+   "joint": "cmc_abduction_r",
+   "background": "neutral",
+   "r_min_mm": -6.24,
+   "r_max_mm": 6.04,
+   "max_jump_mm": 0.21,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "ADPo_r",
+   "joint": "cmc_abduction_r",
+   "background": "neutral",
+   "r_min_mm": -12.25,
+   "r_max_mm": 1.93,
+   "max_jump_mm": 0.253,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "OP_r",
+   "joint": "cmc_abduction_r",
+   "background": "mid_range",
+   "r_min_mm": -4.49,
+   "r_max_mm": 6.91,
+   "max_jump_mm": 0.196,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FPBs_r",
+   "joint": "cmc_abduction_r",
+   "background": "mid_range",
+   "r_min_mm": -5.27,
+   "r_max_mm": 6.33,
+   "max_jump_mm": 0.198,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FPBd_r",
+   "joint": "cmc_abduction_r",
+   "background": "mid_range",
+   "r_min_mm": -6.06,
+   "r_max_mm": 6.08,
+   "max_jump_mm": 0.208,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "ADPo_r",
+   "joint": "cmc_abduction_r",
+   "background": "mid_range",
+   "r_min_mm": -12.08,
+   "r_max_mm": 1.91,
+   "max_jump_mm": 0.25,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDP2_r",
+   "joint": "mcp2_abduction_r",
+   "background": "neutral",
+   "r_min_mm": -1.26,
+   "r_max_mm": 2.6,
+   "max_jump_mm": 0.066,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "EDC2_r",
+   "joint": "mcp2_abduction_r",
+   "background": "mid_range",
+   "r_min_mm": -0.59,
+   "r_max_mm": 1.1,
+   "max_jump_mm": 0.028,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "UI_UB3_r",
+   "joint": "mcp3_flexion_r",
+   "background": "neutral",
+   "r_min_mm": -0.75,
+   "r_max_mm": 4.65,
+   "max_jump_mm": 0.158,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "UI_UB3_r",
+   "joint": "mcp3_flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -0.75,
+   "r_max_mm": 4.65,
+   "max_jump_mm": 0.158,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS3_r",
+   "joint": "mcp3_abduction_r",
+   "background": "neutral",
+   "r_min_mm": -3.78,
+   "r_max_mm": 1.47,
+   "max_jump_mm": 0.088,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDP3_r",
+   "joint": "mcp3_abduction_r",
+   "background": "neutral",
+   "r_min_mm": -2.13,
+   "r_max_mm": 1.29,
+   "max_jump_mm": 0.057,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS3_r",
+   "joint": "mcp3_abduction_r",
+   "background": "mid_range",
+   "r_min_mm": -2.47,
+   "r_max_mm": 0.62,
+   "max_jump_mm": 0.052,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "UI_UB3_r",
+   "joint": "pm3_flexion_r",
+   "background": "neutral",
+   "r_min_mm": -1.29,
+   "r_max_mm": 0.61,
+   "max_jump_mm": 0.035,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "UI_UB3_r",
+   "joint": "pm3_flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -1.29,
+   "r_max_mm": 0.61,
+   "max_jump_mm": 0.035,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "UI_UB4_r",
+   "joint": "mcp4_flexion_r",
+   "background": "neutral",
+   "r_min_mm": -0.87,
+   "r_max_mm": 2.49,
+   "max_jump_mm": 0.075,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "UI_UB4_r",
+   "joint": "mcp4_flexion_r",
+   "background": "mid_range",
+   "r_min_mm": -0.87,
+   "r_max_mm": 2.49,
+   "max_jump_mm": 0.075,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  },
+  {
+   "actuator": "FDS4_r",
+   "joint": "mcp4_abduction_r",
+   "background": "neutral",
+   "r_min_mm": -2.32,
+   "r_max_mm": 0.62,
+   "max_jump_mm": 0.049,
+   "sign_changes": 1,
+   "in_patch_extension": false
+  }
+ ],
+ "n_curves": 357,
+ "passive_tension_at_qpos0_N": {
+  "ECRL_r": -0.0,
+  "ECRB_r": -0.0,
+  "ECU_r": -0.0,
+  "FCR_r": -0.0,
+  "FCU_r": -0.0,
+  "PL_r": -0.0,
+  "PT_r": -0.0,
+  "PQ_r": -0.0,
+  "FDS5_r": -0.0,
+  "FDS4_r": -0.0,
+  "FDS3_r": -0.0,
+  "FDS2_r": -0.0,
+  "FDP5_r": -0.0,
+  "FDP4_r": -0.0,
+  "FDP3_r": -0.0,
+  "FDP2_r": -0.0,
+  "EDC5_r": -0.0,
+  "EDC4_r": -0.0,
+  "EDC3_r": -0.0,
+  "EDC2_r": -0.0,
+  "EDM_r": -0.0,
+  "EIP_r": -0.0,
+  "EPL_r": -0.0,
+  "EPB_r": -0.0,
+  "FPL_r": -0.0,
+  "APL_r": -0.0,
+  "OP_r": -0.0,
+  "RI2_r": 0.074,
+  "LU_RB2_r": -0.0,
+  "UI_UB2_r": -0.0,
+  "RI3_r": 0.103,
+  "LU_RB3_r": -0.0,
+  "UI_UB3_r": -0.0,
+  "RI4_r": 0.187,
+  "LU_RB4_r": -0.0,
+  "UI_UB4_r": -0.0,
+  "RI5_r": 0.473,
+  "LU_RB5_r": -0.0,
+  "UI_UB5_r": 0.075,
+  "APB_r": -0.0,
+  "FPBs_r": -0.0,
+  "FPBd_r": -0.0,
+  "ADPo_r": -0.0,
+  "ADPt_r": -0.0
+ },
+ "activation_dynamics": {
+  "actuator": "FDP3_r",
+  "dynprm_tau_act_s": 0.01,
+  "dynprm_tau_deact_s": 0.04,
+  "time_to_63pct_rise_s": 0.008,
+  "time_to_63pct_fall_s": 0.028,
+  "activation_at_0p2s": 1.0,
+  "note": "MuJoCo muscle activation dynamics scale the time constants with activation level (see MuJoCo docs, muscle actuators); values here are measured, not modelled by BioHand."
+ },
+ "isolated_activation": {
+  "protocol": "u_a=1 for 0.2 s from qpos0, gravity off; dq = q - q(all u=0); expected sign = sign(r) at qpos0 for joints with |r| >= 1 mm; joints whose expected motion pushes into a limit at qpos0 are marked blocked and excluded from agreement",
+  "primary_joint_agreement": "44/44",
+  "actuators": [
+   {
+    "actuator": "ECRL_r",
+    "primary_joint": "deviation_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": -3.56,
+      "dq_rad": -0.14849,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 23.64,
+      "dq_rad": 0.17531,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": -11.66,
+      "dq_rad": -0.6187,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "ECRB_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": -1.56,
+      "dq_rad": -0.03396,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 14.2,
+      "dq_rad": 0.17492,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": -15.33,
+      "dq_rad": -0.62186,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "ECU_r",
+    "primary_joint": "deviation_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "deviation_r",
+      "r_mm": -27.81,
+      "dq_rad": -0.4129,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": -7.55,
+      "dq_rad": -0.15238,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FCR_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 2.62,
+      "dq_rad": 0.07509,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 3.97,
+      "dq_rad": 0.15024,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 18.46,
+      "dq_rad": 0.8311,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FCU_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 1.08,
+      "dq_rad": 0.02059,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": -10.56,
+      "dq_rad": -0.26882,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 18.41,
+      "dq_rad": 0.84296,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "PL_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 3.18,
+      "dq_rad": 0.03911,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 7.25,
+      "dq_rad": 0.13248,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 25.11,
+      "dq_rad": 0.5593,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "PT_r",
+    "primary_joint": "pro_sup_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 11.63,
+      "dq_rad": 0.67412,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "PQ_r",
+    "primary_joint": "pro_sup_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 6.97,
+      "dq_rad": 0.42103,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FDS5_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 1.86,
+      "dq_rad": 0.02387,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 15.28,
+      "dq_rad": 0.35679,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp5_flexion_r",
+      "r_mm": 6.48,
+      "dq_rad": 0.98807,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp5_abduction_r",
+      "r_mm": -4.02,
+      "dq_rad": -0.26678,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm5_flexion_r",
+      "r_mm": 3.9,
+      "dq_rad": 0.7001,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FDS4_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 2.19,
+      "dq_rad": 0.03671,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 1.31,
+      "dq_rad": 0.03685,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 14.86,
+      "dq_rad": 0.47956,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp4_flexion_r",
+      "r_mm": 6.75,
+      "dq_rad": 1.46321,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm4_flexion_r",
+      "r_mm": 3.12,
+      "dq_rad": 0.63694,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FDS3_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 2.89,
+      "dq_rad": 0.03194,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 7.33,
+      "dq_rad": 0.12347,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 14.63,
+      "dq_rad": 0.30131,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp3_flexion_r",
+      "r_mm": 9.51,
+      "dq_rad": 1.53991,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp3_abduction_r",
+      "r_mm": -1.17,
+      "dq_rad": -0.13628,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm3_flexion_r",
+      "r_mm": 7.03,
+      "dq_rad": 1.00177,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FDS2_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 3.15,
+      "dq_rad": 0.03873,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 9.56,
+      "dq_rad": 0.17467,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 14.12,
+      "dq_rad": 0.34564,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp2_flexion_r",
+      "r_mm": 8.61,
+      "dq_rad": 1.46579,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm2_flexion_r",
+      "r_mm": 4.76,
+      "dq_rad": 0.745,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FDP5_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 1.86,
+      "dq_rad": 0.03581,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 11.6,
+      "dq_rad": 0.42004,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp5_flexion_r",
+      "r_mm": 5.87,
+      "dq_rad": 1.45125,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp5_abduction_r",
+      "r_mm": -2.56,
+      "dq_rad": -0.24271,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm5_flexion_r",
+      "r_mm": 4.84,
+      "dq_rad": 1.19013,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "md5_flexion_r",
+      "r_mm": 2.84,
+      "dq_rad": 0.70618,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FDP4_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 1.99,
+      "dq_rad": 0.03188,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 2.7,
+      "dq_rad": 0.06989,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 11.83,
+      "dq_rad": 0.36646,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp4_flexion_r",
+      "r_mm": 6.58,
+      "dq_rad": 1.28206,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp4_abduction_r",
+      "r_mm": -3.05,
+      "dq_rad": -0.26525,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm4_flexion_r",
+      "r_mm": 7.14,
+      "dq_rad": 1.43282,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "md4_flexion_r",
+      "r_mm": 2.3,
+      "dq_rad": 0.48893,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FDP3_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 2.44,
+      "dq_rad": 0.02893,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 5.25,
+      "dq_rad": 0.09363,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 11.7,
+      "dq_rad": 0.25613,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp3_flexion_r",
+      "r_mm": 8.46,
+      "dq_rad": 1.33291,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm3_flexion_r",
+      "r_mm": 7.55,
+      "dq_rad": 1.32455,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "md3_flexion_r",
+      "r_mm": 2.66,
+      "dq_rad": 0.3705,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FDP2_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": 2.58,
+      "dq_rad": 0.03063,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 9.62,
+      "dq_rad": 0.17465,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 11.6,
+      "dq_rad": 0.27656,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp2_flexion_r",
+      "r_mm": 9.58,
+      "dq_rad": 1.3969,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm2_flexion_r",
+      "r_mm": 6.86,
+      "dq_rad": 1.12848,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "md2_flexion_r",
+      "r_mm": 4.33,
+      "dq_rad": 0.67579,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "EDC5_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": -1.21,
+      "dq_rad": -0.01082,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": -9.89,
+      "dq_rad": -0.12148,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": -11.07,
+      "dq_rad": -0.16337,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp5_flexion_r",
+      "r_mm": -5.9,
+      "dq_rad": -0.01113,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "mcp5_abduction_r",
+      "r_mm": 3.22,
+      "dq_rad": 0.25747,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm5_flexion_r",
+      "r_mm": -5.31,
+      "dq_rad": -0.00071,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "md5_flexion_r",
+      "r_mm": -2.99,
+      "dq_rad": -0.00055,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "EDC4_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": -1.84,
+      "dq_rad": -0.03202,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": -9.05,
+      "dq_rad": -0.22256,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": -17.32,
+      "dq_rad": -0.53034,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp4_flexion_r",
+      "r_mm": -7.9,
+      "dq_rad": -0.00338,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "mcp4_abduction_r",
+      "r_mm": 4.38,
+      "dq_rad": 0.25769,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm4_flexion_r",
+      "r_mm": -3.98,
+      "dq_rad": -0.00084,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "md4_flexion_r",
+      "r_mm": -5.5,
+      "dq_rad": -0.00125,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "EDC3_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": -1.7,
+      "dq_rad": -0.02543,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": -2.2,
+      "dq_rad": -0.04608,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": -17.84,
+      "dq_rad": -0.51147,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp3_flexion_r",
+      "r_mm": -9.37,
+      "dq_rad": -0.00233,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "pm3_flexion_r",
+      "r_mm": -5.45,
+      "dq_rad": -0.00093,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "md3_flexion_r",
+      "r_mm": -3.06,
+      "dq_rad": -0.00071,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "EDC2_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": -1.37,
+      "dq_rad": -0.01337,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 2.27,
+      "dq_rad": 0.03593,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": -17.32,
+      "dq_rad": -0.32397,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp2_flexion_r",
+      "r_mm": -8.73,
+      "dq_rad": -0.00179,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "pm2_flexion_r",
+      "r_mm": -5.21,
+      "dq_rad": -0.00075,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "md2_flexion_r",
+      "r_mm": -3.57,
+      "dq_rad": -0.00065,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "EDM_r",
+    "primary_joint": "deviation_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "deviation_r",
+      "r_mm": -14.5,
+      "dq_rad": -0.27013,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": -9.47,
+      "dq_rad": -0.22074,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp5_flexion_r",
+      "r_mm": -5.73,
+      "dq_rad": -0.01125,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "pm5_flexion_r",
+      "r_mm": -2.95,
+      "dq_rad": -0.00061,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "md5_flexion_r",
+      "r_mm": -2.31,
+      "dq_rad": -0.00059,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "EIP_r",
+    "primary_joint": "flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "deviation_r",
+      "r_mm": -2.8,
+      "dq_rad": -0.04001,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": -12.77,
+      "dq_rad": -0.22277,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp2_flexion_r",
+      "r_mm": -9.23,
+      "dq_rad": -0.00183,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "mcp2_abduction_r",
+      "r_mm": 1.49,
+      "dq_rad": 0.17184,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm2_flexion_r",
+      "r_mm": -6.52,
+      "dq_rad": -0.00086,
+      "blocked_by_limit": true,
+      "agrees": true
+     },
+     {
+      "joint": "md2_flexion_r",
+      "r_mm": -2.68,
+      "dq_rad": -0.00056,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "EPL_r",
+    "primary_joint": "deviation_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "pro_sup_r",
+      "r_mm": -1.81,
+      "dq_rad": -0.01932,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "deviation_r",
+      "r_mm": 22.74,
+      "dq_rad": 0.17509,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": -13.4,
+      "dq_rad": -0.28956,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "cmc_flexion_r",
+      "r_mm": 6.66,
+      "dq_rad": 0.34709,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "cmc_abduction_r",
+      "r_mm": -9.01,
+      "dq_rad": -0.47185,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mp_flexion_r",
+      "r_mm": 9.02,
+      "dq_rad": 0.70023,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "ip_flexion_r",
+      "r_mm": 5.16,
+      "dq_rad": 0.43769,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "EPB_r",
+    "primary_joint": "deviation_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "deviation_r",
+      "r_mm": 34.18,
+      "dq_rad": 0.17485,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": -1.03,
+      "dq_rad": -0.01491,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "cmc_flexion_r",
+      "r_mm": 12.48,
+      "dq_rad": 0.64452,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mp_flexion_r",
+      "r_mm": 9.13,
+      "dq_rad": 0.43437,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FPL_r",
+    "primary_joint": "deviation_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "deviation_r",
+      "r_mm": 20.82,
+      "dq_rad": 0.1752,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 11.21,
+      "dq_rad": 0.29846,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "cmc_flexion_r",
+      "r_mm": -3.86,
+      "dq_rad": -0.79029,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "cmc_abduction_r",
+      "r_mm": 1.49,
+      "dq_rad": 0.29121,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mp_flexion_r",
+      "r_mm": -7.12,
+      "dq_rad": -0.78893,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "ip_flexion_r",
+      "r_mm": -8.81,
+      "dq_rad": -1.30559,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "APL_r",
+    "primary_joint": "deviation_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "deviation_r",
+      "r_mm": 26.82,
+      "dq_rad": 0.17511,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "flexion_r",
+      "r_mm": 6.81,
+      "dq_rad": 0.14021,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "cmc_abduction_r",
+      "r_mm": 2.69,
+      "dq_rad": 0.42245,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "OP_r",
+    "primary_joint": "cmc_flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "cmc_flexion_r",
+      "r_mm": -13.7,
+      "dq_rad": -0.78669,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "RI2_r",
+    "primary_joint": "mcp2_abduction_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp2_flexion_r",
+      "r_mm": 3.69,
+      "dq_rad": 0.40572,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp2_abduction_r",
+      "r_mm": 5.61,
+      "dq_rad": 0.26082,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "LU_RB2_r",
+    "primary_joint": "mcp2_abduction_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp2_flexion_r",
+      "r_mm": 3.05,
+      "dq_rad": 0.32438,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp2_abduction_r",
+      "r_mm": 6.55,
+      "dq_rad": 0.26091,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm2_flexion_r",
+      "r_mm": -3.48,
+      "dq_rad": -0.00072,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "UI_UB2_r",
+    "primary_joint": "mcp2_abduction_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp2_flexion_r",
+      "r_mm": 3.61,
+      "dq_rad": 0.36676,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp2_abduction_r",
+      "r_mm": -6.73,
+      "dq_rad": -0.26397,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm2_flexion_r",
+      "r_mm": -2.51,
+      "dq_rad": -0.00055,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "RI3_r",
+    "primary_joint": "mcp3_abduction_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp3_flexion_r",
+      "r_mm": 3.36,
+      "dq_rad": 0.46307,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp3_abduction_r",
+      "r_mm": 7.5,
+      "dq_rad": 0.25963,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "LU_RB3_r",
+    "primary_joint": "mcp3_abduction_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp3_flexion_r",
+      "r_mm": 2.99,
+      "dq_rad": 0.59271,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp3_abduction_r",
+      "r_mm": 8.42,
+      "dq_rad": 0.25982,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm3_flexion_r",
+      "r_mm": -1.25,
+      "dq_rad": -0.00046,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "UI_UB3_r",
+    "primary_joint": "mcp3_flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp3_flexion_r",
+      "r_mm": 4.62,
+      "dq_rad": 0.63544,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp3_abduction_r",
+      "r_mm": -4.09,
+      "dq_rad": -0.26524,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm3_flexion_r",
+      "r_mm": -1.29,
+      "dq_rad": -0.00047,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "RI4_r",
+    "primary_joint": "mcp4_abduction_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp4_flexion_r",
+      "r_mm": 3.43,
+      "dq_rad": 0.6486,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp4_abduction_r",
+      "r_mm": 6.95,
+      "dq_rad": 0.25773,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "LU_RB4_r",
+    "primary_joint": "mcp4_abduction_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp4_flexion_r",
+      "r_mm": 2.38,
+      "dq_rad": 0.34142,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp4_abduction_r",
+      "r_mm": 3.77,
+      "dq_rad": 0.25762,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "UI_UB4_r",
+    "primary_joint": "mcp4_abduction_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp4_flexion_r",
+      "r_mm": 2.49,
+      "dq_rad": 0.27377,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp4_abduction_r",
+      "r_mm": -4.46,
+      "dq_rad": -0.26708,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm4_flexion_r",
+      "r_mm": -2.88,
+      "dq_rad": -0.00067,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "RI5_r",
+    "primary_joint": "mcp5_flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp5_flexion_r",
+      "r_mm": 5.71,
+      "dq_rad": 0.58845,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp5_abduction_r",
+      "r_mm": 3.74,
+      "dq_rad": 0.2574,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "LU_RB5_r",
+    "primary_joint": "mcp5_abduction_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp5_flexion_r",
+      "r_mm": 2.85,
+      "dq_rad": 0.28748,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp5_abduction_r",
+      "r_mm": 6.49,
+      "dq_rad": 0.25771,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm5_flexion_r",
+      "r_mm": -3.76,
+      "dq_rad": -0.00065,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "UI_UB5_r",
+    "primary_joint": "mcp5_abduction_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "mcp5_flexion_r",
+      "r_mm": 3.2,
+      "dq_rad": 0.21337,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mcp5_abduction_r",
+      "r_mm": -6.37,
+      "dq_rad": -0.26708,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "pm5_flexion_r",
+      "r_mm": -2.81,
+      "dq_rad": -0.00053,
+      "blocked_by_limit": true,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "APB_r",
+    "primary_joint": "cmc_flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "cmc_flexion_r",
+      "r_mm": -15.6,
+      "dq_rad": -0.49783,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "cmc_abduction_r",
+      "r_mm": 5.33,
+      "dq_rad": 0.18637,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FPBs_r",
+    "primary_joint": "cmc_flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "cmc_flexion_r",
+      "r_mm": -20.76,
+      "dq_rad": -0.3725,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mp_flexion_r",
+      "r_mm": -7.09,
+      "dq_rad": -0.11665,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "FPBd_r",
+    "primary_joint": "cmc_flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "cmc_flexion_r",
+      "r_mm": -15.51,
+      "dq_rad": -0.27665,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "cmc_abduction_r",
+      "r_mm": -1.49,
+      "dq_rad": -0.01876,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mp_flexion_r",
+      "r_mm": -11.27,
+      "dq_rad": -0.19593,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "ADPo_r",
+    "primary_joint": "cmc_flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "cmc_flexion_r",
+      "r_mm": -14.58,
+      "dq_rad": -0.71792,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "cmc_abduction_r",
+      "r_mm": -7.16,
+      "dq_rad": -0.29793,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mp_flexion_r",
+      "r_mm": -9.71,
+      "dq_rad": -0.47742,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   },
+   {
+    "actuator": "ADPt_r",
+    "primary_joint": "cmc_flexion_r",
+    "primary_agrees": true,
+    "free_joint_agreement": 1.0,
+    "joints": [
+     {
+      "joint": "cmc_flexion_r",
+      "r_mm": -20.05,
+      "dq_rad": -0.5627,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "cmc_abduction_r",
+      "r_mm": -16.09,
+      "dq_rad": -0.44024,
+      "blocked_by_limit": false,
+      "agrees": true
+     },
+     {
+      "joint": "mp_flexion_r",
+      "r_mm": -9.79,
+      "dq_rad": -0.2666,
+      "blocked_by_limit": false,
+      "agrees": true
+     }
+    ]
+   }
+  ]
+ },
+ "ablation": {
+  "method": "actuator removed by zeroing its gear on a model copy (no active or passive force); 1 s simulation from qpos0; differences vs intact model",
+  "tasks": {
+   "finger_flexors_0p5": "FDS2-5 and FDP2-5 at u=0.5, others 0",
+   "random_seeded": "u ~ U(0,1) per step, seed 20261031"
+  },
+  "actuators": [
+   {
+    "actuator": "ECRL_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 2.94,
+      "index": 1.79,
+      "middle": 1.5,
+      "ring": 1.44,
+      "little": 1.39
+     },
+     "max_tip_shift_mm": 2.94,
+     "max_joint_change_deg": 1.28,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 9.88,
+      "index": 12.96,
+      "middle": 4.81,
+      "ring": 3.66,
+      "little": 3.66
+     },
+     "max_tip_shift_mm": 12.96,
+     "max_joint_change_deg": 14.78,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "ECRB_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.06,
+      "index": 0.04,
+      "middle": 0.03,
+      "ring": 0.03,
+      "little": 0.03
+     },
+     "max_tip_shift_mm": 0.06,
+     "max_joint_change_deg": 0.03,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 5.14,
+      "index": 7.3,
+      "middle": 2.37,
+      "ring": 1.64,
+      "little": 1.74
+     },
+     "max_tip_shift_mm": 7.3,
+     "max_joint_change_deg": 8.91,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "ECU_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 1.36,
+      "index": 2.85,
+      "middle": 1.04,
+      "ring": 1.13,
+      "little": 1.32
+     },
+     "max_tip_shift_mm": 2.85,
+     "max_joint_change_deg": 3.6,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "FCR_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.69,
+      "index": 7.42,
+      "middle": 0.52,
+      "ring": 0.58,
+      "little": 0.58
+     },
+     "max_tip_shift_mm": 7.42,
+     "max_joint_change_deg": 10.24,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "FCU_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 3.04,
+      "index": 10.42,
+      "middle": 2.35,
+      "ring": 2.39,
+      "little": 7.08
+     },
+     "max_tip_shift_mm": 10.42,
+     "max_joint_change_deg": 45.27,
+     "joint_most_changed": "md2_flexion_r"
+    }
+   },
+   {
+    "actuator": "PL_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.35,
+      "index": 1.8,
+      "middle": 0.29,
+      "ring": 0.32,
+      "little": 0.32
+     },
+     "max_tip_shift_mm": 1.8,
+     "max_joint_change_deg": 2.52,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "PT_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 27.77,
+      "index": 25.98,
+      "middle": 20.33,
+      "ring": 19.43,
+      "little": 17.58
+     },
+     "max_tip_shift_mm": 27.77,
+     "max_joint_change_deg": 20.4,
+     "joint_most_changed": "pro_sup_r"
+    }
+   },
+   {
+    "actuator": "PQ_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 11.91,
+      "index": 11.17,
+      "middle": 8.72,
+      "ring": 8.27,
+      "little": 7.48
+     },
+     "max_tip_shift_mm": 11.91,
+     "max_joint_change_deg": 8.7,
+     "joint_most_changed": "pro_sup_r"
+    }
+   },
+   {
+    "actuator": "FDS5_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.11,
+      "index": 0.06,
+      "middle": 0.05,
+      "ring": 0.05,
+      "little": 0.48
+     },
+     "max_tip_shift_mm": 0.48,
+     "max_joint_change_deg": 1.39,
+     "joint_most_changed": "mcp5_abduction_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.38,
+      "index": 1.85,
+      "middle": 0.29,
+      "ring": 0.33,
+      "little": 32.76
+     },
+     "max_tip_shift_mm": 32.76,
+     "max_joint_change_deg": 86.56,
+     "joint_most_changed": "pm5_flexion_r"
+    }
+   },
+   {
+    "actuator": "FDS4_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 1.04,
+      "index": 0.65,
+      "middle": 0.54,
+      "ring": 2.54,
+      "little": 0.51
+     },
+     "max_tip_shift_mm": 2.54,
+     "max_joint_change_deg": 7.19,
+     "joint_most_changed": "mcp4_abduction_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.75,
+      "index": 1.96,
+      "middle": 0.48,
+      "ring": 19.31,
+      "little": 0.47
+     },
+     "max_tip_shift_mm": 19.31,
+     "max_joint_change_deg": 26.05,
+     "joint_most_changed": "pm4_flexion_r"
+    }
+   },
+   {
+    "actuator": "FDS3_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 3.52,
+      "index": 2.16,
+      "middle": 2.54,
+      "ring": 1.73,
+      "little": 1.67
+     },
+     "max_tip_shift_mm": 3.52,
+     "max_joint_change_deg": 3.73,
+     "joint_most_changed": "md3_flexion_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.36,
+      "index": 1.17,
+      "middle": 0.41,
+      "ring": 0.09,
+      "little": 0.29
+     },
+     "max_tip_shift_mm": 1.17,
+     "max_joint_change_deg": 1.75,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "FDS2_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 4.45,
+      "index": 1.09,
+      "middle": 2.28,
+      "ring": 2.19,
+      "little": 2.12
+     },
+     "max_tip_shift_mm": 4.45,
+     "max_joint_change_deg": 5.88,
+     "joint_most_changed": "mcp2_abduction_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.47,
+      "index": 28.56,
+      "middle": 0.09,
+      "ring": 0.25,
+      "little": 1.07
+     },
+     "max_tip_shift_mm": 28.56,
+     "max_joint_change_deg": 59.9,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "FDP5_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 5.16,
+      "index": 3.17,
+      "middle": 2.64,
+      "ring": 2.53,
+      "little": 23.95
+     },
+     "max_tip_shift_mm": 23.95,
+     "max_joint_change_deg": 89.02,
+     "joint_most_changed": "md5_flexion_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.44,
+      "index": 4.45,
+      "middle": 0.28,
+      "ring": 0.3,
+      "little": 57.66
+     },
+     "max_tip_shift_mm": 57.66,
+     "max_joint_change_deg": 90.1,
+     "joint_most_changed": "pm5_flexion_r"
+    }
+   },
+   {
+    "actuator": "FDP4_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 4.14,
+      "index": 2.54,
+      "middle": 2.12,
+      "ring": 26.03,
+      "little": 1.97
+     },
+     "max_tip_shift_mm": 26.03,
+     "max_joint_change_deg": 88.86,
+     "joint_most_changed": "md4_flexion_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.39,
+      "index": 1.86,
+      "middle": 0.29,
+      "ring": 60.81,
+      "little": 0.41
+     },
+     "max_tip_shift_mm": 60.81,
+     "max_joint_change_deg": 90.1,
+     "joint_most_changed": "pm4_flexion_r"
+    }
+   },
+   {
+    "actuator": "FDP3_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 4.06,
+      "index": 2.49,
+      "middle": 25.67,
+      "ring": 1.99,
+      "little": 1.93
+     },
+     "max_tip_shift_mm": 25.67,
+     "max_joint_change_deg": 82.9,
+     "joint_most_changed": "md3_flexion_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.2,
+      "index": 2.17,
+      "middle": 68.08,
+      "ring": 0.09,
+      "little": 0.07
+     },
+     "max_tip_shift_mm": 68.08,
+     "max_joint_change_deg": 90.1,
+     "joint_most_changed": "pm3_flexion_r"
+    }
+   },
+   {
+    "actuator": "FDP2_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 4.54,
+      "index": 25.61,
+      "middle": 2.32,
+      "ring": 2.22,
+      "little": 2.15
+     },
+     "max_tip_shift_mm": 25.61,
+     "max_joint_change_deg": 89.58,
+     "joint_most_changed": "md2_flexion_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.71,
+      "index": 52.72,
+      "middle": 0.36,
+      "ring": 0.35,
+      "little": 1.14
+     },
+     "max_tip_shift_mm": 52.72,
+     "max_joint_change_deg": 59.94,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "EDC5_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.04,
+      "index": 0.02,
+      "middle": 0.02,
+      "ring": 0.02,
+      "little": 0.02
+     },
+     "max_tip_shift_mm": 0.04,
+     "max_joint_change_deg": 0.02,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.27,
+      "index": 0.41,
+      "middle": 0.2,
+      "ring": 0.25,
+      "little": 14.82
+     },
+     "max_tip_shift_mm": 14.82,
+     "max_joint_change_deg": 50.71,
+     "joint_most_changed": "md5_flexion_r"
+    }
+   },
+   {
+    "actuator": "EDC4_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.06,
+      "index": 0.04,
+      "middle": 0.03,
+      "ring": 0.09,
+      "little": 0.03
+     },
+     "max_tip_shift_mm": 0.09,
+     "max_joint_change_deg": 0.15,
+     "joint_most_changed": "mcp4_abduction_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 1.28,
+      "index": 1.69,
+      "middle": 0.95,
+      "ring": 25.97,
+      "little": 0.94
+     },
+     "max_tip_shift_mm": 25.97,
+     "max_joint_change_deg": 90.13,
+     "joint_most_changed": "md4_flexion_r"
+    }
+   },
+   {
+    "actuator": "EDC3_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.02,
+      "index": 0.01,
+      "middle": 0.03,
+      "ring": 0.01,
+      "little": 0.01
+     },
+     "max_tip_shift_mm": 0.03,
+     "max_joint_change_deg": 0.08,
+     "joint_most_changed": "md3_flexion_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 1.9,
+      "index": 2.36,
+      "middle": 27.28,
+      "ring": 1.33,
+      "little": 1.24
+     },
+     "max_tip_shift_mm": 27.28,
+     "max_joint_change_deg": 90.06,
+     "joint_most_changed": "md3_flexion_r"
+    }
+   },
+   {
+    "actuator": "EDC2_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.05,
+      "index": 0.03,
+      "middle": 0.03,
+      "ring": 0.03,
+      "little": 0.03
+     },
+     "max_tip_shift_mm": 0.05,
+     "max_joint_change_deg": 0.02,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 1.35,
+      "index": 24.58,
+      "middle": 0.65,
+      "ring": 0.71,
+      "little": 0.97
+     },
+     "max_tip_shift_mm": 24.58,
+     "max_joint_change_deg": 44.77,
+     "joint_most_changed": "md2_flexion_r"
+    }
+   },
+   {
+    "actuator": "EDM_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.01
+     },
+     "max_tip_shift_mm": 0.01,
+     "max_joint_change_deg": 0.02,
+     "joint_most_changed": "mcp5_abduction_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.68,
+      "index": 0.96,
+      "middle": 0.44,
+      "ring": 0.31,
+      "little": 16.19
+     },
+     "max_tip_shift_mm": 16.19,
+     "max_joint_change_deg": 54.79,
+     "joint_most_changed": "md5_flexion_r"
+    }
+   },
+   {
+    "actuator": "EIP_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.03,
+      "index": 0.02,
+      "middle": 0.01,
+      "ring": 0.01,
+      "little": 0.01
+     },
+     "max_tip_shift_mm": 0.03,
+     "max_joint_change_deg": 0.01,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.6,
+      "index": 26.42,
+      "middle": 0.2,
+      "ring": 0.17,
+      "little": 0.9
+     },
+     "max_tip_shift_mm": 26.42,
+     "max_joint_change_deg": 30.12,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "EPL_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 31.9,
+      "index": 1.19,
+      "middle": 0.19,
+      "ring": 0.05,
+      "little": 0.64
+     },
+     "max_tip_shift_mm": 31.9,
+     "max_joint_change_deg": 73.68,
+     "joint_most_changed": "cmc_abduction_r"
+    }
+   },
+   {
+    "actuator": "EPB_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 11.77,
+      "index": 0.43,
+      "middle": 0.06,
+      "ring": 0.03,
+      "little": 0.19
+     },
+     "max_tip_shift_mm": 11.77,
+     "max_joint_change_deg": 15.82,
+     "joint_most_changed": "mp_flexion_r"
+    }
+   },
+   {
+    "actuator": "FPL_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 72.6,
+      "index": 2.88,
+      "middle": 0.91,
+      "ring": 0.71,
+      "little": 0.74
+     },
+     "max_tip_shift_mm": 72.6,
+     "max_joint_change_deg": 98.49,
+     "joint_most_changed": "ip_flexion_r"
+    }
+   },
+   {
+    "actuator": "APL_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 1.33,
+      "index": 2.86,
+      "middle": 0.96,
+      "ring": 0.76,
+      "little": 0.96
+     },
+     "max_tip_shift_mm": 2.86,
+     "max_joint_change_deg": 5.14,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "OP_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.39,
+      "index": 0.06,
+      "middle": 0.04,
+      "ring": 0.03,
+      "little": 0.07
+     },
+     "max_tip_shift_mm": 0.39,
+     "max_joint_change_deg": 0.32,
+     "joint_most_changed": "md5_flexion_r"
+    }
+   },
+   {
+    "actuator": "RI2_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.05,
+      "index": 2.11,
+      "middle": 0.0,
+      "ring": 0.02,
+      "little": 0.06
+     },
+     "max_tip_shift_mm": 2.11,
+     "max_joint_change_deg": 2.19,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "LU_RB2_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.21,
+      "index": 19.17,
+      "middle": 0.2,
+      "ring": 0.05,
+      "little": 0.53
+     },
+     "max_tip_shift_mm": 19.17,
+     "max_joint_change_deg": 45.26,
+     "joint_most_changed": "md2_flexion_r"
+    }
+   },
+   {
+    "actuator": "UI_UB2_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.41,
+      "index": 10.91,
+      "middle": 0.09,
+      "ring": 0.08,
+      "little": 0.08
+     },
+     "max_tip_shift_mm": 10.91,
+     "max_joint_change_deg": 38.18,
+     "joint_most_changed": "md2_flexion_r"
+    }
+   },
+   {
+    "actuator": "RI3_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "md3_flexion_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.01,
+      "index": 0.03,
+      "middle": 0.16,
+      "ring": 0.01,
+      "little": 0.05
+     },
+     "max_tip_shift_mm": 0.16,
+     "max_joint_change_deg": 0.2,
+     "joint_most_changed": "mcp3_abduction_r"
+    }
+   },
+   {
+    "actuator": "LU_RB3_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.05,
+      "index": 1.39,
+      "middle": 15.69,
+      "ring": 0.08,
+      "little": 0.07
+     },
+     "max_tip_shift_mm": 15.69,
+     "max_joint_change_deg": 19.91,
+     "joint_most_changed": "mcp3_abduction_r"
+    }
+   },
+   {
+    "actuator": "UI_UB3_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.42,
+      "index": 1.92,
+      "middle": 1.14,
+      "ring": 0.25,
+      "little": 0.3
+     },
+     "max_tip_shift_mm": 1.92,
+     "max_joint_change_deg": 3.32,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "RI4_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.26,
+      "index": 0.3,
+      "middle": 0.2,
+      "ring": 0.23,
+      "little": 0.15
+     },
+     "max_tip_shift_mm": 0.3,
+     "max_joint_change_deg": 0.55,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "LU_RB4_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.13,
+      "index": 0.25,
+      "middle": 0.08,
+      "ring": 0.14,
+      "little": 0.08
+     },
+     "max_tip_shift_mm": 0.25,
+     "max_joint_change_deg": 0.49,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "UI_UB4_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.19,
+      "index": 1.46,
+      "middle": 0.13,
+      "ring": 0.11,
+      "little": 0.07
+     },
+     "max_tip_shift_mm": 1.46,
+     "max_joint_change_deg": 2.98,
+     "joint_most_changed": "pm2_flexion_r"
+    }
+   },
+   {
+    "actuator": "RI5_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "md3_flexion_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.11,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 1.64
+     },
+     "max_tip_shift_mm": 1.64,
+     "max_joint_change_deg": 3.29,
+     "joint_most_changed": "mcp5_abduction_r"
+    }
+   },
+   {
+    "actuator": "LU_RB5_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.09,
+      "index": 0.08,
+      "middle": 0.06,
+      "ring": 0.06,
+      "little": 5.79
+     },
+     "max_tip_shift_mm": 5.79,
+     "max_joint_change_deg": 19.92,
+     "joint_most_changed": "md5_flexion_r"
+    }
+   },
+   {
+    "actuator": "UI_UB5_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "md3_flexion_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.08,
+      "index": 0.15,
+      "middle": 0.04,
+      "ring": 0.05,
+      "little": 9.49
+     },
+     "max_tip_shift_mm": 9.49,
+     "max_joint_change_deg": 23.2,
+     "joint_most_changed": "md5_flexion_r"
+    }
+   },
+   {
+    "actuator": "APB_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.28,
+      "index": 0.06,
+      "middle": 0.02,
+      "ring": 0.02,
+      "little": 0.04
+     },
+     "max_tip_shift_mm": 0.28,
+     "max_joint_change_deg": 0.26,
+     "joint_most_changed": "mp_flexion_r"
+    }
+   },
+   {
+    "actuator": "FPBs_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 0.44,
+      "index": 0.09,
+      "middle": 0.03,
+      "ring": 0.03,
+      "little": 0.08
+     },
+     "max_tip_shift_mm": 0.44,
+     "max_joint_change_deg": 0.56,
+     "joint_most_changed": "mp_flexion_r"
+    }
+   },
+   {
+    "actuator": "FPBd_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 1.32,
+      "index": 0.12,
+      "middle": 0.04,
+      "ring": 0.03,
+      "little": 0.09
+     },
+     "max_tip_shift_mm": 1.32,
+     "max_joint_change_deg": 1.76,
+     "joint_most_changed": "mp_flexion_r"
+    }
+   },
+   {
+    "actuator": "ADPo_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 12.57,
+      "index": 0.77,
+      "middle": 0.33,
+      "ring": 0.35,
+      "little": 0.5
+     },
+     "max_tip_shift_mm": 12.57,
+     "max_joint_change_deg": 17.41,
+     "joint_most_changed": "mp_flexion_r"
+    }
+   },
+   {
+    "actuator": "ADPt_r",
+    "finger_flexors_0p5": {
+     "fingertip_shift_mm": {
+      "thumb": 0.0,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "little": 0.0
+     },
+     "max_tip_shift_mm": 0.0,
+     "max_joint_change_deg": 0.0,
+     "joint_most_changed": "pro_sup_r"
+    },
+    "random_seeded": {
+     "fingertip_shift_mm": {
+      "thumb": 3.7,
+      "index": 0.14,
+      "middle": 0.16,
+      "ring": 0.19,
+      "little": 0.11
+     },
+     "max_tip_shift_mm": 3.7,
+     "max_joint_change_deg": 5.08,
+     "joint_most_changed": "mp_flexion_r"
+    }
+   }
+  ]
+ },
+ "sampled_length_ranges": {
+  "n_samples": 20000,
+  "seed": 20261031,
+  "joint_ranges": "BioHand (patched)",
+  "muscles": {
+   "ECRL_r": {
+    "specified_lengthrange_m": [
+     0.31319,
+     0.34107
+    ],
+    "sampled_min_max_m": [
+     0.31573,
+     0.35622
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.626,
+    "normalised_length_min_max": [
+     0.777,
+     1.213
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "ECRB_r": {
+    "specified_lengthrange_m": [
+     0.26997,
+     0.3015
+    ],
+    "sampled_min_max_m": [
+     0.26446,
+     0.30722
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.737,
+    "normalised_length_min_max": [
+     0.698,
+     1.105
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "ECU_r": {
+    "specified_lengthrange_m": [
+     0.27904,
+     0.30675
+    ],
+    "sampled_min_max_m": [
+     0.27301,
+     0.30124
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.786,
+    "normalised_length_min_max": [
+     0.685,
+     0.99
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FCR_r": {
+    "specified_lengthrange_m": [
+     0.29587,
+     0.33149
+    ],
+    "sampled_min_max_m": [
+     0.2947,
+     0.33678
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.847,
+    "normalised_length_min_max": [
+     0.74,
+     1.095
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FCU_r": {
+    "specified_lengthrange_m": [
+     0.29336,
+     0.33271
+    ],
+    "sampled_min_max_m": [
+     0.28726,
+     0.33661
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.797,
+    "normalised_length_min_max": [
+     0.704,
+     1.08
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "PL_r": {
+    "specified_lengthrange_m": [
+     0.31159,
+     0.3624
+    ],
+    "sampled_min_max_m": [
+     0.30776,
+     0.36884
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.832,
+    "normalised_length_min_max": [
+     0.727,
+     1.088
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "PT_r": {
+    "specified_lengthrange_m": [
+     0.14724,
+     0.1702
+    ],
+    "sampled_min_max_m": [
+     0.14793,
+     0.17089
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.97,
+    "normalised_length_min_max": [
+     0.759,
+     1.059
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "PQ_r": {
+    "specified_lengthrange_m": [
+     0.02208,
+     0.03717
+    ],
+    "sampled_min_max_m": [
+     0.02208,
+     0.03717
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.75,
+     1.05
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FDS5_r": {
+    "specified_lengthrange_m": [
+     0.35492,
+     0.42399
+    ],
+    "sampled_min_max_m": [
+     0.35061,
+     0.42584
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.918,
+    "normalised_length_min_max": [
+     0.731,
+     1.058
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FDS4_r": {
+    "specified_lengthrange_m": [
+     0.36748,
+     0.42577
+    ],
+    "sampled_min_max_m": [
+     0.35992,
+     0.42622
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.879,
+    "normalised_length_min_max": [
+     0.711,
+     1.052
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FDS3_r": {
+    "specified_lengthrange_m": [
+     0.32849,
+     0.39059
+    ],
+    "sampled_min_max_m": [
+     0.30678,
+     0.38796
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.733,
+    "normalised_length_min_max": [
+     0.645,
+     1.037
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FDS2_r": {
+    "specified_lengthrange_m": [
+     0.33015,
+     0.39233
+    ],
+    "sampled_min_max_m": [
+     0.31757,
+     0.38956
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.825,
+    "normalised_length_min_max": [
+     0.689,
+     1.037
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FDP5_r": {
+    "specified_lengthrange_m": [
+     0.33102,
+     0.39004
+    ],
+    "sampled_min_max_m": [
+     0.32615,
+     0.38933
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.923,
+    "normalised_length_min_max": [
+     0.725,
+     1.046
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FDP4_r": {
+    "specified_lengthrange_m": [
+     0.34816,
+     0.41798
+    ],
+    "sampled_min_max_m": [
+     0.34354,
+     0.41028
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.931,
+    "normalised_length_min_max": [
+     0.73,
+     1.017
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FDP3_r": {
+    "specified_lengthrange_m": [
+     0.33608,
+     0.39867
+    ],
+    "sampled_min_max_m": [
+     0.32006,
+     0.39663
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.791,
+    "normalised_length_min_max": [
+     0.673,
+     1.04
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FDP2_r": {
+    "specified_lengthrange_m": [
+     0.33695,
+     0.40261
+    ],
+    "sampled_min_max_m": [
+     0.32442,
+     0.39982
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.834,
+    "normalised_length_min_max": [
+     0.693,
+     1.037
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "EDC5_r": {
+    "specified_lengthrange_m": [
+     0.38171,
+     0.42659
+    ],
+    "sampled_min_max_m": [
+     0.37506,
+     0.42313
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.862,
+    "normalised_length_min_max": [
+     0.706,
+     1.027
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "EDC4_r": {
+    "specified_lengthrange_m": [
+     0.39171,
+     0.45615
+    ],
+    "sampled_min_max_m": [
+     0.38911,
+     0.45137
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.958,
+    "normalised_length_min_max": [
+     0.738,
+     1.028
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "EDC3_r": {
+    "specified_lengthrange_m": [
+     0.39979,
+     0.45674
+    ],
+    "sampled_min_max_m": [
+     0.39181,
+     0.45141
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.866,
+    "normalised_length_min_max": [
+     0.708,
+     1.022
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "EDC2_r": {
+    "specified_lengthrange_m": [
+     0.39591,
+     0.45548
+    ],
+    "sampled_min_max_m": [
+     0.39404,
+     0.45276
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.968,
+    "normalised_length_min_max": [
+     0.741,
+     1.036
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "EDM_r": {
+    "specified_lengthrange_m": [
+     0.37707,
+     0.41755
+    ],
+    "sampled_min_max_m": [
+     0.37051,
+     0.41213
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.842,
+    "normalised_length_min_max": [
+     0.701,
+     1.01
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "EIP_r": {
+    "specified_lengthrange_m": [
+     0.24581,
+     0.29105
+    ],
+    "sampled_min_max_m": [
+     0.24188,
+     0.2921
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.901,
+    "normalised_length_min_max": [
+     0.724,
+     1.057
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "EPL_r": {
+    "specified_lengthrange_m": [
+     0.25315,
+     0.32748
+    ],
+    "sampled_min_max_m": [
+     0.25925,
+     0.32671
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.775,
+     1.047
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "EPB_r": {
+    "specified_lengthrange_m": [
+     0.14629,
+     0.19928
+    ],
+    "sampled_min_max_m": [
+     0.15549,
+     0.20515
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.882,
+    "normalised_length_min_max": [
+     0.802,
+     1.083
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FPL_r": {
+    "specified_lengthrange_m": [
+     0.22287,
+     0.27967
+    ],
+    "sampled_min_max_m": [
+     0.23235,
+     0.29115
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.805,
+    "normalised_length_min_max": [
+     0.8,
+     1.111
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "APL_r": {
+    "specified_lengthrange_m": [
+     0.18485,
+     0.21509
+    ],
+    "sampled_min_max_m": [
+     0.18734,
+     0.22224
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.795,
+    "normalised_length_min_max": [
+     0.775,
+     1.121
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "OP_r": {
+    "specified_lengthrange_m": [
+     0.03143,
+     0.05187
+    ],
+    "sampled_min_max_m": [
+     0.02927,
+     0.05192
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.903,
+    "normalised_length_min_max": [
+     0.718,
+     1.051
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "RI2_r": {
+    "specified_lengthrange_m": [
+     0.03141,
+     0.04236
+    ],
+    "sampled_min_max_m": [
+     0.03143,
+     0.04234
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.75,
+     1.049
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "LU_RB2_r": {
+    "specified_lengthrange_m": [
+     0.08986,
+     0.09981
+    ],
+    "sampled_min_max_m": [
+     0.09108,
+     0.10418
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.666,
+    "normalised_length_min_max": [
+     0.787,
+     1.182
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "UI_UB2_r": {
+    "specified_lengthrange_m": [
+     0.09133,
+     0.10514
+    ],
+    "sampled_min_max_m": [
+     0.0915,
+     0.10261
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.754,
+     0.995
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "RI3_r": {
+    "specified_lengthrange_m": [
+     0.03584,
+     0.05097
+    ],
+    "sampled_min_max_m": [
+     0.03591,
+     0.0509
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.751,
+     1.049
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "LU_RB3_r": {
+    "specified_lengthrange_m": [
+     0.08276,
+     0.09883
+    ],
+    "sampled_min_max_m": [
+     0.08411,
+     0.09731
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.775,
+     1.022
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "UI_UB3_r": {
+    "specified_lengthrange_m": [
+     0.08534,
+     0.09973
+    ],
+    "sampled_min_max_m": [
+     0.08706,
+     0.09425
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.786,
+     0.936
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "RI4_r": {
+    "specified_lengthrange_m": [
+     0.04356,
+     0.05846
+    ],
+    "sampled_min_max_m": [
+     0.04266,
+     0.05832
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.943,
+    "normalised_length_min_max": [
+     0.732,
+     1.047
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "LU_RB4_r": {
+    "specified_lengthrange_m": [
+     0.0718,
+     0.07887
+    ],
+    "sampled_min_max_m": [
+     0.07189,
+     0.07885
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.754,
+     1.049
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "UI_UB4_r": {
+    "specified_lengthrange_m": [
+     0.07578,
+     0.0839
+    ],
+    "sampled_min_max_m": [
+     0.07587,
+     0.08372
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.753,
+     1.043
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "RI5_r": {
+    "specified_lengthrange_m": [
+     0.02712,
+     0.04196
+    ],
+    "sampled_min_max_m": [
+     0.02714,
+     0.04195
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.75,
+     1.05
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "LU_RB5_r": {
+    "specified_lengthrange_m": [
+     0.09075,
+     0.10499
+    ],
+    "sampled_min_max_m": [
+     0.09104,
+     0.10473
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.756,
+     1.045
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "UI_UB5_r": {
+    "specified_lengthrange_m": [
+     0.09102,
+     0.09768
+    ],
+    "sampled_min_max_m": [
+     0.09114,
+     0.10216
+    ],
+    "fraction_of_sampled_span_inside_specified": 0.594,
+    "normalised_length_min_max": [
+     0.755,
+     1.252
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "APB_r": {
+    "specified_lengthrange_m": [
+     0.03001,
+     0.06016
+    ],
+    "sampled_min_max_m": [
+     0.03027,
+     0.06006
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.753,
+     1.049
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FPBs_r": {
+    "specified_lengthrange_m": [
+     0.02196,
+     0.06088
+    ],
+    "sampled_min_max_m": [
+     0.02228,
+     0.06065
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.753,
+     1.048
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "FPBd_r": {
+    "specified_lengthrange_m": [
+     0.02575,
+     0.06514
+    ],
+    "sampled_min_max_m": [
+     0.0269,
+     0.06484
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.759,
+     1.048
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "ADPo_r": {
+    "specified_lengthrange_m": [
+     0.02871,
+     0.06759
+    ],
+    "sampled_min_max_m": [
+     0.0297,
+     0.06739
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.758,
+     1.048
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   },
+   "ADPt_r": {
+    "specified_lengthrange_m": [
+     0.01312,
+     0.07096
+    ],
+    "sampled_min_max_m": [
+     0.01471,
+     0.07066
+    ],
+    "fraction_of_sampled_span_inside_specified": 1.0,
+    "normalised_length_min_max": [
+     0.758,
+     1.048
+    ],
+    "fraction_samples_outside_active_window": 0.0
+   }
+  }
+ }
+}

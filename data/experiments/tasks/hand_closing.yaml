@@ -1,0 +1,11 @@
+id: hand_closing
+description: Finger flexion (hand closing) driven by FDS2-5 and FDP2-5 from the neutral pose.
+brace_joints: [pro_sup_r, deviation_r, flexion_r]   # forearm/wrist brace (apparatus)
+initial_angles_rad: {}
+duration_s: 1.5
+phases:
+  - {start_s: 0.0, end_s: 1.5, ramp_s: 0.3, activations: {finger_flexors: 0.6}}
+metrics:
+  - {kind: finger_flexion_fraction, name: flexion_fraction_final}
+success:
+  - {metric: flexion_fraction_final, op: ">=", value: 0.5}        # >= 50 % of MCP+PIP flexion range

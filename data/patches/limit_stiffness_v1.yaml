@@ -1,0 +1,20 @@
+# BioHand Twin model patch: joint-limit constraint stiffness (numerical setting, not physiology).
+patch_id: limit_stiffness_v1
+version: 1
+status: provisional
+classification: tuned (numerical solver setting)
+approved_by: project owner ('fix the defects', 2026-10-31)
+rationale: >
+  P3 gap J5': with the upstream joint-limit time constant (solref[0] = 0.02 s) maximal agonist muscle
+  torque pushes joints up to 38 deg past their limits. MuJoCo soft constraints become stiffer as the time
+  constant decreases; MuJoCo's guidance is not to go below twice the simulation timestep (stability). This
+  patch sets every joint-limit time constant to exactly 2 x model timestep; the damping ratio is unchanged.
+  This changes no anatomical or muscle parameter.
+evidence:
+  - reports/P5/limit_stiffness_check.json
+changes:
+  - field: joint_solref
+    joints: all
+    upstream_value: [0.02, 1.0]
+    rule: "timeconst = 2 * model.opt.timestep; dampratio unchanged"
+    patched_value: [0.004, 1.0]

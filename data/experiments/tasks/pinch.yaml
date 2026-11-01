@@ -1,0 +1,43 @@
+id: pinch
+description: Tip pinch proxy between thumb and index distal segments with explicit contact pairs.
+brace_joints: [pro_sup_r, deviation_r, flexion_r]   # forearm/wrist brace (apparatus)
+initial_angles_rad: {}
+duration_s: 2.0
+# Distal segments only. Pairs with the index middle phalanx were removed on 2026-11-01: they let an open-loop
+# optimizer pass with a curled index, a thumb MCP at its extension limit and tips 6.4 cm apart, which is not this task.
+contact_pairs:
+  - {name: pinch_a, geom1: distal_thumb_coll_r, geom2: distph2_coll_r}
+  - {name: pinch_b, geom1: distal_thumb_coll_r, geom2: distph2_coll_2_r}
+  - {name: pinch_c, geom1: distal_thumb_coll_2_r, geom2: distph2_coll_r}
+  - {name: pinch_d, geom1: distal_thumb_coll_2_r, geom2: distph2_coll_2_r}
+# Policy history (reports/P5/P5_REPORT.md, reports/fixes/FIXES_REPORT.md):
+#  v1 open loop FPL+FDS2+FDP2 -> no contact; v2 open loop OP+FDS2 -> no contact (OP drives full CMC abduction);
+#  v3 pose tracking + static optimization -> no contact (no FPB/APB/ADP, gap M1);
+#  v4 forward-dynamics optimization over 12 muscles -> best gap 16.5 mm, no contact;
+#  v5 same as v4 with patch thumb_intrinsics_v1 -> nominal pass, rejected: posture at limits, tips 6.4 cm apart, fragile;
+#  v6 (this policy) same as v3 with patch thumb_intrinsics_v1. Control without that patch: reports/fixes/pinch_evidence.json.
+# The activations are computed by static optimization; they are not measured or validated muscle patterns.
+policy:
+  type: pose_tracking_static_opt
+  kp_Nm_per_rad: 20.0
+  kd_Nms_per_rad: 0.4
+  hold_weight: 0.2
+  lambda: 0.001
+  control_dt_s: 0.01
+  target_angles_rad:    # reports/P5/pinch_target_pad.json (kinematic target; not an anatomical posture claim)
+    cmc_flexion_r: -0.15915
+    cmc_abduction_r: -0.08581
+    mp_flexion_r: -0.37615
+    ip_flexion_r: -0.19064
+    mcp2_flexion_r: 0.78444
+    mcp2_abduction_r: -0.10127
+    pm2_flexion_r: 0.9251
+    md2_flexion_r: 0.81355
+phases: []
+metrics:
+  - {kind: contact_force_mean, name: pinch_force_mean_last_0p5s, from_s: 1.5, to_s: 2.0}
+  - {kind: contact_force_min, name: pinch_force_min_last_0p5s, from_s: 1.5, to_s: 2.0}
+  - {kind: tip_distance, name: thumb_index_final_distance, tips: [thumb, index]}
+success:
+  - {metric: pinch_force_min_last_0p5s, op: ">", value: 0.0}     # contact sustained
+  - {metric: pinch_force_mean_last_0p5s, op: ">=", value: 0.5}   # >= 0.5 N (task definition, not physiology)

@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://biohand-twin.local/schemas/session_metadata/1.1.0",
+  "title": "BioHand Twin session metadata",
+  "description": "Provenance and reproducibility header attached to every export.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "software",
+    "model",
+    "simulation",
+    "units",
+    "disclaimer"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "1.0.0",
+        "1.1.0"
+      ]
+    },
+    "software": {
+      "type": "object",
+      "required": [
+        "biohand_twin",
+        "python",
+        "mujoco"
+      ],
+      "properties": {
+        "biohand_twin": {
+          "type": "string"
+        },
+        "python": {
+          "type": "string"
+        },
+        "mujoco": {
+          "type": "string"
+        }
+      }
+    },
+    "model": {
+      "type": "object",
+      "required": [
+        "name",
+        "myosim_commit",
+        "patches",
+        "fingerprint_sha256",
+        "licence_notice"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "myosim_commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "patches": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fingerprint_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "licence_notice": {
+          "type": "string"
+        }
+      }
+    },
+    "simulation": {
+      "type": "object",
+      "required": [
+        "timestep_s",
+        "integrator",
+        "solver",
+        "iterations"
+      ],
+      "properties": {
+        "timestep_s": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "integrator": {
+          "type": "string"
+        },
+        "solver": {
+          "type": "string"
+        },
+        "iterations": {
+          "type": "integer"
+        },
+        "task": {
+          "type": [
+            "object",
+            "null"
+          ]
+        }
+      }
+    },
+    "units": {
+      "type": "object"
+    },
+    "disclaimer": {
+      "type": "string"
+    }
+  }
+}

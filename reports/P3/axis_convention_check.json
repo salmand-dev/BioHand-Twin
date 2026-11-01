@@ -1,0 +1,534 @@
+{
+ "source": "third_party/simtk_2nd_hand/hand_model_simtk/2nd_Hand_Model_Mass.osim",
+ "frame_notes": [],
+ "joints": [
+  {
+   "joint": "deviation_r",
+   "myohand_axis_radius_frame": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "source_rotation_vector_radius_frame": [
+    -0.8191,
+    -0.1356,
+    -0.5574
+   ],
+   "myohand_range_deg": [
+    -10.0,
+    25.0
+   ],
+   "source_range_deg": [
+    -10.0,
+    25.0
+   ],
+   "cosine": -0.5574,
+   "verdict": "different axis (|cos| <= 0.9)",
+   "ranges_equal": true
+  },
+  {
+   "joint": "flexion_r",
+   "myohand_axis_radius_frame": [
+    1.0,
+    -0.0,
+    0.0
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.4782,
+    -0.1261,
+    0.0736
+   ],
+   "myohand_range_deg": [
+    -45.0,
+    45.0
+   ],
+   "source_range_deg": [
+    -70.0,
+    70.0
+   ],
+   "cosine": 0.9564,
+   "verdict": "same convention",
+   "ranges_equal": false
+  },
+  {
+   "joint": "cmc_flexion_r",
+   "myohand_axis_radius_frame": [
+    -0.0424,
+    -0.6653,
+    0.7454
+   ],
+   "source_rotation_vector_radius_frame": [
+    -0.0424,
+    -0.6653,
+    0.7454
+   ],
+   "myohand_range_deg": [
+    -44.7,
+    40.1
+   ],
+   "source_range_deg": [
+    -15.0,
+    45.0
+   ],
+   "cosine": 1.0,
+   "verdict": "same convention",
+   "ranges_equal": false
+  },
+  {
+   "joint": "cmc_abduction_r",
+   "myohand_axis_radius_frame": [
+    0.4956,
+    0.7317,
+    0.468
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.4956,
+    0.7317,
+    0.468
+   ],
+   "myohand_range_deg": [
+    -28.6,
+    44.7
+   ],
+   "source_range_deg": [
+    -25.0,
+    25.0
+   ],
+   "cosine": 1.0,
+   "verdict": "same convention",
+   "ranges_equal": false
+  },
+  {
+   "joint": "mp_flexion_r",
+   "myohand_axis_radius_frame": [
+    -0.0843,
+    -0.2035,
+    0.9754
+   ],
+   "source_rotation_vector_radius_frame": [
+    -0.0843,
+    -0.2035,
+    0.9754
+   ],
+   "myohand_range_deg": [
+    -45.0,
+    40.0
+   ],
+   "source_range_deg": [
+    -45.0,
+    40.0
+   ],
+   "cosine": 1.0,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "ip_flexion_r",
+   "myohand_axis_radius_frame": [
+    -0.0501,
+    -0.4796,
+    0.876
+   ],
+   "source_rotation_vector_radius_frame": [
+    -0.0501,
+    -0.4796,
+    0.876
+   ],
+   "myohand_range_deg": [
+    -75.0,
+    25.0
+   ],
+   "source_range_deg": [
+    -75.0,
+    25.0
+   ],
+   "cosine": 1.0,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "mcp2_flexion_r",
+   "myohand_axis_radius_frame": [
+    0.995,
+    0.0997,
+    -0.0
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.9975,
+    -0.0395,
+    0.0585
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.9886,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "mcp2_abduction_r",
+   "myohand_axis_radius_frame": [
+    -0.055,
+    0.0859,
+    0.9948
+   ],
+   "source_rotation_vector_radius_frame": [
+    -0.055,
+    0.0859,
+    0.9948
+   ],
+   "myohand_range_deg": [
+    -15.0,
+    15.0
+   ],
+   "source_range_deg": [
+    -15.0,
+    15.0
+   ],
+   "cosine": 1.0,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "pm2_flexion_r",
+   "myohand_axis_radius_frame": [
+    0.9752,
+    0.0998,
+    -0.1977
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.9603,
+    0.041,
+    -0.2758
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.9951,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "md2_flexion_r",
+   "myohand_axis_radius_frame": [
+    0.995,
+    0.0998,
+    -0.0
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.979,
+    0.0769,
+    -0.1889
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.9818,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "mcp3_flexion_r",
+   "myohand_axis_radius_frame": [
+    0.9801,
+    -0.0,
+    0.1987
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.9707,
+    -0.1672,
+    0.1723
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.9856,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "mcp3_abduction_r",
+   "myohand_axis_radius_frame": [
+    -0.1987,
+    0.0,
+    0.9801
+   ],
+   "source_rotation_vector_radius_frame": [
+    -0.1599,
+    0.0852,
+    0.9835
+   ],
+   "myohand_range_deg": [
+    -15.0,
+    15.0
+   ],
+   "source_range_deg": [
+    -15.0,
+    15.0
+   ],
+   "cosine": 0.9956,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "pm3_flexion_r",
+   "myohand_axis_radius_frame": [
+    1.0,
+    -0.0,
+    0.0
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.9923,
+    -0.115,
+    -0.0453
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.9923,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "md3_flexion_r",
+   "myohand_axis_radius_frame": [
+    1.0,
+    -0.0,
+    0.0
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.9898,
+    0.0935,
+    0.1073
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.9898,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "mcp4_flexion_r",
+   "myohand_axis_radius_frame": [
+    0.9004,
+    -0.0,
+    0.435
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.892,
+    -0.3422,
+    0.2955
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.9317,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "mcp4_abduction_r",
+   "myohand_axis_radius_frame": [
+    -0.435,
+    0.0,
+    0.9004
+   ],
+   "source_rotation_vector_radius_frame": [
+    -0.2911,
+    0.0651,
+    0.9545
+   ],
+   "myohand_range_deg": [
+    -15.0,
+    15.0
+   ],
+   "source_range_deg": [
+    -15.0,
+    15.0
+   ],
+   "cosine": 0.9861,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "pm4_flexion_r",
+   "myohand_axis_radius_frame": [
+    0.9211,
+    -0.0,
+    0.3894
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.9137,
+    -0.1097,
+    0.3913
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.994,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "md4_flexion_r",
+   "myohand_axis_radius_frame": [
+    0.8253,
+    -0.0,
+    0.5646
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.9008,
+    -0.058,
+    0.4304
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.9865,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "mcp5_flexion_r",
+   "myohand_axis_radius_frame": [
+    0.8253,
+    -0.0,
+    0.5646
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.8281,
+    -0.2542,
+    0.4997
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.9656,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "mcp5_abduction_r",
+   "myohand_axis_radius_frame": [
+    -0.5646,
+    0.0,
+    0.8253
+   ],
+   "source_rotation_vector_radius_frame": [
+    -0.51,
+    0.0283,
+    0.8597
+   ],
+   "myohand_range_deg": [
+    -15.0,
+    15.0
+   ],
+   "source_range_deg": [
+    -15.0,
+    15.0
+   ],
+   "cosine": 0.9975,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "pm5_flexion_r",
+   "myohand_axis_radius_frame": [
+    0.8253,
+    -0.0,
+    0.5646
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.6571,
+    -0.381,
+    0.6504
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.9096,
+   "verdict": "same convention",
+   "ranges_equal": true
+  },
+  {
+   "joint": "md5_flexion_r",
+   "myohand_axis_radius_frame": [
+    0.8677,
+    -0.1494,
+    0.474
+   ],
+   "source_rotation_vector_radius_frame": [
+    0.6431,
+    -0.2268,
+    0.7314
+   ],
+   "myohand_range_deg": [
+    0.0,
+    90.0
+   ],
+   "source_range_deg": [
+    0.0,
+    90.0
+   ],
+   "cosine": 0.9387,
+   "verdict": "same convention",
+   "ranges_equal": true
+  }
+ ]
+}

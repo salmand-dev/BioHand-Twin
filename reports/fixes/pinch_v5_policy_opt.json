@@ -1,0 +1,32 @@
+{
+ "muscles": {
+  "FPL_r": 0.0034,
+  "OP_r": 0.099,
+  "EPL_r": 0.5202,
+  "EPB_r": 0.0709,
+  "APL_r": 0.1996,
+  "APB_r": 0.0145,
+  "FPBs_r": 0.0004,
+  "FPBd_r": 0.0004,
+  "ADPo_r": 0.1426,
+  "ADPt_r": 0.2188,
+  "FDS2_r": 0.2142,
+  "FDP2_r": 0.094,
+  "EDC2_r": 0.0884,
+  "EIP_r": 0.3547,
+  "RI2_r": 0.0004,
+  "LU_RB2_r": 0.0005,
+  "UI_UB2_r": 0.0006
+ },
+ "mean_gap_last_0p5s_m": 0.0,
+ "mean_contact_force_last_0p5s_N": 0.8537,
+ "objective": -0.00027164963289402907,
+ "evaluations": 740,
+ "contact_reached": true,
+ "objective_by_start": {
+  "fixed_0p3": 0.0010353199240908514,
+  "warm_no_joint_spring": -0.00027164963289402907
+ },
+ "best_start": "warm_no_joint_spring",
+ "method": "Powell from 2 starts, bounds [0,1], 2.0 s forward simulation per evaluation"
+}

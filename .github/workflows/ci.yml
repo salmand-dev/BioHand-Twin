@@ -1,0 +1,43 @@
+# Prepared 2026-11-01. NOT YET RUN: it first runs after the repository is pushed.
+# The Linux job is marked experimental until it has passed once, because nothing has been tested on Linux yet.
+name: tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {os: windows-latest, experimental: false}
+          - {os: ubuntu-latest, experimental: true}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install locked dependencies
+        run: |
+          python -m pip install -r requirements-lock.txt
+          python -m pip install --no-deps -e .
+      - name: Tests without model files (they must skip, not fail)
+        run: python -m pytest -q
+      - name: Fetch pinned MyoSim
+        run: |
+          git clone https://github.com/MyoHub/myo_sim.git third_party/myo_sim
+          git -C third_party/myo_sim checkout 93b0ca8f4ec90c9899ee7f05fee561e9911da91b
+      - name: Tests with the model (Godot and visual tests skip here)
+        run: python -m pytest -q
+      - name: Lint and types
+        run: |
+          python -m ruff check . --exclude third_party
+          python -m mypy simulation biomechanics --ignore-missing-imports
+      - name: Same results twice
+        run: python scripts/p6_reproducibility.py

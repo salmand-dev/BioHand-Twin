@@ -1,0 +1,10 @@
+OS: Windows-10-10.0.19045-SP0
+Python: 3.11.4 venv: True
+MuJoCo (python): {'package': '3.17.0', 'library': '3.17.0'}
+MuJoCo standalone: 3.17.0 exists: True
+Godot: 4.7.2.stable.official.ed1daf0bf
+Godot headless open rc: 0 stderr: <empty>
+Blender: Blender 3.6.23
+Git: git version 2.56.0.windows.2
+Project git status: (no output, rc=128) rc: 128
+Hardware: {"computer": {"TotalPhysicalMemory": 8524095488, "NumberOfLogicalProcessors": 4}, "cpu": {"Name": "Intel(R) Core(TM) i7-4610M CPU @ 3.00GHz"}, "gpu": [{"Name": "Intel(R) HD Graphics 4600", "DriverVersion": "20.19.15.4835"}, {"Name": "AMD Radeon HD 8690M", "DriverVersion": "15.201.1101.0"}], "disk_c": {"total": 536315899904, "used": 445815590912, "free": 90500308992}}

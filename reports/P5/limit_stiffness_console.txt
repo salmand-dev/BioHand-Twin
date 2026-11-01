@@ -1,0 +1,2 @@
+before worst static penetration (deg): 38.37 | random: {'finite': True, 'max_limit_violation_deg': 9.77, 'max_kinetic_energy_J': 0.15225, 'warnings': {}}
+after worst static penetration (deg): 1.53 | random: {'finite': True, 'max_limit_violation_deg': 0.65, 'max_kinetic_energy_J': 0.15322, 'warnings': {}}

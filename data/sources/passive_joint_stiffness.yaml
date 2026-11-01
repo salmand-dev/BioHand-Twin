@@ -1,0 +1,75 @@
+# Values copied verbatim from the cited tables. Do not edit numbers. Derived values live in the patch.
+sources:
+  formica2012:
+    citation: "Formica D, Charles SK, Zollo L, Guglielmelli E, Hogan N, Krebs HI (2012). The passive stiffness of the
+      wrist and forearm. J Neurophysiol 108(4):1158-1166. Table 2, overall column."
+    doi: 10.1152/jn.01014.2011
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3424077/
+    date_retrieved: 2026-11-01
+    subjects: 10 healthy adults, relaxed, robot-imposed motion, around neutral
+    licence: numeric facts cited; article text not stored
+  wu2009:
+    citation: "Wu JZ, Li ZM, Cutlip RG, An KN (2009). A simulating analysis of the effects of increased joint
+      stiffness on muscle loading in a thumb. BioMed Eng OnLine 8:41."
+    doi: 10.1186/1475-925X-8-41
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2804669/
+    date_retrieved: 2026-11-01
+    subjects: none; values are ASSUMED inputs of a published simulation, not measurements
+    licence: numeric facts cited; article text not stored
+  shi2020:
+    citation: "Shi XQ, Heung HL, Tang ZQ, Tong KY, Li Z (2020). Verification of finger joint stiffness estimation method
+      with soft robotic actuator. Front Bioeng Biotechnol 8:592637. Table 2, subjects H1-H4, ground-truth device."
+    doi: 10.3389/fbioe.2020.592637
+    date_retrieved: 2026-11-01
+    subjects: 4 adults without neurological deficit, index finger MCP, wrist and forearm at 0 deg
+    licence: CC BY
+joints:
+  flexion_r:
+    source: formica2012
+    evidence: measured
+    values_Nm_per_rad: [0.554, 1.021]    # toward flexion, toward extension
+    sd_Nm_per_rad: [0.170, 0.379]
+  deviation_r:
+    source: formica2012
+    evidence: measured
+    values_Nm_per_rad: [1.710, 1.245]    # toward radial, toward ulnar
+    sd_Nm_per_rad: [0.573, 0.448]
+  pro_sup_r:
+    source: formica2012
+    evidence: measured
+    values_Nm_per_rad: [0.240, 0.186]    # toward pronation, toward supination
+    sd_Nm_per_rad: [0.135, 0.101]
+  mcp2_flexion_r:
+    source: shi2020
+    evidence: measured
+    values_Nm_per_rad: [0.0377, 0.0328, 0.0466, 0.0393]    # subjects H1, H2, H3, H4
+  # Below: NOT measurements. Kept because no measured value was found; replace when one is available.
+  cmc_flexion_r:
+    source: wu2009
+    evidence: assumed_in_published_model
+    values_Nm_per_rad: [0.15]
+  cmc_abduction_r:
+    source: wu2009
+    evidence: assumed_in_published_model
+    values_Nm_per_rad: [0.15]
+  mp_flexion_r:
+    source: wu2009
+    evidence: assumed_in_published_model
+    values_Nm_per_rad: [0.10]
+  ip_flexion_r:
+    source: wu2009
+    evidence: assumed_in_published_model
+    values_Nm_per_rad: [0.05]
+  mcp3_flexion_r:
+    source: shi2020
+    evidence: estimated_by_analogy_with_index_mcp
+    values_Nm_per_rad: [0.0377, 0.0328, 0.0466, 0.0393]
+  mcp4_flexion_r:
+    source: shi2020
+    evidence: estimated_by_analogy_with_index_mcp
+    values_Nm_per_rad: [0.0377, 0.0328, 0.0466, 0.0393]
+  mcp5_flexion_r:
+    source: shi2020
+    evidence: estimated_by_analogy_with_index_mcp
+    values_Nm_per_rad: [0.0377, 0.0328, 0.0466, 0.0393]
+not_covered: MCP abduction, PIP and DIP joints keep upstream k = 0; no value was retrieved for them.

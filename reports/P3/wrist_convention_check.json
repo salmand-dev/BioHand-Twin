@@ -1,0 +1,87 @@
+{
+ "tip_site": "MFtip_r",
+ "frame_checks": {
+  "lunate_offset_equal": true,
+  "lunate_rotation_identity": true,
+  "osim_orientations_zero": true
+ },
+ "myohand_capitate_minus_osim_midcarpal_centre_m": 0.0,
+ "coordinates": {
+  "deviation_r": {
+   "mobl_proximal_row_axis_radius_frame": [
+    -0.819064,
+    -0.135611,
+    -0.557444
+   ],
+   "mobl_hand_axis_radius_frame": [
+    0.899136,
+    -0.349053,
+    -0.26404
+   ],
+   "mobl_row_spline_slope": 1.0,
+   "mobl_hand_coupled_slope": 1.142856,
+   "myohand_axis_radius_frame": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "tip_velocity_per_rad_hand_frame_mobl_m": [
+    -0.00268,
+    -0.15148,
+    0.02866
+   ],
+   "tip_velocity_per_rad_hand_frame_myohand_m": [
+    0.00037,
+    0.16558,
+    -0.05053
+   ],
+   "cosine_between_directions": -0.9939,
+   "coordinate_range_rad_mobl": [
+    -0.174533,
+    0.436332
+   ],
+   "range_rad_myohand": [
+    -0.174533,
+    0.436332
+   ]
+  },
+  "flexion_r": {
+   "mobl_proximal_row_axis_radius_frame": [
+    0.956427,
+    -0.252207,
+    0.147104
+   ],
+   "mobl_hand_axis_radius_frame": [
+    0.997119,
+    0.0107,
+    -0.075101
+   ],
+   "mobl_row_spline_slope": 0.499999,
+   "mobl_hand_coupled_slope": 0.5,
+   "myohand_axis_radius_frame": [
+    1.0,
+    -0.0,
+    0.0
+   ],
+   "tip_velocity_per_rad_hand_frame_mobl_m": [
+    -0.00591,
+    -0.04352,
+    -0.15494
+   ],
+   "tip_velocity_per_rad_hand_frame_myohand_m": [
+    -0.00589,
+    -0.0517,
+    -0.16588
+   ],
+   "cosine_between_directions": 0.9996,
+   "coordinate_range_rad_mobl": [
+    -1.22173,
+    1.22173
+   ],
+   "range_rad_myohand": [
+    -0.785398,
+    0.785398
+   ]
+  }
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "id": "thumb_opposition",
+ "description": "Thumb opposition proxy - FPL and OP with light index flexion; thumb tip approaches index tip.",
+ "config": "data/experiments/tasks/thumb_opposition.yaml",
+ "meta": {
+  "patches": [
+   "wrist_rom_v1",
+   "muscle_fixes_v1",
+   "limit_stiffness_v1",
+   "thumb_intrinsics_v1",
+   "passive_stiffness_v1"
+  ],
+  "fixtures": [
+   {
+    "type": "joint_brace",
+    "joint": "pro_sup_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   },
+   {
+    "type": "joint_brace",
+    "joint": "deviation_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   },
+   {
+    "type": "joint_brace",
+    "joint": "flexion_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   }
+  ],
+  "timestep_s": 0.002,
+  "solver": 2,
+  "integrator": 0,
+  "iterations": 100,
+  "myosim_commit": "93b0ca8f4ec90c9899ee7f05fee561e9911da91b"
+ },
+ "metrics": {
+  "finite": true,
+  "max_limit_violation_rad": 0.01469,
+  "max_kinetic_energy_J": 0.02501,
+  "warnings": {},
+  "fraction_samples_outside_muscle_validity_envelope": 0.0,
+  "final_max_abs_qvel_rad_s": 0.02577,
+  "hand_bodies_in_contact": [],
+  "thumb_index_min_distance": 0.05238,
+  "thumb_index_min_distance_initial": 0.09454,
+  "thumb_index_min_distance_ratio": 0.5541
+ },
+ "success": {
+  "all_passed": true,
+  "numerically_healthy": true,
+  "checks": [
+   {
+    "metric": "thumb_index_min_distance_ratio",
+    "op": "<=",
+    "value": 0.6,
+    "observed": 0.5541,
+    "passed": true
+   }
+  ]
+ },
+ "deterministic_repeat": true,
+ "timestep_sensitivity": {
+  "max_limit_violation_rad": {
+   "dt_0p002": 0.01469,
+   "dt_0p001": 0.01411,
+   "abs_diff": 0.00058
+  },
+  "max_kinetic_energy_J": {
+   "dt_0p002": 0.02501,
+   "dt_0p001": 0.024991,
+   "abs_diff": 1.9e-05
+  },
+  "fraction_samples_outside_muscle_validity_envelope": {
+   "dt_0p002": 0.0,
+   "dt_0p001": 0.0,
+   "abs_diff": 0.0
+  },
+  "final_max_abs_qvel_rad_s": {
+   "dt_0p002": 0.02577,
+   "dt_0p001": 0.02576,
+   "abs_diff": 1e-05
+  },
+  "thumb_index_min_distance": {
+   "dt_0p002": 0.05238,
+   "dt_0p001": 0.05236,
+   "abs_diff": 2e-05
+  },
+  "thumb_index_min_distance_initial": {
+   "dt_0p002": 0.09454,
+   "dt_0p001": 0.09454,
+   "abs_diff": 0.0
+  },
+  "thumb_index_min_distance_ratio": {
+   "dt_0p002": 0.5541,
+   "dt_0p001": 0.5538,
+   "abs_diff": 0.0003
+  }
+ },
+ "fine_dt_success": true
+}

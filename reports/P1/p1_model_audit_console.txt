@@ -1,0 +1,61 @@
+{
+ "variants": {
+  "fragment": {
+   "counts": {
+    "nq": 23,
+    "nv": 23,
+    "nu": 39,
+    "na": 39,
+    "nbody": 38,
+    "njnt": 23,
+    "ngeom": 91,
+    "nsite": 491,
+    "nmesh": 33,
+    "ntendon": 39,
+    "nwrap": 315,
+    "nsensor": 0,
+    "neq": 0,
+    "npair": 0,
+    "nexclude": 5,
+    "nkey": 0
+   },
+   "build_warnings": []
+  },
+  "composed": {
+   "entry_point": "myo_sim.load_spec(\"myohand_r\")",
+   "counts": {
+    "nq": 23,
+    "nv": 23,
+    "nu": 39,
+    "na": 39,
+    "nbody": 53,
+    "njnt": 23,
+    "ngeom": 136,
+    "nsite": 1169,
+    "nmesh": 57,
+    "ntendon": 39,
+    "nwrap": 315,
+    "nsensor": 0,
+    "neq": 0,
+    "npair": 3,
+    "nexclude": 5,
+    "nkey": 0
+   },
+   "build_warnings": [
+    "UserWarning: Attaching a spec with an empty prefix may prevent the model from being saved correctly.",
+    "native stderr: WARNING: Attaching a spec with an empty prefix may prevent the model from being saved correctly."
+   ]
+  }
+ },
+ "determinism_fragment": {
+  "steps": 500,
+  "seed": 20261031,
+  "bitwise_identical": true
+ }
+}
+zero finite: True max_limit_violation_rad: 0.00416 warnings: {}
+full finite: True max_limit_violation_rad: 0.15424 warnings: {}
+random_seeded finite: True max_limit_violation_rad: 0.11062 warnings: {}
+legacy counts: {'nq': 23, 'nv': 23, 'nu': 39, 'na': 39, 'nbody': 39, 'njnt': 23, 'ngeom': 99, 'nsite': 328, 'nmesh': 36, 'ntendon': 39, 'nwrap': 315, 'nsensor': 0, 'neq': 0, 'npair': 0, 'nexclude': 5, 'nkey': 0}
+legacy names match: True True
+hashed files: 73

@@ -1,0 +1,143 @@
+{
+ "id": "power_grip_proxy",
+ "description": "Power-grip proxy around a static cylinder (illustrative fixture, 40 mm diameter).",
+ "config": "data/experiments/tasks/power_grip_proxy.yaml",
+ "meta": {
+  "patches": [
+   "wrist_rom_v1",
+   "muscle_fixes_v1",
+   "limit_stiffness_v1",
+   "thumb_intrinsics_v1",
+   "passive_stiffness_v1"
+  ],
+  "fixtures": [
+   {
+    "type": "joint_brace",
+    "joint": "pro_sup_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   },
+   {
+    "type": "joint_brace",
+    "joint": "deviation_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   },
+   {
+    "type": "joint_brace",
+    "joint": "flexion_r",
+    "held_at_rad": 0.0,
+    "implementation": "MuJoCo joint equality constraint, solref = (2 x timestep, 1)",
+    "status": "experimental apparatus (forearm/wrist brace), not anatomy"
+   },
+   {
+    "type": "static_object",
+    "name": "grip_cylinder",
+    "radius_m": 0.02,
+    "half_length_m": 0.05,
+    "palmar_clearance_m": 0.02,
+    "centre_world_m": [
+     0.60279,
+     0.01999,
+     0.13939
+    ],
+    "quat_wxyz_world": [
+     0.831729,
+     -0.550933,
+     -0.065838,
+     -0.019117
+    ],
+    "geom_axis": "local z (MuJoCo cylinder)",
+    "placement": "palmar to the mean of proximal phalanx II-V origins at qpos0; axis along the hand radial axis",
+    "status": "illustrative task fixture, not anatomy"
+   }
+  ],
+  "timestep_s": 0.002,
+  "solver": 2,
+  "integrator": 0,
+  "iterations": 100,
+  "myosim_commit": "93b0ca8f4ec90c9899ee7f05fee561e9911da91b"
+ },
+ "metrics": {
+  "finite": true,
+  "max_limit_violation_rad": 0.01232,
+  "max_kinetic_energy_J": 0.083845,
+  "warnings": {},
+  "fraction_samples_outside_muscle_validity_envelope": 0.0,
+  "final_max_abs_qvel_rad_s": 0.10351,
+  "hand_bodies_in_contact": [
+   "2proxph_r",
+   "3proxph_r",
+   "4proxph_r",
+   "5proxph_r",
+   "distal_thumb_r",
+   "distph2_r",
+   "distph3_r",
+   "distph4_r",
+   "distph5_r",
+   "midph2_r",
+   "midph3_r",
+   "midph4_r",
+   "midph5_r",
+   "proximal_thumb_r"
+  ],
+  "grip_force_mean_last_0p5s": 272.7122,
+  "n_hand_bodies_in_contact": 14
+ },
+ "success": {
+  "all_passed": true,
+  "numerically_healthy": true,
+  "checks": [
+   {
+    "metric": "grip_force_mean_last_0p5s",
+    "op": ">=",
+    "value": 1.0,
+    "observed": 272.7122,
+    "passed": true
+   },
+   {
+    "metric": "n_hand_bodies_in_contact",
+    "op": ">=",
+    "value": 3,
+    "observed": 14,
+    "passed": true
+   }
+  ]
+ },
+ "deterministic_repeat": true,
+ "timestep_sensitivity": {
+  "max_limit_violation_rad": {
+   "dt_0p002": 0.01232,
+   "dt_0p001": 0.00925,
+   "abs_diff": 0.00307
+  },
+  "max_kinetic_energy_J": {
+   "dt_0p002": 0.083845,
+   "dt_0p001": 0.085026,
+   "abs_diff": 0.001181
+  },
+  "fraction_samples_outside_muscle_validity_envelope": {
+   "dt_0p002": 0.0,
+   "dt_0p001": 0.0,
+   "abs_diff": 0.0
+  },
+  "final_max_abs_qvel_rad_s": {
+   "dt_0p002": 0.10351,
+   "dt_0p001": 0.33664,
+   "abs_diff": 0.23313
+  },
+  "grip_force_mean_last_0p5s": {
+   "dt_0p002": 272.7122,
+   "dt_0p001": 272.4778,
+   "abs_diff": 0.2344
+  },
+  "n_hand_bodies_in_contact": {
+   "dt_0p002": 14,
+   "dt_0p001": 14,
+   "abs_diff": 0.0
+  }
+ },
+ "fine_dt_success": true
+}
