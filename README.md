@@ -95,7 +95,7 @@ Results from [the phase reports](docs/PHASE_LOG.md):
 - **Verified as software:** forward kinematics matches an independent implementation; inverse dynamics matches forward dynamics; tasks repeat bit for bit; viewer poses match MuJoCo.
 - **Compared with published data** ([P8 report](reports/P8/P8_REPORT.md)): wrist moment arms have the right sign for 12 of 12 measured values, but only 8 of 12 are within 2 SD, and most are overestimated. Index MCP values agree in 10 of 12 comparisons.
 - **Tasks:** 8 of 8 pass their numerical criteria, with caveats. The `pinch` task reaches only about 0.8 N, is unsteady and is fragile against small parameter changes. The `rest_neutral` task passes at 4 s and fails at the original 2 s. See [the fixes report](reports/fixes/FIXES_REPORT.md).
-- **Not validated:** forces, timing, EMG and motion trajectories. Tested on one Windows machine only.
+- **Not validated:** forces, timing, EMG and motion trajectories. See the status below.
 
 ## Repository map
 
@@ -110,7 +110,7 @@ Results from [the phase reports](docs/PHASE_LOG.md):
 
 ## Status
 
-Version 0.1.0 is a candidate, tested on **one Windows machine**. Linux and other machines are untested; CI is set up to check them. Contributions: [CONTRIBUTING.md](CONTRIBUTING.md).
+Version 0.1.0 is a pre-release. CI runs the tests from a clean install on Windows and Linux. The 3D viewer is only tested on one Windows machine. Contributions: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licence and required citations
 
