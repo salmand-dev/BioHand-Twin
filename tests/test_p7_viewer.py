@@ -42,8 +42,13 @@ def test_godot_inventory_is_current():
     spec = importlib.util.spec_from_file_location("cli", ROOT / "scripts" / "biohand.py")
     cli = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(cli)
-    fresh = json.dumps(cli.godot_inventory(), indent=1, sort_keys=True) + "\n"
-    assert (GODOT_APP / "data" / "biohand_inventory.json").read_text(encoding="utf-8") == fresh
+    # The fingerprint hashes compiled floats, which differ in the last bits between Linux and Windows builds of
+    # MuJoCo. It identifies a model on one platform; test_cross_platform.py compares results across platforms.
+    fresh = cli.godot_inventory()
+    committed = json.loads((GODOT_APP / "data" / "biohand_inventory.json").read_text(encoding="utf-8"))
+    fresh.pop("model_fingerprint_sha256")
+    committed.pop("model_fingerprint_sha256")
+    assert json.loads(json.dumps(fresh)) == committed
 
 
 def test_inventory_labels_cover_every_bone_representation():

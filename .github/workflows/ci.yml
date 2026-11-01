@@ -1,4 +1,3 @@
-# Prepared 2026-11-01. NOT YET RUN: it first runs after the repository is pushed.
 # The Linux job is marked experimental until it has passed once, because nothing has been tested on Linux yet.
 name: tests
 on:

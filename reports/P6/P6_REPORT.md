@@ -49,7 +49,7 @@
 |---|---|
 | Versioned JSON schema | **PASS** — v1.0.0 for frames and metadata, enforced in tests |
 | CSV export has units and metadata | **PASS** |
-| Same experiment configuration reproduces results within documented tolerance | **PASS** — documented tolerance: bitwise identity on the same platform, MuJoCo version and model fingerprint. Cross-timestep verdicts: P5. **Cross-platform reproducibility not tested** |
+| Same experiment configuration reproduces results within documented tolerance | **PASS** — documented tolerance: bitwise identity on the same platform, MuJoCo version and model fingerprint. Cross-timestep verdicts: P5. **Cross-platform: bitwise identity does not hold and is not claimed** (the fingerprint differs between Linux and Windows); `tests/test_cross_platform.py` compares verdicts and metrics instead |
 
 **P6 status: COMPLETE (2026-10-31).**
 

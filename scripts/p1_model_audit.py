@@ -62,7 +62,8 @@ UPSTREAM_SOURCE_FILES = [
 
 
 def sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    # git may check out text with CRLF on Windows; hash the same content on every OS
+    return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
 
 
 def mesh_files(built: BuiltModel) -> list[Path]:
@@ -196,7 +197,7 @@ def main() -> None:
         hashed[rel] = sha256(DEFAULT_MYOSIM_DIR / rel)
     for p in mesh_files(composed):
         hashed[p.relative_to(DEFAULT_MYOSIM_DIR.resolve()).as_posix()] = sha256(p)
-    hashes = {"_meta": {**meta, "algorithm": "sha256"}, "files": dict(sorted(hashed.items()))}
+    hashes = {"_meta": {**meta, "algorithm": "sha256 of file content with CRLF normalised to LF"}, "files": dict(sorted(hashed.items()))}
     (ROOT / "data" / "provenance").mkdir(parents=True, exist_ok=True)
     (ROOT / "data" / "provenance" / "myohand_file_hashes.json").write_text(
         json.dumps(hashes, indent=1)

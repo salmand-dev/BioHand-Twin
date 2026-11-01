@@ -135,4 +135,4 @@ def test_hashed_upstream_files_unchanged():
     hashes = json.loads((ROOT / "data" / "provenance" / "myohand_file_hashes.json").read_text())
     for rel, digest in hashes["files"].items():
         data = (DEFAULT_MYOSIM_DIR / rel).read_bytes()
-        assert hashlib.sha256(data).hexdigest() == digest, rel
+        assert hashlib.sha256(data.replace(b"\r\n", b"\n")).hexdigest() == digest, rel
