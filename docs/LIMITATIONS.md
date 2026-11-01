@@ -40,5 +40,5 @@ A research and education tool: a generic model, built from MoBL-ARMS and 2nd-Han
 - No measured validation for the thumb (including the added muscles), the other fingers' intrinsics, forces, EMG or trajectories.
 
 ## Software
-- Tested on one Windows 10 machine. Cross-platform reproducibility and a separate clean machine are untested.
+- CI runs the Python tests from a clean install on Windows and Linux. Results agree within tolerances, not bit for bit, and pinch force has a wide tolerance (50 %). macOS is untested. The Blender build and the viewer are tested on one Windows machine only.
 - The viewer is playback-only. It was exercised with real mouse input through desktop automation, but no person has used it, and there is no usability study. See `docs/VIEWER_UI.md`.

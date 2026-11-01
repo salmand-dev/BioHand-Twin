@@ -118,7 +118,7 @@ def joint_kinematic_evidence(
         out.append(JointKinematicEvidence(
             joint=mujoco.mj_id2name(model, mujoco.mjtObj.mjOBJ_JOINT, j) or str(j),
             tracked_body=mujoco.mj_id2name(model, mujoco.mjtObj.mjOBJ_BODY, tracked) or str(tracked),
-            displacement_hand_frame_m=tuple(round(float(x), 6) for x in disp),  # type: ignore[arg-type]
-            rotation_about_distal_rad=round(angle, 6),
+            displacement_hand_frame_m=tuple(round(float(x), 6) + 0.0 for x in disp),  # type: ignore[arg-type]
+            rotation_about_distal_rad=round(angle, 6) + 0.0,  # + 0.0 turns -0.0 into 0.0
         ))
     return out

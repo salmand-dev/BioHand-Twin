@@ -1,8 +1,8 @@
 # Release Notes
 
-## 0.1.0 — candidate (2026-11-01), not tagged
+## 0.1.0 — pre-release (2026-11-01)
 
-No release tag exists yet: it waits for the first push and CI run.
+Python tests pass from a clean install on Windows and Linux in CI.
 
 ### Included
 - Build of the reference model: pinned MyoSim commit plus five explicit patches, with values validated against their sources or derivation rules.
@@ -18,7 +18,7 @@ No release tag exists yet: it waits for the first push and CI run.
 - The P5 claim that pinch failed because of the missing muscles was wrong; see `reports/fixes/FIXES_REPORT.md`.
 
 ### Not verified
-- Installation on a separate clean Windows machine; any other operating system.
+- Building the 3D file and running the viewer on a second machine; macOS.
 - Use of the viewer by a person (it was exercised with real input through desktop automation).
 - Forces, timing, EMG and trajectories against measured data.
 

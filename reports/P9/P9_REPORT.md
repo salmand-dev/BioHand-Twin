@@ -40,16 +40,12 @@ All on the development machine, from a project copy that has no `third_party/`, 
 
 | Criterion | Status |
 |---|---|
-| Installation works on a clean Windows machine | **NOT VERIFIED.** Only the isolated checks above on the development machine, and those ran before the fixes. A separate machine has not been tried |
+| Installation works on a clean Windows machine | **PARTLY.** Install from the lock file and the Python tests pass on fresh Windows and Linux CI runners. The Blender build and viewer have not been installed on a second machine |
 | README contains demo, architecture, limitations, citations, reproducibility | **PASS** (test) |
 | Third-party notices and asset licences complete | **PASS** |
-| Release tag | **NOT DONE.** A local git repository exists; the tag waits until CI has run after the first push |
+| Release tag | **PASS.** `v0.1.0`, marked as a pre-release, after CI passed |
 
-**P9 status: documents complete; phase NOT complete.** Two items need the project owner:
-1. Run the installation on another Windows machine.
-2. Push to GitHub (owner decision), let CI run, then tag `v0.1.0`.
-
-A CI workflow for Ubuntu and Windows is prepared (`.github/workflows/ci.yml`) but has never run, because nothing has been pushed yet.
+**P9 status: published as a pre-release; NOT fully complete.** One item remains: install the Blender build and viewer on a second machine.
 
 Also still open, though not P9 criteria: choosing an anatomy reference for the provisional names, and use of the viewer by a person.
 

@@ -13,7 +13,7 @@
 | P8 | Complete (2026-11-01) | `reports/P8/P8_REPORT.md`, `reports/P8/*.json`, `reports/P8/clean_install_output.txt` | All references compared, failures reported: wrist 8/12, index 10/12. No force validation possible. Criteria are about reporting, not about the model passing |
 | Fixes | Done 2026-11-01, with caveats | `reports/fixes/FIXES_REPORT.md` | 2 new patches; 8 of 8 tasks pass with caveats; P5 causal claim corrected; moment-arm validation unchanged (8/12, 10/12); grip inertia effect traced to contact softness; viewer used with real input, 4 defects addressed; other OS still untested |
 | UI | Done 2026-11-01 | `docs/VIEWER_UI.md`, `tests/test_p7_viewer.py`, `reports/P7/viewer_pinch.png` | Viewer redesigned; no person has used it; no screen-reader test |
-| P9 | **Documents done — not complete** | `reports/P9/P9_REPORT.md`, `README.md`, `docs/INSTALL_WINDOWS.md`, `docs/DEMO_SCENARIOS.md`, `docs/LIMITATIONS.md`, `docs/RELEASE_NOTES.md`, `CITATION.cff` | Open: install on a separate clean Windows machine; git repository and release tag (owner decision) |
+| P9 | **Pre-release published — not fully complete** | `reports/P9/P9_REPORT.md`, `README.md`, `docs/INSTALL_WINDOWS.md`, `docs/DEMO_SCENARIOS.md`, `docs/LIMITATIONS.md`, `docs/RELEASE_NOTES.md`, `CITATION.cff` | Pre-release `v0.1.0` published; Python tests pass in CI on Windows and Linux. Open: viewer install on a second machine |
 
 ## 2026-10-31 — P0 + P1 session
 - Created `.venv` (Python 3.11.4) and pinned `mujoco==3.17.0`.

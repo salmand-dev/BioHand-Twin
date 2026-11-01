@@ -45,7 +45,7 @@ About 45-48 FPS at 1600x900 with all layers on an AMD HD 8690M (60 FPS before th
 
 ## Not tested or not included
 - No person has used it, and there is no usability study.
-- Not tested with a screen reader, on a touch screen, on high-DPI displays, or outside Windows.
+- Not tested with a screen reader, on a touch screen, on high-DPI displays, or outside one Windows machine.
 - Right- and middle-drag were not exercised with real input.
 - English only.
 - Bone picking uses bounding boxes, so a click near a bone may select it or a neighbour. The list is exact.
